@@ -11,22 +11,37 @@ class AngleAxisActuation(csdl.Model):
 
     PARAMETERS:
         - number of timesteps
-        - number of thrust vector origin pairs 
-        - number of meshes 
+        - thrust vector dictionary 
+        - vlm mesh dictionary 
+        - axis dictionary
+        - actuation angle dictionary
 
     INPUTS: 
         - normalized axis vector
-        - starting point from which the axis vector originates
-        - points which 
+        - origin point
+        - thrust origin point
+        - thrust vector 
+        - vlm mesh
+
+    OUTPUTS:
+        - actuated thrust origins
+        - actuated thrust vectors
+        - actuated meshes
 
     '''
     def initialize(self):
         self.parameters.declare('num_nodes')
-        self.parameters.declare('num_thrust_vector_origin_pairs')
+        self.parameters.declare('thrust_vector_dict')
+        self.parameters.declare('vlm_mesh_dict')
+        self.parameters.declare('axis_dict')
+        self.parameters.declare('actuation_angle_dict')
 
     def define(self):
 
-        n       = self.parameters['num_nodes'] 
-        n_pairs = self.parameters['num_thrust_vector_origin_pairs']
+        n                    = self.parameters['num_nodes'] 
+        thrust_vector_dict   = self.parameters['thrust_vector_dict']
+        vlm_mesh_dict        = self.parameters['vlm_mesh_dict']
+        axis_dict            = self.parameters['axis_dict']
+        actuation_angle_dict = self.parameters['actuation_angle_dict']
 
-        axis = self.declare_variable('axis', shape=(3,))
+        

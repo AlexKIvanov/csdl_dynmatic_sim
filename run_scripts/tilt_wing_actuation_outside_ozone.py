@@ -26,7 +26,19 @@ import numpy as np
 from vedo import Points, Plotter
 import cProfile
 
+# number of timesteps
+nt = 100     
 
 pointsets = both_wings_all_nacelles()
+
+# Expand all the geometry pointsets to have a time-axis of size nt 
+expanded_pointsets = dict()
+for key,value in pointsets.items():
+    if value.shape[0] == 1:
+        temp = value
+    else:
+        temp = np.expand_dims(value, 0)
+    expanded_pointsets[key] = np.repeat(temp, nt, 0)
+
 
 print('hi')

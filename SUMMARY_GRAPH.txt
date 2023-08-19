@@ -1,0 +1,1339 @@
+node name, 	 node object
+
+actuation_angle, <csdl.lang.input.Input object at 0x7effa96aef70>, .actuation_angle
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_000b
+		_000g
+		_000m
+		_000s
+		_000y
+		_000D
+		_000J
+		_000P
+		_0017
+		_001c
+		_001i
+		_001o
+		_001u
+		_001z
+		_001F
+		_001L
+		_0023
+		_0028
+		_002e
+		_002k
+		_002q
+		_002v
+		_002B
+		_002H
+
+front_wing_rotation_axis_x, <csdl.lang.input.Input object at 0x7effa96aeca0>, .front_wing_rotation_axis_x
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_000k
+		_000H
+		_001g
+		_001D
+		_002c
+		_002z
+
+front_wing_rotation_axis_y, <csdl.lang.input.Input object at 0x7effa96aeb80>, .front_wing_rotation_axis_y
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_000q
+		_000N
+		_001m
+		_001J
+		_002i
+		_002F
+
+front_wing_rotation_axis_z, <csdl.lang.input.Input object at 0x7effa96aefd0>, .front_wing_rotation_axis_z
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_000w
+		_000T
+		_001s
+		_001P
+		_002o
+		_002L
+
+axis_origin_pt, <csdl.lang.input.Input object at 0x7effa93404f0>, .axis_origin_pt
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_0007
+		_000Z
+		_0013
+		_001V
+		_001_
+		_002R
+
+front_left_nacelle1_origin, <csdl.lang.input.Input object at 0x7effa96aeb50>, .front_left_nacelle1_origin
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_0007
+
+front_left_nacelle1_vector, <csdl.lang.input.Input object at 0x7effa96aeaf0>, .front_left_nacelle1_vector
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_000X
+
+front_left_nacelle2_origin, <csdl.lang.input.Input object at 0x7effa9687af0>, .front_left_nacelle2_origin
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_0013
+
+front_left_nacelle2_vector, <csdl.lang.input.Input object at 0x7effa9687a90>, .front_left_nacelle2_vector
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_001T
+
+front_left_nacelle3_origin, <csdl.lang.input.Input object at 0x7effa9340490>, .front_left_nacelle3_origin
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_001_
+
+front_left_nacelle3_vector, <csdl.lang.input.Input object at 0x7effa9340430>, .front_left_nacelle3_vector
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_002P
+
+_000b, <csdl.operations.power_combination.power_combination object at 0x7effa96aeeb0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_000c,(100, 1) 
+
+_000c, <csdl.lang.output.Output object at 0x7effa96aee80>, ._000c
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000b
+	SUCCESSORS
+		_000d
+
+_000d, <csdl.operations.cos.cos object at 0x7effa96aebb0>
+	PREDECESSORS
+		_000c,(100, 1) 
+	SUCCESSORS
+		_000e,(100, 1) 
+
+_000e, <csdl.lang.output.Output object at 0x7effa96aeac0>, ._000e
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000d
+	SUCCESSORS
+		_000f
+
+_000f, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7effa96ae040>
+	PREDECESSORS
+		_000e,(100, 1) 
+		_000l,(100, 1) 
+		_000r,(100, 1) 
+		_000x,(100, 1) 
+	SUCCESSORS
+		front_left_nacelle1_origin_quat,(100, 4) 
+
+_000g, <csdl.operations.power_combination.power_combination object at 0x7effa96ae610>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_000h,(100, 1) 
+
+_000h, <csdl.lang.output.Output object at 0x7effa96ae9d0>, ._000h
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000g
+	SUCCESSORS
+		_000i
+
+_000i, <csdl.operations.sin.sin object at 0x7effa96ae8b0>
+	PREDECESSORS
+		_000h,(100, 1) 
+	SUCCESSORS
+		_000j,(100, 1) 
+
+_000j, <csdl.lang.output.Output object at 0x7effa96aea60>, ._000j
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000i
+	SUCCESSORS
+		_000k
+
+_000k, <csdl.operations.power_combination.power_combination object at 0x7effa96ae130>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(100, 1) 
+		_000j,(100, 1) 
+	SUCCESSORS
+		_000l,(100, 1) 
+
+_000l, <csdl.lang.output.Output object at 0x7effa96ae370>, ._000l
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000k
+	SUCCESSORS
+		_000f
+
+_000m, <csdl.operations.power_combination.power_combination object at 0x7effa96aea00>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_000n,(100, 1) 
+
+_000n, <csdl.lang.output.Output object at 0x7effa96ae9a0>, ._000n
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000m
+	SUCCESSORS
+		_000o
+
+_000o, <csdl.operations.sin.sin object at 0x7effa96ae970>
+	PREDECESSORS
+		_000n,(100, 1) 
+	SUCCESSORS
+		_000p,(100, 1) 
+
+_000p, <csdl.lang.output.Output object at 0x7effa96ae430>, ._000p
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000o
+	SUCCESSORS
+		_000q
+
+_000q, <csdl.operations.power_combination.power_combination object at 0x7effa96ae670>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(100, 1) 
+		_000p,(100, 1) 
+	SUCCESSORS
+		_000r,(100, 1) 
+
+_000r, <csdl.lang.output.Output object at 0x7effa96ae3d0>, ._000r
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000q
+	SUCCESSORS
+		_000f
+
+_000s, <csdl.operations.power_combination.power_combination object at 0x7effa96ae070>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_000t,(100, 1) 
+
+_000t, <csdl.lang.output.Output object at 0x7effa96ae190>, ._000t
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000s
+	SUCCESSORS
+		_000u
+
+_000u, <csdl.operations.sin.sin object at 0x7effa96ae160>
+	PREDECESSORS
+		_000t,(100, 1) 
+	SUCCESSORS
+		_000v,(100, 1) 
+
+_000v, <csdl.lang.output.Output object at 0x7effa96ae5b0>, ._000v
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000u
+	SUCCESSORS
+		_000w
+
+_000w, <csdl.operations.power_combination.power_combination object at 0x7effa96aea30>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(100, 1) 
+		_000v,(100, 1) 
+	SUCCESSORS
+		_000x,(100, 1) 
+
+_000x, <csdl.lang.output.Output object at 0x7effa96ae730>, ._000x
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000w
+	SUCCESSORS
+		_000f
+
+front_left_nacelle1_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7effa96aebe0>, .front_left_nacelle1_origin_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000f
+	SUCCESSORS
+		_000V
+
+_000y, <csdl.operations.power_combination.power_combination object at 0x7effa96ae760>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_000z,(100, 1) 
+
+_000z, <csdl.lang.output.Output object at 0x7effa96aed60>, ._000z
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000y
+	SUCCESSORS
+		_000A
+
+_000A, <csdl.operations.cos.cos object at 0x7effa96aee20>
+	PREDECESSORS
+		_000z,(100, 1) 
+	SUCCESSORS
+		_000B,(100, 1) 
+
+_000B, <csdl.lang.output.Output object at 0x7effa96aec40>, ._000B
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000A
+	SUCCESSORS
+		_000C
+
+_000C, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7effa96aed00>
+	PREDECESSORS
+		_000B,(100, 1) 
+		_000I,(100, 1) 
+		_000O,(100, 1) 
+		_000U,(100, 1) 
+	SUCCESSORS
+		front_left_nacelle1_vector_quat,(100, 4) 
+
+_000D, <csdl.operations.power_combination.power_combination object at 0x7effa96aed30>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_000E,(100, 1) 
+
+_000E, <csdl.lang.output.Output object at 0x7effa96aef40>, ._000E
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000D
+	SUCCESSORS
+		_000F
+
+_000F, <csdl.operations.sin.sin object at 0x7effa96aedf0>
+	PREDECESSORS
+		_000E,(100, 1) 
+	SUCCESSORS
+		_000G,(100, 1) 
+
+_000G, <csdl.lang.output.Output object at 0x7effa96ae0a0>, ._000G
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000F
+	SUCCESSORS
+		_000H
+
+_000H, <csdl.operations.power_combination.power_combination object at 0x7effa96aeb20>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(100, 1) 
+		_000G,(100, 1) 
+	SUCCESSORS
+		_000I,(100, 1) 
+
+_000I, <csdl.lang.output.Output object at 0x7effa96ae820>, ._000I
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000H
+	SUCCESSORS
+		_000C
+
+_000J, <csdl.operations.power_combination.power_combination object at 0x7effa96ae910>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_000K,(100, 1) 
+
+_000K, <csdl.lang.output.Output object at 0x7effa96aea90>, ._000K
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000J
+	SUCCESSORS
+		_000L
+
+_000L, <csdl.operations.sin.sin object at 0x7effa96ae250>
+	PREDECESSORS
+		_000K,(100, 1) 
+	SUCCESSORS
+		_000M,(100, 1) 
+
+_000M, <csdl.lang.output.Output object at 0x7effa96ae2e0>, ._000M
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000L
+	SUCCESSORS
+		_000N
+
+_000N, <csdl.operations.power_combination.power_combination object at 0x7effa96ae3a0>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(100, 1) 
+		_000M,(100, 1) 
+	SUCCESSORS
+		_000O,(100, 1) 
+
+_000O, <csdl.lang.output.Output object at 0x7effa96ae4f0>, ._000O
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000N
+	SUCCESSORS
+		_000C
+
+_000P, <csdl.operations.power_combination.power_combination object at 0x7effa9687fd0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_000Q,(100, 1) 
+
+_000Q, <csdl.lang.output.Output object at 0x7effa9687f70>, ._000Q
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000P
+	SUCCESSORS
+		_000R
+
+_000R, <csdl.operations.sin.sin object at 0x7effa9687eb0>
+	PREDECESSORS
+		_000Q,(100, 1) 
+	SUCCESSORS
+		_000S,(100, 1) 
+
+_000S, <csdl.lang.output.Output object at 0x7effa9687f10>, ._000S
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000R
+	SUCCESSORS
+		_000T
+
+_000T, <csdl.operations.power_combination.power_combination object at 0x7effa9687df0>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(100, 1) 
+		_000S,(100, 1) 
+	SUCCESSORS
+		_000U,(100, 1) 
+
+_000U, <csdl.lang.output.Output object at 0x7effa9687e50>, ._000U
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000T
+	SUCCESSORS
+		_000C
+
+front_left_nacelle1_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7effa96ae790>, .front_left_nacelle1_vector_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000C
+	SUCCESSORS
+		_000X
+
+_000V, <csdl.operations.quatrotvec.quatrotvec object at 0x7effa9687d90>
+	PREDECESSORS
+		front_left_nacelle1_origin_quat,(100, 4) 
+		_0008,(100, 3) 
+	SUCCESSORS
+		_000W,(100, 3) 
+
+_0007, <csdl.operations.linear_combination.linear_combination object at 0x7effa96aef10>
+	PREDECESSORS
+		axis_origin_pt,(100, 3) 
+		front_left_nacelle1_origin,(100, 3) 
+	SUCCESSORS
+		_0008,(100, 3) 
+
+_0008, <csdl.lang.output.Output object at 0x7effa96aeee0>, ._0008
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_0007
+	SUCCESSORS
+		_000V
+
+_000W, <csdl.lang.output.Output object at 0x7effa9687d30>, ._000W
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000V
+	SUCCESSORS
+		_000Z
+
+_000Z, <csdl.operations.linear_combination.linear_combination object at 0x7effa9687bb0>
+	PREDECESSORS
+		axis_origin_pt,(100, 3) 
+		_000W,(100, 3) 
+	SUCCESSORS
+		front_left_nacelle1_origin_rotated,(100, 3) 
+
+front_left_nacelle1_origin_rotated, <csdl.lang.output.Output object at 0x7effa9687c10>, .front_left_nacelle1_origin_rotated
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000Z
+	SUCCESSORS
+
+_000X, <csdl.operations.quatrotvec.quatrotvec object at 0x7effa9687c70>
+	PREDECESSORS
+		front_left_nacelle1_vector,(100, 3) 
+		front_left_nacelle1_vector_quat,(100, 4) 
+	SUCCESSORS
+		front_left_nacelle1_vector_rotated,(100, 3) 
+
+front_left_nacelle1_vector_rotated, <csdl.lang.output.Output object at 0x7effa9687cd0>, .front_left_nacelle1_vector_rotated
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_000X
+	SUCCESSORS
+
+_0017, <csdl.operations.power_combination.power_combination object at 0x7effa96878b0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_0018,(100, 1) 
+
+_0018, <csdl.lang.output.Output object at 0x7effa9687850>, ._0018
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_0017
+	SUCCESSORS
+		_0019
+
+_0019, <csdl.operations.cos.cos object at 0x7effa96877f0>
+	PREDECESSORS
+		_0018,(100, 1) 
+	SUCCESSORS
+		_001a,(100, 1) 
+
+_001a, <csdl.lang.output.Output object at 0x7effa9687790>, ._001a
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_0019
+	SUCCESSORS
+		_001b
+
+_001b, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7effa96876d0>
+	PREDECESSORS
+		_001a,(100, 1) 
+		_001h,(100, 1) 
+		_001n,(100, 1) 
+		_001t,(100, 1) 
+	SUCCESSORS
+		front_left_nacelle2_origin_quat,(100, 4) 
+
+_001c, <csdl.operations.power_combination.power_combination object at 0x7effa9687730>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_001d,(100, 1) 
+
+_001d, <csdl.lang.output.Output object at 0x7effa9687610>, ._001d
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001c
+	SUCCESSORS
+		_001e
+
+_001e, <csdl.operations.sin.sin object at 0x7effa9687670>
+	PREDECESSORS
+		_001d,(100, 1) 
+	SUCCESSORS
+		_001f,(100, 1) 
+
+_001f, <csdl.lang.output.Output object at 0x7effa9687550>, ._001f
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001e
+	SUCCESSORS
+		_001g
+
+_001g, <csdl.operations.power_combination.power_combination object at 0x7effa96875b0>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(100, 1) 
+		_001f,(100, 1) 
+	SUCCESSORS
+		_001h,(100, 1) 
+
+_001h, <csdl.lang.output.Output object at 0x7effa96874f0>, ._001h
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001g
+	SUCCESSORS
+		_001b
+
+_001i, <csdl.operations.power_combination.power_combination object at 0x7effa9687490>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_001j,(100, 1) 
+
+_001j, <csdl.lang.output.Output object at 0x7effa9687430>, ._001j
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001i
+	SUCCESSORS
+		_001k
+
+_001k, <csdl.operations.sin.sin object at 0x7effa9687370>
+	PREDECESSORS
+		_001j,(100, 1) 
+	SUCCESSORS
+		_001l,(100, 1) 
+
+_001l, <csdl.lang.output.Output object at 0x7effa96873d0>, ._001l
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001k
+	SUCCESSORS
+		_001m
+
+_001m, <csdl.operations.power_combination.power_combination object at 0x7effa96872b0>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(100, 1) 
+		_001l,(100, 1) 
+	SUCCESSORS
+		_001n,(100, 1) 
+
+_001n, <csdl.lang.output.Output object at 0x7effa9687310>, ._001n
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001m
+	SUCCESSORS
+		_001b
+
+_001o, <csdl.operations.power_combination.power_combination object at 0x7effa9687250>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_001p,(100, 1) 
+
+_001p, <csdl.lang.output.Output object at 0x7effa96871f0>, ._001p
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001o
+	SUCCESSORS
+		_001q
+
+_001q, <csdl.operations.sin.sin object at 0x7effa9687130>
+	PREDECESSORS
+		_001p,(100, 1) 
+	SUCCESSORS
+		_001r,(100, 1) 
+
+_001r, <csdl.lang.output.Output object at 0x7effa9687190>, ._001r
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001q
+	SUCCESSORS
+		_001s
+
+_001s, <csdl.operations.power_combination.power_combination object at 0x7effa9687070>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(100, 1) 
+		_001r,(100, 1) 
+	SUCCESSORS
+		_001t,(100, 1) 
+
+_001t, <csdl.lang.output.Output object at 0x7effa96870d0>, ._001t
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001s
+	SUCCESSORS
+		_001b
+
+front_left_nacelle2_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7effa9687970>, .front_left_nacelle2_origin_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001b
+	SUCCESSORS
+		_001R
+
+_001u, <csdl.operations.power_combination.power_combination object at 0x7effa9340fd0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_001v,(100, 1) 
+
+_001v, <csdl.lang.output.Output object at 0x7effa9340f70>, ._001v
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001u
+	SUCCESSORS
+		_001w
+
+_001w, <csdl.operations.cos.cos object at 0x7effa9340eb0>
+	PREDECESSORS
+		_001v,(100, 1) 
+	SUCCESSORS
+		_001x,(100, 1) 
+
+_001x, <csdl.lang.output.Output object at 0x7effa9340f10>, ._001x
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001w
+	SUCCESSORS
+		_001y
+
+_001y, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7effa9340e50>
+	PREDECESSORS
+		_001x,(100, 1) 
+		_001E,(100, 1) 
+		_001K,(100, 1) 
+		_001Q,(100, 1) 
+	SUCCESSORS
+		front_left_nacelle2_vector_quat,(100, 4) 
+
+_001z, <csdl.operations.power_combination.power_combination object at 0x7effa9340df0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_001A,(100, 1) 
+
+_001A, <csdl.lang.output.Output object at 0x7effa9340d30>, ._001A
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001z
+	SUCCESSORS
+		_001B
+
+_001B, <csdl.operations.sin.sin object at 0x7effa9340d90>
+	PREDECESSORS
+		_001A,(100, 1) 
+	SUCCESSORS
+		_001C,(100, 1) 
+
+_001C, <csdl.lang.output.Output object at 0x7effa9340c70>, ._001C
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001B
+	SUCCESSORS
+		_001D
+
+_001D, <csdl.operations.power_combination.power_combination object at 0x7effa9340cd0>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(100, 1) 
+		_001C,(100, 1) 
+	SUCCESSORS
+		_001E,(100, 1) 
+
+_001E, <csdl.lang.output.Output object at 0x7effa9340c10>, ._001E
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001D
+	SUCCESSORS
+		_001y
+
+_001F, <csdl.operations.power_combination.power_combination object at 0x7effa9340bb0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_001G,(100, 1) 
+
+_001G, <csdl.lang.output.Output object at 0x7effa9340b50>, ._001G
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001F
+	SUCCESSORS
+		_001H
+
+_001H, <csdl.operations.sin.sin object at 0x7effa9340a90>
+	PREDECESSORS
+		_001G,(100, 1) 
+	SUCCESSORS
+		_001I,(100, 1) 
+
+_001I, <csdl.lang.output.Output object at 0x7effa9340af0>, ._001I
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001H
+	SUCCESSORS
+		_001J
+
+_001J, <csdl.operations.power_combination.power_combination object at 0x7effa93409d0>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(100, 1) 
+		_001I,(100, 1) 
+	SUCCESSORS
+		_001K,(100, 1) 
+
+_001K, <csdl.lang.output.Output object at 0x7effa9340a30>, ._001K
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001J
+	SUCCESSORS
+		_001y
+
+_001L, <csdl.operations.power_combination.power_combination object at 0x7effa9340970>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_001M,(100, 1) 
+
+_001M, <csdl.lang.output.Output object at 0x7effa9340910>, ._001M
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001L
+	SUCCESSORS
+		_001N
+
+_001N, <csdl.operations.sin.sin object at 0x7effa9340850>
+	PREDECESSORS
+		_001M,(100, 1) 
+	SUCCESSORS
+		_001O,(100, 1) 
+
+_001O, <csdl.lang.output.Output object at 0x7effa93408b0>, ._001O
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001N
+	SUCCESSORS
+		_001P
+
+_001P, <csdl.operations.power_combination.power_combination object at 0x7effa9340790>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(100, 1) 
+		_001O,(100, 1) 
+	SUCCESSORS
+		_001Q,(100, 1) 
+
+_001Q, <csdl.lang.output.Output object at 0x7effa93407f0>, ._001Q
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001P
+	SUCCESSORS
+		_001y
+
+front_left_nacelle2_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7effa9687910>, .front_left_nacelle2_vector_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001y
+	SUCCESSORS
+		_001T
+
+_001R, <csdl.operations.quatrotvec.quatrotvec object at 0x7effa9340730>
+	PREDECESSORS
+		front_left_nacelle2_origin_quat,(100, 4) 
+		_0014,(100, 3) 
+	SUCCESSORS
+		_001S,(100, 3) 
+
+_0013, <csdl.operations.linear_combination.linear_combination object at 0x7effa9687a30>
+	PREDECESSORS
+		axis_origin_pt,(100, 3) 
+		front_left_nacelle2_origin,(100, 3) 
+	SUCCESSORS
+		_0014,(100, 3) 
+
+_0014, <csdl.lang.output.Output object at 0x7effa96879d0>, ._0014
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_0013
+	SUCCESSORS
+		_001R
+
+_001S, <csdl.lang.output.Output object at 0x7effa93406d0>, ._001S
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001R
+	SUCCESSORS
+		_001V
+
+_001V, <csdl.operations.linear_combination.linear_combination object at 0x7effa9340550>
+	PREDECESSORS
+		axis_origin_pt,(100, 3) 
+		_001S,(100, 3) 
+	SUCCESSORS
+		front_left_nacelle2_origin_rotated,(100, 3) 
+
+front_left_nacelle2_origin_rotated, <csdl.lang.output.Output object at 0x7effa93405b0>, .front_left_nacelle2_origin_rotated
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001V
+	SUCCESSORS
+
+_001T, <csdl.operations.quatrotvec.quatrotvec object at 0x7effa9340610>
+	PREDECESSORS
+		front_left_nacelle2_vector,(100, 3) 
+		front_left_nacelle2_vector_quat,(100, 4) 
+	SUCCESSORS
+		front_left_nacelle2_vector_rotated,(100, 3) 
+
+front_left_nacelle2_vector_rotated, <csdl.lang.output.Output object at 0x7effa9340670>, .front_left_nacelle2_vector_rotated
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001T
+	SUCCESSORS
+
+_0023, <csdl.operations.power_combination.power_combination object at 0x7effa9340250>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_0024,(100, 1) 
+
+_0024, <csdl.lang.output.Output object at 0x7effa93401f0>, ._0024
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_0023
+	SUCCESSORS
+		_0025
+
+_0025, <csdl.operations.cos.cos object at 0x7effa9340190>
+	PREDECESSORS
+		_0024,(100, 1) 
+	SUCCESSORS
+		_0026,(100, 1) 
+
+_0026, <csdl.lang.output.Output object at 0x7effa9340130>, ._0026
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_0025
+	SUCCESSORS
+		_0027
+
+_0027, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7effa9340070>
+	PREDECESSORS
+		_0026,(100, 1) 
+		_002d,(100, 1) 
+		_002j,(100, 1) 
+		_002p,(100, 1) 
+	SUCCESSORS
+		front_left_nacelle3_origin_quat,(100, 4) 
+
+_0028, <csdl.operations.power_combination.power_combination object at 0x7effa93400d0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_0029,(100, 1) 
+
+_0029, <csdl.lang.output.Output object at 0x7effaa6cdb20>, ._0029
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_0028
+	SUCCESSORS
+		_002a
+
+_002a, <csdl.operations.sin.sin object at 0x7effaa6cdac0>
+	PREDECESSORS
+		_0029,(100, 1) 
+	SUCCESSORS
+		_002b,(100, 1) 
+
+_002b, <csdl.lang.output.Output object at 0x7effaa6cdbe0>, ._002b
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002a
+	SUCCESSORS
+		_002c
+
+_002c, <csdl.operations.power_combination.power_combination object at 0x7effaa6cdb80>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(100, 1) 
+		_002b,(100, 1) 
+	SUCCESSORS
+		_002d,(100, 1) 
+
+_002d, <csdl.lang.output.Output object at 0x7effaa6cdc40>, ._002d
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002c
+	SUCCESSORS
+		_0027
+
+_002e, <csdl.operations.power_combination.power_combination object at 0x7effaa6cdca0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_002f,(100, 1) 
+
+_002f, <csdl.lang.output.Output object at 0x7effaa6cdd00>, ._002f
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002e
+	SUCCESSORS
+		_002g
+
+_002g, <csdl.operations.sin.sin object at 0x7effaa6cddc0>
+	PREDECESSORS
+		_002f,(100, 1) 
+	SUCCESSORS
+		_002h,(100, 1) 
+
+_002h, <csdl.lang.output.Output object at 0x7effaa6cdd60>, ._002h
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002g
+	SUCCESSORS
+		_002i
+
+_002i, <csdl.operations.power_combination.power_combination object at 0x7effaa6cde80>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(100, 1) 
+		_002h,(100, 1) 
+	SUCCESSORS
+		_002j,(100, 1) 
+
+_002j, <csdl.lang.output.Output object at 0x7effaa6cde20>, ._002j
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002i
+	SUCCESSORS
+		_0027
+
+_002k, <csdl.operations.power_combination.power_combination object at 0x7effaa6cdee0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_002l,(100, 1) 
+
+_002l, <csdl.lang.output.Output object at 0x7effaa6cdf40>, ._002l
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002k
+	SUCCESSORS
+		_002m
+
+_002m, <csdl.operations.sin.sin object at 0x7effaa6cdfa0>
+	PREDECESSORS
+		_002l,(100, 1) 
+	SUCCESSORS
+		_002n,(100, 1) 
+
+_002n, <csdl.lang.output.Output object at 0x7effaa7421f0>, ._002n
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002m
+	SUCCESSORS
+		_002o
+
+_002o, <csdl.operations.power_combination.power_combination object at 0x7effaa742b80>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(100, 1) 
+		_002n,(100, 1) 
+	SUCCESSORS
+		_002p,(100, 1) 
+
+_002p, <csdl.lang.output.Output object at 0x7effaa6d3340>, ._002p
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002o
+	SUCCESSORS
+		_0027
+
+front_left_nacelle3_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7effa9340310>, .front_left_nacelle3_origin_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_0027
+	SUCCESSORS
+		_002N
+
+_002q, <csdl.operations.power_combination.power_combination object at 0x7effaa6d3430>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_002r,(100, 1) 
+
+_002r, <csdl.lang.output.Output object at 0x7effaa6d3520>, ._002r
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002q
+	SUCCESSORS
+		_002s
+
+_002s, <csdl.operations.cos.cos object at 0x7effaa6d3460>
+	PREDECESSORS
+		_002r,(100, 1) 
+	SUCCESSORS
+		_002t,(100, 1) 
+
+_002t, <csdl.lang.output.Output object at 0x7effaa6d39d0>, ._002t
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002s
+	SUCCESSORS
+		_002u
+
+_002u, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7effaa6d32e0>
+	PREDECESSORS
+		_002t,(100, 1) 
+		_002A,(100, 1) 
+		_002G,(100, 1) 
+		_002M,(100, 1) 
+	SUCCESSORS
+		front_left_nacelle3_vector_quat,(100, 4) 
+
+_002v, <csdl.operations.power_combination.power_combination object at 0x7effaa6d3550>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_002w,(100, 1) 
+
+_002w, <csdl.lang.output.Output object at 0x7effaa6d3490>, ._002w
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002v
+	SUCCESSORS
+		_002x
+
+_002x, <csdl.operations.sin.sin object at 0x7effaa6d32b0>
+	PREDECESSORS
+		_002w,(100, 1) 
+	SUCCESSORS
+		_002y,(100, 1) 
+
+_002y, <csdl.lang.output.Output object at 0x7effaa6d3400>, ._002y
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002x
+	SUCCESSORS
+		_002z
+
+_002z, <csdl.operations.power_combination.power_combination object at 0x7effaa6d3310>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(100, 1) 
+		_002y,(100, 1) 
+	SUCCESSORS
+		_002A,(100, 1) 
+
+_002A, <csdl.lang.output.Output object at 0x7effaa6d34c0>, ._002A
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002z
+	SUCCESSORS
+		_002u
+
+_002B, <csdl.operations.power_combination.power_combination object at 0x7effaa6d3a00>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_002C,(100, 1) 
+
+_002C, <csdl.lang.output.Output object at 0x7effaa6d33d0>, ._002C
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002B
+	SUCCESSORS
+		_002D
+
+_002D, <csdl.operations.sin.sin object at 0x7effaa6d30a0>
+	PREDECESSORS
+		_002C,(100, 1) 
+	SUCCESSORS
+		_002E,(100, 1) 
+
+_002E, <csdl.lang.output.Output object at 0x7effaa6d3040>, ._002E
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002D
+	SUCCESSORS
+		_002F
+
+_002F, <csdl.operations.power_combination.power_combination object at 0x7effaa6d3160>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(100, 1) 
+		_002E,(100, 1) 
+	SUCCESSORS
+		_002G,(100, 1) 
+
+_002G, <csdl.lang.output.Output object at 0x7effaa6d3100>, ._002G
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002F
+	SUCCESSORS
+		_002u
+
+_002H, <csdl.operations.power_combination.power_combination object at 0x7effaa6d31c0>
+	PREDECESSORS
+		actuation_angle,(100, 1) 
+	SUCCESSORS
+		_002I,(100, 1) 
+
+_002I, <csdl.lang.output.Output object at 0x7effaa6d3220>, ._002I
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002H
+	SUCCESSORS
+		_002J
+
+_002J, <csdl.operations.sin.sin object at 0x7effaa6d3910>
+	PREDECESSORS
+		_002I,(100, 1) 
+	SUCCESSORS
+		_002K,(100, 1) 
+
+_002K, <csdl.lang.output.Output object at 0x7effaa3dabe0>, ._002K
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002J
+	SUCCESSORS
+		_002L
+
+_002L, <csdl.operations.power_combination.power_combination object at 0x7effaa3da730>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(100, 1) 
+		_002K,(100, 1) 
+	SUCCESSORS
+		_002M,(100, 1) 
+
+_002M, <csdl.lang.output.Output object at 0x7effaa3dabb0>, ._002M
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002L
+	SUCCESSORS
+		_002u
+
+front_left_nacelle3_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7effa93402b0>, .front_left_nacelle3_vector_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002u
+	SUCCESSORS
+		_002P
+
+_002N, <csdl.operations.quatrotvec.quatrotvec object at 0x7effaa3dab80>
+	PREDECESSORS
+		front_left_nacelle3_origin_quat,(100, 4) 
+		_0020,(100, 3) 
+	SUCCESSORS
+		_002O,(100, 3) 
+
+_001_, <csdl.operations.linear_combination.linear_combination object at 0x7effa93403d0>
+	PREDECESSORS
+		axis_origin_pt,(100, 3) 
+		front_left_nacelle3_origin,(100, 3) 
+	SUCCESSORS
+		_0020,(100, 3) 
+
+_0020, <csdl.lang.output.Output object at 0x7effa9340370>, ._0020
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_001_
+	SUCCESSORS
+		_002N
+
+_002O, <csdl.lang.output.Output object at 0x7effaa3daf40>, ._002O
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002N
+	SUCCESSORS
+		_002R
+
+_002R, <csdl.operations.linear_combination.linear_combination object at 0x7effaa3da4c0>
+	PREDECESSORS
+		axis_origin_pt,(100, 3) 
+		_002O,(100, 3) 
+	SUCCESSORS
+		front_left_nacelle3_origin_rotated,(100, 3) 
+
+front_left_nacelle3_origin_rotated, <csdl.lang.output.Output object at 0x7effaa3da490>, .front_left_nacelle3_origin_rotated
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002R
+	SUCCESSORS
+
+_002P, <csdl.operations.quatrotvec.quatrotvec object at 0x7effaa3da460>
+	PREDECESSORS
+		front_left_nacelle3_vector,(100, 3) 
+		front_left_nacelle3_vector_quat,(100, 4) 
+	SUCCESSORS
+		front_left_nacelle3_vector_rotated,(100, 3) 
+
+front_left_nacelle3_vector_rotated, <csdl.lang.output.Output object at 0x7effaa3da430>, .front_left_nacelle3_vector_rotated
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_002P
+	SUCCESSORS

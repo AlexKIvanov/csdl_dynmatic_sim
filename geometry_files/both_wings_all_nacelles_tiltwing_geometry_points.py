@@ -161,6 +161,11 @@ def both_wings_all_nacelles():
     centerRearBackwardPt, centerRearBackwardPtCoord = geo.project_points(centerRearBackwardPoint, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
 
     centerRearIntrp = geo.perform_linear_interpolation(centerRearForwardPt, centerRearBackwardPt,[1] ,output_parameters = np.array([alpha]))
+
+
+    frontwingRotaxis = geo.subtract_pointsets(flnacelle3_thrust[0], axisOrigin)
+    rearwingRotaxis  = geo.subtract_pointsets(leftIntrp, centerRearIntrp)
+
     geo.assemble()
     geo.evaluate()
 
@@ -174,6 +179,12 @@ def both_wings_all_nacelles():
     results_dict['front_left_nacelle3_origin'] = flnacelle3_thrust[0].physical_coordinates
     results_dict['front_left_nacelle3_vector'] = flnacelle3_thrust[1].physical_coordinates
     results_dict['rear_left_nacelle3_origin'] = rlnacelle1_thrust[0].physical_coordinates
-    results_dict['rear_left_nacelle3_vector'] = rlnacelle1_thrust[1].physical_coordinates    
+    results_dict['rear_left_nacelle3_vector'] = rlnacelle1_thrust[1].physical_coordinates
+    results_dict['front_wing_axis_origin'] = axisOrigin.physical_coordinates
+    results_dict['front_wing_axis_end']    = flnacelle3_thrust[0].physical_coordinates
+    results_dict['rear_wing_axis_origin']  = centerRearIntrp.physical_coordinates
+    results_dict['rear_wing_axis_end']     = leftIntrp.physical_coordinates
+    results_dict['front_wing_rotation_axis'] = frontwingRotaxis.physical_coordinates / np.linalg.norm(frontwingRotaxis.physical_coordinates)
+    results_dict['rear_wing_rotation_axis']  = rearwingRotaxis.physical_coordinates  / np.linalg.norm(rearwingRotaxis.physical_coordinates)
 
     return results_dict

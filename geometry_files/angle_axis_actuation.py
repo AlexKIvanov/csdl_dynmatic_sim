@@ -89,13 +89,13 @@ class AngleAxisActuation(csdl.Model):
 
                 quat_origin[:,0] = csdl.cos(actuation_angle / 2)
                 quat_origin[:,1] = csdl.sin(actuation_angle / 2) * x_axis
-                quat_origin[:,2] = csdl.cos(actuation_angle / 2) * y_axis
-                quat_origin[:,3] = csdl.cos(actuation_angle / 2) * z_axis
+                quat_origin[:,2] = csdl.sin(actuation_angle / 2) * y_axis
+                quat_origin[:,3] = csdl.sin(actuation_angle / 2) * z_axis
                 
                 quat_vector[:,0] = csdl.cos(actuation_angle / 2)
                 quat_vector[:,1] = csdl.sin(actuation_angle / 2) * x_axis
-                quat_vector[:,2] = csdl.cos(actuation_angle / 2) * y_axis
-                quat_vector[:,3] = csdl.cos(actuation_angle / 2) * z_axis
+                quat_vector[:,2] = csdl.sin(actuation_angle / 2) * y_axis
+                quat_vector[:,3] = csdl.sin(actuation_angle / 2) * z_axis
 
                 translated_rotated_thrust_origin = csdl.quatrotvec(quat_origin, thrust_origin_translated)
                 translated_rotated_thrust_vector = csdl.quatrotvec(quat_vector, thrust_vector_translated)

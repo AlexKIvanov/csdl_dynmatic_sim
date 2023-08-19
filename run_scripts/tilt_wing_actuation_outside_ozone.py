@@ -63,6 +63,19 @@ rear_actuation_angle_end   = np.deg2rad(90)
 rear_actuation_array = np.linspace(rear_actuation_angle_start, rear_actuation_angle_end, nt)
 rear_act_dict['actuation_angle'] = rear_actuation_array
 
+# Thrust Dict for front wing
+thrust_start        = 1000.0
+thrust_end          = 4000.0 
+thrust_upper_bound  = 4000.0
+thrust_lower_bound  = 0.0
+thrust_scaler       = 1e-3
+
+thrust = dict()
+thrust['front_left_nacelle1'] = np.linspace(thrust_start, thrust_end, nt)
+thrust['front_left_nacelle2'] = np.linspace(thrust_start, thrust_end, nt)
+thrust['front_left_nacelle3'] = np.linspace(thrust_start, thrust_end, nt)
+thrust['rear_left_nacelle1']  = np.linspace(thrust_start, thrust_end, nt)
+
 # Expand all the geometry pointsets to have a time-axis of size nt 
 expanded_pointsets = dict()
 for key,value in pointsets.items():
@@ -81,9 +94,6 @@ front_thrust_vector_dict['front_left_nacelle3'] = (expanded_pointsets['front_lef
 # Defining the thrust vector dictionary for rear wing 
 rear_thrust_vector_dict = dict()
 rear_thrust_vector_dict['rear_left_nacelle1'] = (expanded_pointsets['rear_left_nacelle1_origin'], expanded_pointsets['rear_left_nacelle1_vector'])
-rear_thrust_vector_dict['rear_left_nacelle2'] = (expanded_pointsets['rear_left_nacelle2_origin'], expanded_pointsets['rear_left_nacelle2_vector'])
-rear_thrust_vector_dict['rear_left_nacelle3'] = (expanded_pointsets['rear_left_nacelle3_origin'], expanded_pointsets['rear_left_nacelle3_vector'])
-
 
 # Defining an empty vlm dictionary        
 front_vlm_mesh_dict = dict()

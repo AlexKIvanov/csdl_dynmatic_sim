@@ -178,8 +178,8 @@ def both_wings_all_nacelles():
     results_dict['front_left_nacelle2_vector'] = flnacelle2_thrust[1].physical_coordinates
     results_dict['front_left_nacelle3_origin'] = flnacelle3_thrust[0].physical_coordinates
     results_dict['front_left_nacelle3_vector'] = flnacelle3_thrust[1].physical_coordinates
-    results_dict['rear_left_nacelle3_origin'] = rlnacelle1_thrust[0].physical_coordinates
-    results_dict['rear_left_nacelle3_vector'] = rlnacelle1_thrust[1].physical_coordinates
+    results_dict['rear_left_nacelle1_origin'] = rlnacelle1_thrust[0].physical_coordinates
+    results_dict['rear_left_nacelle1_vector'] = rlnacelle1_thrust[1].physical_coordinates
     results_dict['front_wing_axis_origin'] = axisOrigin.physical_coordinates
     results_dict['front_wing_axis_end']    = flnacelle3_thrust[0].physical_coordinates
     results_dict['rear_wing_axis_origin']  = centerRearIntrp.physical_coordinates

@@ -1,7 +1,7 @@
 import numpy as np
 import csdl
-from eom_model import OzoneEulerFlatEarth6DoF
-from tiltwing_mass_properties_model import tiltwing_mass_properties_model
+from ozone_models.eom_model import OzoneEulerFlatEarth6DoF
+from ozone_models.tiltwing_mass_properties_model import tiltwing_mass_properties_model
 
 '''
 

@@ -76,7 +76,7 @@ class AngleAxisActuation(csdl.Model):
                 thrust_vector_name = key + '_vector'
                 thrust_vector_val = value[1]          # Should be a numpy array of shape (n,3)
 
-                axis_origin_pt = self.create_input('axis_origin_pt', val=thrust_axis_origin_pt)
+                axis_origin_pt = self.create_input(key+'_axis_origin_pt', val=thrust_axis_origin_pt)
 
                 thrust_origin = self.create_input(thrust_origin_name, val=thrust_origin_val)
                 thrust_vector = self.create_input(thrust_vector_name, val=thrust_vector_val)

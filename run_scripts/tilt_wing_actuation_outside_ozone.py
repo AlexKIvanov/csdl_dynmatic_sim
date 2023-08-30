@@ -161,15 +161,15 @@ for key,value in thrust.items():
 main_model.add(simpleForcesAndMomentsModel, 'simple_forces_moments_model')
 
 # Define ODE system model
-ode_problem = ODEProblem('RK4', 'time-marching', nt)
-ode_problem.set_ode_system(ODESystemModel)
-ode_problem.add_times(step_vector='h')
+# ode_problem = ODEProblem('RK4', 'time-marching', nt)
+# ode_problem.set_ode_system(ODESystemModel)
+# ode_problem.add_times(step_vector='h')
 
-for key,value in states.items():
-    ode_problem.add_state(key, f'd{key}_dt', initial_condition_name=f'{key}_0',
-                          output=f'solved_{key}')
+# for key,value in states.items():
+#     ode_problem.add_state(key, f'd{key}_dt', initial_condition_name=f'{key}_0',
+#                           output=f'solved_{key}')
 
-main_model.add(ode_problem.create_solver_model(ODE_parameters=nt, profile_parameters=nt), 'subgroup')
+# main_model.add(ode_problem.create_solver_model(ODE_parameters=nt, profile_parameters=nt), 'subgroup')
 
 sim = python_csdl_backend.Simulator(main_model, analytics=True)
 sim.run()
@@ -178,17 +178,32 @@ sim.run()
 # sim.visualize_implementation()
 
 # PLOTTING THE VECTORS 
-print(sim['front_left_nacelle1_vector_rotated'])
-print(sim['front_left_nacelle2_vector_rotated'])
-print(sim['front_left_nacelle3_vector_rotated'])
-print(sim['rear_left_nacelle1_vector_rotated'])
+print(sim['front_left_nacelle1_vector_rotated_VSP'])
+print(sim['front_left_nacelle2_vector_rotated_VSP'])
+print(sim['front_left_nacelle3_vector_rotated_VSP'])
+print(sim['rear_left_nacelle1_vector_rotated_VSP'])
 
 print('--------------------------------------')
 
-print(sim['front_left_nacelle1_thrust_vector_mult'])
-print(sim['front_left_nacelle2_thrust_vector_mult'])
-print(sim['front_left_nacelle2_thrust_vector_mult'])
-print(sim['rear_left_nacelle1_thrust_vector_mult'])
+print(sim['front_left_nacelle1_vector_rotated_NED'])
+print(sim['front_left_nacelle2_vector_rotated_NED'])
+print(sim['front_left_nacelle3_vector_rotated_NED'])
+print(sim['rear_left_nacelle1_vector_rotated_NED'])
+
+print('--------------------------------------')
+
+print(sim['total_Fx'])
+print(sim['total_Fy'])
+print(sim['total_Fz'])
+
+print(sim['total_Mx'])
+print(sim['total_My'])
+print(sim['total_Mz'])
+
+# print(sim['front_left_nacelle1_thrust_vector_mult'])
+# print(sim['front_left_nacelle2_thrust_vector_mult'])
+# print(sim['front_left_nacelle2_thrust_vector_mult'])
+# print(sim['rear_left_nacelle1_thrust_vector_mult'])
 
 
 # Create the plot

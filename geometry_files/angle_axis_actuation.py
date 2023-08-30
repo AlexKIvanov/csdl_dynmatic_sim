@@ -103,8 +103,18 @@ class AngleAxisActuation(csdl.Model):
                 rotated_thrust_origin = translated_rotated_thrust_origin + axis_origin_pt
                 rotated_thrust_vector = translated_rotated_thrust_vector
 
-                self.register_output(thrust_origin_name+'_rotated', rotated_thrust_origin)
-                self.register_output(thrust_vector_name+'_rotated', rotated_thrust_vector)
+                rotated_thrust_origin_NED = self.create_output(thrust_origin_name+'_rotated_NED', shape=(n,3))
+                rotated_thrust_origin_NED[:,0] = rotated_thrust_origin[:,0]
+                rotated_thrust_origin_NED[:,1] = rotated_thrust_origin[:,1]
+                rotated_thrust_origin_NED[:,2] = rotated_thrust_origin[:,2]
+                
+                rotated_thrust_vector_NED = self.create_output(thrust_vector_name+'_rotated_NED', shape=(n,3))
+                rotated_thrust_vector_NED[:,0] = -1*rotated_thrust_vector[:,0]
+                rotated_thrust_vector_NED[:,1] = rotated_thrust_vector[:,1]
+                rotated_thrust_vector_NED[:,2] = -1*rotated_thrust_vector[:,2]
+                
+                self.register_output(thrust_origin_name+'_rotated_VSP', rotated_thrust_origin)
+                self.register_output(thrust_vector_name+'_rotated_VSP', rotated_thrust_vector)
 
         # Check if the dictionary is empty
         if len(vlm_mesh_dict) == 0:

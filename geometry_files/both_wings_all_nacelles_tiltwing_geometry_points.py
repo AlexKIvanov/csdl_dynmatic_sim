@@ -46,7 +46,7 @@ def both_wings_all_nacelles():
     geo.add_component(front_wing)
 
     rear_wing = Component(
-        stp_entity_names=['RearWing'],
+        stp_entity_names=rsurfaces,
         name='rear_wing')  # Creating a wing component and naming it wing
     geo.add_component(rear_wing)
 
@@ -110,6 +110,7 @@ def both_wings_all_nacelles():
     rearLeftWingNacelle1BotPoint = np.array([7679.89761,	1536.2898,	3813.9249])/ mm2ft
     rlnacelle1_thrust=generate_origin_vector_pair(geo, rearLeftWingNacelle1TopPoint, rearLeftWingNacelle1BotPoint, rlnacelle1)
 
+    # ----------------------------------------------------------------------------------------------------------------------------------------------
     # DEFINE THE POINTS TO CREATE AN AXIS OF ROTATION FOR FRONT AND REAR WINGS
     # LEFT MIDDLE WING POINTS
     front_middle_wing = np.array([2711.2761624, 0, 2591.0])/mm2ft
@@ -140,31 +141,85 @@ def both_wings_all_nacelles():
     geo.assemble()
     geo.evaluate()
 
+    # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     #REAR WING POINTS
-    leftRearForwardPoint  = np.array([8277.012402, 1536.28984, 4006.])/mm2ft
-    leftRearBackwardPoint = np.array([9123.563922, 1536.28984, 4006.])/mm2ft
+    leftRearForwardPoint  = np.array([8277.012, 1536.2898, 4006.5]) / mm2ft
+    leftRearBackwardPoint = np.array([9123.5639, 1536.2898, 4006.5]) / mm2ft
 
     leftRearForwardPt, leftRearForwardPtCoord  = geo.project_points(leftRearForwardPoint, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
     leftRearBackwardPt, leftRearBackwardPtCoord = geo.project_points(leftRearBackwardPoint, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
-    leftIntrp   = geo.perform_linear_interpolation(leftRearForwardPt,   leftRearBackwardPt ,[1] ,output_parameters = np.array([0.1]))
+    # leftIntrp   = geo.perform_linear_interpolation(leftRearForwardPt,   leftRearBackwardPt, [1], output_parameters = np.array([0.1]))
+
+    # Compute middle point of left side of rear wing 
+    midLeftRearWing = geo.perform_linear_interpolation(leftRearForwardPt, leftRearBackwardPt ,[1] ,output_parameters = np.array([0.5]))
+    geo.assemble()
+    geo.evaluate()
+
+    # Take Coordinates of middle point of left side of rear wing and find points on top and bottom of that x coordinate for left edge of the wing
+    temp_leftTopMidPt = midLeftRearWing.physical_coordinates
+    temp_leftTopMidPt[0][2] = 13.6    
+    rw_leftTopMidPt = geo.project_points(temp_leftTopMidPt, projection_direction = up_direction, projection_targets_names=["rear_wing"],plot=False)
+
+    temp_leftLowerMidPt = midLeftRearWing.physical_coordinates
+    temp_leftLowerMidPt[0][2] = 12.9   
+    rw_leftLowerMidPt = geo.project_points(temp_leftLowerMidPt, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
+
+    # Take Coordinates of middle point of left side of rear wing and find points on top and bottom of that x coordinate for center of the wing
+    temp_centerTopMidPt = midLeftRearWing.physical_coordinates
+    temp_centerTopMidPt[0][1] = 0.0
+    temp_centerTopMidPt[0][2] = 13.6
+    rw_centerTopMidPt = geo.project_points(temp_centerTopMidPt, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
+
+    temp_centerLowerMidPt = midLeftRearWing.physical_coordinates
+    temp_centerLowerMidPt[0][1] = 0.0
+    temp_centerLowerMidPt[0][2] = 12.92
+    rw_centerLowerMidPt = geo.project_points(temp_centerLowerMidPt, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
 
     geo.assemble()
     geo.evaluate()
 
-    temp  = ((leftIntrp.physical_coordinates[0][0] -leftRearBackwardPtCoord[0][0]) / (leftRearForwardPtCoord[0][0] - leftRearBackwardPtCoord[0][0]))
+    # Interpolate the left side of rear wing and find the point that lines up with the z coordinate in the nacelle
+    temp  = ((rlnacelle1_thrust[0].physical_coordinates[0][2] - rw_leftLowerMidPt[0].physical_coordinates[0][2]) / (rw_leftTopMidPt[0].physical_coordinates[0][2] - rw_leftLowerMidPt[0].physical_coordinates[0][2]))
     alpha = 1 - temp 
+    rw_leftNacelleAligned = geo.perform_linear_interpolation(rw_leftTopMidPt[0], rw_leftLowerMidPt[0] ,[1] ,output_parameters = np.array([alpha]))
 
-    centerRearForwardPoint  = np.array([8065.374522, 0.0, 4006.])/mm2ft
-    centerRearBackwardPoint = np.array([9123.563922, 0.0, 4006.])/mm2ft
+    # Interpolate the left side of center wing and find the point that lines up with the z coordinate in the nacelle
+    temp  = ((rlnacelle1_thrust[0].physical_coordinates[0][2] - rw_centerLowerMidPt[0].physical_coordinates[0][2]) / (rw_centerTopMidPt[0].physical_coordinates[0][2] - rw_centerLowerMidPt[0].physical_coordinates[0][2]))
+    alpha = 1 - temp 
+    rw_centerNacelleAligned = geo.perform_linear_interpolation(rw_centerTopMidPt[0], rw_centerLowerMidPt[0] ,[1] ,output_parameters = np.array([alpha]))
 
-    centerRearForwardPt, centerRearForwardPtCoord = geo.project_points(centerRearForwardPoint, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
-    centerRearBackwardPt, centerRearBackwardPtCoord = geo.project_points(centerRearBackwardPoint, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
+    geo.assemble()
+    geo.evaluate()
 
-    centerRearIntrp = geo.perform_linear_interpolation(centerRearForwardPt, centerRearBackwardPt,[1] ,output_parameters = np.array([alpha]))
+    # To line up the z-coordinates with the FrontLeft3 Nacelle
+    tempPoint = np.array([ middleLeftIntrp.physical_coordinates[0][0], 0, 4010.0 / mm2ft])
+    tempProj =  geo.project_points(tempPoint, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
+
+    geo.assemble()
+    geo.evaluate()
+
+    # To line up the Z-coordinates with the RearLeft1 nacelle 
+    temp  = ((rlnacelle1_thrust[0].physical_coordinates[0][2] - middleLeftIntrp.physical_coordinates[0][2]) / (tempProj[0].physical_coordinates[0][2] - middleLeftIntrp.physical_coordinates[0][2]))
+    alpha = 1 - temp 
+    axisOriginRear = geo.perform_linear_interpolation(tempProj[0], middleLeftIntrp ,[1] ,output_parameters = np.array([alpha]))
+
+    geo.assemble()
+    geo.evaluate()
+
+    # temp  = ((leftIntrp.physical_coordinates[0][0] -leftRearBackwardPtCoord[0][0]) / (leftRearForwardPtCoord[0][0] - leftRearBackwardPtCoord[0][0]))
+    # alpha = 1 - temp 
+
+    # centerRearForwardPoint  = np.array([8065.374522, 0.0, 4006.])/mm2ft
+    # centerRearBackwardPoint = np.array([9123.563922, 0.0, 4006.])/mm2ft
+
+    # centerRearForwardPt, centerRearForwardPtCoord = geo.project_points(centerRearForwardPoint, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
+    # centerRearBackwardPt, centerRearBackwardPtCoord = geo.project_points(centerRearBackwardPoint, projection_direction = down_direction, projection_targets_names=["rear_wing"],plot=False)
+
+    # centerRearIntrp = geo.perform_linear_interpolation(centerRearForwardPt, centerRearBackwardPt,[1] ,output_parameters = np.array([alpha]))
 
 
     frontwingRotaxis = geo.subtract_pointsets(flnacelle3_thrust[0], axisOrigin)
-    rearwingRotaxis  = geo.subtract_pointsets(leftIntrp, centerRearIntrp)
+    rearwingRotaxis  = geo.subtract_pointsets(rw_leftNacelleAligned, rw_centerNacelleAligned)
 
     geo.assemble()
     geo.evaluate()
@@ -182,8 +237,8 @@ def both_wings_all_nacelles():
     results_dict['rear_left_nacelle1_vector'] = rlnacelle1_thrust[1].physical_coordinates
     results_dict['front_wing_axis_origin'] = axisOrigin.physical_coordinates
     results_dict['front_wing_axis_end']    = flnacelle3_thrust[0].physical_coordinates
-    results_dict['rear_wing_axis_origin']  = centerRearIntrp.physical_coordinates
-    results_dict['rear_wing_axis_end']     = leftIntrp.physical_coordinates
+    results_dict['rear_wing_axis_origin']  = rw_centerNacelleAligned.physical_coordinates
+    results_dict['rear_wing_axis_end']     = rw_leftNacelleAligned.physical_coordinates
     results_dict['front_wing_rotation_axis'] = frontwingRotaxis.physical_coordinates / np.linalg.norm(frontwingRotaxis.physical_coordinates)
     results_dict['rear_wing_rotation_axis']  = rearwingRotaxis.physical_coordinates  / np.linalg.norm(rearwingRotaxis.physical_coordinates)
 

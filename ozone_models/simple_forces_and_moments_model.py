@@ -31,25 +31,24 @@ class simpleForcesAndMoments(csdl.Model):
         refPt         = self.declare_variable('refPt', val=refPt)
         refPtExpanded = csdl.expand(refPt, (nt,3), 'i->ji')
 
-        Fx = self.create_output('Fx', shape=(nt,1))
-        Fy = self.create_output('Fy', shape=(nt,1))
-        Fz = self.create_output('Fz', shape=(nt,1))
+        dict_len = len(thrust_vector_dict)
 
-        Mx = self.create_output('Mx', shape=(nt,1))
-        My = self.create_output('My', shape=(nt,1))
-        Mz = self.create_output('Mz', shape=(nt,1))
+        Fx = self.create_output('Fx', shape=(dict_len, nt,1))
+        Fy = self.create_output('Fy', shape=(dict_len, nt,1))
+        Fz = self.create_output('Fz', shape=(dict_len, nt,1))
+
+        Mx = self.create_output('Mx', shape=(dict_len, nt,1))
+        My = self.create_output('My', shape=(dict_len, nt,1))
+        Mz = self.create_output('Mz', shape=(dict_len, nt,1))
         
-        
-
-
-
+        cnt = 0
         for key, val in thrust_vector_dict.items():
             thrust_origin_val = val[0]
             thrust_vector_val = val[1]
 
             tempThrust = self.declare_variable(key+'_thrust', shape=thrust_dict[key].shape)
-            tempOrigin = self.declare_variable(key+'_origin_rotated', shape=thrust_origin_val.shape)
-            tempVector = self.declare_variable(key+'_vector_rotated', shape=thrust_vector_val.shape)
+            tempOrigin = self.declare_variable(key+'_origin_rotated_NED', shape=thrust_origin_val.shape)
+            tempVector = self.declare_variable(key+'_vector_rotated_NED', shape=thrust_vector_val.shape)
 
             # Expand the thrust variable
             thrust_mult_thrust_vector = csdl.expand(tempThrust, (nt,3), 'i->ij') 
@@ -61,3 +60,31 @@ class simpleForcesAndMoments(csdl.Model):
             # Compute the moments produced by the thrust vector around the refPt
             thrust_moments = csdl.cross(tempOrigin-refPtExpanded, thrust_vector_mult, axis=1)
             self.register_output(key+'_moments', thrust_moments)
+
+            Fx[cnt,:,0] = csdl.reshape(thrust_vector_mult[:,0], (1,nt,1))
+            Fy[cnt,:,0] = csdl.reshape(thrust_vector_mult[:,1], (1,nt,1))
+            Fz[cnt,:,0] = csdl.reshape(thrust_vector_mult[:,2], (1,nt,1))
+
+            Mx[cnt,:,0] = csdl.reshape(thrust_moments[:,0], (1,nt,1))
+            My[cnt,:,0] = csdl.reshape(thrust_moments[:,1], (1,nt,1))
+            Mz[cnt,:,0] = csdl.reshape(thrust_moments[:,2], (1,nt,1))   
+            cnt = cnt + 1
+
+        
+        summedFx = csdl.sum(Fx, axes=(0,))
+        summedFy = csdl.sum(Fy, axes=(0,))
+        summedFz = csdl.sum(Fz, axes=(0,))
+
+        summedMx = csdl.sum(Mx, axes=(0,))
+        summedMy = csdl.sum(My, axes=(0,))
+        summedMz = csdl.sum(Mz, axes=(0,))
+
+        self.register_output('total_Fx', summedFx)
+        self.register_output('total_Fy', summedFy)
+        self.register_output('total_Fz', summedFz)
+
+        self.register_output('total_Mx', summedMx)
+        self.register_output('total_My', summedMy)
+        self.register_output('total_Mz', summedMz)
+                    
+            

@@ -72,12 +72,12 @@ class simpleForcesAndMoments(csdl.Model):
 
         
         summedFx = csdl.sum(Fx, axes=(0,))
-        summedFy = csdl.sum(Fy, axes=(0,))
+        summedFy = csdl.sum(Fy, axes=(0,)) * np.zeros((nt,1))
         summedFz = csdl.sum(Fz, axes=(0,))
 
-        summedMx = csdl.sum(Mx, axes=(0,))
-        summedMy = csdl.sum(My, axes=(0,))
-        summedMz = csdl.sum(Mz, axes=(0,))
+        summedMx = csdl.sum(Mx, axes=(0,))* np.zeros((nt,1))
+        summedMy = csdl.sum(My, axes=(0,)) 
+        summedMz = csdl.sum(Mz, axes=(0,))* np.zeros((nt,1))
 
         self.register_output('total_Fx', summedFx)
         self.register_output('total_Fy', summedFy)

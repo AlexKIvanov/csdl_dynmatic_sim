@@ -56,12 +56,12 @@ class OzoneEulerFlatEarth6DoF(csdl.Model):
 
         # region Inputs
         # Loads
-        Fx = self.declare_variable(name='Fx', shape=(num_nodes))
-        Fy = self.declare_variable(name='Fy', shape=(num_nodes))
-        Fz = self.declare_variable(name='Fz', shape=(num_nodes))
-        L = self.declare_variable(name='Mx', shape=(num_nodes))
-        M = self.declare_variable(name='My', shape=(num_nodes))
-        N = self.declare_variable(name='Mz', shape=(num_nodes))
+        Fx = self.declare_variable(name='total_Fx', shape=(num_nodes))
+        Fy = self.declare_variable(name='total_Fy', shape=(num_nodes))
+        Fz = self.declare_variable(name='total_Fz', shape=(num_nodes))
+        L = self.declare_variable(name='total_Mx', shape=(num_nodes))
+        M = self.declare_variable(name='total_My', shape=(num_nodes))
+        N = self.declare_variable(name='total_Mz', shape=(num_nodes))
 
         # Mass properties
         mass = self.declare_variable(

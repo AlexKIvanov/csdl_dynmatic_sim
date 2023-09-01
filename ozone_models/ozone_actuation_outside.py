@@ -41,14 +41,17 @@ class ODESystemModel(csdl.Model):
 
 
         # Create inputs for the Forces
-        Fx = self.create_input('Fx', val=np.zeros((n,1)))
-        Fy = self.create_input('Fy', val=np.zeros((n,1)))
-        Fz = self.create_input('Fz', val=np.zeros((n,1)))
+        Fx = self.create_input('total_Fx', val=np.zeros((n,1)))
+        Fy = self.create_input('total_Fy', val=np.zeros((n,1)))
+        Fz = self.create_input('total_Fz', val=np.zeros((n,1)))
 
         # Create inputs for the moments
-        Mx = self.create_input('Mx', val=np.zeros((n,1)))
-        My = self.create_input('My', val=np.zeros((n,1)))
-        Mz = self.create_input('Mz', val=np.zeros((n,1)))
+        Mx = self.create_input('total_Mx', val=np.zeros((n,1)))
+        My = self.create_input('total_My', val=np.zeros((n,1)))
+        Mz = self.create_input('total_Mz', val=np.zeros((n,1)))
+
+        self.print_var(Fx)
+
 
         # Call mass properties model and promote everything 
         tilt_wing_mass_prop = tiltwing_mass_properties_model()

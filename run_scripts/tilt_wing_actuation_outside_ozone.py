@@ -28,7 +28,7 @@ from vedo import Points, Plotter
 import cProfile
 
 # number of timesteps
-nt = 10    
+nt = 100    
 dt = 0.01
 h_vec = np.ones(nt-1) * dt    # A variable that needs to be created for Ozone
 
@@ -52,14 +52,14 @@ pointsets = both_wings_all_nacelles()
 
 # Acutation Angle Dict for Front Wing
 front_act_dict = dict()
-front_actuation_angle_start = np.deg2rad(0.0)
+front_actuation_angle_start = np.deg2rad(90.0)
 front_actuation_angle_end   = np.deg2rad(90)
 front_actuation_array = np.linspace(front_actuation_angle_start, front_actuation_angle_end, nt)
 front_act_dict['front_actuation_angle'] = front_actuation_array
 
 # Acutation Angle Dict for Rear Wing
 rear_act_dict = dict()
-rear_actuation_angle_start = np.deg2rad(0.0)
+rear_actuation_angle_start = np.deg2rad(90.0)
 rear_actuation_angle_end   = np.deg2rad(90)
 rear_actuation_array = np.linspace(rear_actuation_angle_start, rear_actuation_angle_end, nt)
 rear_act_dict['rear_actuation_angle'] = rear_actuation_array
@@ -68,11 +68,11 @@ rear_act_dict['rear_actuation_angle'] = rear_actuation_array
 refPt = np.array([13.35494603, -4.123772014e-16 , 8.118931759]) * 0.3048
 
 # Thrust Dict for front wing [NEWTONS]
-thrust_start        = 1000.0
-thrust_end          = 1000.0 
+thrust_start        = 25000.0
+thrust_end          = 25000.0 
 thrust_upper_bound  = 4000.0
 thrust_lower_bound  = 0.0
-thrust_scaler       = 1e-3
+thrust_scaler       = 1e0
 
 thrust = dict()
 thrust['front_left_nacelle1'] = np.linspace(thrust_start, thrust_end, nt)
@@ -161,15 +161,32 @@ for key,value in thrust.items():
 main_model.add(simpleForcesAndMomentsModel, 'simple_forces_moments_model')
 
 # Define ODE system model
-# ode_problem = ODEProblem('RK4', 'time-marching', nt)
-# ode_problem.set_ode_system(ODESystemModel)
-# ode_problem.add_times(step_vector='h')
+ode_problem = ODEProblem('RK4', 'time-marching', nt)
+ode_problem.set_ode_system(ODESystemModel)
+ode_problem.add_times(step_vector='h')
 
-# for key,value in states.items():
-#     ode_problem.add_state(key, f'd{key}_dt', initial_condition_name=f'{key}_0',
-#                           output=f'solved_{key}')
 
-# main_model.add(ode_problem.create_solver_model(ODE_parameters=nt, profile_parameters=nt), 'subgroup')
+ode_problem.add_parameter('total_Fx', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('total_Fy', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('total_Fz', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('total_Mx', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('total_My', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('total_Mz', dynamic=True, shape=(nt,1))
+
+for key,value in states.items():
+    ode_problem.add_state(key, f'd{key}_dt', initial_condition_name=f'{key}_0',
+                          output=f'solved_{key}')
+
+ode_problem.set_profile_system(ODESystemModel)
+main_model.add(ode_problem.create_solver_model(), 'subgroup')
+
+x = main_model.declare_variable('solved_x', shape=(nt,1))
+z = main_model.declare_variable('solved_z', shape=(nt,1))
+u = main_model.declare_variable('solved_u', shape=(nt,1))
+w = main_model.declare_variable('solved_w', shape=(nt,1))
+theta = main_model.declare_variable('solved_theta', shape=(nt,1))
+q = main_model.declare_variable('solved_q', shape=(nt,1))
+
 
 sim = python_csdl_backend.Simulator(main_model, analytics=True)
 sim.run()
@@ -199,6 +216,14 @@ print(sim['total_Fz'])
 print(sim['total_Mx'])
 print(sim['total_My'])
 print(sim['total_Mz'])
+
+print('--------------------------------------')
+print(sim['solved_x'])
+print(sim['solved_z'])
+print(sim['solved_u'])
+print(sim['solved_z'])
+print(sim['solved_theta'])
+print(sim['solved_q'])
 
 # print(sim['front_left_nacelle1_thrust_vector_mult'])
 # print(sim['front_left_nacelle2_thrust_vector_mult'])

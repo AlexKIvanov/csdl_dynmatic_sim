@@ -80,7 +80,7 @@ class simpleForcesAndMoments(csdl.Model):
         summedMy = csdl.sum(My, axes=(0,)) 
         summedMz = csdl.sum(Mz, axes=(0,))* np.zeros((nt,1))
 
-        self.add(InertialLoadsModel)
+        self.add(InertialLoadsModel(num_nodes=nt))
 
 
         self.register_output('total_Fx', summedFx)

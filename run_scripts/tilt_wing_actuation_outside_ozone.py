@@ -28,7 +28,7 @@ from vedo import Points, Plotter
 import cProfile
 
 # number of timesteps
-nt = 100    
+nt = 10    
 dt = 0.01
 h_vec = np.ones(nt-1) * dt    # A variable that needs to be created for Ozone
 
@@ -68,8 +68,8 @@ rear_act_dict['rear_actuation_angle'] = rear_actuation_array
 refPt = np.array([13.35494603, -4.123772014e-16 , 8.118931759]) * 0.3048
 
 # Thrust Dict for front wing [NEWTONS]
-thrust_start        = 100.0
-thrust_end          = 100.0 
+thrust_start        = 1000.0
+thrust_end          = 1000.0 
 thrust_upper_bound  = 4000.0
 thrust_lower_bound  = 0.0
 thrust_scaler       = 1e0
@@ -166,19 +166,35 @@ ode_problem.set_ode_system(ODESystemModel)
 ode_problem.add_times(step_vector='h')
 
 
-ode_problem.add_parameter('total_Fx', dynamic=True, shape=(nt,1))
-ode_problem.add_parameter('total_Fy', dynamic=True, shape=(nt,1))
-ode_problem.add_parameter('total_Fz', dynamic=True, shape=(nt,1))
-ode_problem.add_parameter('total_Mx', dynamic=True, shape=(nt,1))
-ode_problem.add_parameter('total_My', dynamic=True, shape=(nt,1))
-ode_problem.add_parameter('total_Mz', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('forces_moments_Fx', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('forces_moments_Fy', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('forces_moments_Fz', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('forces_moments_Mx', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('forces_moments_My', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('forces_moments_Mz', dynamic=True, shape=(nt,1))
+ode_problem.add_parameter('refPt', dynamic=False, shape=(3,))
 
 for key,value in states.items():
     ode_problem.add_state(key, f'd{key}_dt', initial_condition_name=f'{key}_0',
                           output=f'solved_{key}')
+    
+# ode_problem.add_profile_output('total_Fx', shape=(1,))
+# ode_problem.add_profile_output('total_Fy', shape=(1,))
+# ode_problem.add_profile_output('total_Fz', shape=(1,))
+
+# ode_problem.add_profile_output('total_Mx', shape=(1,))
+# ode_problem.add_profile_output('total_My', shape=(1,))
+# ode_problem.add_profile_output('total_Mz', shape=(1,))
 
 ode_problem.set_profile_system(ODESystemModel)
 main_model.add(ode_problem.create_solver_model(), 'subgroup')
+
+# main_model.declare_variable('total_Fx', shape=(nt,1))
+# main_model.declare_variable('total_Fy', shape=(nt,1))
+# main_model.declare_variable('total_Fz', shape=(nt,1))
+# main_model.declare_variable('total_Mx', shape=(nt,1))
+# main_model.declare_variable('total_My', shape=(nt,1))
+# main_model.declare_variable('total_Mz', shape=(nt,1))
 
 x = main_model.declare_variable('solved_x', shape=(nt,1))
 z = main_model.declare_variable('solved_z', shape=(nt,1))
@@ -187,28 +203,70 @@ w = main_model.declare_variable('solved_w', shape=(nt,1))
 theta = main_model.declare_variable('solved_theta', shape=(nt,1))
 q = main_model.declare_variable('solved_q', shape=(nt,1))
 
+flipZ = main_model.create_input('flipZ', val=-1*np.ones((nt,1)), shape=(nt,1))
+vertVel = main_model.create_output(name='vertVel', shape=(nt,1)) 
+vertVel[:, 0] = w * flipZ   # Vertical Velocity
+
+tol = main_model.create_input('tol', val=np.ones((nt,1))*1e-8)
+thetaTol = theta + tol
+thetaConstraint = csdl.max( csdl.pnorm(thetaTol, axis=1) )
+
+
+########################################################
+# Computing acceleration using back-difference of rates
+########################################################
+# acceleration in x
+# ddx_1 = dyn_model.create_output('accel_x_1', shape=(nt-1,1))
+# ddx_2 = dyn_model.create_output('accel_x_2', shape=(nt-1,1))
+
+# ddx_2[0:nt-1,0] = u[1:nt,0]
+# ddx_1[0:nt-1,0] = u[0:nt-1,0]
+
+# ddx = dyn_model.create_output('accel_x', shape=(nt-1,1))
+# ddx[0:nt-1,0] = ddx_2 - ddx_1
+
+# # acceleration in z
+# ddz_1 = dyn_model.create_output('accel_z_1', shape=(nt-1,1))
+# ddz_2 = dyn_model.create_output('accel_z_2', shape=(nt-1,1))
+
+# ddz_2[0:nt-1,0] = w[1:nt,0]
+# ddz_1[0:nt-1,0] = w[0:nt-1,0]
+
+# ddz = dyn_model.create_output('accel_z', shape=(nt-1,1))
+# ddz[0:nt-1,0] = ddz_2 - ddz_1
+
+# # acceleration in theta
+# ddtheta_1 = dyn_model.create_output('accel_theta_1', shape=(nt-1,1))
+# ddtheta_2 = dyn_model.create_output('accel_theta_2', shape=(nt-1,1))
+
+# ddtheta_2[0:nt-1,0] = q[1:nt,0]
+# ddtheta_1[0:nt-1,0] = q[0:nt-1,0]
+
+# ddtheta = dyn_model.create_output('accel_theta', shape=(nt-1,1))
+# ddtheta[0:nt-1,0] = ddtheta_2 - ddtheta_1
+
+
 
 sim = python_csdl_backend.Simulator(main_model, analytics=True)
 sim.run()
-# sim.check_partials(compact_print=True)
+sim.check_partials(compact_print=True)
 # sim.check_totals(compact_print=False)
 # sim.visualize_implementation()
 
 # PLOTTING THE VECTORS 
+print('----------- VSP VECTORS ----------------')
 print(sim['front_left_nacelle1_vector_rotated_VSP'])
 print(sim['front_left_nacelle2_vector_rotated_VSP'])
 print(sim['front_left_nacelle3_vector_rotated_VSP'])
 print(sim['rear_left_nacelle1_vector_rotated_VSP'])
 
-print('--------------------------------------')
-
+print('----------- NED VECTORS ----------------')
 print(sim['front_left_nacelle1_vector_rotated_NED'])
 print(sim['front_left_nacelle2_vector_rotated_NED'])
 print(sim['front_left_nacelle3_vector_rotated_NED'])
 print(sim['rear_left_nacelle1_vector_rotated_NED'])
 
-print('--------------------------------------')
-
+print('------ FORCES AND MOMENTS -------')
 print(sim['total_Fx'])
 print(sim['total_Fy'])
 print(sim['total_Fz'])
@@ -217,7 +275,7 @@ print(sim['total_Mx'])
 print(sim['total_My'])
 print(sim['total_Mz'])
 
-print('--------------------------------------')
+print('---------- STATES --------------')
 print(sim['solved_x'])
 print(sim['solved_z'])
 print(sim['solved_u'])

@@ -18,16 +18,17 @@ class InertialLoadsModel(csdl.Model):
         cgx = self.declare_variable('cgx', shape=(1, ), units='m')
         cgy = self.declare_variable('cgy', shape=(1, ), units='m')
         cgz = self.declare_variable('cgz', shape=(1, ), units='m')
-        m = self.declare_variable('m', shape=(1, ), units='kg')
-        ref_pt = self.declare_variable(name='ref_pt', shape=(3, ), units='m')
+        m = self.declare_variable('total_mass', shape=(1, ), units='kg')
+        ref_pt = self.declare_variable(name='refPt', shape=(3, ), units='m')
+
 
         mass = csdl.expand(var=m, shape=(num_nodes, 1))
 
         # self.print_var(mass)
 
         # Inputs changing across conditions (segments)
-        th = self.declare_variable('Theta', shape=(num_nodes, 1), units='rad')
-        ph = self.declare_variable('Phi',
+        th = self.declare_variable('theta', shape=(num_nodes, 1), units='rad')
+        ph = self.declare_variable('phi',
                                    shape=(num_nodes, 1),
                                    units='rad',
                                    val=0.)
@@ -53,24 +54,24 @@ class InertialLoadsModel(csdl.Model):
         # self.print_var(cg)
 
         # region Atmosisa
-        self.register_output(name='h_for_atmosisa', var=z + 0.)
+        h_for_atmosisa = z * np.ones((num_nodes,1))*-1
+        self.register_output(name='altitude', var=h_for_atmosisa)
         atmosisa = AtmosphereModel(num_nodes=num_nodes)
 
         self.add(submodel=atmosisa,
-                 name='atmoshphere_model',
-                 promotes=[])
+                 name='atmoshphere_model')
 
-        self.connect('h_for_atmosisa',
-                     'atmoshphere_model.altitude')
+        # self.connect('h_for_atmosisa',
+        #              'atmoshphere_model.altitude')
 
-        g = self.declare_variable(name='g', shape=(num_nodes, 1))
-        self.connect('atmosphere_model.acc_gravity',
-                     'g')
+        g = self.declare_variable(name='acc_gravity', shape=(num_nodes, 1))
+        # self.connect('atmosphere_model.acc_gravity',
+        #              'g')
 
         # self.print_var(var=rho)
         # endregion
 
-        F = self.create_output(name='F', shape=(num_nodes, 3))
+        F = self.create_output(name='inertial_loads_F', shape=(num_nodes, 3))
 
         F[:, 0] = -mass * g * csdl.sin(th)
         F[:, 1] = mass * g * csdl.cos(th) * csdl.sin(ph)
@@ -78,7 +79,7 @@ class InertialLoadsModel(csdl.Model):
 
         r_vec = cg - ref_pt
         r_vec = csdl.reshape(r_vec, (1, 3))
-        M = self.create_output(name='M', shape=(num_nodes, 3))
+        M = self.create_output(name='inertial_loads_M', shape=(num_nodes, 3))
         for n in range(num_nodes):
             M[n, :] = csdl.cross(r_vec, F[n, :], axis=1)
         return

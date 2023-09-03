@@ -1,2352 +1,617 @@
 node name, 	 node object
 
-h, <csdl.lang.input.Input object at 0x7ff05b9fcac0>, .h
+h, <csdl.lang.input.Input object at 0x7f92d17c0520>, .h
 	CONNECTED TO: False
 	PROMOTED TO: True
 		h, subgroup.h
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-refPt, <csdl.lang.input.Input object at 0x7ff05b9fcaf0>, .refPt
+refPt, <csdl.lang.input.Input object at 0x7f92d17c05e0>, .refPt
 	CONNECTED TO: False
 	PROMOTED TO: True
+		refPt, subgroup.refPt
 		refPt, simple_forces_moments_model.refPt
 	PREDECESSORS
 	SUCCESSORS
-		_00hQ
+		_00mj
+		_00p6
 
-x_0, <csdl.lang.input.Input object at 0x7ff05b9fcb20>, .x_0
+x_0, <csdl.lang.input.Input object at 0x7f92d17c06a0>, .x_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		x_0, subgroup.x_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-y_0, <csdl.lang.input.Input object at 0x7ff05b9fcb50>, .y_0
+y_0, <csdl.lang.input.Input object at 0x7f92d17c06d0>, .y_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		y_0, subgroup.y_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-z_0, <csdl.lang.input.Input object at 0x7ff05b9fcb80>, .z_0
+z_0, <csdl.lang.input.Input object at 0x7f92d17c02e0>, .z_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		z_0, subgroup.z_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-u_0, <csdl.lang.input.Input object at 0x7ff05b9fcbb0>, .u_0
+u_0, <csdl.lang.input.Input object at 0x7f92d1e65970>, .u_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		u_0, subgroup.u_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-v_0, <csdl.lang.input.Input object at 0x7ff05b9fcbe0>, .v_0
+v_0, <csdl.lang.input.Input object at 0x7f92d1e65ca0>, .v_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		v_0, subgroup.v_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-w_0, <csdl.lang.input.Input object at 0x7ff05b9fcc10>, .w_0
+w_0, <csdl.lang.input.Input object at 0x7f92d1e65ac0>, .w_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		w_0, subgroup.w_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-theta_0, <csdl.lang.input.Input object at 0x7ff05b9fcc40>, .theta_0
+theta_0, <csdl.lang.input.Input object at 0x7f92d1e65b20>, .theta_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		theta_0, subgroup.theta_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-psi_0, <csdl.lang.input.Input object at 0x7ff05b9fcc70>, .psi_0
+psi_0, <csdl.lang.input.Input object at 0x7f92d1e65a90>, .psi_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		psi_0, subgroup.psi_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-phi_0, <csdl.lang.input.Input object at 0x7ff05b9fcca0>, .phi_0
+phi_0, <csdl.lang.input.Input object at 0x7f92e1e8c520>, .phi_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		phi_0, subgroup.phi_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-p_0, <csdl.lang.input.Input object at 0x7ff05b9fccd0>, .p_0
+p_0, <csdl.lang.input.Input object at 0x7f92d072ee20>, .p_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		p_0, subgroup.p_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-q_0, <csdl.lang.input.Input object at 0x7ff05b9fcd00>, .q_0
+q_0, <csdl.lang.input.Input object at 0x7f92d072ea30>, .q_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		q_0, subgroup.q_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-r_0, <csdl.lang.input.Input object at 0x7ff05b9fcd30>, .r_0
+r_0, <csdl.lang.input.Input object at 0x7f92d072edc0>, .r_0
 	CONNECTED TO: False
 	PROMOTED TO: True
 		r_0, subgroup.r_0
 	PREDECESSORS
 	SUCCESSORS
-		_00kC
+		_00p6
 
-front_left_nacelle1_thrust, <csdl.lang.input.Input object at 0x7ff05b9fcdc0>, .front_left_nacelle1_thrust
+front_left_nacelle1_thrust, <csdl.lang.input.Input object at 0x7f92d072eb20>, .front_left_nacelle1_thrust
 	CONNECTED TO: False
 	PROMOTED TO: True
 		front_left_nacelle1_thrust, simple_forces_moments_model.front_left_nacelle1_thrust
 	PREDECESSORS
 	SUCCESSORS
-		_00i0
+		_00mu
 
-front_left_nacelle2_thrust, <csdl.lang.input.Input object at 0x7ff05b9fcdf0>, .front_left_nacelle2_thrust
+front_left_nacelle2_thrust, <csdl.lang.input.Input object at 0x7f92d072efa0>, .front_left_nacelle2_thrust
 	CONNECTED TO: False
 	PROMOTED TO: True
 		front_left_nacelle2_thrust, simple_forces_moments_model.front_left_nacelle2_thrust
 	PREDECESSORS
 	SUCCESSORS
-		_00iB
+		_00n4
 
-front_left_nacelle3_thrust, <csdl.lang.input.Input object at 0x7ff05b9fce20>, .front_left_nacelle3_thrust
+front_left_nacelle3_thrust, <csdl.lang.input.Input object at 0x7f92d072e9a0>, .front_left_nacelle3_thrust
 	CONNECTED TO: False
 	PROMOTED TO: True
 		front_left_nacelle3_thrust, simple_forces_moments_model.front_left_nacelle3_thrust
 	PREDECESSORS
 	SUCCESSORS
-		_00j5
+		_00nz
 
-rear_left_nacelle1_thrust, <csdl.lang.input.Input object at 0x7ff05b9fce50>, .rear_left_nacelle1_thrust
+rear_left_nacelle1_thrust, <csdl.lang.input.Input object at 0x7f92d072ed00>, .rear_left_nacelle1_thrust
 	CONNECTED TO: False
 	PROMOTED TO: True
 		rear_left_nacelle1_thrust, simple_forces_moments_model.rear_left_nacelle1_thrust
 	PREDECESSORS
 	SUCCESSORS
-		_00jA
+		_00o3
 
-front_actuation_angle, <csdl.lang.input.Input object at 0x7ff05a4aca60>, front_wing_actuation_model.front_actuation_angle
+front_actuation_angle, <csdl.lang.input.Input object at 0x7f92d12ba0a0>, front_wing_actuation_model.front_actuation_angle
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-	SUCCESSORS
-		_00d6
-		_00db
-		_00dh
-		_00dn
-		_00dt
-		_00dy
-		_00dE
-		_00dK
-		_00ei
-		_00en
-		_00et
-		_00ez
-		_00eF
-		_00eK
-		_00eQ
-		_00eW
-		_00fu
-		_00fz
-		_00fF
-		_00fL
-		_00fR
-		_00fW
-		_00g1
-		_00g7
-
-_00d6, <csdl.operations.power_combination.power_combination object at 0x7ff059d36820>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00d7,(100, 1) 
-
-_00db, <csdl.operations.power_combination.power_combination object at 0x7ff059d368e0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00dc,(100, 1) 
-
-_00dh, <csdl.operations.power_combination.power_combination object at 0x7ff059d36a30>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00di,(100, 1) 
-
-_00dn, <csdl.operations.power_combination.power_combination object at 0x7ff059d36b50>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00do,(100, 1) 
-
-_00dt, <csdl.operations.power_combination.power_combination object at 0x7ff059d36c70>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00du,(100, 1) 
-
-_00dy, <csdl.operations.power_combination.power_combination object at 0x7ff059d36d60>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00dz,(100, 1) 
-
-_00dE, <csdl.operations.power_combination.power_combination object at 0x7ff059d36e80>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00dF,(100, 1) 
-
-_00dK, <csdl.operations.power_combination.power_combination object at 0x7ff059d36fa0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00dL,(100, 1) 
-
-_00ei, <csdl.operations.power_combination.power_combination object at 0x7ff059d30670>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00ej,(100, 1) 
-
-_00en, <csdl.operations.power_combination.power_combination object at 0x7ff059d30730>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00eo,(100, 1) 
-
-_00et, <csdl.operations.power_combination.power_combination object at 0x7ff059d30880>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00eu,(100, 1) 
-
-_00ez, <csdl.operations.power_combination.power_combination object at 0x7ff059d309a0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00eA,(100, 1) 
-
-_00eF, <csdl.operations.power_combination.power_combination object at 0x7ff059d30ac0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00eG,(100, 1) 
-
-_00eK, <csdl.operations.power_combination.power_combination object at 0x7ff059d30bb0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00eL,(100, 1) 
-
-_00eQ, <csdl.operations.power_combination.power_combination object at 0x7ff059d30cd0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00eR,(100, 1) 
-
-_00eW, <csdl.operations.power_combination.power_combination object at 0x7ff059d30df0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00eX,(100, 1) 
-
-_00fu, <csdl.operations.power_combination.power_combination object at 0x7ff059d10ac0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00fv,(100, 1) 
-
-_00fz, <csdl.operations.power_combination.power_combination object at 0x7ff059d10b80>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00fA,(100, 1) 
-
-_00fF, <csdl.operations.power_combination.power_combination object at 0x7ff059d10cd0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00fG,(100, 1) 
-
-_00fL, <csdl.operations.power_combination.power_combination object at 0x7ff059d10df0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00fM,(100, 1) 
-
-_00fR, <csdl.operations.power_combination.power_combination object at 0x7ff059d10f10>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00fS,(100, 1) 
-
-_00fW, <csdl.operations.power_combination.power_combination object at 0x7ff059d10fd0>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00fX,(100, 1) 
-
-_00g1, <csdl.operations.power_combination.power_combination object at 0x7ff059d25160>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00g2,(100, 1) 
-
-_00g7, <csdl.operations.power_combination.power_combination object at 0x7ff059d25280>
-	PREDECESSORS
-		front_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00g8,(100, 1) 
-
-front_wing_rotation_axis_x, <csdl.lang.input.Input object at 0x7ff05a4acbe0>, front_wing_actuation_model.front_wing_rotation_axis_x
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00df
-		_00dC
-		_00er
-		_00eO
-		_00fD
-		_00f_
-
-_00df, <csdl.operations.power_combination.power_combination object at 0x7ff059d369a0>
-	PREDECESSORS
-		front_wing_rotation_axis_x,(100, 1) 
-		_00de,(100, 1) 
-	SUCCESSORS
-		_00dg,(100, 1) 
-
-_00dC, <csdl.operations.power_combination.power_combination object at 0x7ff059d36df0>
-	PREDECESSORS
-		front_wing_rotation_axis_x,(100, 1) 
-		_00dB,(100, 1) 
-	SUCCESSORS
-		_00dD,(100, 1) 
-
-_00er, <csdl.operations.power_combination.power_combination object at 0x7ff059d307f0>
-	PREDECESSORS
-		front_wing_rotation_axis_x,(100, 1) 
-		_00eq,(100, 1) 
-	SUCCESSORS
-		_00es,(100, 1) 
-
-_00eO, <csdl.operations.power_combination.power_combination object at 0x7ff059d30c40>
-	PREDECESSORS
-		front_wing_rotation_axis_x,(100, 1) 
-		_00eN,(100, 1) 
-	SUCCESSORS
-		_00eP,(100, 1) 
-
-_00fD, <csdl.operations.power_combination.power_combination object at 0x7ff059d10c40>
-	PREDECESSORS
-		front_wing_rotation_axis_x,(100, 1) 
-		_00fC,(100, 1) 
-	SUCCESSORS
-		_00fE,(100, 1) 
-
-_00f_, <csdl.operations.power_combination.power_combination object at 0x7ff059d250d0>
-	PREDECESSORS
-		front_wing_rotation_axis_x,(100, 1) 
-		_00fZ,(100, 1) 
-	SUCCESSORS
-		_00g0,(100, 1) 
-
-front_wing_rotation_axis_y, <csdl.lang.input.Input object at 0x7ff05a4acbb0>, front_wing_actuation_model.front_wing_rotation_axis_y
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00dl
-		_00dI
-		_00ex
-		_00eU
-		_00fJ
-		_00g5
-
-_00dl, <csdl.operations.power_combination.power_combination object at 0x7ff059d36b20>
-	PREDECESSORS
-		front_wing_rotation_axis_y,(100, 1) 
-		_00dk,(100, 1) 
-	SUCCESSORS
-		_00dm,(100, 1) 
-
-_00dI, <csdl.operations.power_combination.power_combination object at 0x7ff059d36f70>
-	PREDECESSORS
-		front_wing_rotation_axis_y,(100, 1) 
-		_00dH,(100, 1) 
-	SUCCESSORS
-		_00dJ,(100, 1) 
-
-_00ex, <csdl.operations.power_combination.power_combination object at 0x7ff059d30970>
-	PREDECESSORS
-		front_wing_rotation_axis_y,(100, 1) 
-		_00ew,(100, 1) 
-	SUCCESSORS
-		_00ey,(100, 1) 
-
-_00eU, <csdl.operations.power_combination.power_combination object at 0x7ff059d30dc0>
-	PREDECESSORS
-		front_wing_rotation_axis_y,(100, 1) 
-		_00eT,(100, 1) 
-	SUCCESSORS
-		_00eV,(100, 1) 
-
-_00fJ, <csdl.operations.power_combination.power_combination object at 0x7ff059d10dc0>
-	PREDECESSORS
-		front_wing_rotation_axis_y,(100, 1) 
-		_00fI,(100, 1) 
-	SUCCESSORS
-		_00fK,(100, 1) 
-
-_00g5, <csdl.operations.power_combination.power_combination object at 0x7ff059d25250>
-	PREDECESSORS
-		front_wing_rotation_axis_y,(100, 1) 
-		_00g4,(100, 1) 
-	SUCCESSORS
-		_00g6,(100, 1) 
-
-front_wing_rotation_axis_z, <csdl.lang.input.Input object at 0x7ff059d366a0>, front_wing_actuation_model.front_wing_rotation_axis_z
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00dr
-		_00dO
-		_00eD
-		_00e_
-		_00fP
-		_00gb
-
-_00dr, <csdl.operations.power_combination.power_combination object at 0x7ff059d36c40>
-	PREDECESSORS
-		front_wing_rotation_axis_z,(100, 1) 
-		_00dq,(100, 1) 
-	SUCCESSORS
-		_00ds,(100, 1) 
-
-_00dO, <csdl.operations.power_combination.power_combination object at 0x7ff059d300d0>
-	PREDECESSORS
-		front_wing_rotation_axis_z,(100, 1) 
-		_00dN,(100, 1) 
-	SUCCESSORS
-		_00dP,(100, 1) 
-
-_00eD, <csdl.operations.power_combination.power_combination object at 0x7ff059d30a90>
-	PREDECESSORS
-		front_wing_rotation_axis_z,(100, 1) 
-		_00eC,(100, 1) 
-	SUCCESSORS
-		_00eE,(100, 1) 
-
-_00e_, <csdl.operations.power_combination.power_combination object at 0x7ff059d30eb0>
-	PREDECESSORS
-		front_wing_rotation_axis_z,(100, 1) 
-		_00eZ,(100, 1) 
-	SUCCESSORS
-		_00f0,(100, 1) 
-
-_00fP, <csdl.operations.power_combination.power_combination object at 0x7ff059d10ee0>
-	PREDECESSORS
-		front_wing_rotation_axis_z,(100, 1) 
-		_00fO,(100, 1) 
-	SUCCESSORS
-		_00fQ,(100, 1) 
-
-_00gb, <csdl.operations.power_combination.power_combination object at 0x7ff059d25370>
-	PREDECESSORS
-		front_wing_rotation_axis_z,(100, 1) 
-		_00ga,(100, 1) 
-	SUCCESSORS
-		_00gc,(100, 1) 
-
-front_left_nacelle1_axis_origin_pt, <csdl.lang.input.Input object at 0x7ff059d366d0>, front_wing_actuation_model.front_left_nacelle1_axis_origin_pt
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00d2
-		_00dU
-
-_00d2, <csdl.operations.linear_combination.linear_combination object at 0x7ff059d36760>
-	PREDECESSORS
-		front_left_nacelle1_axis_origin_pt,(100, 3) 
-		front_left_nacelle1_origin,(100, 3) 
-	SUCCESSORS
-		_00d3,(100, 3) 
-
-_00dU, <csdl.operations.linear_combination.linear_combination object at 0x7ff059d301f0>
-	PREDECESSORS
-		front_left_nacelle1_axis_origin_pt,(100, 3) 
-		_00dR,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle1_origin_rotated_VSP,(100, 3) 
-
-front_left_nacelle1_origin, <csdl.lang.input.Input object at 0x7ff059d36700>, front_wing_actuation_model.front_left_nacelle1_origin
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00d2
-
-front_left_nacelle1_vector, <csdl.lang.input.Input object at 0x7ff059d36730>, front_wing_actuation_model.front_left_nacelle1_vector
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00dS
-
-_00dS, <csdl.operations.quatrotvec.quatrotvec object at 0x7ff059d30190>
-	PREDECESSORS
-		front_left_nacelle1_vector,(100, 3) 
-		front_left_nacelle1_vector_quat,(100, 4) 
-	SUCCESSORS
-		front_left_nacelle1_vector_rotated_VSP,(100, 3) 
-
-front_left_nacelle2_axis_origin_pt, <csdl.lang.input.Input object at 0x7ff059d30520>, front_wing_actuation_model.front_left_nacelle2_axis_origin_pt
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00ee
-		_00f5
-
-_00ee, <csdl.operations.linear_combination.linear_combination object at 0x7ff059d30580>
-	PREDECESSORS
-		front_left_nacelle2_axis_origin_pt,(100, 3) 
-		front_left_nacelle2_origin,(100, 3) 
-	SUCCESSORS
-		_00ef,(100, 3) 
-
-_00f5, <csdl.operations.linear_combination.linear_combination object at 0x7ff059d10640>
-	PREDECESSORS
-		front_left_nacelle2_axis_origin_pt,(100, 3) 
-		_00f2,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle2_origin_rotated_VSP,(100, 3) 
-
-front_left_nacelle2_origin, <csdl.lang.input.Input object at 0x7ff059d304f0>, front_wing_actuation_model.front_left_nacelle2_origin
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00ee
-
-front_left_nacelle2_vector, <csdl.lang.input.Input object at 0x7ff059d305b0>, front_wing_actuation_model.front_left_nacelle2_vector
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00f3
-
-_00f3, <csdl.operations.quatrotvec.quatrotvec object at 0x7ff059d105e0>
-	PREDECESSORS
-		front_left_nacelle2_vector,(100, 3) 
-		front_left_nacelle2_vector_quat,(100, 4) 
-	SUCCESSORS
-		front_left_nacelle2_vector_rotated_VSP,(100, 3) 
-
-front_left_nacelle3_axis_origin_pt, <csdl.lang.input.Input object at 0x7ff059d10970>, front_wing_actuation_model.front_left_nacelle3_axis_origin_pt
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00fq
-		_00gh
-
-_00fq, <csdl.operations.linear_combination.linear_combination object at 0x7ff059d109d0>
-	PREDECESSORS
-		front_left_nacelle3_axis_origin_pt,(100, 3) 
-		front_left_nacelle3_origin,(100, 3) 
-	SUCCESSORS
-		_00fr,(100, 3) 
-
-_00gh, <csdl.operations.linear_combination.linear_combination object at 0x7ff059d25460>
-	PREDECESSORS
-		front_left_nacelle3_axis_origin_pt,(100, 3) 
-		_00ge,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle3_origin_rotated_VSP,(100, 3) 
-
-front_left_nacelle3_origin, <csdl.lang.input.Input object at 0x7ff059d10940>, front_wing_actuation_model.front_left_nacelle3_origin
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00fq
-
-front_left_nacelle3_vector, <csdl.lang.input.Input object at 0x7ff059d10a00>, front_wing_actuation_model.front_left_nacelle3_vector
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00gf
-
-_00gf, <csdl.operations.quatrotvec.quatrotvec object at 0x7ff059d25430>
-	PREDECESSORS
-		front_left_nacelle3_vector,(100, 3) 
-		front_left_nacelle3_vector_quat,(100, 4) 
-	SUCCESSORS
-		front_left_nacelle3_vector_rotated_VSP,(100, 3) 
-
-_00d7, <csdl.lang.output.Output object at 0x7ff059d36850>, front_wing_actuation_model._00d7
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00d6
-	SUCCESSORS
-		_00d8
-
-_00d8, <csdl.operations.cos.cos object at 0x7ff059d36880>
-	PREDECESSORS
-		_00d7,(100, 1) 
-	SUCCESSORS
-		_00d9,(100, 1) 
-
-_00d9, <csdl.lang.output.Output object at 0x7ff059d368b0>, front_wing_actuation_model._00d9
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00d8
-	SUCCESSORS
-		_00da
-
-_00da, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d36910>
-	PREDECESSORS
-		_00d9,(100, 1) 
-		_00dg,(100, 1) 
-		_00dm,(100, 1) 
-		_00ds,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle1_origin_quat,(100, 4) 
-
-front_left_nacelle1_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7ff059d367c0>, front_wing_actuation_model.front_left_nacelle1_origin_quat
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00da
-	SUCCESSORS
-		_00dQ
-
-_00dc, <csdl.lang.output.Output object at 0x7ff059d36970>, front_wing_actuation_model._00dc
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00db
-	SUCCESSORS
-		_00dd
-
-_00dd, <csdl.operations.sin.sin object at 0x7ff059d36940>
-	PREDECESSORS
-		_00dc,(100, 1) 
-	SUCCESSORS
-		_00de,(100, 1) 
-
-_00de, <csdl.lang.output.Output object at 0x7ff059d369d0>, front_wing_actuation_model._00de
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dd
-	SUCCESSORS
-		_00df
-
-_00dg, <csdl.lang.output.Output object at 0x7ff059d36a00>, front_wing_actuation_model._00dg
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00df
-	SUCCESSORS
-		_00da
-
-_00di, <csdl.lang.output.Output object at 0x7ff059d36a60>, front_wing_actuation_model._00di
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dh
-	SUCCESSORS
-		_00dj
-
-_00dj, <csdl.operations.sin.sin object at 0x7ff059d36ac0>
-	PREDECESSORS
-		_00di,(100, 1) 
-	SUCCESSORS
-		_00dk,(100, 1) 
-
-_00dk, <csdl.lang.output.Output object at 0x7ff059d36a90>, front_wing_actuation_model._00dk
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dj
-	SUCCESSORS
-		_00dl
-
-_00dm, <csdl.lang.output.Output object at 0x7ff059d36af0>, front_wing_actuation_model._00dm
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dl
-	SUCCESSORS
-		_00da
-
-_00do, <csdl.lang.output.Output object at 0x7ff059d36b80>, front_wing_actuation_model._00do
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dn
-	SUCCESSORS
-		_00dp
-
-_00dp, <csdl.operations.sin.sin object at 0x7ff059d36be0>
-	PREDECESSORS
-		_00do,(100, 1) 
-	SUCCESSORS
-		_00dq,(100, 1) 
-
-_00dq, <csdl.lang.output.Output object at 0x7ff059d36bb0>, front_wing_actuation_model._00dq
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dp
-	SUCCESSORS
-		_00dr
-
-_00ds, <csdl.lang.output.Output object at 0x7ff059d36c10>, front_wing_actuation_model._00ds
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dr
-	SUCCESSORS
-		_00da
-
-_00dQ, <csdl.operations.quatrotvec.quatrotvec object at 0x7ff059d30100>
-	PREDECESSORS
-		front_left_nacelle1_origin_quat,(100, 4) 
-		_00d3,(100, 3) 
-	SUCCESSORS
-		_00dR,(100, 3) 
-
-_00du, <csdl.lang.output.Output object at 0x7ff059d36ca0>, front_wing_actuation_model._00du
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dt
-	SUCCESSORS
-		_00dv
-
-_00dv, <csdl.operations.cos.cos object at 0x7ff059d36d00>
-	PREDECESSORS
-		_00du,(100, 1) 
-	SUCCESSORS
-		_00dw,(100, 1) 
-
-_00dw, <csdl.lang.output.Output object at 0x7ff059d36cd0>, front_wing_actuation_model._00dw
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dv
-	SUCCESSORS
-		_00dx
-
-_00dx, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d36d30>
-	PREDECESSORS
-		_00dw,(100, 1) 
-		_00dD,(100, 1) 
-		_00dJ,(100, 1) 
-		_00dP,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle1_vector_quat,(100, 4) 
-
-front_left_nacelle1_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7ff059d367f0>, front_wing_actuation_model.front_left_nacelle1_vector_quat
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dx
-	SUCCESSORS
-		_00dS
-
-_00dz, <csdl.lang.output.Output object at 0x7ff059d36dc0>, front_wing_actuation_model._00dz
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dy
-	SUCCESSORS
-		_00dA
-
-_00dA, <csdl.operations.sin.sin object at 0x7ff059d36d90>
-	PREDECESSORS
-		_00dz,(100, 1) 
-	SUCCESSORS
-		_00dB,(100, 1) 
-
-_00dB, <csdl.lang.output.Output object at 0x7ff059d36e20>, front_wing_actuation_model._00dB
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dA
-	SUCCESSORS
-		_00dC
-
-_00dD, <csdl.lang.output.Output object at 0x7ff059d36e50>, front_wing_actuation_model._00dD
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dC
-	SUCCESSORS
-		_00dx
-
-_00dF, <csdl.lang.output.Output object at 0x7ff059d36eb0>, front_wing_actuation_model._00dF
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dE
-	SUCCESSORS
-		_00dG
-
-_00dG, <csdl.operations.sin.sin object at 0x7ff059d36f10>
-	PREDECESSORS
-		_00dF,(100, 1) 
-	SUCCESSORS
-		_00dH,(100, 1) 
-
-_00dH, <csdl.lang.output.Output object at 0x7ff059d36ee0>, front_wing_actuation_model._00dH
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dG
-	SUCCESSORS
-		_00dI
-
-_00dJ, <csdl.lang.output.Output object at 0x7ff059d36f40>, front_wing_actuation_model._00dJ
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dI
-	SUCCESSORS
-		_00dx
-
-_00dL, <csdl.lang.output.Output object at 0x7ff059d36fd0>, front_wing_actuation_model._00dL
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dK
-	SUCCESSORS
-		_00dM
-
-_00dM, <csdl.operations.sin.sin object at 0x7ff059d30070>
-	PREDECESSORS
-		_00dL,(100, 1) 
-	SUCCESSORS
-		_00dN,(100, 1) 
-
-_00dN, <csdl.lang.output.Output object at 0x7ff059d30040>, front_wing_actuation_model._00dN
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dM
-	SUCCESSORS
-		_00dO
-
-_00dP, <csdl.lang.output.Output object at 0x7ff059d300a0>, front_wing_actuation_model._00dP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dO
-	SUCCESSORS
-		_00dx
-
-_00dR, <csdl.lang.output.Output object at 0x7ff059d30130>, front_wing_actuation_model._00dR
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dQ
-	SUCCESSORS
-		_00dU
-
-_00d3, <csdl.lang.output.Output object at 0x7ff059d36790>, front_wing_actuation_model._00d3
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00d2
-	SUCCESSORS
-		_00dQ
-
-front_left_nacelle1_origin_rotated_VSP, <csdl.lang.output.Output object at 0x7ff059d301c0>, front_wing_actuation_model.front_left_nacelle1_origin_rotated_VSP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dU
-	SUCCESSORS
-		_00dX
-
-_00dX, <csdl.operations.decompose.decompose object at 0x7ff059d30280>
-	PREDECESSORS
-		front_left_nacelle1_origin_rotated_VSP,(100, 3) 
-	SUCCESSORS
-		_00dY,(100, 1) 
-		_00d_,(100, 1) 
-		_00e0,(100, 1) 
-
-_00dY, <csdl.lang.output.Output object at 0x7ff059d302e0>, front_wing_actuation_model._00dY
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dX
-	SUCCESSORS
-		_00dZ
-
-_00d_, <csdl.lang.output.Output object at 0x7ff059d302b0>, front_wing_actuation_model._00d_
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dX
-	SUCCESSORS
-		_00dZ
-
-_00e0, <csdl.lang.output.Output object at 0x7ff059d303d0>, front_wing_actuation_model._00e0
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dX
-	SUCCESSORS
-		_00dZ
-
-_00dZ, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d30310>
-	PREDECESSORS
-		_00dY,(100, 1) 
-		_00d_,(100, 1) 
-		_00e0,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle1_origin_rotated_NED,(100, 3) 
-
-front_left_nacelle1_origin_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7ff059d30220>, front_wing_actuation_model.front_left_nacelle1_origin_rotated_NED
-	CONNECTED TO: False
-	PROMOTED TO: True
-		front_left_nacelle1_origin_rotated_NED, simple_forces_moments_model.front_left_nacelle1_origin_rotated_NED
-	PREDECESSORS
-		_00dZ
-	SUCCESSORS
-		_00i4
-
-front_left_nacelle1_vector_rotated_VSP, <csdl.lang.output.Output object at 0x7ff059d30160>, front_wing_actuation_model.front_left_nacelle1_vector_rotated_VSP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00dS
-	SUCCESSORS
-		_00e2
-
-_00e2, <csdl.operations.decompose.decompose object at 0x7ff059d30340>
-	PREDECESSORS
-		front_left_nacelle1_vector_rotated_VSP,(100, 3) 
-	SUCCESSORS
-		_00e3,(100, 1) 
-		_00e7,(100, 1) 
-		_00e8,(100, 1) 
-
-_00e3, <csdl.lang.output.Output object at 0x7ff059d30430>, front_wing_actuation_model._00e3
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00e2
-	SUCCESSORS
-		_00e4
-
-_00e7, <csdl.lang.output.Output object at 0x7ff059d30460>, front_wing_actuation_model._00e7
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00e2
-	SUCCESSORS
-		_00e6
-
-_00e8, <csdl.lang.output.Output object at 0x7ff059d30550>, front_wing_actuation_model._00e8
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00e2
-	SUCCESSORS
-		_00e9
-
-_00e4, <csdl.operations.power_combination.power_combination object at 0x7ff059d30370>
-	PREDECESSORS
-		_00e3,(100, 1) 
-	SUCCESSORS
-		_00e5,(100, 1) 
-
-_00e6, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d30490>
-	PREDECESSORS
-		_00e7,(100, 1) 
-		_00e5,(100, 1) 
-		_00ea,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle1_vector_rotated_NED,(100, 3) 
-
-_00e9, <csdl.operations.power_combination.power_combination object at 0x7ff059d303a0>
-	PREDECESSORS
-		_00e8,(100, 1) 
-	SUCCESSORS
-		_00ea,(100, 1) 
-
-_00e5, <csdl.lang.output.Output object at 0x7ff059d30400>, front_wing_actuation_model._00e5
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00e4
-	SUCCESSORS
-		_00e6
-
-front_left_nacelle1_vector_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7ff059d30250>, front_wing_actuation_model.front_left_nacelle1_vector_rotated_NED
-	CONNECTED TO: False
-	PROMOTED TO: True
-		front_left_nacelle1_vector_rotated_NED, simple_forces_moments_model.front_left_nacelle1_vector_rotated_NED
-	PREDECESSORS
-		_00e6
-	SUCCESSORS
-		_00i2
-
-_00ea, <csdl.lang.output.Output object at 0x7ff059d304c0>, front_wing_actuation_model._00ea
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00e9
-	SUCCESSORS
-		_00e6
-
-_00ej, <csdl.lang.output.Output object at 0x7ff059d306a0>, front_wing_actuation_model._00ej
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ei
-	SUCCESSORS
-		_00ek
-
-_00ek, <csdl.operations.cos.cos object at 0x7ff059d306d0>
-	PREDECESSORS
-		_00ej,(100, 1) 
-	SUCCESSORS
-		_00el,(100, 1) 
-
-_00el, <csdl.lang.output.Output object at 0x7ff059d30700>, front_wing_actuation_model._00el
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ek
-	SUCCESSORS
-		_00em
-
-_00em, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d30760>
-	PREDECESSORS
-		_00el,(100, 1) 
-		_00es,(100, 1) 
-		_00ey,(100, 1) 
-		_00eE,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle2_origin_quat,(100, 4) 
-
-front_left_nacelle2_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7ff059d305e0>, front_wing_actuation_model.front_left_nacelle2_origin_quat
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00em
-	SUCCESSORS
-		_00f1
-
-_00eo, <csdl.lang.output.Output object at 0x7ff059d307c0>, front_wing_actuation_model._00eo
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00en
-	SUCCESSORS
-		_00ep
-
-_00ep, <csdl.operations.sin.sin object at 0x7ff059d30790>
-	PREDECESSORS
-		_00eo,(100, 1) 
-	SUCCESSORS
-		_00eq,(100, 1) 
-
-_00eq, <csdl.lang.output.Output object at 0x7ff059d30820>, front_wing_actuation_model._00eq
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ep
-	SUCCESSORS
-		_00er
-
-_00es, <csdl.lang.output.Output object at 0x7ff059d30850>, front_wing_actuation_model._00es
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00er
-	SUCCESSORS
-		_00em
-
-_00eu, <csdl.lang.output.Output object at 0x7ff059d308b0>, front_wing_actuation_model._00eu
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00et
-	SUCCESSORS
-		_00ev
-
-_00ev, <csdl.operations.sin.sin object at 0x7ff059d30910>
-	PREDECESSORS
-		_00eu,(100, 1) 
-	SUCCESSORS
-		_00ew,(100, 1) 
-
-_00ew, <csdl.lang.output.Output object at 0x7ff059d308e0>, front_wing_actuation_model._00ew
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ev
-	SUCCESSORS
-		_00ex
-
-_00ey, <csdl.lang.output.Output object at 0x7ff059d30940>, front_wing_actuation_model._00ey
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ex
-	SUCCESSORS
-		_00em
-
-_00eA, <csdl.lang.output.Output object at 0x7ff059d309d0>, front_wing_actuation_model._00eA
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ez
-	SUCCESSORS
-		_00eB
-
-_00eB, <csdl.operations.sin.sin object at 0x7ff059d30a30>
-	PREDECESSORS
-		_00eA,(100, 1) 
-	SUCCESSORS
-		_00eC,(100, 1) 
-
-_00eC, <csdl.lang.output.Output object at 0x7ff059d30a00>, front_wing_actuation_model._00eC
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eB
-	SUCCESSORS
-		_00eD
-
-_00eE, <csdl.lang.output.Output object at 0x7ff059d30a60>, front_wing_actuation_model._00eE
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eD
-	SUCCESSORS
-		_00em
-
-_00f1, <csdl.operations.quatrotvec.quatrotvec object at 0x7ff059d10550>
-	PREDECESSORS
-		front_left_nacelle2_origin_quat,(100, 4) 
-		_00ef,(100, 3) 
-	SUCCESSORS
-		_00f2,(100, 3) 
-
-_00eG, <csdl.lang.output.Output object at 0x7ff059d30af0>, front_wing_actuation_model._00eG
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eF
-	SUCCESSORS
-		_00eH
-
-_00eH, <csdl.operations.cos.cos object at 0x7ff059d30b50>
-	PREDECESSORS
-		_00eG,(100, 1) 
-	SUCCESSORS
-		_00eI,(100, 1) 
-
-_00eI, <csdl.lang.output.Output object at 0x7ff059d30b20>, front_wing_actuation_model._00eI
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eH
-	SUCCESSORS
-		_00eJ
-
-_00eJ, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d30b80>
-	PREDECESSORS
-		_00eI,(100, 1) 
-		_00eP,(100, 1) 
-		_00eV,(100, 1) 
-		_00f0,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle2_vector_quat,(100, 4) 
-
-front_left_nacelle2_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7ff059d30640>, front_wing_actuation_model.front_left_nacelle2_vector_quat
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eJ
-	SUCCESSORS
-		_00f3
-
-_00eL, <csdl.lang.output.Output object at 0x7ff059d30c10>, front_wing_actuation_model._00eL
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eK
-	SUCCESSORS
-		_00eM
-
-_00eM, <csdl.operations.sin.sin object at 0x7ff059d30be0>
-	PREDECESSORS
-		_00eL,(100, 1) 
-	SUCCESSORS
-		_00eN,(100, 1) 
-
-_00eN, <csdl.lang.output.Output object at 0x7ff059d30c70>, front_wing_actuation_model._00eN
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eM
-	SUCCESSORS
-		_00eO
-
-_00eP, <csdl.lang.output.Output object at 0x7ff059d30ca0>, front_wing_actuation_model._00eP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eO
-	SUCCESSORS
-		_00eJ
-
-_00eR, <csdl.lang.output.Output object at 0x7ff059d30d00>, front_wing_actuation_model._00eR
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eQ
-	SUCCESSORS
-		_00eS
-
-_00eS, <csdl.operations.sin.sin object at 0x7ff059d30d60>
-	PREDECESSORS
-		_00eR,(100, 1) 
-	SUCCESSORS
-		_00eT,(100, 1) 
-
-_00eT, <csdl.lang.output.Output object at 0x7ff059d30d30>, front_wing_actuation_model._00eT
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eS
-	SUCCESSORS
-		_00eU
-
-_00eV, <csdl.lang.output.Output object at 0x7ff059d30d90>, front_wing_actuation_model._00eV
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eU
-	SUCCESSORS
-		_00eJ
-
-_00eX, <csdl.lang.output.Output object at 0x7ff059d30e20>, front_wing_actuation_model._00eX
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eW
-	SUCCESSORS
-		_00eY
-
-_00eY, <csdl.operations.sin.sin object at 0x7ff059d30e80>
-	PREDECESSORS
-		_00eX,(100, 1) 
-	SUCCESSORS
-		_00eZ,(100, 1) 
-
-_00eZ, <csdl.lang.output.Output object at 0x7ff059d30e50>, front_wing_actuation_model._00eZ
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00eY
-	SUCCESSORS
-		_00e_
-
-_00f0, <csdl.lang.output.Output object at 0x7ff059d10520>, front_wing_actuation_model._00f0
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00e_
-	SUCCESSORS
-		_00eJ
-
-_00f2, <csdl.lang.output.Output object at 0x7ff059d10580>, front_wing_actuation_model._00f2
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00f1
-	SUCCESSORS
-		_00f5
-
-_00ef, <csdl.lang.output.Output object at 0x7ff059d30610>, front_wing_actuation_model._00ef
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ee
-	SUCCESSORS
-		_00f1
-
-front_left_nacelle2_origin_rotated_VSP, <csdl.lang.output.Output object at 0x7ff059d10610>, front_wing_actuation_model.front_left_nacelle2_origin_rotated_VSP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00f5
-	SUCCESSORS
-		_00f8
-
-_00f8, <csdl.operations.decompose.decompose object at 0x7ff059d106d0>
-	PREDECESSORS
-		front_left_nacelle2_origin_rotated_VSP,(100, 3) 
-	SUCCESSORS
-		_00f9,(100, 1) 
-		_00fb,(100, 1) 
-		_00fc,(100, 1) 
-
-_00f9, <csdl.lang.output.Output object at 0x7ff059d10730>, front_wing_actuation_model._00f9
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00f8
-	SUCCESSORS
-		_00fa
-
-_00fb, <csdl.lang.output.Output object at 0x7ff059d10700>, front_wing_actuation_model._00fb
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00f8
-	SUCCESSORS
-		_00fa
-
-_00fc, <csdl.lang.output.Output object at 0x7ff059d10820>, front_wing_actuation_model._00fc
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00f8
-	SUCCESSORS
-		_00fa
-
-_00fa, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d10760>
-	PREDECESSORS
-		_00f9,(100, 1) 
-		_00fb,(100, 1) 
-		_00fc,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle2_origin_rotated_NED,(100, 3) 
-
-front_left_nacelle2_origin_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7ff059d10670>, front_wing_actuation_model.front_left_nacelle2_origin_rotated_NED
-	CONNECTED TO: False
-	PROMOTED TO: True
-		front_left_nacelle2_origin_rotated_NED, simple_forces_moments_model.front_left_nacelle2_origin_rotated_NED
-	PREDECESSORS
-		_00fa
-	SUCCESSORS
-		_00iF
-
-front_left_nacelle2_vector_rotated_VSP, <csdl.lang.output.Output object at 0x7ff059d105b0>, front_wing_actuation_model.front_left_nacelle2_vector_rotated_VSP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00f3
-	SUCCESSORS
-		_00fe
-
-_00fe, <csdl.operations.decompose.decompose object at 0x7ff059d10790>
-	PREDECESSORS
-		front_left_nacelle2_vector_rotated_VSP,(100, 3) 
-	SUCCESSORS
-		_00ff,(100, 1) 
-		_00fj,(100, 1) 
-		_00fk,(100, 1) 
-
-_00ff, <csdl.lang.output.Output object at 0x7ff059d10880>, front_wing_actuation_model._00ff
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fe
-	SUCCESSORS
-		_00fg
-
-_00fj, <csdl.lang.output.Output object at 0x7ff059d108b0>, front_wing_actuation_model._00fj
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fe
-	SUCCESSORS
-		_00fi
-
-_00fk, <csdl.lang.output.Output object at 0x7ff059d109a0>, front_wing_actuation_model._00fk
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fe
-	SUCCESSORS
-		_00fl
-
-_00fg, <csdl.operations.power_combination.power_combination object at 0x7ff059d107c0>
-	PREDECESSORS
-		_00ff,(100, 1) 
-	SUCCESSORS
-		_00fh,(100, 1) 
-
-_00fi, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d108e0>
-	PREDECESSORS
-		_00fj,(100, 1) 
-		_00fh,(100, 1) 
-		_00fm,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle2_vector_rotated_NED,(100, 3) 
-
-_00fl, <csdl.operations.power_combination.power_combination object at 0x7ff059d107f0>
-	PREDECESSORS
-		_00fk,(100, 1) 
-	SUCCESSORS
-		_00fm,(100, 1) 
-
-_00fh, <csdl.lang.output.Output object at 0x7ff059d10850>, front_wing_actuation_model._00fh
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fg
-	SUCCESSORS
-		_00fi
-
-front_left_nacelle2_vector_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7ff059d106a0>, front_wing_actuation_model.front_left_nacelle2_vector_rotated_NED
-	CONNECTED TO: False
-	PROMOTED TO: True
-		front_left_nacelle2_vector_rotated_NED, simple_forces_moments_model.front_left_nacelle2_vector_rotated_NED
-	PREDECESSORS
-		_00fi
-	SUCCESSORS
-		_00iD
-
-_00fm, <csdl.lang.output.Output object at 0x7ff059d10910>, front_wing_actuation_model._00fm
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fl
-	SUCCESSORS
-		_00fi
-
-_00fv, <csdl.lang.output.Output object at 0x7ff059d10af0>, front_wing_actuation_model._00fv
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fu
-	SUCCESSORS
-		_00fw
-
-_00fw, <csdl.operations.cos.cos object at 0x7ff059d10b20>
-	PREDECESSORS
-		_00fv,(100, 1) 
-	SUCCESSORS
-		_00fx,(100, 1) 
-
-_00fx, <csdl.lang.output.Output object at 0x7ff059d10b50>, front_wing_actuation_model._00fx
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fw
-	SUCCESSORS
-		_00fy
-
-_00fy, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d10bb0>
-	PREDECESSORS
-		_00fx,(100, 1) 
-		_00fE,(100, 1) 
-		_00fK,(100, 1) 
-		_00fQ,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle3_origin_quat,(100, 4) 
-
-front_left_nacelle3_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7ff059d10a30>, front_wing_actuation_model.front_left_nacelle3_origin_quat
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fy
-	SUCCESSORS
-		_00gd
-
-_00fA, <csdl.lang.output.Output object at 0x7ff059d10c10>, front_wing_actuation_model._00fA
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fz
-	SUCCESSORS
-		_00fB
-
-_00fB, <csdl.operations.sin.sin object at 0x7ff059d10be0>
-	PREDECESSORS
-		_00fA,(100, 1) 
-	SUCCESSORS
-		_00fC,(100, 1) 
-
-_00fC, <csdl.lang.output.Output object at 0x7ff059d10c70>, front_wing_actuation_model._00fC
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fB
-	SUCCESSORS
-		_00fD
-
-_00fE, <csdl.lang.output.Output object at 0x7ff059d10ca0>, front_wing_actuation_model._00fE
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fD
-	SUCCESSORS
-		_00fy
-
-_00fG, <csdl.lang.output.Output object at 0x7ff059d10d00>, front_wing_actuation_model._00fG
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fF
-	SUCCESSORS
-		_00fH
-
-_00fH, <csdl.operations.sin.sin object at 0x7ff059d10d60>
-	PREDECESSORS
-		_00fG,(100, 1) 
-	SUCCESSORS
-		_00fI,(100, 1) 
-
-_00fI, <csdl.lang.output.Output object at 0x7ff059d10d30>, front_wing_actuation_model._00fI
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fH
-	SUCCESSORS
-		_00fJ
-
-_00fK, <csdl.lang.output.Output object at 0x7ff059d10d90>, front_wing_actuation_model._00fK
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fJ
-	SUCCESSORS
-		_00fy
-
-_00fM, <csdl.lang.output.Output object at 0x7ff059d10e20>, front_wing_actuation_model._00fM
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fL
-	SUCCESSORS
-		_00fN
-
-_00fN, <csdl.operations.sin.sin object at 0x7ff059d10e80>
-	PREDECESSORS
-		_00fM,(100, 1) 
-	SUCCESSORS
-		_00fO,(100, 1) 
-
-_00fO, <csdl.lang.output.Output object at 0x7ff059d10e50>, front_wing_actuation_model._00fO
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fN
-	SUCCESSORS
-		_00fP
-
-_00fQ, <csdl.lang.output.Output object at 0x7ff059d10eb0>, front_wing_actuation_model._00fQ
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fP
-	SUCCESSORS
-		_00fy
-
-_00gd, <csdl.operations.quatrotvec.quatrotvec object at 0x7ff059d253a0>
-	PREDECESSORS
-		front_left_nacelle3_origin_quat,(100, 4) 
-		_00fr,(100, 3) 
-	SUCCESSORS
-		_00ge,(100, 3) 
-
-_00fS, <csdl.lang.output.Output object at 0x7ff059d10f40>, front_wing_actuation_model._00fS
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fR
-	SUCCESSORS
-		_00fT
-
-_00fT, <csdl.operations.cos.cos object at 0x7ff059d10fa0>
-	PREDECESSORS
-		_00fS,(100, 1) 
-	SUCCESSORS
-		_00fU,(100, 1) 
-
-_00fU, <csdl.lang.output.Output object at 0x7ff059d10f70>, front_wing_actuation_model._00fU
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fT
-	SUCCESSORS
-		_00fV
-
-_00fV, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059d25040>
-	PREDECESSORS
-		_00fU,(100, 1) 
-		_00g0,(100, 1) 
-		_00g6,(100, 1) 
-		_00gc,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle3_vector_quat,(100, 4) 
-
-front_left_nacelle3_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7ff059d10a90>, front_wing_actuation_model.front_left_nacelle3_vector_quat
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fV
-	SUCCESSORS
-		_00gf
-
-_00fX, <csdl.lang.output.Output object at 0x7ff059d250a0>, front_wing_actuation_model._00fX
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fW
-	SUCCESSORS
-		_00fY
-
-_00fY, <csdl.operations.sin.sin object at 0x7ff059d25070>
-	PREDECESSORS
-		_00fX,(100, 1) 
-	SUCCESSORS
-		_00fZ,(100, 1) 
-
-_00fZ, <csdl.lang.output.Output object at 0x7ff059d25100>, front_wing_actuation_model._00fZ
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fY
-	SUCCESSORS
-		_00f_
-
-_00g0, <csdl.lang.output.Output object at 0x7ff059d25130>, front_wing_actuation_model._00g0
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00f_
-	SUCCESSORS
-		_00fV
-
-_00g2, <csdl.lang.output.Output object at 0x7ff059d25190>, front_wing_actuation_model._00g2
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00g1
-	SUCCESSORS
-		_00g3
-
-_00g3, <csdl.operations.sin.sin object at 0x7ff059d251f0>
-	PREDECESSORS
-		_00g2,(100, 1) 
-	SUCCESSORS
-		_00g4,(100, 1) 
-
-_00g4, <csdl.lang.output.Output object at 0x7ff059d251c0>, front_wing_actuation_model._00g4
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00g3
-	SUCCESSORS
-		_00g5
-
-_00g6, <csdl.lang.output.Output object at 0x7ff059d25220>, front_wing_actuation_model._00g6
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00g5
-	SUCCESSORS
-		_00fV
-
-_00g8, <csdl.lang.output.Output object at 0x7ff059d252b0>, front_wing_actuation_model._00g8
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00g7
-	SUCCESSORS
-		_00g9
-
-_00g9, <csdl.operations.sin.sin object at 0x7ff059d25310>
-	PREDECESSORS
-		_00g8,(100, 1) 
-	SUCCESSORS
-		_00ga,(100, 1) 
-
-_00ga, <csdl.lang.output.Output object at 0x7ff059d252e0>, front_wing_actuation_model._00ga
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00g9
-	SUCCESSORS
-		_00gb
-
-_00gc, <csdl.lang.output.Output object at 0x7ff059d25340>, front_wing_actuation_model._00gc
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gb
-	SUCCESSORS
-		_00fV
-
-_00ge, <csdl.lang.output.Output object at 0x7ff059d253d0>, front_wing_actuation_model._00ge
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gd
-	SUCCESSORS
-		_00gh
-
-_00fr, <csdl.lang.output.Output object at 0x7ff059d10a60>, front_wing_actuation_model._00fr
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00fq
-	SUCCESSORS
-		_00gd
-
-front_left_nacelle3_origin_rotated_VSP, <csdl.lang.output.Output object at 0x7ff059d254c0>, front_wing_actuation_model.front_left_nacelle3_origin_rotated_VSP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gh
-	SUCCESSORS
-		_00gk
-
-_00gk, <csdl.operations.decompose.decompose object at 0x7ff0599dc190>
-	PREDECESSORS
-		front_left_nacelle3_origin_rotated_VSP,(100, 3) 
-	SUCCESSORS
-		_00gl,(100, 1) 
-		_00gn,(100, 1) 
-		_00go,(100, 1) 
-
-_00gl, <csdl.lang.output.Output object at 0x7ff0599dc1f0>, front_wing_actuation_model._00gl
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gk
-	SUCCESSORS
-		_00gm
-
-_00gn, <csdl.lang.output.Output object at 0x7ff0599dc1c0>, front_wing_actuation_model._00gn
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gk
-	SUCCESSORS
-		_00gm
-
-_00go, <csdl.lang.output.Output object at 0x7ff0599dc2e0>, front_wing_actuation_model._00go
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gk
-	SUCCESSORS
-		_00gm
-
-_00gm, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff0599dc220>
-	PREDECESSORS
-		_00gl,(100, 1) 
-		_00gn,(100, 1) 
-		_00go,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle3_origin_rotated_NED,(100, 3) 
-
-front_left_nacelle3_origin_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7ff0599dc130>, front_wing_actuation_model.front_left_nacelle3_origin_rotated_NED
-	CONNECTED TO: False
-	PROMOTED TO: True
-		front_left_nacelle3_origin_rotated_NED, simple_forces_moments_model.front_left_nacelle3_origin_rotated_NED
-	PREDECESSORS
-		_00gm
-	SUCCESSORS
-		_00j9
-
-front_left_nacelle3_vector_rotated_VSP, <csdl.lang.output.Output object at 0x7ff059d25490>, front_wing_actuation_model.front_left_nacelle3_vector_rotated_VSP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gf
-	SUCCESSORS
-		_00gq
-
-_00gq, <csdl.operations.decompose.decompose object at 0x7ff0599dc250>
-	PREDECESSORS
-		front_left_nacelle3_vector_rotated_VSP,(100, 3) 
-	SUCCESSORS
-		_00gr,(100, 1) 
-		_00gv,(100, 1) 
-		_00gw,(100, 1) 
-
-_00gr, <csdl.lang.output.Output object at 0x7ff0599dc340>, front_wing_actuation_model._00gr
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gq
-	SUCCESSORS
-		_00gs
-
-_00gv, <csdl.lang.output.Output object at 0x7ff0599dc370>, front_wing_actuation_model._00gv
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gq
-	SUCCESSORS
-		_00gu
-
-_00gw, <csdl.lang.output.Output object at 0x7ff0599dc430>, front_wing_actuation_model._00gw
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gq
-	SUCCESSORS
-		_00gx
-
-_00gs, <csdl.operations.power_combination.power_combination object at 0x7ff0599dc280>
-	PREDECESSORS
-		_00gr,(100, 1) 
-	SUCCESSORS
-		_00gt,(100, 1) 
-
-_00gu, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff0599dc3a0>
-	PREDECESSORS
-		_00gv,(100, 1) 
-		_00gt,(100, 1) 
-		_00gy,(100, 1) 
-	SUCCESSORS
-		front_left_nacelle3_vector_rotated_NED,(100, 3) 
-
-_00gx, <csdl.operations.power_combination.power_combination object at 0x7ff05a089f70>
-	PREDECESSORS
-		_00gw,(100, 1) 
-	SUCCESSORS
-		_00gy,(100, 1) 
-
-_00gt, <csdl.lang.output.Output object at 0x7ff0599dc310>, front_wing_actuation_model._00gt
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gs
-	SUCCESSORS
-		_00gu
-
-front_left_nacelle3_vector_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7ff0599dc160>, front_wing_actuation_model.front_left_nacelle3_vector_rotated_NED
-	CONNECTED TO: False
-	PROMOTED TO: True
-		front_left_nacelle3_vector_rotated_NED, simple_forces_moments_model.front_left_nacelle3_vector_rotated_NED
-	PREDECESSORS
-		_00gu
-	SUCCESSORS
-		_00j7
-
-_00gy, <csdl.lang.output.Output object at 0x7ff0599dc460>, front_wing_actuation_model._00gy
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gx
-	SUCCESSORS
-		_00gu
-
-rear_actuation_angle, <csdl.lang.input.Input object at 0x7ff0599dc2b0>, rear_wing_actuation_model.rear_actuation_angle
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00gK
-		_00gP
-		_00gV
-		_00h0
-		_00h6
-		_00hb
-		_00hh
-		_00hn
-
-_00gK, <csdl.operations.power_combination.power_combination object at 0x7ff0599dc610>
-	PREDECESSORS
-		rear_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00gL,(100, 1) 
-
-_00gP, <csdl.operations.power_combination.power_combination object at 0x7ff0599dc6d0>
-	PREDECESSORS
-		rear_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00gQ,(100, 1) 
-
-_00gV, <csdl.operations.power_combination.power_combination object at 0x7ff0599dc820>
-	PREDECESSORS
-		rear_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00gW,(100, 1) 
-
-_00h0, <csdl.operations.power_combination.power_combination object at 0x7ff0599dc940>
-	PREDECESSORS
-		rear_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00h1,(100, 1) 
-
-_00h6, <csdl.operations.power_combination.power_combination object at 0x7ff0599dca60>
-	PREDECESSORS
-		rear_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00h7,(100, 1) 
-
-_00hb, <csdl.operations.power_combination.power_combination object at 0x7ff0599dcb50>
-	PREDECESSORS
-		rear_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00hc,(100, 1) 
-
-_00hh, <csdl.operations.power_combination.power_combination object at 0x7ff0599dcc70>
-	PREDECESSORS
-		rear_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00hi,(100, 1) 
-
-_00hn, <csdl.operations.power_combination.power_combination object at 0x7ff0599dcd90>
-	PREDECESSORS
-		rear_actuation_angle,(100, 1) 
-	SUCCESSORS
-		_00ho,(100, 1) 
-
-rear_wing_rotation_axis_x, <csdl.lang.input.Input object at 0x7ff0599dc490>, rear_wing_actuation_model.rear_wing_rotation_axis_x
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00gT
-		_00hf
-
-_00gT, <csdl.operations.power_combination.power_combination object at 0x7ff0599dc790>
-	PREDECESSORS
-		rear_wing_rotation_axis_x,(100, 1) 
-		_00gS,(100, 1) 
-	SUCCESSORS
-		_00gU,(100, 1) 
-
-_00hf, <csdl.operations.power_combination.power_combination object at 0x7ff0599dcbe0>
-	PREDECESSORS
-		rear_wing_rotation_axis_x,(100, 1) 
-		_00he,(100, 1) 
-	SUCCESSORS
-		_00hg,(100, 1) 
-
-rear_wing_rotation_axis_y, <csdl.lang.input.Input object at 0x7ff0599dc400>, rear_wing_actuation_model.rear_wing_rotation_axis_y
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00gZ
-		_00hl
-
-_00gZ, <csdl.operations.power_combination.power_combination object at 0x7ff0599dc910>
-	PREDECESSORS
-		rear_wing_rotation_axis_y,(100, 1) 
-		_00gY,(100, 1) 
-	SUCCESSORS
-		_00g_,(100, 1) 
-
-_00hl, <csdl.operations.power_combination.power_combination object at 0x7ff0599dcd60>
-	PREDECESSORS
-		rear_wing_rotation_axis_y,(100, 1) 
-		_00hk,(100, 1) 
-	SUCCESSORS
-		_00hm,(100, 1) 
-
-rear_wing_rotation_axis_z, <csdl.lang.input.Input object at 0x7ff0599dc3d0>, rear_wing_actuation_model.rear_wing_rotation_axis_z
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00h4
-		_00hr
-
-_00h4, <csdl.operations.power_combination.power_combination object at 0x7ff0599dca30>
-	PREDECESSORS
-		rear_wing_rotation_axis_z,(100, 1) 
-		_00h3,(100, 1) 
-	SUCCESSORS
-		_00h5,(100, 1) 
-
-_00hr, <csdl.operations.power_combination.power_combination object at 0x7ff0599dce80>
-	PREDECESSORS
-		rear_wing_rotation_axis_z,(100, 1) 
-		_00hq,(100, 1) 
-	SUCCESSORS
-		_00hs,(100, 1) 
-
-rear_left_nacelle1_axis_origin_pt, <csdl.lang.input.Input object at 0x7ff0599dc4f0>, rear_wing_actuation_model.rear_left_nacelle1_axis_origin_pt
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00gG
-		_00hx
-
-_00gG, <csdl.operations.linear_combination.linear_combination object at 0x7ff0599dc550>
-	PREDECESSORS
-		rear_left_nacelle1_axis_origin_pt,(100, 3) 
-		rear_left_nacelle1_origin,(100, 3) 
-	SUCCESSORS
-		_00gH,(100, 3) 
-
-_00hx, <csdl.operations.linear_combination.linear_combination object at 0x7ff0599dcfa0>
-	PREDECESSORS
-		rear_left_nacelle1_axis_origin_pt,(100, 3) 
-		_00hu,(100, 3) 
-	SUCCESSORS
-		rear_left_nacelle1_origin_rotated_VSP,(100, 3) 
-
-rear_left_nacelle1_origin, <csdl.lang.input.Input object at 0x7ff0599dc4c0>, rear_wing_actuation_model.rear_left_nacelle1_origin
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00gG
-
-rear_left_nacelle1_vector, <csdl.lang.input.Input object at 0x7ff0599dc520>, rear_wing_actuation_model.rear_left_nacelle1_vector
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-	SUCCESSORS
-		_00hv
-
-_00hv, <csdl.operations.quatrotvec.quatrotvec object at 0x7ff0599dcf40>
-	PREDECESSORS
-		rear_left_nacelle1_vector,(100, 3) 
-		rear_left_nacelle1_vector_quat,(100, 4) 
-	SUCCESSORS
-		rear_left_nacelle1_vector_rotated_VSP,(100, 3) 
-
-_00gL, <csdl.lang.output.Output object at 0x7ff0599dc640>, rear_wing_actuation_model._00gL
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gK
-	SUCCESSORS
-		_00gM
-
-_00gM, <csdl.operations.cos.cos object at 0x7ff0599dc670>
-	PREDECESSORS
-		_00gL,(100, 1) 
-	SUCCESSORS
-		_00gN,(100, 1) 
-
-_00gN, <csdl.lang.output.Output object at 0x7ff0599dc6a0>, rear_wing_actuation_model._00gN
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gM
-	SUCCESSORS
-		_00gO
-
-_00gO, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff0599dc700>
-	PREDECESSORS
-		_00gN,(100, 1) 
-		_00gU,(100, 1) 
-		_00g_,(100, 1) 
-		_00h5,(100, 1) 
-	SUCCESSORS
-		rear_left_nacelle1_origin_quat,(100, 4) 
-
-rear_left_nacelle1_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7ff0599dc5b0>, rear_wing_actuation_model.rear_left_nacelle1_origin_quat
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gO
-	SUCCESSORS
-		_00ht
-
-_00gQ, <csdl.lang.output.Output object at 0x7ff0599dc760>, rear_wing_actuation_model._00gQ
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gP
-	SUCCESSORS
-		_00gR
-
-_00gR, <csdl.operations.sin.sin object at 0x7ff0599dc730>
-	PREDECESSORS
-		_00gQ,(100, 1) 
-	SUCCESSORS
-		_00gS,(100, 1) 
-
-_00gS, <csdl.lang.output.Output object at 0x7ff0599dc7c0>, rear_wing_actuation_model._00gS
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gR
-	SUCCESSORS
-		_00gT
-
-_00gU, <csdl.lang.output.Output object at 0x7ff0599dc7f0>, rear_wing_actuation_model._00gU
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gT
-	SUCCESSORS
-		_00gO
-
-_00gW, <csdl.lang.output.Output object at 0x7ff0599dc850>, rear_wing_actuation_model._00gW
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gV
-	SUCCESSORS
-		_00gX
-
-_00gX, <csdl.operations.sin.sin object at 0x7ff0599dc8b0>
-	PREDECESSORS
-		_00gW,(100, 1) 
-	SUCCESSORS
-		_00gY,(100, 1) 
-
-_00gY, <csdl.lang.output.Output object at 0x7ff0599dc880>, rear_wing_actuation_model._00gY
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gX
-	SUCCESSORS
-		_00gZ
-
-_00g_, <csdl.lang.output.Output object at 0x7ff0599dc8e0>, rear_wing_actuation_model._00g_
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gZ
-	SUCCESSORS
-		_00gO
-
-_00h1, <csdl.lang.output.Output object at 0x7ff0599dc970>, rear_wing_actuation_model._00h1
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00h0
-	SUCCESSORS
-		_00h2
-
-_00h2, <csdl.operations.sin.sin object at 0x7ff0599dc9d0>
-	PREDECESSORS
-		_00h1,(100, 1) 
-	SUCCESSORS
-		_00h3,(100, 1) 
-
-_00h3, <csdl.lang.output.Output object at 0x7ff0599dc9a0>, rear_wing_actuation_model._00h3
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00h2
-	SUCCESSORS
-		_00h4
-
-_00h5, <csdl.lang.output.Output object at 0x7ff0599dca00>, rear_wing_actuation_model._00h5
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00h4
-	SUCCESSORS
-		_00gO
-
-_00ht, <csdl.operations.quatrotvec.quatrotvec object at 0x7ff0599dceb0>
-	PREDECESSORS
-		rear_left_nacelle1_origin_quat,(100, 4) 
-		_00gH,(100, 3) 
-	SUCCESSORS
-		_00hu,(100, 3) 
-
-_00h7, <csdl.lang.output.Output object at 0x7ff0599dca90>, rear_wing_actuation_model._00h7
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00h6
-	SUCCESSORS
-		_00h8
-
-_00h8, <csdl.operations.cos.cos object at 0x7ff0599dcaf0>
-	PREDECESSORS
-		_00h7,(100, 1) 
-	SUCCESSORS
-		_00h9,(100, 1) 
-
-_00h9, <csdl.lang.output.Output object at 0x7ff0599dcac0>, rear_wing_actuation_model._00h9
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00h8
-	SUCCESSORS
-		_00ha
-
-_00ha, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff0599dcb20>
-	PREDECESSORS
-		_00h9,(100, 1) 
-		_00hg,(100, 1) 
-		_00hm,(100, 1) 
-		_00hs,(100, 1) 
-	SUCCESSORS
-		rear_left_nacelle1_vector_quat,(100, 4) 
-
-rear_left_nacelle1_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7ff0599dc5e0>, rear_wing_actuation_model.rear_left_nacelle1_vector_quat
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ha
-	SUCCESSORS
-		_00hv
-
-_00hc, <csdl.lang.output.Output object at 0x7ff0599dcbb0>, rear_wing_actuation_model._00hc
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hb
-	SUCCESSORS
-		_00hd
-
-_00hd, <csdl.operations.sin.sin object at 0x7ff0599dcb80>
-	PREDECESSORS
-		_00hc,(100, 1) 
-	SUCCESSORS
-		_00he,(100, 1) 
-
-_00he, <csdl.lang.output.Output object at 0x7ff0599dcc10>, rear_wing_actuation_model._00he
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hd
-	SUCCESSORS
-		_00hf
-
-_00hg, <csdl.lang.output.Output object at 0x7ff0599dcc40>, rear_wing_actuation_model._00hg
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hf
-	SUCCESSORS
-		_00ha
-
-_00hi, <csdl.lang.output.Output object at 0x7ff0599dcca0>, rear_wing_actuation_model._00hi
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hh
-	SUCCESSORS
-		_00hj
-
-_00hj, <csdl.operations.sin.sin object at 0x7ff0599dcd00>
-	PREDECESSORS
-		_00hi,(100, 1) 
-	SUCCESSORS
-		_00hk,(100, 1) 
-
-_00hk, <csdl.lang.output.Output object at 0x7ff0599dccd0>, rear_wing_actuation_model._00hk
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hj
-	SUCCESSORS
-		_00hl
-
-_00hm, <csdl.lang.output.Output object at 0x7ff0599dcd30>, rear_wing_actuation_model._00hm
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hl
-	SUCCESSORS
-		_00ha
-
-_00ho, <csdl.lang.output.Output object at 0x7ff0599dcdc0>, rear_wing_actuation_model._00ho
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hn
-	SUCCESSORS
-		_00hp
-
-_00hp, <csdl.operations.sin.sin object at 0x7ff0599dce20>
-	PREDECESSORS
-		_00ho,(100, 1) 
-	SUCCESSORS
-		_00hq,(100, 1) 
-
-_00hq, <csdl.lang.output.Output object at 0x7ff0599dcdf0>, rear_wing_actuation_model._00hq
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hp
-	SUCCESSORS
-		_00hr
-
-_00hs, <csdl.lang.output.Output object at 0x7ff0599dce50>, rear_wing_actuation_model._00hs
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hr
-	SUCCESSORS
-		_00ha
-
-_00hu, <csdl.lang.output.Output object at 0x7ff0599dcee0>, rear_wing_actuation_model._00hu
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00ht
-	SUCCESSORS
-		_00hx
-
-_00gH, <csdl.lang.output.Output object at 0x7ff0599dc580>, rear_wing_actuation_model._00gH
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00gG
-	SUCCESSORS
-		_00ht
-
-rear_left_nacelle1_origin_rotated_VSP, <csdl.lang.output.Output object at 0x7ff0599dcf70>, rear_wing_actuation_model.rear_left_nacelle1_origin_rotated_VSP
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hx
 	SUCCESSORS
 		_00hA
+		_00hF
+		_00hL
+		_00hR
+		_00hX
+		_00i1
+		_00i7
+		_00id
+		_00iM
+		_00iR
+		_00iX
+		_00j2
+		_00j8
+		_00jd
+		_00jj
+		_00jp
+		_00jY
+		_00k2
+		_00k8
+		_00ke
+		_00kk
+		_00kp
+		_00kv
+		_00kB
 
-_00hA, <csdl.operations.decompose.decompose object at 0x7ff059ce2070>
+_00hA, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba2b0>
 	PREDECESSORS
-		rear_left_nacelle1_origin_rotated_VSP,(100, 3) 
+		front_actuation_angle,(10, 1) 
 	SUCCESSORS
-		_00hB,(100, 1) 
-		_00hD,(100, 1) 
-		_00hE,(100, 1) 
+		_00hB,(10, 1) 
 
-_00hB, <csdl.lang.output.Output object at 0x7ff059ce20d0>, rear_wing_actuation_model._00hB
+_00hF, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba370>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00hG,(10, 1) 
+
+_00hL, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba4c0>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00hM,(10, 1) 
+
+_00hR, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba5e0>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00hS,(10, 1) 
+
+_00hX, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba700>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00hY,(10, 1) 
+
+_00i1, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba7f0>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00i2,(10, 1) 
+
+_00i7, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba910>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00i8,(10, 1) 
+
+_00id, <csdl.operations.power_combination.power_combination object at 0x7f92d12baa30>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00ie,(10, 1) 
+
+_00iM, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab400>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00iN,(10, 1) 
+
+_00iR, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab4c0>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00iS,(10, 1) 
+
+_00iX, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab610>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00iY,(10, 1) 
+
+_00j2, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab730>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00j3,(10, 1) 
+
+_00j8, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab850>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00j9,(10, 1) 
+
+_00jd, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab940>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00je,(10, 1) 
+
+_00jj, <csdl.operations.power_combination.power_combination object at 0x7f92d12aba60>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00jk,(10, 1) 
+
+_00jp, <csdl.operations.power_combination.power_combination object at 0x7f92d12abb80>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00jq,(10, 1) 
+
+_00jY, <csdl.operations.power_combination.power_combination object at 0x7f92d12a8250>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00jZ,(10, 1) 
+
+_00k2, <csdl.operations.power_combination.power_combination object at 0x7f92d12a8310>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00k3,(10, 1) 
+
+_00k8, <csdl.operations.power_combination.power_combination object at 0x7f92d12a8460>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00k9,(10, 1) 
+
+_00ke, <csdl.operations.power_combination.power_combination object at 0x7f92d12a8580>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00kf,(10, 1) 
+
+_00kk, <csdl.operations.power_combination.power_combination object at 0x7f92d12a86a0>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00kl,(10, 1) 
+
+_00kp, <csdl.operations.power_combination.power_combination object at 0x7f92d12a8790>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00kq,(10, 1) 
+
+_00kv, <csdl.operations.power_combination.power_combination object at 0x7f92d12a88b0>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00kw,(10, 1) 
+
+_00kB, <csdl.operations.power_combination.power_combination object at 0x7f92d128dfd0>
+	PREDECESSORS
+		front_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00kC,(10, 1) 
+
+front_wing_rotation_axis_x, <csdl.lang.input.Input object at 0x7f92d12ba0d0>, front_wing_actuation_model.front_wing_rotation_axis_x
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00hJ
+		_00i5
+		_00iV
+		_00jh
+		_00k6
+		_00kt
+
+_00hJ, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba430>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(10, 1) 
+		_00hI,(10, 1) 
+	SUCCESSORS
+		_00hK,(10, 1) 
+
+_00i5, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba880>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(10, 1) 
+		_00i4,(10, 1) 
+	SUCCESSORS
+		_00i6,(10, 1) 
+
+_00iV, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab580>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(10, 1) 
+		_00iU,(10, 1) 
+	SUCCESSORS
+		_00iW,(10, 1) 
+
+_00jh, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab9d0>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(10, 1) 
+		_00jg,(10, 1) 
+	SUCCESSORS
+		_00ji,(10, 1) 
+
+_00k6, <csdl.operations.power_combination.power_combination object at 0x7f92d12a83d0>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(10, 1) 
+		_00k5,(10, 1) 
+	SUCCESSORS
+		_00k7,(10, 1) 
+
+_00kt, <csdl.operations.power_combination.power_combination object at 0x7f92d12a8820>
+	PREDECESSORS
+		front_wing_rotation_axis_x,(10, 1) 
+		_00ks,(10, 1) 
+	SUCCESSORS
+		_00ku,(10, 1) 
+
+front_wing_rotation_axis_y, <csdl.lang.input.Input object at 0x7f92d12ba100>, front_wing_actuation_model.front_wing_rotation_axis_y
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00hP
+		_00ib
+		_00j0
+		_00jn
+		_00kc
+		_00kz
+
+_00hP, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba5b0>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(10, 1) 
+		_00hO,(10, 1) 
+	SUCCESSORS
+		_00hQ,(10, 1) 
+
+_00ib, <csdl.operations.power_combination.power_combination object at 0x7f92d12baa00>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(10, 1) 
+		_00ia,(10, 1) 
+	SUCCESSORS
+		_00ic,(10, 1) 
+
+_00j0, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab700>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(10, 1) 
+		_00i_,(10, 1) 
+	SUCCESSORS
+		_00j1,(10, 1) 
+
+_00jn, <csdl.operations.power_combination.power_combination object at 0x7f92d12abb50>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(10, 1) 
+		_00jm,(10, 1) 
+	SUCCESSORS
+		_00jo,(10, 1) 
+
+_00kc, <csdl.operations.power_combination.power_combination object at 0x7f92d12a8550>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(10, 1) 
+		_00kb,(10, 1) 
+	SUCCESSORS
+		_00kd,(10, 1) 
+
+_00kz, <csdl.operations.power_combination.power_combination object at 0x7f92d128dfa0>
+	PREDECESSORS
+		front_wing_rotation_axis_y,(10, 1) 
+		_00ky,(10, 1) 
+	SUCCESSORS
+		_00kA,(10, 1) 
+
+front_wing_rotation_axis_z, <csdl.lang.input.Input object at 0x7f92d12ba130>, front_wing_actuation_model.front_wing_rotation_axis_z
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00hV
+		_00ih
+		_00j6
+		_00jt
+		_00ki
+		_00kF
+
+_00hV, <csdl.operations.power_combination.power_combination object at 0x7f92d12ba6d0>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(10, 1) 
+		_00hU,(10, 1) 
+	SUCCESSORS
+		_00hW,(10, 1) 
+
+_00ih, <csdl.operations.power_combination.power_combination object at 0x7f92d12bab20>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(10, 1) 
+		_00ig,(10, 1) 
+	SUCCESSORS
+		_00ii,(10, 1) 
+
+_00j6, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab820>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(10, 1) 
+		_00j5,(10, 1) 
+	SUCCESSORS
+		_00j7,(10, 1) 
+
+_00jt, <csdl.operations.power_combination.power_combination object at 0x7f92d12abc70>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(10, 1) 
+		_00js,(10, 1) 
+	SUCCESSORS
+		_00ju,(10, 1) 
+
+_00ki, <csdl.operations.power_combination.power_combination object at 0x7f92d12a8670>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(10, 1) 
+		_00kh,(10, 1) 
+	SUCCESSORS
+		_00kj,(10, 1) 
+
+_00kF, <csdl.operations.power_combination.power_combination object at 0x7f92d1286100>
+	PREDECESSORS
+		front_wing_rotation_axis_z,(10, 1) 
+		_00kE,(10, 1) 
+	SUCCESSORS
+		_00kG,(10, 1) 
+
+front_left_nacelle1_axis_origin_pt, <csdl.lang.input.Input object at 0x7f92d12ba160>, front_wing_actuation_model.front_left_nacelle1_axis_origin_pt
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00hw
+		_00in
+
+_00hw, <csdl.operations.linear_combination.linear_combination object at 0x7f92d12ba1f0>
+	PREDECESSORS
+		front_left_nacelle1_axis_origin_pt,(10, 3) 
+		front_left_nacelle1_origin,(10, 3) 
+	SUCCESSORS
+		_00hx,(10, 3) 
+
+_00in, <csdl.operations.linear_combination.linear_combination object at 0x7f92d12bac40>
+	PREDECESSORS
+		front_left_nacelle1_axis_origin_pt,(10, 3) 
+		_00ik,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle1_origin_rotated_VSP,(10, 3) 
+
+front_left_nacelle1_origin, <csdl.lang.input.Input object at 0x7f92d12ba190>, front_wing_actuation_model.front_left_nacelle1_origin
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00hw
+
+front_left_nacelle1_vector, <csdl.lang.input.Input object at 0x7f92d12ba1c0>, front_wing_actuation_model.front_left_nacelle1_vector
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00il
+
+_00il, <csdl.operations.quatrotvec.quatrotvec object at 0x7f92d12babe0>
+	PREDECESSORS
+		front_left_nacelle1_vector,(10, 3) 
+		front_left_nacelle1_vector_quat,(10, 4) 
+	SUCCESSORS
+		front_left_nacelle1_vector_rotated_VSP,(10, 3) 
+
+front_left_nacelle2_axis_origin_pt, <csdl.lang.input.Input object at 0x7f92d12ab2b0>, front_wing_actuation_model.front_left_nacelle2_axis_origin_pt
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00iI
+		_00jz
+
+_00iI, <csdl.operations.linear_combination.linear_combination object at 0x7f92d12ab310>
+	PREDECESSORS
+		front_left_nacelle2_axis_origin_pt,(10, 3) 
+		front_left_nacelle2_origin,(10, 3) 
+	SUCCESSORS
+		_00iJ,(10, 3) 
+
+_00jz, <csdl.operations.linear_combination.linear_combination object at 0x7f92d12abd90>
+	PREDECESSORS
+		front_left_nacelle2_axis_origin_pt,(10, 3) 
+		_00jw,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle2_origin_rotated_VSP,(10, 3) 
+
+front_left_nacelle2_origin, <csdl.lang.input.Input object at 0x7f92d12ab280>, front_wing_actuation_model.front_left_nacelle2_origin
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00iI
+
+front_left_nacelle2_vector, <csdl.lang.input.Input object at 0x7f92d12ab340>, front_wing_actuation_model.front_left_nacelle2_vector
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00jx
+
+_00jx, <csdl.operations.quatrotvec.quatrotvec object at 0x7f92d12abd30>
+	PREDECESSORS
+		front_left_nacelle2_vector,(10, 3) 
+		front_left_nacelle2_vector_quat,(10, 4) 
+	SUCCESSORS
+		front_left_nacelle2_vector_rotated_VSP,(10, 3) 
+
+front_left_nacelle3_axis_origin_pt, <csdl.lang.input.Input object at 0x7f92d12a8100>, front_wing_actuation_model.front_left_nacelle3_axis_origin_pt
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00jU
+		_00kL
+
+_00jU, <csdl.operations.linear_combination.linear_combination object at 0x7f92d12a8160>
+	PREDECESSORS
+		front_left_nacelle3_axis_origin_pt,(10, 3) 
+		front_left_nacelle3_origin,(10, 3) 
+	SUCCESSORS
+		_00jV,(10, 3) 
+
+_00kL, <csdl.operations.linear_combination.linear_combination object at 0x7f92d1286220>
+	PREDECESSORS
+		front_left_nacelle3_axis_origin_pt,(10, 3) 
+		_00kI,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle3_origin_rotated_VSP,(10, 3) 
+
+front_left_nacelle3_origin, <csdl.lang.input.Input object at 0x7f92d12a80d0>, front_wing_actuation_model.front_left_nacelle3_origin
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00jU
+
+front_left_nacelle3_vector, <csdl.lang.input.Input object at 0x7f92d12a8190>, front_wing_actuation_model.front_left_nacelle3_vector
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00kJ
+
+_00kJ, <csdl.operations.quatrotvec.quatrotvec object at 0x7f92d12861c0>
+	PREDECESSORS
+		front_left_nacelle3_vector,(10, 3) 
+		front_left_nacelle3_vector_quat,(10, 4) 
+	SUCCESSORS
+		front_left_nacelle3_vector_rotated_VSP,(10, 3) 
+
+_00hB, <csdl.lang.output.Output object at 0x7f92d12ba2e0>, front_wing_actuation_model._00hB
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
@@ -2354,1210 +619,2948 @@ _00hB, <csdl.lang.output.Output object at 0x7ff059ce20d0>, rear_wing_actuation_m
 	SUCCESSORS
 		_00hC
 
-_00hD, <csdl.lang.output.Output object at 0x7ff059ce20a0>, rear_wing_actuation_model._00hD
+_00hC, <csdl.operations.cos.cos object at 0x7f92d12ba310>
+	PREDECESSORS
+		_00hB,(10, 1) 
+	SUCCESSORS
+		_00hD,(10, 1) 
+
+_00hD, <csdl.lang.output.Output object at 0x7f92d12ba340>, front_wing_actuation_model._00hD
 	CONNECTED TO: False
 	PROMOTED TO: False
-	PREDECESSORS
-		_00hA
-	SUCCESSORS
-		_00hC
-
-_00hE, <csdl.lang.output.Output object at 0x7ff059ce21c0>, rear_wing_actuation_model._00hE
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hA
-	SUCCESSORS
-		_00hC
-
-_00hC, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059ce2100>
-	PREDECESSORS
-		_00hB,(100, 1) 
-		_00hD,(100, 1) 
-		_00hE,(100, 1) 
-	SUCCESSORS
-		rear_left_nacelle1_origin_rotated_NED,(100, 3) 
-
-rear_left_nacelle1_origin_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7ff0599dcfd0>, rear_wing_actuation_model.rear_left_nacelle1_origin_rotated_NED
-	CONNECTED TO: False
-	PROMOTED TO: True
-		rear_left_nacelle1_origin_rotated_NED, simple_forces_moments_model.rear_left_nacelle1_origin_rotated_NED
 	PREDECESSORS
 		_00hC
 	SUCCESSORS
-		_00jE
+		_00hE
 
-rear_left_nacelle1_vector_rotated_VSP, <csdl.lang.output.Output object at 0x7ff0599dcf10>, rear_wing_actuation_model.rear_left_nacelle1_vector_rotated_VSP
+_00hE, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12ba3a0>
+	PREDECESSORS
+		_00hD,(10, 1) 
+		_00hK,(10, 1) 
+		_00hQ,(10, 1) 
+		_00hW,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle1_origin_quat,(10, 4) 
+
+front_left_nacelle1_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7f92d12ba250>, front_wing_actuation_model.front_left_nacelle1_origin_quat
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00hv
+		_00hE
 	SUCCESSORS
-		_00hG
+		_00ij
 
-_00hG, <csdl.operations.decompose.decompose object at 0x7ff059ce2130>
-	PREDECESSORS
-		rear_left_nacelle1_vector_rotated_VSP,(100, 3) 
-	SUCCESSORS
-		_00hH,(100, 1) 
-		_00hL,(100, 1) 
-		_00hM,(100, 1) 
-
-_00hH, <csdl.lang.output.Output object at 0x7ff059ce2220>, rear_wing_actuation_model._00hH
+_00hG, <csdl.lang.output.Output object at 0x7f92d12ba400>, front_wing_actuation_model._00hG
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00hG
+		_00hF
 	SUCCESSORS
-		_00hI
+		_00hH
 
-_00hL, <csdl.lang.output.Output object at 0x7ff059ce2250>, rear_wing_actuation_model._00hL
+_00hH, <csdl.operations.sin.sin object at 0x7f92d12ba3d0>
+	PREDECESSORS
+		_00hG,(10, 1) 
+	SUCCESSORS
+		_00hI,(10, 1) 
+
+_00hI, <csdl.lang.output.Output object at 0x7f92d12ba460>, front_wing_actuation_model._00hI
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00hG
+		_00hH
 	SUCCESSORS
-		_00hK
+		_00hJ
 
-_00hM, <csdl.lang.output.Output object at 0x7ff059ce2340>, rear_wing_actuation_model._00hM
+_00hK, <csdl.lang.output.Output object at 0x7f92d12ba490>, front_wing_actuation_model._00hK
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00hG
+		_00hJ
+	SUCCESSORS
+		_00hE
+
+_00hM, <csdl.lang.output.Output object at 0x7f92d12ba4f0>, front_wing_actuation_model._00hM
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00hL
 	SUCCESSORS
 		_00hN
 
-_00hI, <csdl.operations.power_combination.power_combination object at 0x7ff059ce2160>
+_00hN, <csdl.operations.sin.sin object at 0x7f92d12ba550>
 	PREDECESSORS
-		_00hH,(100, 1) 
+		_00hM,(10, 1) 
 	SUCCESSORS
-		_00hJ,(100, 1) 
+		_00hO,(10, 1) 
 
-_00hK, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059ce2280>
-	PREDECESSORS
-		_00hL,(100, 1) 
-		_00hJ,(100, 1) 
-		_00hO,(100, 1) 
-	SUCCESSORS
-		rear_left_nacelle1_vector_rotated_NED,(100, 3) 
-
-_00hN, <csdl.operations.power_combination.power_combination object at 0x7ff059ce2190>
-	PREDECESSORS
-		_00hM,(100, 1) 
-	SUCCESSORS
-		_00hO,(100, 1) 
-
-_00hJ, <csdl.lang.output.Output object at 0x7ff059ce21f0>, rear_wing_actuation_model._00hJ
-	CONNECTED TO: False
-	PROMOTED TO: False
-	PREDECESSORS
-		_00hI
-	SUCCESSORS
-		_00hK
-
-rear_left_nacelle1_vector_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7ff059ce2040>, rear_wing_actuation_model.rear_left_nacelle1_vector_rotated_NED
-	CONNECTED TO: False
-	PROMOTED TO: True
-		rear_left_nacelle1_vector_rotated_NED, simple_forces_moments_model.rear_left_nacelle1_vector_rotated_NED
-	PREDECESSORS
-		_00hK
-	SUCCESSORS
-		_00jC
-
-_00hO, <csdl.lang.output.Output object at 0x7ff059ce22b0>, rear_wing_actuation_model._00hO
+_00hO, <csdl.lang.output.Output object at 0x7f92d12ba520>, front_wing_actuation_model._00hO
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
 		_00hN
 	SUCCESSORS
-		_00hK
+		_00hP
 
-_00i0, <csdl.operations.expand.expand object at 0x7ff059ce24f0>
+_00hQ, <csdl.lang.output.Output object at 0x7f92d12ba580>, front_wing_actuation_model._00hQ
+	CONNECTED TO: False
+	PROMOTED TO: False
 	PREDECESSORS
-		front_left_nacelle1_thrust,(100,) 
+		_00hP
 	SUCCESSORS
-		_00i1,(100, 3) 
+		_00hE
 
-_00i1, <csdl.lang.output.Output object at 0x7ff059ce2520>, simple_forces_moments_model._00i1
+_00hS, <csdl.lang.output.Output object at 0x7f92d12ba610>, front_wing_actuation_model._00hS
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00hR
+	SUCCESSORS
+		_00hT
+
+_00hT, <csdl.operations.sin.sin object at 0x7f92d12ba670>
+	PREDECESSORS
+		_00hS,(10, 1) 
+	SUCCESSORS
+		_00hU,(10, 1) 
+
+_00hU, <csdl.lang.output.Output object at 0x7f92d12ba640>, front_wing_actuation_model._00hU
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00hT
+	SUCCESSORS
+		_00hV
+
+_00hW, <csdl.lang.output.Output object at 0x7f92d12ba6a0>, front_wing_actuation_model._00hW
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00hV
+	SUCCESSORS
+		_00hE
+
+_00ij, <csdl.operations.quatrotvec.quatrotvec object at 0x7f92d12bab50>
+	PREDECESSORS
+		front_left_nacelle1_origin_quat,(10, 4) 
+		_00hx,(10, 3) 
+	SUCCESSORS
+		_00ik,(10, 3) 
+
+_00hY, <csdl.lang.output.Output object at 0x7f92d12ba730>, front_wing_actuation_model._00hY
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00hX
+	SUCCESSORS
+		_00hZ
+
+_00hZ, <csdl.operations.cos.cos object at 0x7f92d12ba790>
+	PREDECESSORS
+		_00hY,(10, 1) 
+	SUCCESSORS
+		_00h_,(10, 1) 
+
+_00h_, <csdl.lang.output.Output object at 0x7f92d12ba760>, front_wing_actuation_model._00h_
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00hZ
+	SUCCESSORS
+		_00i0
+
+_00i0, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12ba7c0>
+	PREDECESSORS
+		_00h_,(10, 1) 
+		_00i6,(10, 1) 
+		_00ic,(10, 1) 
+		_00ii,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle1_vector_quat,(10, 4) 
+
+front_left_nacelle1_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7f92d12ba280>, front_wing_actuation_model.front_left_nacelle1_vector_quat
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
 		_00i0
 	SUCCESSORS
-		_00i2
+		_00il
 
-_00i2, <csdl.operations.power_combination.power_combination object at 0x7ff059ce2490>
-	PREDECESSORS
-		_00i1,(100, 3) 
-		front_left_nacelle1_vector_rotated_NED,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle1_thrust_vector_mult,(100, 3) 
-
-front_left_nacelle1_thrust_vector_mult, <csdl.lang.output.Output object at 0x7ff059ce24c0>, simple_forces_moments_model.front_left_nacelle1_thrust_vector_mult
+_00i2, <csdl.lang.output.Output object at 0x7f92d12ba850>, front_wing_actuation_model._00i2
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00i2
+		_00i1
 	SUCCESSORS
-		_00i8
-		_00i6
+		_00i3
 
-_00i8, <csdl.operations.decompose.decompose object at 0x7ff059cdec10>
+_00i3, <csdl.operations.sin.sin object at 0x7f92d12ba820>
 	PREDECESSORS
-		front_left_nacelle1_thrust_vector_mult,(100, 3) 
+		_00i2,(10, 1) 
 	SUCCESSORS
-		_00i9,(100, 1) 
-		_00id,(100, 1) 
-		_00ih,(100, 1) 
+		_00i4,(10, 1) 
 
-_00i6, <csdl.operations.cross.cross object at 0x7ff059ce2400>
-	PREDECESSORS
-		front_left_nacelle1_thrust_vector_mult,(100, 3) 
-		_00i5,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle1_moments,(100, 3) 
-
-_00i9, <csdl.lang.output.Output object at 0x7ff059cded90>, simple_forces_moments_model._00i9
+_00i4, <csdl.lang.output.Output object at 0x7f92d12ba8b0>, front_wing_actuation_model._00i4
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00i8
+		_00i3
 	SUCCESSORS
-		_00ia
+		_00i5
 
-_00id, <csdl.lang.output.Output object at 0x7ff059cdefa0>, simple_forces_moments_model._00id
+_00i6, <csdl.lang.output.Output object at 0x7f92d12ba8e0>, front_wing_actuation_model._00i6
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00i8
+		_00i5
 	SUCCESSORS
-		_00ie
+		_00i0
 
-_00ih, <csdl.lang.output.Output object at 0x7ff059cdeeb0>, simple_forces_moments_model._00ih
+_00i8, <csdl.lang.output.Output object at 0x7f92d12ba940>, front_wing_actuation_model._00i8
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00i8
+		_00i7
 	SUCCESSORS
-		_00ii
+		_00i9
 
-_00ia, <csdl.operations.reshape.reshape object at 0x7ff059ce23a0>
+_00i9, <csdl.operations.sin.sin object at 0x7f92d12ba9a0>
 	PREDECESSORS
-		_00i9,(100, 1) 
+		_00i8,(10, 1) 
 	SUCCESSORS
-		_00ib,(1, 100, 1) 
+		_00ia,(10, 1) 
 
-_00ie, <csdl.operations.reshape.reshape object at 0x7ff059cded60>
-	PREDECESSORS
-		_00id,(100, 1) 
-	SUCCESSORS
-		_00if,(1, 100, 1) 
-
-_00ii, <csdl.operations.reshape.reshape object at 0x7ff059cdef70>
-	PREDECESSORS
-		_00ih,(100, 1) 
-	SUCCESSORS
-		_00ij,(1, 100, 1) 
-
-_00ib, <csdl.lang.output.Output object at 0x7ff059cdef40>, simple_forces_moments_model._00ib
+_00ia, <csdl.lang.output.Output object at 0x7f92d12ba970>, front_wing_actuation_model._00ia
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ia
+		_00i9
 	SUCCESSORS
-		_00ic
+		_00ib
 
-_00ic, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059cdefd0>
-	PREDECESSORS
-		_00ib,(1, 100, 1) 
-		_00iM,(1, 100, 1) 
-		_00jg,(1, 100, 1) 
-		_00jL,(1, 100, 1) 
-	SUCCESSORS
-		Fx,(4, 100, 1) 
-
-Fx, <csdl.lang.concatenation.Concatenation object at 0x7ff059ce2670>, simple_forces_moments_model.Fx
+_00ic, <csdl.lang.output.Output object at 0x7f92d12ba9d0>, front_wing_actuation_model._00ic
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ic
+		_00ib
+	SUCCESSORS
+		_00i0
+
+_00ie, <csdl.lang.output.Output object at 0x7f92d12baa60>, front_wing_actuation_model._00ie
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00id
+	SUCCESSORS
+		_00if
+
+_00if, <csdl.operations.sin.sin object at 0x7f92d12baac0>
+	PREDECESSORS
+		_00ie,(10, 1) 
+	SUCCESSORS
+		_00ig,(10, 1) 
+
+_00ig, <csdl.lang.output.Output object at 0x7f92d12baa90>, front_wing_actuation_model._00ig
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00if
+	SUCCESSORS
+		_00ih
+
+_00ii, <csdl.lang.output.Output object at 0x7f92d12baaf0>, front_wing_actuation_model._00ii
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ih
+	SUCCESSORS
+		_00i0
+
+_00ik, <csdl.lang.output.Output object at 0x7f92d12bab80>, front_wing_actuation_model._00ik
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ij
+	SUCCESSORS
+		_00in
+
+_00hx, <csdl.lang.output.Output object at 0x7f92d12ba220>, front_wing_actuation_model._00hx
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00hw
+	SUCCESSORS
+		_00ij
+
+front_left_nacelle1_origin_rotated_VSP, <csdl.lang.output.Output object at 0x7f92d12bac10>, front_wing_actuation_model.front_left_nacelle1_origin_rotated_VSP
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00in
+	SUCCESSORS
+		_00iq
+
+_00iq, <csdl.operations.decompose.decompose object at 0x7f92d12bacd0>
+	PREDECESSORS
+		front_left_nacelle1_origin_rotated_VSP,(10, 3) 
+	SUCCESSORS
+		_00ir,(10, 1) 
+		_00it,(10, 1) 
+		_00iu,(10, 1) 
+
+_00ir, <csdl.lang.output.Output object at 0x7f92d12bad30>, front_wing_actuation_model._00ir
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iq
+	SUCCESSORS
+		_00is
+
+_00it, <csdl.lang.output.Output object at 0x7f92d12bad00>, front_wing_actuation_model._00it
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iq
+	SUCCESSORS
+		_00is
+
+_00iu, <csdl.lang.output.Output object at 0x7f92d12bad90>, front_wing_actuation_model._00iu
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iq
+	SUCCESSORS
+		_00is
+
+_00is, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12bad60>
+	PREDECESSORS
+		_00ir,(10, 1) 
+		_00it,(10, 1) 
+		_00iu,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle1_origin_rotated_NED,(10, 3) 
+
+front_left_nacelle1_origin_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7f92d12bac70>, front_wing_actuation_model.front_left_nacelle1_origin_rotated_NED
+	CONNECTED TO: False
+	PROMOTED TO: True
+		front_left_nacelle1_origin_rotated_NED, simple_forces_moments_model.front_left_nacelle1_origin_rotated_NED
+	PREDECESSORS
+		_00is
+	SUCCESSORS
+		_00my
+
+front_left_nacelle1_vector_rotated_VSP, <csdl.lang.output.Output object at 0x7f92d12babb0>, front_wing_actuation_model.front_left_nacelle1_vector_rotated_VSP
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00il
+	SUCCESSORS
+		_00iw
+
+_00iw, <csdl.operations.decompose.decompose object at 0x7f92d12ab100>
+	PREDECESSORS
+		front_left_nacelle1_vector_rotated_VSP,(10, 3) 
+	SUCCESSORS
+		_00ix,(10, 1) 
+		_00iB,(10, 1) 
+		_00iC,(10, 1) 
+
+_00ix, <csdl.lang.output.Output object at 0x7f92d12ab1c0>, front_wing_actuation_model._00ix
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iw
+	SUCCESSORS
+		_00iy
+
+_00iB, <csdl.lang.output.Output object at 0x7f92d12ab1f0>, front_wing_actuation_model._00iB
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iw
+	SUCCESSORS
+		_00iA
+
+_00iC, <csdl.lang.output.Output object at 0x7f92d12ab2e0>, front_wing_actuation_model._00iC
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iw
+	SUCCESSORS
+		_00iD
+
+_00iy, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab130>
+	PREDECESSORS
+		_00ix,(10, 1) 
+	SUCCESSORS
+		_00iz,(10, 1) 
+
+_00iA, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12ab220>
+	PREDECESSORS
+		_00iB,(10, 1) 
+		_00iz,(10, 1) 
+		_00iE,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle1_vector_rotated_NED,(10, 3) 
+
+_00iD, <csdl.operations.power_combination.power_combination object at 0x7f92d12ab160>
+	PREDECESSORS
+		_00iC,(10, 1) 
+	SUCCESSORS
+		_00iE,(10, 1) 
+
+_00iz, <csdl.lang.output.Output object at 0x7f92d12ab190>, front_wing_actuation_model._00iz
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iy
+	SUCCESSORS
+		_00iA
+
+front_left_nacelle1_vector_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7f92d12baca0>, front_wing_actuation_model.front_left_nacelle1_vector_rotated_NED
+	CONNECTED TO: False
+	PROMOTED TO: True
+		front_left_nacelle1_vector_rotated_NED, simple_forces_moments_model.front_left_nacelle1_vector_rotated_NED
+	PREDECESSORS
+		_00iA
+	SUCCESSORS
+		_00mw
+
+_00iE, <csdl.lang.output.Output object at 0x7f92d12ab250>, front_wing_actuation_model._00iE
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iD
+	SUCCESSORS
+		_00iA
+
+_00iN, <csdl.lang.output.Output object at 0x7f92d12ab430>, front_wing_actuation_model._00iN
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iM
+	SUCCESSORS
+		_00iO
+
+_00iO, <csdl.operations.cos.cos object at 0x7f92d12ab460>
+	PREDECESSORS
+		_00iN,(10, 1) 
+	SUCCESSORS
+		_00iP,(10, 1) 
+
+_00iP, <csdl.lang.output.Output object at 0x7f92d12ab490>, front_wing_actuation_model._00iP
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iO
+	SUCCESSORS
+		_00iQ
+
+_00iQ, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12ab4f0>
+	PREDECESSORS
+		_00iP,(10, 1) 
+		_00iW,(10, 1) 
+		_00j1,(10, 1) 
+		_00j7,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle2_origin_quat,(10, 4) 
+
+front_left_nacelle2_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7f92d12ab370>, front_wing_actuation_model.front_left_nacelle2_origin_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iQ
+	SUCCESSORS
+		_00jv
+
+_00iS, <csdl.lang.output.Output object at 0x7f92d12ab550>, front_wing_actuation_model._00iS
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iR
+	SUCCESSORS
+		_00iT
+
+_00iT, <csdl.operations.sin.sin object at 0x7f92d12ab520>
+	PREDECESSORS
+		_00iS,(10, 1) 
+	SUCCESSORS
+		_00iU,(10, 1) 
+
+_00iU, <csdl.lang.output.Output object at 0x7f92d12ab5b0>, front_wing_actuation_model._00iU
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iT
+	SUCCESSORS
+		_00iV
+
+_00iW, <csdl.lang.output.Output object at 0x7f92d12ab5e0>, front_wing_actuation_model._00iW
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iV
+	SUCCESSORS
+		_00iQ
+
+_00iY, <csdl.lang.output.Output object at 0x7f92d12ab640>, front_wing_actuation_model._00iY
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iX
+	SUCCESSORS
+		_00iZ
+
+_00iZ, <csdl.operations.sin.sin object at 0x7f92d12ab6a0>
+	PREDECESSORS
+		_00iY,(10, 1) 
+	SUCCESSORS
+		_00i_,(10, 1) 
+
+_00i_, <csdl.lang.output.Output object at 0x7f92d12ab670>, front_wing_actuation_model._00i_
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iZ
+	SUCCESSORS
+		_00j0
+
+_00j1, <csdl.lang.output.Output object at 0x7f92d12ab6d0>, front_wing_actuation_model._00j1
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00j0
+	SUCCESSORS
+		_00iQ
+
+_00j3, <csdl.lang.output.Output object at 0x7f92d12ab760>, front_wing_actuation_model._00j3
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00j2
+	SUCCESSORS
+		_00j4
+
+_00j4, <csdl.operations.sin.sin object at 0x7f92d12ab7c0>
+	PREDECESSORS
+		_00j3,(10, 1) 
+	SUCCESSORS
+		_00j5,(10, 1) 
+
+_00j5, <csdl.lang.output.Output object at 0x7f92d12ab790>, front_wing_actuation_model._00j5
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00j4
+	SUCCESSORS
+		_00j6
+
+_00j7, <csdl.lang.output.Output object at 0x7f92d12ab7f0>, front_wing_actuation_model._00j7
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00j6
+	SUCCESSORS
+		_00iQ
+
+_00jv, <csdl.operations.quatrotvec.quatrotvec object at 0x7f92d12abca0>
+	PREDECESSORS
+		front_left_nacelle2_origin_quat,(10, 4) 
+		_00iJ,(10, 3) 
+	SUCCESSORS
+		_00jw,(10, 3) 
+
+_00j9, <csdl.lang.output.Output object at 0x7f92d12ab880>, front_wing_actuation_model._00j9
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00j8
+	SUCCESSORS
+		_00ja
+
+_00ja, <csdl.operations.cos.cos object at 0x7f92d12ab8e0>
+	PREDECESSORS
+		_00j9,(10, 1) 
+	SUCCESSORS
+		_00jb,(10, 1) 
+
+_00jb, <csdl.lang.output.Output object at 0x7f92d12ab8b0>, front_wing_actuation_model._00jb
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ja
+	SUCCESSORS
+		_00jc
+
+_00jc, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12ab910>
+	PREDECESSORS
+		_00jb,(10, 1) 
+		_00ji,(10, 1) 
+		_00jo,(10, 1) 
+		_00ju,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle2_vector_quat,(10, 4) 
+
+front_left_nacelle2_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7f92d12ab3d0>, front_wing_actuation_model.front_left_nacelle2_vector_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jc
+	SUCCESSORS
+		_00jx
+
+_00je, <csdl.lang.output.Output object at 0x7f92d12ab9a0>, front_wing_actuation_model._00je
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jd
+	SUCCESSORS
+		_00jf
+
+_00jf, <csdl.operations.sin.sin object at 0x7f92d12ab970>
+	PREDECESSORS
+		_00je,(10, 1) 
+	SUCCESSORS
+		_00jg,(10, 1) 
+
+_00jg, <csdl.lang.output.Output object at 0x7f92d12aba00>, front_wing_actuation_model._00jg
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jf
+	SUCCESSORS
+		_00jh
+
+_00ji, <csdl.lang.output.Output object at 0x7f92d12aba30>, front_wing_actuation_model._00ji
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jh
+	SUCCESSORS
+		_00jc
+
+_00jk, <csdl.lang.output.Output object at 0x7f92d12aba90>, front_wing_actuation_model._00jk
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jj
+	SUCCESSORS
+		_00jl
+
+_00jl, <csdl.operations.sin.sin object at 0x7f92d12abaf0>
+	PREDECESSORS
+		_00jk,(10, 1) 
+	SUCCESSORS
+		_00jm,(10, 1) 
+
+_00jm, <csdl.lang.output.Output object at 0x7f92d12abac0>, front_wing_actuation_model._00jm
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jl
+	SUCCESSORS
+		_00jn
+
+_00jo, <csdl.lang.output.Output object at 0x7f92d12abb20>, front_wing_actuation_model._00jo
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jn
+	SUCCESSORS
+		_00jc
+
+_00jq, <csdl.lang.output.Output object at 0x7f92d12abbb0>, front_wing_actuation_model._00jq
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jp
+	SUCCESSORS
+		_00jr
+
+_00jr, <csdl.operations.sin.sin object at 0x7f92d12abc10>
+	PREDECESSORS
+		_00jq,(10, 1) 
+	SUCCESSORS
+		_00js,(10, 1) 
+
+_00js, <csdl.lang.output.Output object at 0x7f92d12abbe0>, front_wing_actuation_model._00js
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jr
+	SUCCESSORS
+		_00jt
+
+_00ju, <csdl.lang.output.Output object at 0x7f92d12abc40>, front_wing_actuation_model._00ju
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jt
+	SUCCESSORS
+		_00jc
+
+_00jw, <csdl.lang.output.Output object at 0x7f92d12abcd0>, front_wing_actuation_model._00jw
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jv
+	SUCCESSORS
+		_00jz
+
+_00iJ, <csdl.lang.output.Output object at 0x7f92d12ab3a0>, front_wing_actuation_model._00iJ
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00iI
+	SUCCESSORS
+		_00jv
+
+front_left_nacelle2_origin_rotated_VSP, <csdl.lang.output.Output object at 0x7f92d12abd60>, front_wing_actuation_model.front_left_nacelle2_origin_rotated_VSP
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jz
+	SUCCESSORS
+		_00jC
+
+_00jC, <csdl.operations.decompose.decompose object at 0x7f92d12abe20>
+	PREDECESSORS
+		front_left_nacelle2_origin_rotated_VSP,(10, 3) 
+	SUCCESSORS
+		_00jD,(10, 1) 
+		_00jF,(10, 1) 
+		_00jG,(10, 1) 
+
+_00jD, <csdl.lang.output.Output object at 0x7f92d12abe80>, front_wing_actuation_model._00jD
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jC
+	SUCCESSORS
+		_00jE
+
+_00jF, <csdl.lang.output.Output object at 0x7f92d12abe50>, front_wing_actuation_model._00jF
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jC
+	SUCCESSORS
+		_00jE
+
+_00jG, <csdl.lang.output.Output object at 0x7f92d12abf70>, front_wing_actuation_model._00jG
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jC
+	SUCCESSORS
+		_00jE
+
+_00jE, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12abeb0>
+	PREDECESSORS
+		_00jD,(10, 1) 
+		_00jF,(10, 1) 
+		_00jG,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle2_origin_rotated_NED,(10, 3) 
+
+front_left_nacelle2_origin_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7f92d12abdc0>, front_wing_actuation_model.front_left_nacelle2_origin_rotated_NED
+	CONNECTED TO: False
+	PROMOTED TO: True
+		front_left_nacelle2_origin_rotated_NED, simple_forces_moments_model.front_left_nacelle2_origin_rotated_NED
+	PREDECESSORS
+		_00jE
+	SUCCESSORS
+		_00n8
+
+front_left_nacelle2_vector_rotated_VSP, <csdl.lang.output.Output object at 0x7f92d12abd00>, front_wing_actuation_model.front_left_nacelle2_vector_rotated_VSP
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jx
+	SUCCESSORS
+		_00jI
+
+_00jI, <csdl.operations.decompose.decompose object at 0x7f92d12abee0>
+	PREDECESSORS
+		front_left_nacelle2_vector_rotated_VSP,(10, 3) 
+	SUCCESSORS
+		_00jJ,(10, 1) 
+		_00jN,(10, 1) 
+		_00jO,(10, 1) 
+
+_00jJ, <csdl.lang.output.Output object at 0x7f92d12abfd0>, front_wing_actuation_model._00jJ
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jI
+	SUCCESSORS
+		_00jK
+
+_00jN, <csdl.lang.output.Output object at 0x7f92d12a8040>, front_wing_actuation_model._00jN
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jI
+	SUCCESSORS
+		_00jM
+
+_00jO, <csdl.lang.output.Output object at 0x7f92d12a8130>, front_wing_actuation_model._00jO
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jI
+	SUCCESSORS
+		_00jP
+
+_00jK, <csdl.operations.power_combination.power_combination object at 0x7f92d12abf10>
+	PREDECESSORS
+		_00jJ,(10, 1) 
+	SUCCESSORS
+		_00jL,(10, 1) 
+
+_00jM, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12a8070>
+	PREDECESSORS
+		_00jN,(10, 1) 
+		_00jL,(10, 1) 
+		_00jQ,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle2_vector_rotated_NED,(10, 3) 
+
+_00jP, <csdl.operations.power_combination.power_combination object at 0x7f92d12abf40>
+	PREDECESSORS
+		_00jO,(10, 1) 
+	SUCCESSORS
+		_00jQ,(10, 1) 
+
+_00jL, <csdl.lang.output.Output object at 0x7f92d12abfa0>, front_wing_actuation_model._00jL
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jK
+	SUCCESSORS
+		_00jM
+
+front_left_nacelle2_vector_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7f92d12abdf0>, front_wing_actuation_model.front_left_nacelle2_vector_rotated_NED
+	CONNECTED TO: False
+	PROMOTED TO: True
+		front_left_nacelle2_vector_rotated_NED, simple_forces_moments_model.front_left_nacelle2_vector_rotated_NED
+	PREDECESSORS
+		_00jM
+	SUCCESSORS
+		_00n6
+
+_00jQ, <csdl.lang.output.Output object at 0x7f92d12a80a0>, front_wing_actuation_model._00jQ
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jP
+	SUCCESSORS
+		_00jM
+
+_00jZ, <csdl.lang.output.Output object at 0x7f92d12a8280>, front_wing_actuation_model._00jZ
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00jY
+	SUCCESSORS
+		_00j_
+
+_00j_, <csdl.operations.cos.cos object at 0x7f92d12a82b0>
+	PREDECESSORS
+		_00jZ,(10, 1) 
+	SUCCESSORS
+		_00k0,(10, 1) 
+
+_00k0, <csdl.lang.output.Output object at 0x7f92d12a82e0>, front_wing_actuation_model._00k0
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00j_
 	SUCCESSORS
 		_00k1
 
-_00iB, <csdl.operations.expand.expand object at 0x7ff0599eb130>
+_00k1, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12a8340>
 	PREDECESSORS
-		front_left_nacelle2_thrust,(100,) 
+		_00k0,(10, 1) 
+		_00k7,(10, 1) 
+		_00kd,(10, 1) 
+		_00kj,(10, 1) 
 	SUCCESSORS
-		_00iC,(100, 3) 
+		front_left_nacelle3_origin_quat,(10, 4) 
 
-_00iC, <csdl.lang.output.Output object at 0x7ff0599eb100>, simple_forces_moments_model._00iC
+front_left_nacelle3_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7f92d12a81c0>, front_wing_actuation_model.front_left_nacelle3_origin_quat
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iB
+		_00k1
 	SUCCESSORS
-		_00iD
+		_00kH
 
-_00iD, <csdl.operations.power_combination.power_combination object at 0x7ff0599eb160>
-	PREDECESSORS
-		_00iC,(100, 3) 
-		front_left_nacelle2_vector_rotated_NED,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle2_thrust_vector_mult,(100, 3) 
-
-front_left_nacelle2_thrust_vector_mult, <csdl.lang.output.Output object at 0x7ff0599eb190>, simple_forces_moments_model.front_left_nacelle2_thrust_vector_mult
+_00k3, <csdl.lang.output.Output object at 0x7f92d12a83a0>, front_wing_actuation_model._00k3
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iD
+		_00k2
 	SUCCESSORS
-		_00iJ
-		_00iH
+		_00k4
 
-_00iJ, <csdl.operations.decompose.decompose object at 0x7ff0599eb2b0>
+_00k4, <csdl.operations.sin.sin object at 0x7f92d12a8370>
 	PREDECESSORS
-		front_left_nacelle2_thrust_vector_mult,(100, 3) 
+		_00k3,(10, 1) 
 	SUCCESSORS
-		_00iK,(100, 1) 
-		_00iN,(100, 1) 
-		_00iQ,(100, 1) 
+		_00k5,(10, 1) 
 
-_00iH, <csdl.operations.cross.cross object at 0x7ff0599eb220>
-	PREDECESSORS
-		front_left_nacelle2_thrust_vector_mult,(100, 3) 
-		_00iG,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle2_moments,(100, 3) 
-
-_00iK, <csdl.lang.output.Output object at 0x7ff0599eb310>, simple_forces_moments_model._00iK
+_00k5, <csdl.lang.output.Output object at 0x7f92d12a8400>, front_wing_actuation_model._00k5
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iJ
+		_00k4
 	SUCCESSORS
-		_00iL
+		_00k6
 
-_00iN, <csdl.lang.output.Output object at 0x7ff0599eb370>, simple_forces_moments_model._00iN
+_00k7, <csdl.lang.output.Output object at 0x7f92d12a8430>, front_wing_actuation_model._00k7
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iJ
+		_00k6
 	SUCCESSORS
-		_00iO
+		_00k1
 
-_00iQ, <csdl.lang.output.Output object at 0x7ff0599eb400>, simple_forces_moments_model._00iQ
+_00k9, <csdl.lang.output.Output object at 0x7f92d12a8490>, front_wing_actuation_model._00k9
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iJ
+		_00k8
 	SUCCESSORS
-		_00iR
+		_00ka
 
-_00iL, <csdl.operations.reshape.reshape object at 0x7ff0599eb280>
+_00ka, <csdl.operations.sin.sin object at 0x7f92d12a84f0>
 	PREDECESSORS
-		_00iK,(100, 1) 
+		_00k9,(10, 1) 
 	SUCCESSORS
-		_00iM,(1, 100, 1) 
+		_00kb,(10, 1) 
 
-_00iO, <csdl.operations.reshape.reshape object at 0x7ff0599eb2e0>
-	PREDECESSORS
-		_00iN,(100, 1) 
-	SUCCESSORS
-		_00iP,(1, 100, 1) 
-
-_00iR, <csdl.operations.reshape.reshape object at 0x7ff0599eb3a0>
-	PREDECESSORS
-		_00iQ,(100, 1) 
-	SUCCESSORS
-		_00iS,(1, 100, 1) 
-
-_00iM, <csdl.lang.output.Output object at 0x7ff0599eb340>, simple_forces_moments_model._00iM
+_00kb, <csdl.lang.output.Output object at 0x7f92d12a84c0>, front_wing_actuation_model._00kb
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iL
+		_00ka
 	SUCCESSORS
-		_00ic
+		_00kc
 
-_00j5, <csdl.operations.expand.expand object at 0x7ff0599eb6a0>
-	PREDECESSORS
-		front_left_nacelle3_thrust,(100,) 
-	SUCCESSORS
-		_00j6,(100, 3) 
-
-_00j6, <csdl.lang.output.Output object at 0x7ff0599eb700>, simple_forces_moments_model._00j6
+_00kd, <csdl.lang.output.Output object at 0x7f92d12a8520>, front_wing_actuation_model._00kd
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00j5
+		_00kc
 	SUCCESSORS
-		_00j7
+		_00k1
 
-_00j7, <csdl.operations.power_combination.power_combination object at 0x7ff0599eb790>
-	PREDECESSORS
-		_00j6,(100, 3) 
-		front_left_nacelle3_vector_rotated_NED,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle3_thrust_vector_mult,(100, 3) 
-
-front_left_nacelle3_thrust_vector_mult, <csdl.lang.output.Output object at 0x7ff0599eb760>, simple_forces_moments_model.front_left_nacelle3_thrust_vector_mult
+_00kf, <csdl.lang.output.Output object at 0x7f92d12a85b0>, front_wing_actuation_model._00kf
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00j7
+		_00ke
 	SUCCESSORS
-		_00jd
-		_00jb
+		_00kg
 
-_00jd, <csdl.operations.decompose.decompose object at 0x7ff0599eb880>
+_00kg, <csdl.operations.sin.sin object at 0x7f92d12a8610>
 	PREDECESSORS
-		front_left_nacelle3_thrust_vector_mult,(100, 3) 
+		_00kf,(10, 1) 
 	SUCCESSORS
-		_00je,(100, 1) 
-		_00jh,(100, 1) 
-		_00jk,(100, 1) 
+		_00kh,(10, 1) 
 
-_00jb, <csdl.operations.cross.cross object at 0x7ff0599eb7c0>
-	PREDECESSORS
-		front_left_nacelle3_thrust_vector_mult,(100, 3) 
-		_00ja,(100, 3) 
-	SUCCESSORS
-		front_left_nacelle3_moments,(100, 3) 
-
-_00je, <csdl.lang.output.Output object at 0x7ff0599eb8e0>, simple_forces_moments_model._00je
+_00kh, <csdl.lang.output.Output object at 0x7f92d12a85e0>, front_wing_actuation_model._00kh
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jd
+		_00kg
 	SUCCESSORS
-		_00jf
+		_00ki
 
-_00jh, <csdl.lang.output.Output object at 0x7ff0599eb940>, simple_forces_moments_model._00jh
+_00kj, <csdl.lang.output.Output object at 0x7f92d12a8640>, front_wing_actuation_model._00kj
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jd
+		_00ki
 	SUCCESSORS
-		_00ji
+		_00k1
 
-_00jk, <csdl.lang.output.Output object at 0x7ff0599eb9d0>, simple_forces_moments_model._00jk
+_00kH, <csdl.operations.quatrotvec.quatrotvec object at 0x7f92d1286130>
+	PREDECESSORS
+		front_left_nacelle3_origin_quat,(10, 4) 
+		_00jV,(10, 3) 
+	SUCCESSORS
+		_00kI,(10, 3) 
+
+_00kl, <csdl.lang.output.Output object at 0x7f92d12a86d0>, front_wing_actuation_model._00kl
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jd
+		_00kk
 	SUCCESSORS
-		_00jl
+		_00km
 
-_00jf, <csdl.operations.reshape.reshape object at 0x7ff0599eb850>
+_00km, <csdl.operations.cos.cos object at 0x7f92d12a8730>
 	PREDECESSORS
-		_00je,(100, 1) 
+		_00kl,(10, 1) 
 	SUCCESSORS
-		_00jg,(1, 100, 1) 
+		_00kn,(10, 1) 
 
-_00ji, <csdl.operations.reshape.reshape object at 0x7ff0599eb8b0>
-	PREDECESSORS
-		_00jh,(100, 1) 
-	SUCCESSORS
-		_00jj,(1, 100, 1) 
-
-_00jl, <csdl.operations.reshape.reshape object at 0x7ff0599eb970>
-	PREDECESSORS
-		_00jk,(100, 1) 
-	SUCCESSORS
-		_00jm,(1, 100, 1) 
-
-_00jg, <csdl.lang.output.Output object at 0x7ff0599eb910>, simple_forces_moments_model._00jg
+_00kn, <csdl.lang.output.Output object at 0x7f92d12a8700>, front_wing_actuation_model._00kn
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jf
+		_00km
 	SUCCESSORS
-		_00ic
+		_00ko
 
-_00jA, <csdl.operations.expand.expand object at 0x7ff0599ebc70>
+_00ko, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12a8760>
 	PREDECESSORS
-		rear_left_nacelle1_thrust,(100,) 
+		_00kn,(10, 1) 
+		_00ku,(10, 1) 
+		_00kA,(10, 1) 
+		_00kG,(10, 1) 
 	SUCCESSORS
-		_00jB,(100, 3) 
+		front_left_nacelle3_vector_quat,(10, 4) 
 
-_00jB, <csdl.lang.output.Output object at 0x7ff0599ebcd0>, simple_forces_moments_model._00jB
+front_left_nacelle3_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7f92d12a8220>, front_wing_actuation_model.front_left_nacelle3_vector_quat
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jA
+		_00ko
 	SUCCESSORS
-		_00jC
+		_00kJ
 
-_00jC, <csdl.operations.power_combination.power_combination object at 0x7ff0599ebd60>
-	PREDECESSORS
-		_00jB,(100, 3) 
-		rear_left_nacelle1_vector_rotated_NED,(100, 3) 
-	SUCCESSORS
-		rear_left_nacelle1_thrust_vector_mult,(100, 3) 
-
-rear_left_nacelle1_thrust_vector_mult, <csdl.lang.output.Output object at 0x7ff0599ebd30>, simple_forces_moments_model.rear_left_nacelle1_thrust_vector_mult
+_00kq, <csdl.lang.output.Output object at 0x7f92d12a87f0>, front_wing_actuation_model._00kq
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jC
+		_00kp
 	SUCCESSORS
-		_00jI
-		_00jG
+		_00kr
 
-_00jI, <csdl.operations.decompose.decompose object at 0x7ff0599ebe50>
+_00kr, <csdl.operations.sin.sin object at 0x7f92d12a87c0>
 	PREDECESSORS
-		rear_left_nacelle1_thrust_vector_mult,(100, 3) 
+		_00kq,(10, 1) 
 	SUCCESSORS
-		_00jJ,(100, 1) 
-		_00jM,(100, 1) 
-		_00jP,(100, 1) 
+		_00ks,(10, 1) 
 
-_00jG, <csdl.operations.cross.cross object at 0x7ff0599ebd90>
-	PREDECESSORS
-		rear_left_nacelle1_thrust_vector_mult,(100, 3) 
-		_00jF,(100, 3) 
-	SUCCESSORS
-		rear_left_nacelle1_moments,(100, 3) 
-
-_00jJ, <csdl.lang.output.Output object at 0x7ff0599ebeb0>, simple_forces_moments_model._00jJ
+_00ks, <csdl.lang.output.Output object at 0x7f92d12a8850>, front_wing_actuation_model._00ks
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jI
+		_00kr
 	SUCCESSORS
-		_00jK
+		_00kt
 
-_00jM, <csdl.lang.output.Output object at 0x7ff0599ebf10>, simple_forces_moments_model._00jM
+_00ku, <csdl.lang.output.Output object at 0x7f92d12a8880>, front_wing_actuation_model._00ku
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jI
+		_00kt
 	SUCCESSORS
-		_00jN
+		_00ko
 
-_00jP, <csdl.lang.output.Output object at 0x7ff0599ebfa0>, simple_forces_moments_model._00jP
+_00kw, <csdl.lang.output.Output object at 0x7f92d128dee0>, front_wing_actuation_model._00kw
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jI
+		_00kv
 	SUCCESSORS
-		_00jQ
+		_00kx
 
-_00jK, <csdl.operations.reshape.reshape object at 0x7ff0599ebe20>
+_00kx, <csdl.operations.sin.sin object at 0x7f92d128df40>
 	PREDECESSORS
-		_00jJ,(100, 1) 
+		_00kw,(10, 1) 
 	SUCCESSORS
-		_00jL,(1, 100, 1) 
+		_00ky,(10, 1) 
 
-_00jN, <csdl.operations.reshape.reshape object at 0x7ff0599ebe80>
-	PREDECESSORS
-		_00jM,(100, 1) 
-	SUCCESSORS
-		_00jO,(1, 100, 1) 
-
-_00jQ, <csdl.operations.reshape.reshape object at 0x7ff0599ebf40>
-	PREDECESSORS
-		_00jP,(100, 1) 
-	SUCCESSORS
-		_00jR,(1, 100, 1) 
-
-_00jL, <csdl.lang.output.Output object at 0x7ff0599ebee0>, simple_forces_moments_model._00jL
+_00ky, <csdl.lang.output.Output object at 0x7f92d128df10>, front_wing_actuation_model._00ky
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jK
+		_00kx
 	SUCCESSORS
-		_00ic
+		_00kz
 
-_00k1, <csdl.operations.sum.sum object at 0x7ff0599861c0>
-	PREDECESSORS
-		Fx,(4, 100, 1) 
-	SUCCESSORS
-		total_Fx,(100, 1) 
-
-_00if, <csdl.lang.output.Output object at 0x7ff059cdef10>, simple_forces_moments_model._00if
+_00kA, <csdl.lang.output.Output object at 0x7f92d128df70>, front_wing_actuation_model._00kA
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ie
+		_00kz
 	SUCCESSORS
-		_00ig
+		_00ko
 
-_00ig, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059cdee80>
-	PREDECESSORS
-		_00if,(1, 100, 1) 
-		_00iP,(1, 100, 1) 
-		_00jj,(1, 100, 1) 
-		_00jO,(1, 100, 1) 
-	SUCCESSORS
-		Fy,(4, 100, 1) 
-
-Fy, <csdl.lang.concatenation.Concatenation object at 0x7ff059ce2370>, simple_forces_moments_model.Fy
+_00kC, <csdl.lang.output.Output object at 0x7f92d1286040>, front_wing_actuation_model._00kC
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ig
+		_00kB
 	SUCCESSORS
-		_00k3
+		_00kD
 
-_00iP, <csdl.lang.output.Output object at 0x7ff0599eb3d0>, simple_forces_moments_model._00iP
+_00kD, <csdl.operations.sin.sin object at 0x7f92d12860a0>
+	PREDECESSORS
+		_00kC,(10, 1) 
+	SUCCESSORS
+		_00kE,(10, 1) 
+
+_00kE, <csdl.lang.output.Output object at 0x7f92d1286070>, front_wing_actuation_model._00kE
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iO
+		_00kD
 	SUCCESSORS
-		_00ig
+		_00kF
 
-_00jj, <csdl.lang.output.Output object at 0x7ff0599eb9a0>, simple_forces_moments_model._00jj
+_00kG, <csdl.lang.output.Output object at 0x7f92d12860d0>, front_wing_actuation_model._00kG
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ji
+		_00kF
 	SUCCESSORS
-		_00ig
+		_00ko
 
-_00jO, <csdl.lang.output.Output object at 0x7ff0599ebf70>, simple_forces_moments_model._00jO
+_00kI, <csdl.lang.output.Output object at 0x7f92d1286160>, front_wing_actuation_model._00kI
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jN
+		_00kH
 	SUCCESSORS
-		_00ig
+		_00kL
 
-_00k3, <csdl.operations.sum.sum object at 0x7ff059986220>
-	PREDECESSORS
-		Fy,(4, 100, 1) 
-	SUCCESSORS
-		_00k4,(100, 1) 
-
-_00ij, <csdl.lang.output.Output object at 0x7ff059cdee20>, simple_forces_moments_model._00ij
+_00jV, <csdl.lang.output.Output object at 0x7f92d12a81f0>, front_wing_actuation_model._00jV
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ii
+		_00jU
 	SUCCESSORS
-		_00ik
+		_00kH
 
-_00ik, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059cdedc0>
-	PREDECESSORS
-		_00ij,(1, 100, 1) 
-		_00iS,(1, 100, 1) 
-		_00jm,(1, 100, 1) 
-		_00jR,(1, 100, 1) 
-	SUCCESSORS
-		Fz,(4, 100, 1) 
-
-Fz, <csdl.lang.concatenation.Concatenation object at 0x7ff059ce26a0>, simple_forces_moments_model.Fz
+front_left_nacelle3_origin_rotated_VSP, <csdl.lang.output.Output object at 0x7f92d12861f0>, front_wing_actuation_model.front_left_nacelle3_origin_rotated_VSP
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ik
+		_00kL
 	SUCCESSORS
-		_00k7
+		_00kO
 
-_00iS, <csdl.lang.output.Output object at 0x7ff0599eb490>, simple_forces_moments_model._00iS
+_00kO, <csdl.operations.decompose.decompose object at 0x7f92d12862b0>
+	PREDECESSORS
+		front_left_nacelle3_origin_rotated_VSP,(10, 3) 
+	SUCCESSORS
+		_00kP,(10, 1) 
+		_00kR,(10, 1) 
+		_00kS,(10, 1) 
+
+_00kP, <csdl.lang.output.Output object at 0x7f92d1286310>, front_wing_actuation_model._00kP
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iR
+		_00kO
 	SUCCESSORS
-		_00ik
+		_00kQ
 
-_00jm, <csdl.lang.output.Output object at 0x7ff0599eba60>, simple_forces_moments_model._00jm
+_00kR, <csdl.lang.output.Output object at 0x7f92d12862e0>, front_wing_actuation_model._00kR
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jl
+		_00kO
 	SUCCESSORS
-		_00ik
+		_00kQ
 
-_00jR, <csdl.lang.output.Output object at 0x7ff0599ebfd0>, simple_forces_moments_model._00jR
+_00kS, <csdl.lang.output.Output object at 0x7f92d1286400>, front_wing_actuation_model._00kS
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jQ
+		_00kO
 	SUCCESSORS
-		_00ik
+		_00kQ
 
-_00k7, <csdl.operations.sum.sum object at 0x7ff059986370>
+_00kQ, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d1286340>
 	PREDECESSORS
-		Fz,(4, 100, 1) 
+		_00kP,(10, 1) 
+		_00kR,(10, 1) 
+		_00kS,(10, 1) 
 	SUCCESSORS
-		total_Fz,(100, 1) 
+		front_left_nacelle3_origin_rotated_NED,(10, 3) 
 
-_00i4, <csdl.operations.linear_combination.linear_combination object at 0x7ff059ce2460>
+front_left_nacelle3_origin_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7f92d1286250>, front_wing_actuation_model.front_left_nacelle3_origin_rotated_NED
+	CONNECTED TO: False
+	PROMOTED TO: True
+		front_left_nacelle3_origin_rotated_NED, simple_forces_moments_model.front_left_nacelle3_origin_rotated_NED
 	PREDECESSORS
-		_00hR,(100, 3) 
-		front_left_nacelle1_origin_rotated_NED,(100, 3) 
+		_00kQ
 	SUCCESSORS
-		_00i5,(100, 3) 
+		_00nD
 
-_00i5, <csdl.lang.output.Output object at 0x7ff059ce2430>, simple_forces_moments_model._00i5
+front_left_nacelle3_vector_rotated_VSP, <csdl.lang.output.Output object at 0x7f92d1286190>, front_wing_actuation_model.front_left_nacelle3_vector_rotated_VSP
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00i4
+		_00kJ
 	SUCCESSORS
-		_00i6
+		_00kU
 
-_00hQ, <csdl.operations.expand.expand object at 0x7ff059ce2730>
+_00kU, <csdl.operations.decompose.decompose object at 0x7f92d1286370>
+	PREDECESSORS
+		front_left_nacelle3_vector_rotated_VSP,(10, 3) 
+	SUCCESSORS
+		_00kV,(10, 1) 
+		_00kZ,(10, 1) 
+		_00k_,(10, 1) 
+
+_00kV, <csdl.lang.output.Output object at 0x7f92d1286460>, front_wing_actuation_model._00kV
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00kU
+	SUCCESSORS
+		_00kW
+
+_00kZ, <csdl.lang.output.Output object at 0x7f92d1286490>, front_wing_actuation_model._00kZ
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00kU
+	SUCCESSORS
+		_00kY
+
+_00k_, <csdl.lang.output.Output object at 0x7f92d1286580>, front_wing_actuation_model._00k_
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00kU
+	SUCCESSORS
+		_00l0
+
+_00kW, <csdl.operations.power_combination.power_combination object at 0x7f92d12863a0>
+	PREDECESSORS
+		_00kV,(10, 1) 
+	SUCCESSORS
+		_00kX,(10, 1) 
+
+_00kY, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12864c0>
+	PREDECESSORS
+		_00kZ,(10, 1) 
+		_00kX,(10, 1) 
+		_00l1,(10, 1) 
+	SUCCESSORS
+		front_left_nacelle3_vector_rotated_NED,(10, 3) 
+
+_00l0, <csdl.operations.power_combination.power_combination object at 0x7f92d12863d0>
+	PREDECESSORS
+		_00k_,(10, 1) 
+	SUCCESSORS
+		_00l1,(10, 1) 
+
+_00kX, <csdl.lang.output.Output object at 0x7f92d1286430>, front_wing_actuation_model._00kX
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00kW
+	SUCCESSORS
+		_00kY
+
+front_left_nacelle3_vector_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7f92d1286280>, front_wing_actuation_model.front_left_nacelle3_vector_rotated_NED
+	CONNECTED TO: False
+	PROMOTED TO: True
+		front_left_nacelle3_vector_rotated_NED, simple_forces_moments_model.front_left_nacelle3_vector_rotated_NED
+	PREDECESSORS
+		_00kY
+	SUCCESSORS
+		_00nB
+
+_00l1, <csdl.lang.output.Output object at 0x7f92d12864f0>, front_wing_actuation_model._00l1
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00l0
+	SUCCESSORS
+		_00kY
+
+rear_actuation_angle, <csdl.lang.input.Input object at 0x7f92d1286550>, rear_wing_actuation_model.rear_actuation_angle
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00ld
+		_00li
+		_00lo
+		_00lu
+		_00lA
+		_00lF
+		_00lL
+		_00lR
+
+_00ld, <csdl.operations.power_combination.power_combination object at 0x7f92d1286760>
+	PREDECESSORS
+		rear_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00le,(10, 1) 
+
+_00li, <csdl.operations.power_combination.power_combination object at 0x7f92d1286820>
+	PREDECESSORS
+		rear_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00lj,(10, 1) 
+
+_00lo, <csdl.operations.power_combination.power_combination object at 0x7f92d1286970>
+	PREDECESSORS
+		rear_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00lp,(10, 1) 
+
+_00lu, <csdl.operations.power_combination.power_combination object at 0x7f92d1286a90>
+	PREDECESSORS
+		rear_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00lv,(10, 1) 
+
+_00lA, <csdl.operations.power_combination.power_combination object at 0x7f92d1286bb0>
+	PREDECESSORS
+		rear_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00lB,(10, 1) 
+
+_00lF, <csdl.operations.power_combination.power_combination object at 0x7f92d1286ca0>
+	PREDECESSORS
+		rear_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00lG,(10, 1) 
+
+_00lL, <csdl.operations.power_combination.power_combination object at 0x7f92d1286dc0>
+	PREDECESSORS
+		rear_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00lM,(10, 1) 
+
+_00lR, <csdl.operations.power_combination.power_combination object at 0x7f92d1286ee0>
+	PREDECESSORS
+		rear_actuation_angle,(10, 1) 
+	SUCCESSORS
+		_00lS,(10, 1) 
+
+rear_wing_rotation_axis_x, <csdl.lang.input.Input object at 0x7f92d1286520>, rear_wing_actuation_model.rear_wing_rotation_axis_x
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00lm
+		_00lJ
+
+_00lm, <csdl.operations.power_combination.power_combination object at 0x7f92d12868e0>
+	PREDECESSORS
+		rear_wing_rotation_axis_x,(10, 1) 
+		_00ll,(10, 1) 
+	SUCCESSORS
+		_00ln,(10, 1) 
+
+_00lJ, <csdl.operations.power_combination.power_combination object at 0x7f92d1286d30>
+	PREDECESSORS
+		rear_wing_rotation_axis_x,(10, 1) 
+		_00lI,(10, 1) 
+	SUCCESSORS
+		_00lK,(10, 1) 
+
+rear_wing_rotation_axis_y, <csdl.lang.input.Input object at 0x7f92d12865e0>, rear_wing_actuation_model.rear_wing_rotation_axis_y
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00ls
+		_00lP
+
+_00ls, <csdl.operations.power_combination.power_combination object at 0x7f92d1286a60>
+	PREDECESSORS
+		rear_wing_rotation_axis_y,(10, 1) 
+		_00lr,(10, 1) 
+	SUCCESSORS
+		_00lt,(10, 1) 
+
+_00lP, <csdl.operations.power_combination.power_combination object at 0x7f92d1286eb0>
+	PREDECESSORS
+		rear_wing_rotation_axis_y,(10, 1) 
+		_00lO,(10, 1) 
+	SUCCESSORS
+		_00lQ,(10, 1) 
+
+rear_wing_rotation_axis_z, <csdl.lang.input.Input object at 0x7f92d12865b0>, rear_wing_actuation_model.rear_wing_rotation_axis_z
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00ly
+		_00lV
+
+_00ly, <csdl.operations.power_combination.power_combination object at 0x7f92d1286b80>
+	PREDECESSORS
+		rear_wing_rotation_axis_z,(10, 1) 
+		_00lx,(10, 1) 
+	SUCCESSORS
+		_00lz,(10, 1) 
+
+_00lV, <csdl.operations.power_combination.power_combination object at 0x7f92cf5c6c10>
+	PREDECESSORS
+		rear_wing_rotation_axis_z,(10, 1) 
+		_00lU,(10, 1) 
+	SUCCESSORS
+		_00lW,(10, 1) 
+
+rear_left_nacelle1_axis_origin_pt, <csdl.lang.input.Input object at 0x7f92d1286640>, rear_wing_actuation_model.rear_left_nacelle1_axis_origin_pt
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00l9
+		_00m0
+
+_00l9, <csdl.operations.linear_combination.linear_combination object at 0x7f92d12866a0>
+	PREDECESSORS
+		rear_left_nacelle1_axis_origin_pt,(10, 3) 
+		rear_left_nacelle1_origin,(10, 3) 
+	SUCCESSORS
+		_00la,(10, 3) 
+
+_00m0, <csdl.operations.linear_combination.linear_combination object at 0x7f92cf5c6d30>
+	PREDECESSORS
+		rear_left_nacelle1_axis_origin_pt,(10, 3) 
+		_00lY,(10, 3) 
+	SUCCESSORS
+		rear_left_nacelle1_origin_rotated_VSP,(10, 3) 
+
+rear_left_nacelle1_origin, <csdl.lang.input.Input object at 0x7f92d1286610>, rear_wing_actuation_model.rear_left_nacelle1_origin
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00l9
+
+rear_left_nacelle1_vector, <csdl.lang.input.Input object at 0x7f92d1286670>, rear_wing_actuation_model.rear_left_nacelle1_vector
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+	SUCCESSORS
+		_00lZ
+
+_00lZ, <csdl.operations.quatrotvec.quatrotvec object at 0x7f92cf5c6cd0>
+	PREDECESSORS
+		rear_left_nacelle1_vector,(10, 3) 
+		rear_left_nacelle1_vector_quat,(10, 4) 
+	SUCCESSORS
+		rear_left_nacelle1_vector_rotated_VSP,(10, 3) 
+
+_00le, <csdl.lang.output.Output object at 0x7f92d1286790>, rear_wing_actuation_model._00le
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ld
+	SUCCESSORS
+		_00lf
+
+_00lf, <csdl.operations.cos.cos object at 0x7f92d12867c0>
+	PREDECESSORS
+		_00le,(10, 1) 
+	SUCCESSORS
+		_00lg,(10, 1) 
+
+_00lg, <csdl.lang.output.Output object at 0x7f92d12867f0>, rear_wing_actuation_model._00lg
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lf
+	SUCCESSORS
+		_00lh
+
+_00lh, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d1286850>
+	PREDECESSORS
+		_00lg,(10, 1) 
+		_00ln,(10, 1) 
+		_00lt,(10, 1) 
+		_00lz,(10, 1) 
+	SUCCESSORS
+		rear_left_nacelle1_origin_quat,(10, 4) 
+
+rear_left_nacelle1_origin_quat, <csdl.lang.concatenation.Concatenation object at 0x7f92d1286700>, rear_wing_actuation_model.rear_left_nacelle1_origin_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lh
+	SUCCESSORS
+		_00lX
+
+_00lj, <csdl.lang.output.Output object at 0x7f92d12868b0>, rear_wing_actuation_model._00lj
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00li
+	SUCCESSORS
+		_00lk
+
+_00lk, <csdl.operations.sin.sin object at 0x7f92d1286880>
+	PREDECESSORS
+		_00lj,(10, 1) 
+	SUCCESSORS
+		_00ll,(10, 1) 
+
+_00ll, <csdl.lang.output.Output object at 0x7f92d1286910>, rear_wing_actuation_model._00ll
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lk
+	SUCCESSORS
+		_00lm
+
+_00ln, <csdl.lang.output.Output object at 0x7f92d1286940>, rear_wing_actuation_model._00ln
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lm
+	SUCCESSORS
+		_00lh
+
+_00lp, <csdl.lang.output.Output object at 0x7f92d12869a0>, rear_wing_actuation_model._00lp
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lo
+	SUCCESSORS
+		_00lq
+
+_00lq, <csdl.operations.sin.sin object at 0x7f92d1286a00>
+	PREDECESSORS
+		_00lp,(10, 1) 
+	SUCCESSORS
+		_00lr,(10, 1) 
+
+_00lr, <csdl.lang.output.Output object at 0x7f92d12869d0>, rear_wing_actuation_model._00lr
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lq
+	SUCCESSORS
+		_00ls
+
+_00lt, <csdl.lang.output.Output object at 0x7f92d1286a30>, rear_wing_actuation_model._00lt
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ls
+	SUCCESSORS
+		_00lh
+
+_00lv, <csdl.lang.output.Output object at 0x7f92d1286ac0>, rear_wing_actuation_model._00lv
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lu
+	SUCCESSORS
+		_00lw
+
+_00lw, <csdl.operations.sin.sin object at 0x7f92d1286b20>
+	PREDECESSORS
+		_00lv,(10, 1) 
+	SUCCESSORS
+		_00lx,(10, 1) 
+
+_00lx, <csdl.lang.output.Output object at 0x7f92d1286af0>, rear_wing_actuation_model._00lx
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lw
+	SUCCESSORS
+		_00ly
+
+_00lz, <csdl.lang.output.Output object at 0x7f92d1286b50>, rear_wing_actuation_model._00lz
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ly
+	SUCCESSORS
+		_00lh
+
+_00lX, <csdl.operations.quatrotvec.quatrotvec object at 0x7f92cf5c6c40>
+	PREDECESSORS
+		rear_left_nacelle1_origin_quat,(10, 4) 
+		_00la,(10, 3) 
+	SUCCESSORS
+		_00lY,(10, 3) 
+
+_00lB, <csdl.lang.output.Output object at 0x7f92d1286be0>, rear_wing_actuation_model._00lB
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lA
+	SUCCESSORS
+		_00lC
+
+_00lC, <csdl.operations.cos.cos object at 0x7f92d1286c40>
+	PREDECESSORS
+		_00lB,(10, 1) 
+	SUCCESSORS
+		_00lD,(10, 1) 
+
+_00lD, <csdl.lang.output.Output object at 0x7f92d1286c10>, rear_wing_actuation_model._00lD
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lC
+	SUCCESSORS
+		_00lE
+
+_00lE, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d1286c70>
+	PREDECESSORS
+		_00lD,(10, 1) 
+		_00lK,(10, 1) 
+		_00lQ,(10, 1) 
+		_00lW,(10, 1) 
+	SUCCESSORS
+		rear_left_nacelle1_vector_quat,(10, 4) 
+
+rear_left_nacelle1_vector_quat, <csdl.lang.concatenation.Concatenation object at 0x7f92d1286730>, rear_wing_actuation_model.rear_left_nacelle1_vector_quat
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lE
+	SUCCESSORS
+		_00lZ
+
+_00lG, <csdl.lang.output.Output object at 0x7f92d1286d00>, rear_wing_actuation_model._00lG
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lF
+	SUCCESSORS
+		_00lH
+
+_00lH, <csdl.operations.sin.sin object at 0x7f92d1286cd0>
+	PREDECESSORS
+		_00lG,(10, 1) 
+	SUCCESSORS
+		_00lI,(10, 1) 
+
+_00lI, <csdl.lang.output.Output object at 0x7f92d1286d60>, rear_wing_actuation_model._00lI
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lH
+	SUCCESSORS
+		_00lJ
+
+_00lK, <csdl.lang.output.Output object at 0x7f92d1286d90>, rear_wing_actuation_model._00lK
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lJ
+	SUCCESSORS
+		_00lE
+
+_00lM, <csdl.lang.output.Output object at 0x7f92d1286df0>, rear_wing_actuation_model._00lM
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lL
+	SUCCESSORS
+		_00lN
+
+_00lN, <csdl.operations.sin.sin object at 0x7f92d1286e50>
+	PREDECESSORS
+		_00lM,(10, 1) 
+	SUCCESSORS
+		_00lO,(10, 1) 
+
+_00lO, <csdl.lang.output.Output object at 0x7f92d1286e20>, rear_wing_actuation_model._00lO
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lN
+	SUCCESSORS
+		_00lP
+
+_00lQ, <csdl.lang.output.Output object at 0x7f92d1286e80>, rear_wing_actuation_model._00lQ
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lP
+	SUCCESSORS
+		_00lE
+
+_00lS, <csdl.lang.output.Output object at 0x7f92d1286f10>, rear_wing_actuation_model._00lS
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lR
+	SUCCESSORS
+		_00lT
+
+_00lT, <csdl.operations.sin.sin object at 0x7f92d1286f70>
+	PREDECESSORS
+		_00lS,(10, 1) 
+	SUCCESSORS
+		_00lU,(10, 1) 
+
+_00lU, <csdl.lang.output.Output object at 0x7f92d1286f40>, rear_wing_actuation_model._00lU
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lT
+	SUCCESSORS
+		_00lV
+
+_00lW, <csdl.lang.output.Output object at 0x7f92cf5c6be0>, rear_wing_actuation_model._00lW
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lV
+	SUCCESSORS
+		_00lE
+
+_00lY, <csdl.lang.output.Output object at 0x7f92cf5c6c70>, rear_wing_actuation_model._00lY
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lX
+	SUCCESSORS
+		_00m0
+
+_00la, <csdl.lang.output.Output object at 0x7f92d12866d0>, rear_wing_actuation_model._00la
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00l9
+	SUCCESSORS
+		_00lX
+
+rear_left_nacelle1_origin_rotated_VSP, <csdl.lang.output.Output object at 0x7f92cf5c6d00>, rear_wing_actuation_model.rear_left_nacelle1_origin_rotated_VSP
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00m0
+	SUCCESSORS
+		_00m3
+
+_00m3, <csdl.operations.decompose.decompose object at 0x7f92cf5c6dc0>
+	PREDECESSORS
+		rear_left_nacelle1_origin_rotated_VSP,(10, 3) 
+	SUCCESSORS
+		_00m4,(10, 1) 
+		_00m6,(10, 1) 
+		_00m7,(10, 1) 
+
+_00m4, <csdl.lang.output.Output object at 0x7f92cf5c6e20>, rear_wing_actuation_model._00m4
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00m3
+	SUCCESSORS
+		_00m5
+
+_00m6, <csdl.lang.output.Output object at 0x7f92cf5c6df0>, rear_wing_actuation_model._00m6
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00m3
+	SUCCESSORS
+		_00m5
+
+_00m7, <csdl.lang.output.Output object at 0x7f92cf5c6f10>, rear_wing_actuation_model._00m7
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00m3
+	SUCCESSORS
+		_00m5
+
+_00m5, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92cf5c6e50>
+	PREDECESSORS
+		_00m4,(10, 1) 
+		_00m6,(10, 1) 
+		_00m7,(10, 1) 
+	SUCCESSORS
+		rear_left_nacelle1_origin_rotated_NED,(10, 3) 
+
+rear_left_nacelle1_origin_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7f92cf5c6d60>, rear_wing_actuation_model.rear_left_nacelle1_origin_rotated_NED
+	CONNECTED TO: False
+	PROMOTED TO: True
+		rear_left_nacelle1_origin_rotated_NED, simple_forces_moments_model.rear_left_nacelle1_origin_rotated_NED
+	PREDECESSORS
+		_00m5
+	SUCCESSORS
+		_00o7
+
+rear_left_nacelle1_vector_rotated_VSP, <csdl.lang.output.Output object at 0x7f92cf5c6ca0>, rear_wing_actuation_model.rear_left_nacelle1_vector_rotated_VSP
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00lZ
+	SUCCESSORS
+		_00m9
+
+_00m9, <csdl.operations.decompose.decompose object at 0x7f92cf5c6e80>
+	PREDECESSORS
+		rear_left_nacelle1_vector_rotated_VSP,(10, 3) 
+	SUCCESSORS
+		_00ma,(10, 1) 
+		_00me,(10, 1) 
+		_00mf,(10, 1) 
+
+_00ma, <csdl.lang.output.Output object at 0x7f92cf5c6f70>, rear_wing_actuation_model._00ma
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00m9
+	SUCCESSORS
+		_00mb
+
+_00me, <csdl.lang.output.Output object at 0x7f92cf5c6fa0>, rear_wing_actuation_model._00me
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00m9
+	SUCCESSORS
+		_00md
+
+_00mf, <csdl.lang.output.Output object at 0x7f92d12bc460>, rear_wing_actuation_model._00mf
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00m9
+	SUCCESSORS
+		_00mg
+
+_00mb, <csdl.operations.power_combination.power_combination object at 0x7f92cf5c6eb0>
+	PREDECESSORS
+		_00ma,(10, 1) 
+	SUCCESSORS
+		_00mc,(10, 1) 
+
+_00md, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92cf5c6fd0>
+	PREDECESSORS
+		_00me,(10, 1) 
+		_00mc,(10, 1) 
+		_00mh,(10, 1) 
+	SUCCESSORS
+		rear_left_nacelle1_vector_rotated_NED,(10, 3) 
+
+_00mg, <csdl.operations.power_combination.power_combination object at 0x7f92cf5c6ee0>
+	PREDECESSORS
+		_00mf,(10, 1) 
+	SUCCESSORS
+		_00mh,(10, 1) 
+
+_00mc, <csdl.lang.output.Output object at 0x7f92cf5c6f40>, rear_wing_actuation_model._00mc
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mb
+	SUCCESSORS
+		_00md
+
+rear_left_nacelle1_vector_rotated_NED, <csdl.lang.concatenation.Concatenation object at 0x7f92cf5c6d90>, rear_wing_actuation_model.rear_left_nacelle1_vector_rotated_NED
+	CONNECTED TO: False
+	PROMOTED TO: True
+		rear_left_nacelle1_vector_rotated_NED, simple_forces_moments_model.rear_left_nacelle1_vector_rotated_NED
+	PREDECESSORS
+		_00md
+	SUCCESSORS
+		_00o5
+
+_00mh, <csdl.lang.output.Output object at 0x7f92d12bc3d0>, rear_wing_actuation_model._00mh
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mg
+	SUCCESSORS
+		_00md
+
+_00mu, <csdl.operations.expand.expand object at 0x7f92d12bc6a0>
+	PREDECESSORS
+		front_left_nacelle1_thrust,(10,) 
+	SUCCESSORS
+		_00mv,(10, 3) 
+
+_00mv, <csdl.lang.output.Output object at 0x7f92d12bc670>, simple_forces_moments_model._00mv
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mu
+	SUCCESSORS
+		_00mw
+
+_00mw, <csdl.operations.power_combination.power_combination object at 0x7f92d12bc700>
+	PREDECESSORS
+		_00mv,(10, 3) 
+		front_left_nacelle1_vector_rotated_NED,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle1_thrust_vector_mult,(10, 3) 
+
+front_left_nacelle1_thrust_vector_mult, <csdl.lang.output.Output object at 0x7f92d12bc6d0>, simple_forces_moments_model.front_left_nacelle1_thrust_vector_mult
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mw
+	SUCCESSORS
+		_00mC
+		_00mA
+
+_00mC, <csdl.operations.decompose.decompose object at 0x7f92d12bc820>
+	PREDECESSORS
+		front_left_nacelle1_thrust_vector_mult,(10, 3) 
+	SUCCESSORS
+		_00mD,(10, 1) 
+		_00mH,(10, 1) 
+		_00mL,(10, 1) 
+
+_00mA, <csdl.operations.cross.cross object at 0x7f92d12bc790>
+	PREDECESSORS
+		front_left_nacelle1_thrust_vector_mult,(10, 3) 
+		_00mz,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle1_moments,(10, 3) 
+
+_00mD, <csdl.lang.output.Output object at 0x7f92d12bc880>, simple_forces_moments_model._00mD
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mC
+	SUCCESSORS
+		_00mE
+
+_00mH, <csdl.lang.output.Output object at 0x7f92d12bc940>, simple_forces_moments_model._00mH
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mC
+	SUCCESSORS
+		_00mI
+
+_00mL, <csdl.lang.output.Output object at 0x7f92d12bc9d0>, simple_forces_moments_model._00mL
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mC
+	SUCCESSORS
+		_00mM
+
+_00mE, <csdl.operations.reshape.reshape object at 0x7f92d12bc7f0>
+	PREDECESSORS
+		_00mD,(10, 1) 
+	SUCCESSORS
+		_00mF,(1, 10, 1) 
+
+_00mI, <csdl.operations.reshape.reshape object at 0x7f92d12bc850>
+	PREDECESSORS
+		_00mH,(10, 1) 
+	SUCCESSORS
+		_00mJ,(1, 10, 1) 
+
+_00mM, <csdl.operations.reshape.reshape object at 0x7f92d12bc8e0>
+	PREDECESSORS
+		_00mL,(10, 1) 
+	SUCCESSORS
+		_00mN,(1, 10, 1) 
+
+_00mF, <csdl.lang.output.Output object at 0x7f92d12bc8b0>, simple_forces_moments_model._00mF
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mE
+	SUCCESSORS
+		_00mG
+
+_00mG, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12bc910>
+	PREDECESSORS
+		_00mF,(1, 10, 1) 
+		_00nf,(1, 10, 1) 
+		_00nK,(1, 10, 1) 
+		_00oe,(1, 10, 1) 
+	SUCCESSORS
+		Fx,(4, 10, 1) 
+
+Fx, <csdl.lang.concatenation.Concatenation object at 0x7f92d12bc520>, simple_forces_moments_model.Fx
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mG
+	SUCCESSORS
+		_00ov
+
+_00n4, <csdl.operations.expand.expand object at 0x7f92d12bcd60>
+	PREDECESSORS
+		front_left_nacelle2_thrust,(10,) 
+	SUCCESSORS
+		_00n5,(10, 3) 
+
+_00n5, <csdl.lang.output.Output object at 0x7f92d12bcd90>, simple_forces_moments_model._00n5
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00n4
+	SUCCESSORS
+		_00n6
+
+_00n6, <csdl.operations.power_combination.power_combination object at 0x7f92d12bcdc0>
+	PREDECESSORS
+		_00n5,(10, 3) 
+		front_left_nacelle2_vector_rotated_NED,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle2_thrust_vector_mult,(10, 3) 
+
+front_left_nacelle2_thrust_vector_mult, <csdl.lang.output.Output object at 0x7f92d12bcdf0>, simple_forces_moments_model.front_left_nacelle2_thrust_vector_mult
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00n6
+	SUCCESSORS
+		_00nc
+		_00na
+
+_00nc, <csdl.operations.decompose.decompose object at 0x7f92d12bcf10>
+	PREDECESSORS
+		front_left_nacelle2_thrust_vector_mult,(10, 3) 
+	SUCCESSORS
+		_00nd,(10, 1) 
+		_00ng,(10, 1) 
+		_00nj,(10, 1) 
+
+_00na, <csdl.operations.cross.cross object at 0x7f92d12bce80>
+	PREDECESSORS
+		front_left_nacelle2_thrust_vector_mult,(10, 3) 
+		_00n9,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle2_moments,(10, 3) 
+
+_00nd, <csdl.lang.output.Output object at 0x7f92d12bcf70>, simple_forces_moments_model._00nd
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nc
+	SUCCESSORS
+		_00ne
+
+_00ng, <csdl.lang.output.Output object at 0x7f92d12bcfd0>, simple_forces_moments_model._00ng
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nc
+	SUCCESSORS
+		_00nh
+
+_00nj, <csdl.lang.output.Output object at 0x7f92d12bc250>, simple_forces_moments_model._00nj
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nc
+	SUCCESSORS
+		_00nk
+
+_00ne, <csdl.operations.reshape.reshape object at 0x7f92d12bcee0>
+	PREDECESSORS
+		_00nd,(10, 1) 
+	SUCCESSORS
+		_00nf,(1, 10, 1) 
+
+_00nh, <csdl.operations.reshape.reshape object at 0x7f92d12bcf40>
+	PREDECESSORS
+		_00ng,(10, 1) 
+	SUCCESSORS
+		_00ni,(1, 10, 1) 
+
+_00nk, <csdl.operations.reshape.reshape object at 0x7f92d12bc370>
+	PREDECESSORS
+		_00nj,(10, 1) 
+	SUCCESSORS
+		_00nl,(1, 10, 1) 
+
+_00nf, <csdl.lang.output.Output object at 0x7f92d12bcfa0>, simple_forces_moments_model._00nf
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ne
+	SUCCESSORS
+		_00mG
+
+_00nz, <csdl.operations.expand.expand object at 0x7f92cff64580>
+	PREDECESSORS
+		front_left_nacelle3_thrust,(10,) 
+	SUCCESSORS
+		_00nA,(10, 3) 
+
+_00nA, <csdl.lang.output.Output object at 0x7f92cff64760>, simple_forces_moments_model._00nA
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nz
+	SUCCESSORS
+		_00nB
+
+_00nB, <csdl.operations.power_combination.power_combination object at 0x7f92cff64af0>
+	PREDECESSORS
+		_00nA,(10, 3) 
+		front_left_nacelle3_vector_rotated_NED,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle3_thrust_vector_mult,(10, 3) 
+
+front_left_nacelle3_thrust_vector_mult, <csdl.lang.output.Output object at 0x7f92cff64ac0>, simple_forces_moments_model.front_left_nacelle3_thrust_vector_mult
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nB
+	SUCCESSORS
+		_00nH
+		_00nF
+
+_00nH, <csdl.operations.decompose.decompose object at 0x7f92cff64f70>
+	PREDECESSORS
+		front_left_nacelle3_thrust_vector_mult,(10, 3) 
+	SUCCESSORS
+		_00nI,(10, 1) 
+		_00nL,(10, 1) 
+		_00nO,(10, 1) 
+
+_00nF, <csdl.operations.cross.cross object at 0x7f92cff64b20>
+	PREDECESSORS
+		front_left_nacelle3_thrust_vector_mult,(10, 3) 
+		_00nE,(10, 3) 
+	SUCCESSORS
+		front_left_nacelle3_moments,(10, 3) 
+
+_00nI, <csdl.lang.output.Output object at 0x7f92cff64f10>, simple_forces_moments_model._00nI
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nH
+	SUCCESSORS
+		_00nJ
+
+_00nL, <csdl.lang.output.Output object at 0x7f92cff64eb0>, simple_forces_moments_model._00nL
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nH
+	SUCCESSORS
+		_00nM
+
+_00nO, <csdl.lang.output.Output object at 0x7f92cff64e20>, simple_forces_moments_model._00nO
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nH
+	SUCCESSORS
+		_00nP
+
+_00nJ, <csdl.operations.reshape.reshape object at 0x7f92cff64fa0>
+	PREDECESSORS
+		_00nI,(10, 1) 
+	SUCCESSORS
+		_00nK,(1, 10, 1) 
+
+_00nM, <csdl.operations.reshape.reshape object at 0x7f92cff64f40>
+	PREDECESSORS
+		_00nL,(10, 1) 
+	SUCCESSORS
+		_00nN,(1, 10, 1) 
+
+_00nP, <csdl.operations.reshape.reshape object at 0x7f92cff64e80>
+	PREDECESSORS
+		_00nO,(10, 1) 
+	SUCCESSORS
+		_00nQ,(1, 10, 1) 
+
+_00nK, <csdl.lang.output.Output object at 0x7f92cff64ee0>, simple_forces_moments_model._00nK
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nJ
+	SUCCESSORS
+		_00mG
+
+_00o3, <csdl.operations.expand.expand object at 0x7f92cff64b80>
+	PREDECESSORS
+		rear_left_nacelle1_thrust,(10,) 
+	SUCCESSORS
+		_00o4,(10, 3) 
+
+_00o4, <csdl.lang.output.Output object at 0x7f92cff64a30>, simple_forces_moments_model._00o4
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00o3
+	SUCCESSORS
+		_00o5
+
+_00o5, <csdl.operations.power_combination.power_combination object at 0x7f92cff649a0>
+	PREDECESSORS
+		_00o4,(10, 3) 
+		rear_left_nacelle1_vector_rotated_NED,(10, 3) 
+	SUCCESSORS
+		rear_left_nacelle1_thrust_vector_mult,(10, 3) 
+
+rear_left_nacelle1_thrust_vector_mult, <csdl.lang.output.Output object at 0x7f92cff649d0>, simple_forces_moments_model.rear_left_nacelle1_thrust_vector_mult
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00o5
+	SUCCESSORS
+		_00ob
+		_00o9
+
+_00ob, <csdl.operations.decompose.decompose object at 0x7f92cff648b0>
+	PREDECESSORS
+		rear_left_nacelle1_thrust_vector_mult,(10, 3) 
+	SUCCESSORS
+		_00oc,(10, 1) 
+		_00of,(10, 1) 
+		_00oi,(10, 1) 
+
+_00o9, <csdl.operations.cross.cross object at 0x7f92cff64970>
+	PREDECESSORS
+		rear_left_nacelle1_thrust_vector_mult,(10, 3) 
+		_00o8,(10, 3) 
+	SUCCESSORS
+		rear_left_nacelle1_moments,(10, 3) 
+
+_00oc, <csdl.lang.output.Output object at 0x7f92cff64850>, simple_forces_moments_model._00oc
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ob
+	SUCCESSORS
+		_00od
+
+_00of, <csdl.lang.output.Output object at 0x7f92cff647f0>, simple_forces_moments_model._00of
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ob
+	SUCCESSORS
+		_00og
+
+_00oi, <csdl.lang.output.Output object at 0x7f92cff64700>, simple_forces_moments_model._00oi
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00ob
+	SUCCESSORS
+		_00oj
+
+_00od, <csdl.operations.reshape.reshape object at 0x7f92cff648e0>
+	PREDECESSORS
+		_00oc,(10, 1) 
+	SUCCESSORS
+		_00oe,(1, 10, 1) 
+
+_00og, <csdl.operations.reshape.reshape object at 0x7f92cff64880>
+	PREDECESSORS
+		_00of,(10, 1) 
+	SUCCESSORS
+		_00oh,(1, 10, 1) 
+
+_00oj, <csdl.operations.reshape.reshape object at 0x7f92cff647c0>
+	PREDECESSORS
+		_00oi,(10, 1) 
+	SUCCESSORS
+		_00ok,(1, 10, 1) 
+
+_00oe, <csdl.lang.output.Output object at 0x7f92cff64820>, simple_forces_moments_model._00oe
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00od
+	SUCCESSORS
+		_00mG
+
+_00ov, <csdl.operations.sum.sum object at 0x7f92cff644f0>
+	PREDECESSORS
+		Fx,(4, 10, 1) 
+	SUCCESSORS
+		forces_moments_Fx,(10, 1) 
+
+_00mJ, <csdl.lang.output.Output object at 0x7f92d12bc970>, simple_forces_moments_model._00mJ
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mI
+	SUCCESSORS
+		_00mK
+
+_00mK, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12bca00>
+	PREDECESSORS
+		_00mJ,(1, 10, 1) 
+		_00ni,(1, 10, 1) 
+		_00nN,(1, 10, 1) 
+		_00oh,(1, 10, 1) 
+	SUCCESSORS
+		Fy,(4, 10, 1) 
+
+Fy, <csdl.lang.concatenation.Concatenation object at 0x7f92d12bc490>, simple_forces_moments_model.Fy
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mK
+	SUCCESSORS
+		_00ox
+
+_00ni, <csdl.lang.output.Output object at 0x7f92d12bc2b0>, simple_forces_moments_model._00ni
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nh
+	SUCCESSORS
+		_00mK
+
+_00nN, <csdl.lang.output.Output object at 0x7f92cff64e50>, simple_forces_moments_model._00nN
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nM
+	SUCCESSORS
+		_00mK
+
+_00oh, <csdl.lang.output.Output object at 0x7f92cff64790>, simple_forces_moments_model._00oh
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00og
+	SUCCESSORS
+		_00mK
+
+_00ox, <csdl.operations.sum.sum object at 0x7f92cff64460>
+	PREDECESSORS
+		Fy,(4, 10, 1) 
+	SUCCESSORS
+		_00oy,(10, 1) 
+
+_00mN, <csdl.lang.output.Output object at 0x7f92d12bca60>, simple_forces_moments_model._00mN
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mM
+	SUCCESSORS
+		_00mO
+
+_00mO, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12bcac0>
+	PREDECESSORS
+		_00mN,(1, 10, 1) 
+		_00nl,(1, 10, 1) 
+		_00nQ,(1, 10, 1) 
+		_00ok,(1, 10, 1) 
+	SUCCESSORS
+		Fz,(4, 10, 1) 
+
+Fz, <csdl.lang.concatenation.Concatenation object at 0x7f92d12bc4f0>, simple_forces_moments_model.Fz
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00mO
+	SUCCESSORS
+		_00oB
+
+_00nl, <csdl.lang.output.Output object at 0x7f92d12bc1c0>, simple_forces_moments_model._00nl
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nk
+	SUCCESSORS
+		_00mO
+
+_00nQ, <csdl.lang.output.Output object at 0x7f92cff64d90>, simple_forces_moments_model._00nQ
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00nP
+	SUCCESSORS
+		_00mO
+
+_00ok, <csdl.lang.output.Output object at 0x7f92cff64670>, simple_forces_moments_model._00ok
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00oj
+	SUCCESSORS
+		_00mO
+
+_00oB, <csdl.operations.sum.sum object at 0x7f92cf5d0070>
+	PREDECESSORS
+		Fz,(4, 10, 1) 
+	SUCCESSORS
+		forces_moments_Fz,(10, 1) 
+
+_00my, <csdl.operations.linear_combination.linear_combination object at 0x7f92d12bc730>
+	PREDECESSORS
+		_00mk,(10, 3) 
+		front_left_nacelle1_origin_rotated_NED,(10, 3) 
+	SUCCESSORS
+		_00mz,(10, 3) 
+
+_00mz, <csdl.lang.output.Output object at 0x7f92d12bc760>, simple_forces_moments_model._00mz
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00my
+	SUCCESSORS
+		_00mA
+
+_00mj, <csdl.operations.expand.expand object at 0x7f92d12bc4c0>
 	PREDECESSORS
 		refPt,(3,) 
 	SUCCESSORS
-		_00hR,(100, 3) 
+		_00mk,(10, 3) 
 
-_00hR, <csdl.lang.output.Output object at 0x7ff059ce22e0>, simple_forces_moments_model._00hR
+_00mk, <csdl.lang.output.Output object at 0x7f92d12bc400>, simple_forces_moments_model._00mk
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00hQ
+		_00mj
 	SUCCESSORS
-		_00i4
-		_00iF
-		_00j9
-		_00jE
+		_00my
+		_00n8
+		_00nD
+		_00o7
 
-_00iF, <csdl.operations.linear_combination.linear_combination object at 0x7ff0599eb1f0>
+_00n8, <csdl.operations.linear_combination.linear_combination object at 0x7f92d12bce50>
 	PREDECESSORS
-		_00hR,(100, 3) 
-		front_left_nacelle2_origin_rotated_NED,(100, 3) 
+		_00mk,(10, 3) 
+		front_left_nacelle2_origin_rotated_NED,(10, 3) 
 	SUCCESSORS
-		_00iG,(100, 3) 
+		_00n9,(10, 3) 
 
-_00j9, <csdl.operations.linear_combination.linear_combination object at 0x7ff0599eb730>
+_00nD, <csdl.operations.linear_combination.linear_combination object at 0x7f92cff64a90>
 	PREDECESSORS
-		_00hR,(100, 3) 
-		front_left_nacelle3_origin_rotated_NED,(100, 3) 
+		_00mk,(10, 3) 
+		front_left_nacelle3_origin_rotated_NED,(10, 3) 
 	SUCCESSORS
-		_00ja,(100, 3) 
+		_00nE,(10, 3) 
 
-_00jE, <csdl.operations.linear_combination.linear_combination object at 0x7ff0599ebd00>
+_00o7, <csdl.operations.linear_combination.linear_combination object at 0x7f92cff64a00>
 	PREDECESSORS
-		_00hR,(100, 3) 
-		rear_left_nacelle1_origin_rotated_NED,(100, 3) 
+		_00mk,(10, 3) 
+		rear_left_nacelle1_origin_rotated_NED,(10, 3) 
 	SUCCESSORS
-		_00jF,(100, 3) 
+		_00o8,(10, 3) 
 
-front_left_nacelle1_moments, <csdl.lang.output.Output object at 0x7ff059ce23d0>, simple_forces_moments_model.front_left_nacelle1_moments
+front_left_nacelle1_moments, <csdl.lang.output.Output object at 0x7f92d12bc7c0>, simple_forces_moments_model.front_left_nacelle1_moments
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00i6
+		_00mA
 	SUCCESSORS
-		_00il
+		_00mP
 
-_00il, <csdl.operations.decompose.decompose object at 0x7ff059cdee50>
+_00mP, <csdl.operations.decompose.decompose object at 0x7f92d12bca30>
 	PREDECESSORS
-		front_left_nacelle1_moments,(100, 3) 
+		front_left_nacelle1_moments,(10, 3) 
 	SUCCESSORS
-		_00im,(100, 1) 
-		_00iq,(100, 1) 
-		_00iu,(100, 1) 
+		_00mQ,(10, 1) 
+		_00mU,(10, 1) 
+		_00mY,(10, 1) 
 
-_00im, <csdl.lang.output.Output object at 0x7ff059cded00>, simple_forces_moments_model._00im
+_00mQ, <csdl.lang.output.Output object at 0x7f92d12bcb20>, simple_forces_moments_model._00mQ
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00il
+		_00mP
 	SUCCESSORS
-		_00in
+		_00mR
 
-_00iq, <csdl.lang.output.Output object at 0x7ff059cdec40>, simple_forces_moments_model._00iq
+_00mU, <csdl.lang.output.Output object at 0x7f92d12bcbe0>, simple_forces_moments_model._00mU
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00il
+		_00mP
 	SUCCESSORS
-		_00ir
+		_00mV
 
-_00iu, <csdl.lang.output.Output object at 0x7ff059c84310>, simple_forces_moments_model._00iu
+_00mY, <csdl.lang.output.Output object at 0x7f92d12bcc40>, simple_forces_moments_model._00mY
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00il
+		_00mP
 	SUCCESSORS
-		_00iv
+		_00mZ
 
-_00in, <csdl.operations.reshape.reshape object at 0x7ff059cdeee0>
+_00mR, <csdl.operations.reshape.reshape object at 0x7f92d12bc9a0>
 	PREDECESSORS
-		_00im,(100, 1) 
+		_00mQ,(10, 1) 
 	SUCCESSORS
-		_00io,(1, 100, 1) 
+		_00mS,(1, 10, 1) 
 
-_00ir, <csdl.operations.reshape.reshape object at 0x7ff059cdedf0>
+_00mV, <csdl.operations.reshape.reshape object at 0x7f92d12bca90>
 	PREDECESSORS
-		_00iq,(100, 1) 
+		_00mU,(10, 1) 
 	SUCCESSORS
-		_00is,(1, 100, 1) 
+		_00mW,(1, 10, 1) 
 
-_00iv, <csdl.operations.reshape.reshape object at 0x7ff059cdeca0>
+_00mZ, <csdl.operations.reshape.reshape object at 0x7f92d12bcb80>
 	PREDECESSORS
-		_00iu,(100, 1) 
+		_00mY,(10, 1) 
 	SUCCESSORS
-		_00iw,(1, 100, 1) 
+		_00m_,(1, 10, 1) 
 
-_00io, <csdl.lang.output.Output object at 0x7ff059cded30>, simple_forces_moments_model._00io
+_00mS, <csdl.lang.output.Output object at 0x7f92d12bcaf0>, simple_forces_moments_model._00mS
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00in
+		_00mR
 	SUCCESSORS
-		_00ip
+		_00mT
 
-_00ip, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059cdecd0>
+_00mT, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12bcb50>
 	PREDECESSORS
-		_00io,(1, 100, 1) 
-		_00iW,(1, 100, 1) 
-		_00jq,(1, 100, 1) 
-		_00jV,(1, 100, 1) 
+		_00mS,(1, 10, 1) 
+		_00np,(1, 10, 1) 
+		_00nU,(1, 10, 1) 
+		_00oo,(1, 10, 1) 
 	SUCCESSORS
-		Mx,(4, 100, 1) 
+		Mx,(4, 10, 1) 
 
-Mx, <csdl.lang.concatenation.Concatenation object at 0x7ff059ce2640>, simple_forces_moments_model.Mx
+Mx, <csdl.lang.concatenation.Concatenation object at 0x7f92d12bc550>, simple_forces_moments_model.Mx
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ip
+		_00mT
 	SUCCESSORS
-		_00k9
+		_00oD
 
-_00iG, <csdl.lang.output.Output object at 0x7ff0599eb1c0>, simple_forces_moments_model._00iG
+_00n9, <csdl.lang.output.Output object at 0x7f92d12bce20>, simple_forces_moments_model._00n9
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iF
+		_00n8
 	SUCCESSORS
-		_00iH
+		_00na
 
-front_left_nacelle2_moments, <csdl.lang.output.Output object at 0x7ff0599eb250>, simple_forces_moments_model.front_left_nacelle2_moments
+front_left_nacelle2_moments, <csdl.lang.output.Output object at 0x7f92d12bceb0>, simple_forces_moments_model.front_left_nacelle2_moments
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iH
+		_00na
 	SUCCESSORS
-		_00iT
+		_00nm
 
-_00iT, <csdl.operations.decompose.decompose object at 0x7ff0599eb4f0>
+_00nm, <csdl.operations.decompose.decompose object at 0x7f92d12bc160>
 	PREDECESSORS
-		front_left_nacelle2_moments,(100, 3) 
+		front_left_nacelle2_moments,(10, 3) 
 	SUCCESSORS
-		_00iU,(100, 1) 
-		_00iX,(100, 1) 
-		_00i_,(100, 1) 
+		_00nn,(10, 1) 
+		_00nq,(10, 1) 
+		_00nt,(10, 1) 
 
-_00iU, <csdl.lang.output.Output object at 0x7ff0599eb520>, simple_forces_moments_model._00iU
+_00nn, <csdl.lang.output.Output object at 0x7f92d12bc130>, simple_forces_moments_model._00nn
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iT
+		_00nm
 	SUCCESSORS
-		_00iV
+		_00no
 
-_00iX, <csdl.lang.output.Output object at 0x7ff0599eb580>, simple_forces_moments_model._00iX
+_00nq, <csdl.lang.output.Output object at 0x7f92d12bc0d0>, simple_forces_moments_model._00nq
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iT
+		_00nm
 	SUCCESSORS
-		_00iY
+		_00nr
 
-_00i_, <csdl.lang.output.Output object at 0x7ff0599eb610>, simple_forces_moments_model._00i_
+_00nt, <csdl.lang.output.Output object at 0x7f92d12bc040>, simple_forces_moments_model._00nt
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iT
+		_00nm
 	SUCCESSORS
-		_00j0
+		_00nu
 
-_00iV, <csdl.operations.reshape.reshape object at 0x7ff0599eb430>
+_00no, <csdl.operations.reshape.reshape object at 0x7f92d12bc220>
 	PREDECESSORS
-		_00iU,(100, 1) 
+		_00nn,(10, 1) 
 	SUCCESSORS
-		_00iW,(1, 100, 1) 
+		_00np,(1, 10, 1) 
 
-_00iY, <csdl.operations.reshape.reshape object at 0x7ff0599eb460>
+_00nr, <csdl.operations.reshape.reshape object at 0x7f92d12bc1f0>
 	PREDECESSORS
-		_00iX,(100, 1) 
+		_00nq,(10, 1) 
 	SUCCESSORS
-		_00iZ,(1, 100, 1) 
+		_00ns,(1, 10, 1) 
 
-_00j0, <csdl.operations.reshape.reshape object at 0x7ff0599eb5b0>
+_00nu, <csdl.operations.reshape.reshape object at 0x7f92d12bc0a0>
 	PREDECESSORS
-		_00i_,(100, 1) 
+		_00nt,(10, 1) 
 	SUCCESSORS
-		_00j1,(1, 100, 1) 
+		_00nv,(1, 10, 1) 
 
-_00iW, <csdl.lang.output.Output object at 0x7ff0599eb4c0>, simple_forces_moments_model._00iW
+_00np, <csdl.lang.output.Output object at 0x7f92d12bc190>, simple_forces_moments_model._00np
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iV
+		_00no
 	SUCCESSORS
-		_00ip
+		_00mT
 
-_00ja, <csdl.lang.output.Output object at 0x7ff0599eb7f0>, simple_forces_moments_model._00ja
+_00nE, <csdl.lang.output.Output object at 0x7f92cff64b50>, simple_forces_moments_model._00nE
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00j9
+		_00nD
 	SUCCESSORS
-		_00jb
+		_00nF
 
-front_left_nacelle3_moments, <csdl.lang.output.Output object at 0x7ff0599eb820>, simple_forces_moments_model.front_left_nacelle3_moments
+front_left_nacelle3_moments, <csdl.lang.output.Output object at 0x7f92cff64fd0>, simple_forces_moments_model.front_left_nacelle3_moments
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jb
+		_00nF
 	SUCCESSORS
-		_00jn
+		_00nR
 
-_00jn, <csdl.operations.decompose.decompose object at 0x7ff0599ebac0>
+_00nR, <csdl.operations.decompose.decompose object at 0x7f92cff64d30>
 	PREDECESSORS
-		front_left_nacelle3_moments,(100, 3) 
+		front_left_nacelle3_moments,(10, 3) 
 	SUCCESSORS
-		_00jo,(100, 1) 
-		_00jr,(100, 1) 
-		_00ju,(100, 1) 
+		_00nS,(10, 1) 
+		_00nV,(10, 1) 
+		_00nY,(10, 1) 
 
-_00jo, <csdl.lang.output.Output object at 0x7ff0599ebaf0>, simple_forces_moments_model._00jo
+_00nS, <csdl.lang.output.Output object at 0x7f92cff64d00>, simple_forces_moments_model._00nS
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jn
+		_00nR
 	SUCCESSORS
-		_00jp
+		_00nT
 
-_00jr, <csdl.lang.output.Output object at 0x7ff0599ebb50>, simple_forces_moments_model._00jr
+_00nV, <csdl.lang.output.Output object at 0x7f92cff64ca0>, simple_forces_moments_model._00nV
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jn
+		_00nR
 	SUCCESSORS
-		_00js
+		_00nW
 
-_00ju, <csdl.lang.output.Output object at 0x7ff0599ebbe0>, simple_forces_moments_model._00ju
+_00nY, <csdl.lang.output.Output object at 0x7f92cff64c10>, simple_forces_moments_model._00nY
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jn
+		_00nR
 	SUCCESSORS
-		_00jv
+		_00nZ
 
-_00jp, <csdl.operations.reshape.reshape object at 0x7ff0599eba00>
+_00nT, <csdl.operations.reshape.reshape object at 0x7f92cff64df0>
 	PREDECESSORS
-		_00jo,(100, 1) 
+		_00nS,(10, 1) 
 	SUCCESSORS
-		_00jq,(1, 100, 1) 
+		_00nU,(1, 10, 1) 
 
-_00js, <csdl.operations.reshape.reshape object at 0x7ff0599eba30>
+_00nW, <csdl.operations.reshape.reshape object at 0x7f92cff64dc0>
 	PREDECESSORS
-		_00jr,(100, 1) 
+		_00nV,(10, 1) 
 	SUCCESSORS
-		_00jt,(1, 100, 1) 
+		_00nX,(1, 10, 1) 
 
-_00jv, <csdl.operations.reshape.reshape object at 0x7ff0599ebb80>
+_00nZ, <csdl.operations.reshape.reshape object at 0x7f92cff64c70>
 	PREDECESSORS
-		_00ju,(100, 1) 
+		_00nY,(10, 1) 
 	SUCCESSORS
-		_00jw,(1, 100, 1) 
+		_00n_,(1, 10, 1) 
 
-_00jq, <csdl.lang.output.Output object at 0x7ff0599eba90>, simple_forces_moments_model._00jq
+_00nU, <csdl.lang.output.Output object at 0x7f92cff64d60>, simple_forces_moments_model._00nU
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jp
+		_00nT
 	SUCCESSORS
-		_00ip
+		_00mT
 
-_00jF, <csdl.lang.output.Output object at 0x7ff0599ebdc0>, simple_forces_moments_model._00jF
+_00o8, <csdl.lang.output.Output object at 0x7f92cff64940>, simple_forces_moments_model._00o8
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jE
+		_00o7
 	SUCCESSORS
-		_00jG
+		_00o9
 
-rear_left_nacelle1_moments, <csdl.lang.output.Output object at 0x7ff0599ebdf0>, simple_forces_moments_model.rear_left_nacelle1_moments
+rear_left_nacelle1_moments, <csdl.lang.output.Output object at 0x7f92cff64910>, simple_forces_moments_model.rear_left_nacelle1_moments
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jG
+		_00o9
 	SUCCESSORS
-		_00jS
+		_00ol
 
-_00jS, <csdl.operations.decompose.decompose object at 0x7ff059986070>
+_00ol, <csdl.operations.decompose.decompose object at 0x7f92cff64610>
 	PREDECESSORS
-		rear_left_nacelle1_moments,(100, 3) 
+		rear_left_nacelle1_moments,(10, 3) 
 	SUCCESSORS
-		_00jT,(100, 1) 
-		_00jW,(100, 1) 
-		_00jZ,(100, 1) 
+		_00om,(10, 1) 
+		_00op,(10, 1) 
+		_00os,(10, 1) 
 
-_00jT, <csdl.lang.output.Output object at 0x7ff0599860d0>, simple_forces_moments_model._00jT
+_00om, <csdl.lang.output.Output object at 0x7f92cff645e0>, simple_forces_moments_model._00om
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jS
+		_00ol
 	SUCCESSORS
-		_00jU
+		_00on
 
-_00jW, <csdl.lang.output.Output object at 0x7ff059986130>, simple_forces_moments_model._00jW
+_00op, <csdl.lang.output.Output object at 0x7f92cff64550>, simple_forces_moments_model._00op
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jS
+		_00ol
 	SUCCESSORS
-		_00jX
+		_00oq
 
-_00jZ, <csdl.lang.output.Output object at 0x7ff0599861f0>, simple_forces_moments_model._00jZ
+_00os, <csdl.lang.output.Output object at 0x7f92cff644c0>, simple_forces_moments_model._00os
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jS
+		_00ol
 	SUCCESSORS
-		_00j_
+		_00ot
 
-_00jU, <csdl.operations.reshape.reshape object at 0x7ff059986040>
+_00on, <csdl.operations.reshape.reshape object at 0x7f92cff646d0>
 	PREDECESSORS
-		_00jT,(100, 1) 
+		_00om,(10, 1) 
 	SUCCESSORS
-		_00jV,(1, 100, 1) 
+		_00oo,(1, 10, 1) 
 
-_00jX, <csdl.operations.reshape.reshape object at 0x7ff0599860a0>
+_00oq, <csdl.operations.reshape.reshape object at 0x7f92cff646a0>
 	PREDECESSORS
-		_00jW,(100, 1) 
+		_00op,(10, 1) 
 	SUCCESSORS
-		_00jY,(1, 100, 1) 
+		_00or,(1, 10, 1) 
 
-_00j_, <csdl.operations.reshape.reshape object at 0x7ff059986190>
+_00ot, <csdl.operations.reshape.reshape object at 0x7f92cff64520>
 	PREDECESSORS
-		_00jZ,(100, 1) 
+		_00os,(10, 1) 
 	SUCCESSORS
-		_00k0,(1, 100, 1) 
+		_00ou,(1, 10, 1) 
 
-_00jV, <csdl.lang.output.Output object at 0x7ff059986100>, simple_forces_moments_model._00jV
+_00oo, <csdl.lang.output.Output object at 0x7f92cff64640>, simple_forces_moments_model._00oo
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jU
+		_00on
 	SUCCESSORS
-		_00ip
+		_00mT
 
-_00k9, <csdl.operations.sum.sum object at 0x7ff0599863d0>
+_00oD, <csdl.operations.sum.sum object at 0x7f92cf5d00d0>
 	PREDECESSORS
-		Mx,(4, 100, 1) 
+		Mx,(4, 10, 1) 
 	SUCCESSORS
-		_00ka,(100, 1) 
+		_00oE,(10, 1) 
 
-_00is, <csdl.lang.output.Output object at 0x7ff059cdec70>, simple_forces_moments_model._00is
+_00mW, <csdl.lang.output.Output object at 0x7f92d12bcbb0>, simple_forces_moments_model._00mW
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ir
+		_00mV
 	SUCCESSORS
-		_00it
+		_00mX
 
-_00it, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff059cdebb0>
+_00mX, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12bcc70>
 	PREDECESSORS
-		_00is,(1, 100, 1) 
-		_00iZ,(1, 100, 1) 
-		_00jt,(1, 100, 1) 
-		_00jY,(1, 100, 1) 
+		_00mW,(1, 10, 1) 
+		_00ns,(1, 10, 1) 
+		_00nX,(1, 10, 1) 
+		_00or,(1, 10, 1) 
 	SUCCESSORS
-		My,(4, 100, 1) 
+		My,(4, 10, 1) 
 
-My, <csdl.lang.concatenation.Concatenation object at 0x7ff059ce2610>, simple_forces_moments_model.My
+My, <csdl.lang.concatenation.Concatenation object at 0x7f92d12bc580>, simple_forces_moments_model.My
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00it
+		_00mX
 	SUCCESSORS
-		_00kd
+		_00oH
 
-_00iZ, <csdl.lang.output.Output object at 0x7ff0599eb550>, simple_forces_moments_model._00iZ
+_00ns, <csdl.lang.output.Output object at 0x7f92d12bc100>, simple_forces_moments_model._00ns
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iY
+		_00nr
 	SUCCESSORS
-		_00it
+		_00mX
 
-_00jt, <csdl.lang.output.Output object at 0x7ff0599ebb20>, simple_forces_moments_model._00jt
+_00nX, <csdl.lang.output.Output object at 0x7f92cff64cd0>, simple_forces_moments_model._00nX
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00js
+		_00nW
 	SUCCESSORS
-		_00it
+		_00mX
 
-_00jY, <csdl.lang.output.Output object at 0x7ff059986160>, simple_forces_moments_model._00jY
+_00or, <csdl.lang.output.Output object at 0x7f92cff645b0>, simple_forces_moments_model._00or
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jX
+		_00oq
 	SUCCESSORS
-		_00it
+		_00mX
 
-_00kd, <csdl.operations.sum.sum object at 0x7ff059986460>
+_00oH, <csdl.operations.sum.sum object at 0x7f92cf5d0190>
 	PREDECESSORS
-		My,(4, 100, 1) 
+		My,(4, 10, 1) 
 	SUCCESSORS
-		total_My,(100, 1) 
+		forces_moments_My,(10, 1) 
 
-_00iw, <csdl.lang.output.Output object at 0x7ff059c84700>, simple_forces_moments_model._00iw
+_00m_, <csdl.lang.output.Output object at 0x7f92d12bccd0>, simple_forces_moments_model._00m_
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00iv
+		_00mZ
 	SUCCESSORS
-		_00ix
+		_00n0
 
-_00ix, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7ff0599eb070>
+_00n0, <csdl.operations.indexed_passthrough.indexed_passthrough object at 0x7f92d12bcd30>
 	PREDECESSORS
-		_00iw,(1, 100, 1) 
-		_00j1,(1, 100, 1) 
-		_00jw,(1, 100, 1) 
-		_00k0,(1, 100, 1) 
+		_00m_,(1, 10, 1) 
+		_00nv,(1, 10, 1) 
+		_00n_,(1, 10, 1) 
+		_00ou,(1, 10, 1) 
 	SUCCESSORS
-		Mz,(4, 100, 1) 
+		Mz,(4, 10, 1) 
 
-Mz, <csdl.lang.concatenation.Concatenation object at 0x7ff059ce25e0>, simple_forces_moments_model.Mz
+Mz, <csdl.lang.concatenation.Concatenation object at 0x7f92d12bc5b0>, simple_forces_moments_model.Mz
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00ix
+		_00n0
 	SUCCESSORS
-		_00kf
+		_00oJ
 
-_00j1, <csdl.lang.output.Output object at 0x7ff0599eb670>, simple_forces_moments_model._00j1
+_00nv, <csdl.lang.output.Output object at 0x7f92d12bc070>, simple_forces_moments_model._00nv
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00j0
+		_00nu
 	SUCCESSORS
-		_00ix
+		_00n0
 
-_00jw, <csdl.lang.output.Output object at 0x7ff0599ebc40>, simple_forces_moments_model._00jw
+_00n_, <csdl.lang.output.Output object at 0x7f92cff64bb0>, simple_forces_moments_model._00n_
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00jv
+		_00nZ
 	SUCCESSORS
-		_00ix
+		_00n0
 
-_00k0, <csdl.lang.output.Output object at 0x7ff059986250>, simple_forces_moments_model._00k0
+_00ou, <csdl.lang.output.Output object at 0x7f92cff64430>, simple_forces_moments_model._00ou
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00j_
+		_00ot
 	SUCCESSORS
-		_00ix
+		_00n0
 
-_00kf, <csdl.operations.sum.sum object at 0x7ff0599864c0>
+_00oJ, <csdl.operations.sum.sum object at 0x7f92cf5d01f0>
 	PREDECESSORS
-		Mz,(4, 100, 1) 
+		Mz,(4, 10, 1) 
 	SUCCESSORS
-		_00kg,(100, 1) 
+		_00oK,(10, 1) 
 
-total_Fx, <csdl.lang.output.Output object at 0x7ff0599862b0>, simple_forces_moments_model.total_Fx
+forces_moments_Fx, <csdl.lang.output.Output object at 0x7f92cff64400>, simple_forces_moments_model.forces_moments_Fx
 	CONNECTED TO: False
 	PROMOTED TO: True
-		total_Fx, subgroup.total_Fx
+		forces_moments_Fx, subgroup.forces_moments_Fx
 	PREDECESSORS
-		_00k1
+		_00ov
 	SUCCESSORS
-		_00kC
+		_00p6
 
-_00k4, <csdl.lang.output.Output object at 0x7ff0599862e0>, simple_forces_moments_model._00k4
+_00oy, <csdl.lang.output.Output object at 0x7f92d13fc4c0>, simple_forces_moments_model._00oy
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00k3
+		_00ox
 	SUCCESSORS
-		_00k5
+		_00oz
 
-_00k5, <csdl.operations.power_combination.power_combination object at 0x7ff059986280>
+_00oz, <csdl.operations.power_combination.power_combination object at 0x7f92d13fc0d0>
 	PREDECESSORS
-		_00k4,(100, 1) 
+		_00oy,(10, 1) 
 	SUCCESSORS
-		total_Fy,(100, 1) 
+		forces_moments_Fy,(10, 1) 
 
-total_Fy, <csdl.lang.output.Output object at 0x7ff059986340>, simple_forces_moments_model.total_Fy
+forces_moments_Fy, <csdl.lang.output.Output object at 0x7f92cf5d0040>, simple_forces_moments_model.forces_moments_Fy
 	CONNECTED TO: False
 	PROMOTED TO: True
-		total_Fy, subgroup.total_Fy
+		forces_moments_Fy, subgroup.forces_moments_Fy
 	PREDECESSORS
-		_00k5
+		_00oz
 	SUCCESSORS
-		_00kC
+		_00p6
 
-total_Fz, <csdl.lang.output.Output object at 0x7ff059986310>, simple_forces_moments_model.total_Fz
+forces_moments_Fz, <csdl.lang.output.Output object at 0x7f92cf5d00a0>, simple_forces_moments_model.forces_moments_Fz
 	CONNECTED TO: False
 	PROMOTED TO: True
-		total_Fz, subgroup.total_Fz
+		forces_moments_Fz, subgroup.forces_moments_Fz
 	PREDECESSORS
-		_00k7
+		_00oB
 	SUCCESSORS
-		_00kC
+		_00p6
 
-_00ka, <csdl.lang.output.Output object at 0x7ff0599863a0>, simple_forces_moments_model._00ka
+_00oE, <csdl.lang.output.Output object at 0x7f92cf5d0100>, simple_forces_moments_model._00oE
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00k9
+		_00oD
 	SUCCESSORS
-		_00kb
+		_00oF
 
-_00kb, <csdl.operations.power_combination.power_combination object at 0x7ff059986400>
+_00oF, <csdl.operations.power_combination.power_combination object at 0x7f92cf5d0130>
 	PREDECESSORS
-		_00ka,(100, 1) 
+		_00oE,(10, 1) 
 	SUCCESSORS
-		total_Mx,(100, 1) 
+		forces_moments_Mx,(10, 1) 
 
-total_Mx, <csdl.lang.output.Output object at 0x7ff059986430>, simple_forces_moments_model.total_Mx
+forces_moments_Mx, <csdl.lang.output.Output object at 0x7f92cf5d0160>, simple_forces_moments_model.forces_moments_Mx
 	CONNECTED TO: False
 	PROMOTED TO: True
-		total_Mx, subgroup.total_Mx
+		forces_moments_Mx, subgroup.forces_moments_Mx
 	PREDECESSORS
-		_00kb
+		_00oF
 	SUCCESSORS
-		_00kC
+		_00p6
 
-total_My, <csdl.lang.output.Output object at 0x7ff059986490>, simple_forces_moments_model.total_My
+forces_moments_My, <csdl.lang.output.Output object at 0x7f92cf5d01c0>, simple_forces_moments_model.forces_moments_My
 	CONNECTED TO: False
 	PROMOTED TO: True
-		total_My, subgroup.total_My
+		forces_moments_My, subgroup.forces_moments_My
 	PREDECESSORS
-		_00kd
+		_00oH
 	SUCCESSORS
-		_00kC
+		_00p6
 
-_00kg, <csdl.lang.output.Output object at 0x7ff0599864f0>, simple_forces_moments_model._00kg
+_00oK, <csdl.lang.output.Output object at 0x7f92cf5d0220>, simple_forces_moments_model._00oK
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kf
+		_00oJ
 	SUCCESSORS
-		_00kh
+		_00oL
 
-_00kh, <csdl.operations.power_combination.power_combination object at 0x7ff059986520>
+_00oL, <csdl.operations.power_combination.power_combination object at 0x7f92cf5d0250>
 	PREDECESSORS
-		_00kg,(100, 1) 
+		_00oK,(10, 1) 
 	SUCCESSORS
-		total_Mz,(100, 1) 
+		forces_moments_Mz,(10, 1) 
 
-total_Mz, <csdl.lang.output.Output object at 0x7ff059986550>, simple_forces_moments_model.total_Mz
+forces_moments_Mz, <csdl.lang.output.Output object at 0x7f92cf5d0280>, simple_forces_moments_model.forces_moments_Mz
 	CONNECTED TO: False
 	PROMOTED TO: True
-		total_Mz, subgroup.total_Mz
+		forces_moments_Mz, subgroup.forces_moments_Mz
 	PREDECESSORS
-		_00kh
+		_00oL
 	SUCCESSORS
-		_00kC
+		_00p6
 
-_00kC, <ozone.classes.ODEModelTM.ODEModelComp object at 0x7ff059986910>
+_00p6, <ozone.classes.ODEModelTM.ODEModelComp object at 0x7f92cf5d0670>
 	PREDECESSORS
-		h,(99,) 
+		h,(9,) 
+		refPt,(3,) 
 		x_0,(1,) 
 		y_0,(1,) 
 		z_0,(1,) 
@@ -3570,106 +3573,154 @@ _00kC, <ozone.classes.ODEModelTM.ODEModelComp object at 0x7ff059986910>
 		p_0,(1,) 
 		q_0,(1,) 
 		r_0,(1,) 
-		total_Fx,(100, 1) 
-		total_Fy,(100, 1) 
-		total_Fz,(100, 1) 
-		total_Mx,(100, 1) 
-		total_My,(100, 1) 
-		total_Mz,(100, 1) 
+		forces_moments_Fx,(10, 1) 
+		forces_moments_Fy,(10, 1) 
+		forces_moments_Fz,(10, 1) 
+		forces_moments_Mx,(10, 1) 
+		forces_moments_My,(10, 1) 
+		forces_moments_Mz,(10, 1) 
 	SUCCESSORS
-		solved_x,(100,) 
-		solved_y,(100,) 
-		solved_z,(100,) 
-		solved_u,(100,) 
-		solved_v,(100,) 
-		solved_w,(100,) 
-		solved_theta,(100,) 
-		solved_psi,(100,) 
-		solved_phi,(100,) 
-		solved_p,(100,) 
-		solved_q,(100,) 
-		solved_r,(100,) 
+		total_Fx,(10, 1) 
+		total_Fy,(10, 1) 
+		total_Fz,(10, 1) 
+		total_Mx,(10, 1) 
+		total_My,(10, 1) 
+		total_Mz,(10, 1) 
+		solved_x,(10,) 
+		solved_y,(10,) 
+		solved_z,(10,) 
+		solved_u,(10,) 
+		solved_v,(10,) 
+		solved_w,(10,) 
+		solved_theta,(10,) 
+		solved_psi,(10,) 
+		solved_phi,(10,) 
+		solved_p,(10,) 
+		solved_q,(10,) 
+		solved_r,(10,) 
 
-solved_x, <csdl.lang.output.Output object at 0x7ff0599869d0>, subgroup.solved_x
+total_Fx, <csdl.lang.output.Output object at 0x7f92cf5d0730>, subgroup.total_Fx
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_y, <csdl.lang.output.Output object at 0x7ff0599869a0>, subgroup.solved_y
+total_Fy, <csdl.lang.output.Output object at 0x7f92cf5d0700>, subgroup.total_Fy
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_z, <csdl.lang.output.Output object at 0x7ff059986a00>, subgroup.solved_z
+total_Fz, <csdl.lang.output.Output object at 0x7f92cf5d0760>, subgroup.total_Fz
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_u, <csdl.lang.output.Output object at 0x7ff059986a30>, subgroup.solved_u
+total_Mx, <csdl.lang.output.Output object at 0x7f92cf5d0790>, subgroup.total_Mx
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_v, <csdl.lang.output.Output object at 0x7ff059986a60>, subgroup.solved_v
+total_My, <csdl.lang.output.Output object at 0x7f92cf5d07c0>, subgroup.total_My
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_w, <csdl.lang.output.Output object at 0x7ff059986a90>, subgroup.solved_w
+total_Mz, <csdl.lang.output.Output object at 0x7f92cf5d07f0>, subgroup.total_Mz
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_theta, <csdl.lang.output.Output object at 0x7ff059986ac0>, subgroup.solved_theta
+solved_x, <csdl.lang.output.Output object at 0x7f92cf5d0820>, subgroup.solved_x
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_psi, <csdl.lang.output.Output object at 0x7ff059986af0>, subgroup.solved_psi
+solved_y, <csdl.lang.output.Output object at 0x7f92cf5d0850>, subgroup.solved_y
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_phi, <csdl.lang.output.Output object at 0x7ff059986b20>, subgroup.solved_phi
+solved_z, <csdl.lang.output.Output object at 0x7f92cf5d0880>, subgroup.solved_z
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_p, <csdl.lang.output.Output object at 0x7ff059986b50>, subgroup.solved_p
+solved_u, <csdl.lang.output.Output object at 0x7f92cf5d08b0>, subgroup.solved_u
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_q, <csdl.lang.output.Output object at 0x7ff059986b80>, subgroup.solved_q
+solved_v, <csdl.lang.output.Output object at 0x7f92cf5d08e0>, subgroup.solved_v
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
 	SUCCESSORS
 
-solved_r, <csdl.lang.output.Output object at 0x7ff059986bb0>, subgroup.solved_r
+solved_w, <csdl.lang.output.Output object at 0x7f92cf5d0910>, subgroup.solved_w
 	CONNECTED TO: False
 	PROMOTED TO: False
 	PREDECESSORS
-		_00kC
+		_00p6
+	SUCCESSORS
+
+solved_theta, <csdl.lang.output.Output object at 0x7f92cf5d0940>, subgroup.solved_theta
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00p6
+	SUCCESSORS
+
+solved_psi, <csdl.lang.output.Output object at 0x7f92cf5d0970>, subgroup.solved_psi
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00p6
+	SUCCESSORS
+
+solved_phi, <csdl.lang.output.Output object at 0x7f92cf5d09a0>, subgroup.solved_phi
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00p6
+	SUCCESSORS
+
+solved_p, <csdl.lang.output.Output object at 0x7f92cf5d09d0>, subgroup.solved_p
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00p6
+	SUCCESSORS
+
+solved_q, <csdl.lang.output.Output object at 0x7f92cf5d0a00>, subgroup.solved_q
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00p6
+	SUCCESSORS
+
+solved_r, <csdl.lang.output.Output object at 0x7f92cf5d0a30>, subgroup.solved_r
+	CONNECTED TO: False
+	PROMOTED TO: False
+	PREDECESSORS
+		_00p6
 	SUCCESSORS

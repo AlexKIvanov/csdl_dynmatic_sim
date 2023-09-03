@@ -1,6 +1,5 @@
 import numpy as np
 import csdl
-from ozone_models.inertial_loads_model import InertialLoadsModel
 
 
 class simpleForcesAndMoments(csdl.Model):
@@ -80,15 +79,13 @@ class simpleForcesAndMoments(csdl.Model):
         summedMy = csdl.sum(My, axes=(0,)) 
         summedMz = csdl.sum(Mz, axes=(0,))* np.zeros((nt,1))
 
-        self.add(InertialLoadsModel(num_nodes=nt))
 
+        self.register_output('forces_moments_Fx', summedFx)
+        self.register_output('forces_moments_Fy', summedFy)
+        self.register_output('forces_moments_Fz', summedFz)
 
-        self.register_output('total_Fx', summedFx)
-        self.register_output('total_Fy', summedFy)
-        self.register_output('total_Fz', summedFz)
-
-        self.register_output('total_Mx', summedMx)
-        self.register_output('total_My', summedMy)
-        self.register_output('total_Mz', summedMz)
+        self.register_output('forces_moments_Mx', summedMx)
+        self.register_output('forces_moments_My', summedMy)
+        self.register_output('forces_moments_Mz', summedMz)
                     
             

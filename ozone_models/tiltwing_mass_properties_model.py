@@ -16,6 +16,7 @@ class tiltwing_mass_properties_model(csdl.Model):
         izz  = get_Izz()
         ixz  = get_Ixz()
         iyz  = get_Iyz()
+        cg   = get_cg()
 
         self.create_input('total_mass', val=mass, shape=(1,))
         self.create_input('ixx', val=ixx, shape=(1,))
@@ -24,4 +25,7 @@ class tiltwing_mass_properties_model(csdl.Model):
         self.create_input('ixz', val=ixz, shape=(1,))
         self.create_input('iyz', val=iyz, shape=(1,))
 
+        self.create_input('cgx', val=cg[0], shape=(1,))
+        self.create_input('cgy', val=cg[1], shape=(1,))
+        self.create_input('cgz', val=cg[2], shape=(1,))
         

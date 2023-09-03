@@ -56,12 +56,12 @@ class OzoneEulerFlatEarth6DoF(csdl.Model):
 
         # region Inputs
         # Loads
-        Fx = self.declare_variable(name='total_Fx', shape=(num_nodes))
-        Fy = self.declare_variable(name='total_Fy', shape=(num_nodes))
-        Fz = self.declare_variable(name='total_Fz', shape=(num_nodes))
-        L = self.declare_variable(name='total_Mx', shape=(num_nodes))
-        M = self.declare_variable(name='total_My', shape=(num_nodes))
-        N = self.declare_variable(name='total_Mz', shape=(num_nodes))
+        Fx = self.declare_variable(name='total_Fx', shape=(num_nodes,1))
+        Fy = self.declare_variable(name='total_Fy', shape=(num_nodes,1))
+        Fz = self.declare_variable(name='total_Fz', shape=(num_nodes,1))
+        L = self.declare_variable(name='total_Mx', shape=(num_nodes,1))
+        M = self.declare_variable(name='total_My', shape=(num_nodes,1))
+        N = self.declare_variable(name='total_Mz', shape=(num_nodes,1))
 
         # Mass properties
         mass = self.declare_variable(
@@ -81,18 +81,18 @@ class OzoneEulerFlatEarth6DoF(csdl.Model):
             shape=(1, ), units='kg*m**2')
 
         # State
-        u = self.declare_variable(name='u', shape=(num_nodes))
-        v = self.declare_variable(name='v', shape=(num_nodes))
-        w = self.declare_variable(name='w', shape=(num_nodes))
-        p = self.declare_variable(name='p', shape=(num_nodes))
-        q = self.declare_variable(name='q', shape=(num_nodes))
-        r = self.declare_variable(name='r', shape=(num_nodes))
-        phi = self.declare_variable(name='phi', shape=(num_nodes))
-        theta = self.declare_variable(name='theta', shape=(num_nodes))
-        psi = self.declare_variable(name='psi', shape=(num_nodes))
-        x = self.declare_variable(name='x', shape=(num_nodes))
-        y = self.declare_variable(name='y', shape=(num_nodes))
-        z = self.declare_variable(name='z', shape=(num_nodes))
+        u = self.declare_variable(name='u', shape=(num_nodes,1))
+        v = self.declare_variable(name='v', shape=(num_nodes,1))
+        w = self.declare_variable(name='w', shape=(num_nodes,1))
+        p = self.declare_variable(name='p', shape=(num_nodes,1))
+        q = self.declare_variable(name='q', shape=(num_nodes,1))
+        r = self.declare_variable(name='r', shape=(num_nodes,1))
+        phi = self.declare_variable(name='phi', shape=(num_nodes,1))
+        theta = self.declare_variable(name='theta', shape=(num_nodes,1))
+        psi = self.declare_variable(name='psi', shape=(num_nodes,1))
+        x = self.declare_variable(name='x', shape=(num_nodes,1))
+        y = self.declare_variable(name='y', shape=(num_nodes,1))
+        z = self.declare_variable(name='z', shape=(num_nodes,1))
         # endregion
 
         # region Calculations

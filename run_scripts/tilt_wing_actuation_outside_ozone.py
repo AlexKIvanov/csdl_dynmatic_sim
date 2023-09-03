@@ -68,8 +68,8 @@ rear_act_dict['rear_actuation_angle'] = rear_actuation_array
 refPt = np.array([13.35494603, -4.123772014e-16 , 8.118931759]) * 0.3048
 
 # Thrust Dict for front wing [NEWTONS]
-thrust_start        = 25000.0
-thrust_end          = 25000.0 
+thrust_start        = 100.0
+thrust_end          = 100.0 
 thrust_upper_bound  = 4000.0
 thrust_lower_bound  = 0.0
 thrust_scaler       = 1e0

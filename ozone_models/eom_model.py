@@ -103,9 +103,9 @@ class OzoneEulerFlatEarth6DoF(csdl.Model):
         Jxz = csdl.expand(var=Ixz, shape=(num_nodes))
 
         # Linear momentum equations
-        du_dt = Fx / m + r * v - q * w + x * 0.
-        dv_dt = (Fy / m) * 0. - r * u * 0. + p * w * 0. + y * 0.
-        dw_dt = Fz / m + q * u - p * v + z * 0.
+        du_dt = Fx / m + r * v - q * w
+        dv_dt = (Fy / m) * 0. - r * u * 0. + p * w * 0. 
+        dw_dt = Fz / m + q * u - p * v
 
         # Angular momentum equations
         dp_dt = ((L * Iz + N * Jxz - q * r * (Iz ** 2 - Iz * Iy + Jxz ** 2) +
@@ -119,7 +119,7 @@ class OzoneEulerFlatEarth6DoF(csdl.Model):
         dphi_dt = (p + (q * csdl.sin(phi) + r * csdl.cos(phi)) * csdl.tan(theta)) * 0.0 
         dpsi_dt = ((q * csdl.sin(phi) + r * csdl.cos(phi)) / csdl.cos(theta)) * 0.0  
 
-        # Linear kinematic equations
+        # Linear kinematic equations in Inertial NED frame
         dx_dt = (csdl.cos(theta) * csdl.cos(psi) * u +
                  (csdl.sin(phi) * csdl.sin(theta) * csdl.cos(psi) - csdl.cos(phi) * csdl.sin(psi)) * v +
                  (csdl.cos(phi) * csdl.sin(theta) * csdl.cos(psi) + csdl.sin(phi) * csdl.sin(psi)) * w)

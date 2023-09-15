@@ -81,7 +81,7 @@ thrust_start        = 8000.0
 thrust_end          = 8000.0 
 thrust_upper_bound  = 10000.0
 thrust_lower_bound  = 0.0
-thrust_scaler       = 1e-2
+thrust_scaler       = 1e-4
 
 thrust = dict()
 thrust['front_left_nacelle1_NEWTONS'] = np.linspace(thrust_start, thrust_end, nt)
@@ -175,7 +175,15 @@ main_model.add(front_wing_actuation_model, 'front_wing_actuation_model')
 main_model.add(rear_wing_actuation_model, 'rear_wing_actuation_model')
 
 for key,value in thrust.items():
-    main_model.create_input(key+'_thrust', val=value)
+    if 'front_left_nacelle1_NEWTONS' in key:
+        front_left_nacelle1_NEWTONS = main_model.create_input(key+'_thrust', val=value, shape=(nt,))
+    elif 'front_left_nacelle2_NEWTONS' in key:
+        front_left_nacelle2_NEWTONS = main_model.create_input(key+'_thrust', val=value, shape=(nt,))
+    elif 'front_left_nacelle3_NEWTONS' in key:
+        front_left_nacelle3_NEWTONS = main_model.create_input(key+'_thrust', val=value, shape=(nt,))
+    elif 'rear_left_nacelle1_NEWTONS' in key:
+        rear_left_nacelle1_NEWTONS = main_model.create_input(key+'_thrust', val=value, shape=(nt,))
+        
     main_model.add_design_variable(key+'_thrust', lower=thrust_lower_bound, upper=thrust_upper_bound, scaler=thrust_scaler)
 
 main_model.add(simpleForcesAndMomentsModel, 'simple_forces_moments_model')
@@ -298,6 +306,21 @@ endConstraints[4,0] = u[nt-2,0]
 endConstraints[5,0] = du_dt[nt-2,0] 
 endConstraints[6,0] = zdesire_final - alt[nt-2,0]
 
+# Minimum effort objective function
+obj_vec      = main_model.create_output('obj_vec', shape=(nt,6))
+obj_vec[:,0] = csdl.reshape(front_act, new_shape=(nt,1))
+obj_vec[:,1] = csdl.reshape(rear_act, new_shape=(nt,1))
+obj_vec[:,2] = csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1))
+obj_vec[:,3] = csdl.reshape(front_left_nacelle2_NEWTONS, new_shape=(nt,1))
+obj_vec[:,4] = csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1))
+obj_vec[:,5] = csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1))
+
+obj_norm = csdl.pnorm(obj_vec, axis=0)
+obj_sum  = csdl.sum(obj_norm)
+main_model.register_output('objective', obj_sum)
+main_model.print_var(obj_sum)
+
+
 posConstraints = main_model.create_output(name='posConstraints', shape=(1, ))
 posConstraints[0] = csdl.min(alt * 100) / 100
 
@@ -350,36 +373,35 @@ ObjMultConst = main_model.create_input('ObjMultConst', val=np.ones((6, ))*10)
 ObjDivConst  = main_model.create_input('ObjDivConst',  val=np.ones((1,  ))*10)
 
 # obj1 = ((csdl.sum(csdl.pnorm(endConstraints + ObjAdd, axis=1) * ObjMultConst))/ObjDivConst) - ObjSub
-obj1 = csdl.sum(csdl.pnorm(endConstraints, axis=1))
-
-main_model.register_output('objective', obj1)
+constraints = csdl.sum(csdl.pnorm(endConstraints, axis=1))
 
 main_model.add_constraint('thetaConstraint', lower=-0.1745, upper=0.1745, scaler=1 )
 main_model.add_constraint('posConstraints', lower=0.0)
 main_model.add_constraint('frontMaxRotRate',lower=-0.02, upper=0.02, scaler=1)
 main_model.add_constraint('rearMaxRotRate', lower=-0.02, upper=0.02, scaler=1)
+main_model.add_constraint('endConstraints', lower=-0.02, upper=0.02, scaler=1)
 
 main_model.add_objective('objective')
 
 sim = python_csdl_backend.Simulator(main_model, analytics=True)
 sim.run()
 
-# prob = CSDLProblem(problem_name='Equalsplusminus5constraint', simulator=sim)
-# optimizer = SNOPT(
-#     prob, 
-#     Major_iterations = 5000,
-#     Major_optimality=1e-5, 
-#     Major_feasibility=1e-5,
-#     Superbasics_limit=1000,
-#     Linesearch_tolerance=0.99,
-#     # Major_step_limit=0.1,
-#     append2file=True
-# )
-# optimizer.solve()
-# optimizer.print_results()
+prob = CSDLProblem(problem_name='Equalsplusminus5constraint', simulator=sim)
+optimizer = SNOPT(
+    prob, 
+    Major_iterations = 5000,
+    Major_optimality=1e-5, 
+    Major_feasibility=1e-5,
+    Superbasics_limit=1000,
+    Linesearch_tolerance=0.99,
+    # Major_step_limit=0.1,
+    append2file=True
+)
+optimizer.solve()
+optimizer.print_results()
 
 # sim.check_partials(compact_print=True)
-sim.check_totals(compact_print=True)
+# sim.check_totals(compact_print=True)
 # sim.visualize_implementation()
 
 # PLOTTING THE VECTORS 

@@ -1,0 +1,84 @@
+
+ ==============================
+ S N O P T  7.7.7    (Feb 2021)
+ ==============================
+
+ SNMEMB EXIT 100 -- finished successfully
+ SNMEMB INFO 104 -- memory requirements estimated
+
+ Trial version of SNOPT -- for evaluation or academic purposes only
+
+
+
+ Nonlinear constraints      11     Linear constraints       0
+ Nonlinear variables       300     Linear variables         0
+ Jacobian  variables       300     Objective variables    300
+ Total constraints          11     Total variables        300
+
+
+
+ The user has defined    3300   out of    3300   constraint gradients.
+ The user has defined     300   out of     300   objective  gradients.
+
+
+        Minor NumInf  FP mult  FP step   rgNorm         SumInf     nS
+          100      9 -1.6E+01  2.0E-01           1.2244654E+03
+          200      8  2.2E+01  2.8E-02           7.5889484E+02
+          300      7  1.6E+02  7.4E-06           3.9856267E+02
+          400      7 -1.1E+00  2.0E-01           1.9248883E+02
+          500      6  1.3E-01  5.6E-01           1.3693594E+02
+          600      6  1.2E-01  4.9E-01           1.3493085E+02
+          700      6  1.4E-02  2.3E+01           1.3358938E+02
+          800      6  3.0E-02  8.2E+00           1.3282130E+02
+
+        Minor NonOpt  QP mult  QP step   rgNorm Elastic QP obj     nS
+          900    189  1.0E+08  9.0E-07           3.1997267E+10
+         1000    155 -6.5E+08  1.7E-05           2.1924157E+10
+         1100    115  1.3E+08  2.7E-04           6.2907332E+09
+         1200     58  3.1E+06  7.1E-04           5.2257160E+09
+         1300     39  6.6E+06  7.2E-05           4.9505984E+09
+         1400     17 -1.2E+06  2.6E-03           4.7154788E+09
+
+ Major Minors     Step   nCon Feasible  Optimal  MeritFunction     nS Penalty
+     0   1466               1  1.9E+00  1.1E+00  2.2629639E+05                  r it
+
+        Minor NonOpt  QP mult  QP step   rgNorm Elastic QP obj     nS
+          100    113 -6.4E+07  1.9E-07           4.1805196E+09
+          200     34  5.4E+06  5.9E-03           3.9279550E+09
+
+ Major Minors     Step   nCon Feasible  Optimal  MeritFunction     nS Penalty
+     1    218  6.2E-02      2  1.7E+00  1.0E+00  7.4959556E+09        1.2E+07   rli
+
+        Minor NonOpt  QP mult  QP step   rgNorm Elastic QP obj     nS
+          100     73 -2.0E+07  3.2E-01  1.3E-07  4.2289837E+09      1
+          200      1 -4.1E+04  1.0E+00  1.0E-07  3.9800096E+09     54
+
+ Major Minors     Step   nCon Feasible  Optimal  MeritFunction     nS Penalty
+     2    201  5.9E-02      3  1.5E+00  1.0E+00  7.2795868E+09     55 1.2E+07 s  li
+
+ SNOPTC EXIT  40 -- terminated after numerical difficulties
+ SNOPTC INFO  43 -- cannot satisfy the general constraints
+
+ Problem name                 Equalspl
+ No. of iterations                1885   Objective            2.1609407763E+05
+ No. of major iterations             3   Linear    obj. term  0.0000000000E+00
+ Penalty parameter           1.178E+07   Nonlinear obj. term  2.1609407763E+05
+ No. of infeasibilities             11   Sum of infeas        2.3928912542E+02
+ Elastic weight                1.6E+09   Elastic   objective  3.5919009207E+09
+ No. of infeas elastics              2   Elastic infeas       2.1994377893E+00
+ User function calls (total)        15
+ No. of superbasics                 55   No. of basic nonlinears             6
+ No. of degenerate steps             0   Percentage                       0.00
+ Max x                      25 3.1E+01   Max pi                      1 1.6E+09
+ Max Primal infeas         311 8.8E+01   Max Dual infeas           264 1.5E+09
+ Nonlinear constraint violn    8.8E+01
+
+
+
+ Solution printed on file   9
+
+ Time for MPS input                             0.00 seconds
+ Time for solving problem                      48.39 seconds
+ Time for solution output                       0.00 seconds
+ Time for constraint functions                 51.57 seconds
+ Time for objective function                    0.00 seconds

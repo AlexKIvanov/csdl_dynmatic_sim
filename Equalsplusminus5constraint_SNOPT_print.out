@@ -1,0 +1,503 @@
+
+         ==============================
+         S N O P T  7.7.7    (Feb 2021)
+         ==============================
+1
+
+ SNMEMB EXIT 100 -- finished successfully
+ SNMEMB INFO 104 -- memory requirements estimated
+
+ Trial version of SNOPT -- for evaluation or academic purposes only
+1
+
+ Parameters
+ ==========
+
+ Files
+ -----
+ Solution file..........         0       Old basis file ........         0       Standard input.........         5
+ Insert file............         0       New basis file ........         0       (Printer)..............         9
+ Punch file.............         0       Backup basis file......         0       (Specs file)...........         0
+ Load file..............         0       Dump file..............         0       Standard output........         6
+
+ Frequencies
+ -----------
+ Print frequency........       100       Check frequency........        60       Save new basis map.....       100
+ Summary frequency......       100       Factorization frequency        50       Expand frequency.......     10000
+
+ QP subproblems
+ --------------
+ QPsolver Cholesky......
+ Scale tolerance........     0.900       Minor feasibility tol..  1.00E-06       Iteration limit........     10000
+ Scale option...........         0       Minor optimality  tol..  1.00E-06       Minor print level......         1
+ Crash tolerance........     0.100       Pivot tolerance........  3.25E-11       New superbasics........        99
+ Crash option...........         3       Elastic weight.........  1.00E+05
+
+ Partial pricing
+ ---------------
+ LP Partial price.......         1       Prtl price section ( A)       300       Prtl price section (-I)        11
+ QP Partial price.......         1       Prtl price section ( A)       300       Prtl price section (-I)        11
+
+ The SQP Method
+ --------------
+ Minimize...............                 Cold start.............                 Proximal Point method..         1
+ Nonlinear objectiv vars       300       Major optimality tol...  1.00E-05       Function precision.....  3.00E-13
+ Unbounded step size....  1.00E+20       Superbasics limit......       300       Difference interval....  5.48E-07
+ Unbounded objective....  1.00E+10       Reduced Hessian dim....       300       Central difference int.  6.70E-05
+ Major step limit.......  2.00E+00       Derivative linesearch..                 Derivative level.......         3
+ Major iterations limit.      5000       Linesearch tolerance...   0.99000       Verify level...........         0
+ Minor iterations limit.       500       Penalty parameter......  0.00E+00       Major Print Level......         1
+ Time limit (secs)...... 9999999.0
+
+ Hessian Approximation
+ ---------------------
+ Hessian limited-memory.                 Hessian updates........        10       Hessian frequency......  99999999
+                                                                                 Hessian flush..........  99999999
+
+ Nonlinear constraints
+ ---------------------
+ Nonlinear constraints..        11       Major feasibility tol..  1.00E-05       Violation limit........  1.00E+06
+ Nonlinear Jacobian vars       300
+
+ Miscellaneous
+ -------------
+ LU factor tolerance....      3.99       LU singularity tol.....  3.25E-11       Timing level...........         3
+ LU update tolerance....      3.99       LU swap tolerance......  1.22E-04       Debug level............         0
+ LU partial  pivoting...                 eps (machine precision)  2.22E-16       System information.....        No
+                                                                                 Sticky parameters......        No
+1
+
+
+
+
+ Matrix statistics
+ -----------------
+               Total      Normal        Free       Fixed     Bounded
+ Rows             11           1           0           0          10
+ Columns         300           0           0           0         300
+
+ No. of matrix elements                 3300     Density     100.000
+ Biggest  constant element        0.0000E+00  (excluding fixed columns,
+ Smallest constant element        0.0000E+00   free rows, and RHS)
+
+ No. of objective coefficients             0
+
+ Nonlinear constraints      11     Linear constraints       0
+ Nonlinear variables       300     Linear variables         0
+ Jacobian  variables       300     Objective variables    300
+ Total constraints          11     Total variables        300
+1
+
+
+
+ The user has defined    3300   out of    3300   constraint gradients.
+ The user has defined     300   out of     300   objective  gradients.
+
+ Cheap test of user-supplied problem derivatives...
+
+ The constraint gradients seem to be OK.
+
+ -->  The largest discrepancy was    1.17E-07  in constraint   311
+
+
+ The objective  gradients seem to be OK.
+
+ Gradient projected in one direction   4.70256123158E-03
+ Difference approximation              6.55833398756E-03
+1
+
+
+    Itn     FP mult  FP step   rgNorm          NumInf         SumInf   +SBS   -SBS    -BS    Pivot     L+U ncp    nS condZHZ
+    100    -1.6E+01  2.0E-01                        9  1.2244654E+03    158    158        -1.0E+00      61
+    200     2.2E+01  2.8E-02                        8  7.5889484E+02    279    279     37  1.9E+01      96
+    300     1.6E+02  7.4E-06                        7  3.9856267E+02    303    303     45  6.7E+02      81
+    400    -1.1E+00  2.0E-01                        7  1.9248883E+02    226    226        -1.0E+00      77
+    500     1.3E-01  5.6E-01                        6  1.3693594E+02    252    252    248  5.3E+00     108
+    600     1.2E-01  4.9E-01                        6  1.3493085E+02    276    276     43  8.5E+00      94
+    700     1.4E-02  2.3E+01                        6  1.3358938E+02    175    175    102 -1.5E+00     140
+    800     3.0E-02  8.2E+00                        6  1.3282130E+02    276    276    230 -3.0E+00     117
+
+    Itn     QP mult  QP step   rgNorm  SumInfE NonOpt Elastic QP obj   +SBS   -SBS    -BS    Pivot     L+U ncp    nS condZHZ
+    900     1.0E+08  9.0E-07           2.0E+01    189  3.1997267E+10    259    259    270  4.5E-01      61
+   1000    -6.5E+08  1.7E-05           1.3E+01    155  2.1924157E+10    265    265    208  9.4E-01      44
+   1100     1.3E+08  2.7E-04           3.9E+00    115  6.2907332E+09    134    134         3.7E+03      69
+   1200     3.1E+06  7.1E-04           3.2E+00     58  5.2257160E+09    131    131         1.4E+03      60
+   1300     6.6E+06  7.2E-05           3.0E+00     39  4.9505984E+09    216    216    181  1.7E+00      52
+   1400    -1.2E+06  2.6E-03           2.9E+00     17  4.7154788E+09    181    181        -3.8E+02      82
+
+
+   Itns Major Minors    Step   nCon Feasible  Optimal  MeritFunction     L+U BSwap     nS condZHZ Penalty
+   1466     0   1466              1  1.9E+00  1.1E+00  2.2629639E+05      79                              _  r it
+
+    Itn     QP mult  QP step   rgNorm  SumInfE NonOpt Elastic QP obj   +SBS   -SBS    -BS    Pivot     L+U ncp    nS condZHZ
+   1566    -6.4E+07  1.9E-07           2.6E+00    113  4.1805196E+09    265    265    183 -2.4E+00      99
+   1666     5.4E+06  5.9E-03           2.4E+00     34  3.9279550E+09    165    165    265  1.2E-01     116
+
+   Itns Major Minors    Step   nCon Feasible  Optimal  MeritFunction     L+U BSwap     nS condZHZ Penalty
+   1684     1    218 6.2E-02      2  1.7E+00  1.0E+00  7.4959556E+09     104                      1.2E+07 _  rli
+
+    Itn     QP mult  QP step   rgNorm  SumInfE NonOpt Elastic QP obj   +SBS   -SBS    -BS    Pivot     L+U ncp    nS condZHZ
+   1784    -2.0E+07  3.2E-01  1.3E-07  2.4E+00     73  4.2289837E+09    303    303        -1.2E-01      79         1 6.2E+08
+   1884    -4.1E+04  1.0E+00  1.0E-07  2.3E+00      1  3.9800096E+09     14                             80        54 6.3E+01
+
+   Itns Major Minors    Step   nCon Feasible  Optimal  MeritFunction     L+U BSwap     nS condZHZ Penalty
+   1885     2    201 5.9E-02      3  1.5E+00  1.0E+00  7.2795868E+09      80           55 6.3E+01 1.2E+07 _s  li
+ Singular(m=n)  rank        9  n-rank       2  nsing        2
+ Singular(m>n)  rank        9  n-rank       2  nsing        2
+ Singular(m=n)  rank        9  n-rank       2  nsing        2
+1
+
+ SNOPTC EXIT  40 -- terminated after numerical difficulties
+ SNOPTC INFO  43 -- cannot satisfy the general constraints
+
+ Problem name                 Equalspl
+ No. of iterations                1885   Objective            2.1609407763E+05
+ No. of major iterations             3   Linear    obj. term  0.0000000000E+00
+ Penalty parameter           1.178E+07   Nonlinear obj. term  2.1609407763E+05
+ No. of infeasibilities             11   Sum of infeas        2.3928912542E+02
+ Elastic weight                1.6E+09   Elastic   objective  3.5919009207E+09
+ No. of infeas elastics              2   Elastic infeas       2.1994377893E+00
+ User function calls (total)        15
+ No. of superbasics                 55   No. of basic nonlinears             6
+ No. of degenerate steps             0   Percentage                       0.00
+ Max x                      25 3.1E+01   Max pi                      1 1.6E+09
+ Max Primal infeas         311 8.8E+01   Max Dual infeas           264 1.5E+09
+ Nonlinear constraint violn    8.8E+01
+1
+
+ Name           Equalspl                 Infeasibilities     11      2.3929E+02
+
+ Status         Optimal Soln             Iteration   1885    Superbasics    55
+
+ Objective               (Min)
+ RHS
+ Ranges
+ Bounds
+
+ Section 1 - Constraints
+
+  Number  ...Row.. State  ...Value......  Slack Value...  ..Lower Limit.  ..Upper Limit.  .Dual Variable    ..i
+
+     301  r      1 I  BS         1.64018         1.46568        -0.17450         0.17450          .           1
+     302  r      2 I  BS       -80.70937       -80.70937          .                None         -1.0          2
+     303  r      3 I  BS         2.37845         2.35845        -0.02000         0.02000 -19930837.42066      3
+     304  r      4 I  BS         1.53071         1.51071        -0.02000         0.02000-108505165.03093      4
+     305  r      5 I  BS        -0.75376        -0.73376        -0.02000         0.02000          .           5
+     306  r      6 I  UL        -0.02704        -0.00704        -0.02000         0.02000-748656367.58899      6
+     307  r      7 I  LL         3.20637         3.18637        -0.02000         0.02000  99571412.57618      7
+     308  r      8 I  LL       -21.74241       -21.72241        -0.02000         0.02000 101265323.83610      8
+     309  r      9 I  LL        28.32506        28.30506        -0.02000         0.02000  38679033.05481      9
+     310  r     10 I  UL        11.48228        11.46228        -0.02000         0.02000 -28939373.60813     10
+     311  r     11 I  LL        87.84800        87.82800        -0.02000         0.02000  26544371.22478     11
+1
+
+ Section 2 - Variables
+
+  Number  .Column. State  ...Value......  .Obj Gradient.  ..Lower Limit.  ..Upper Limit.  .Dual Variable    m+j
+
+       1  x      1   SBS        28.65169          .               .             31.41593             NaN     12
+       2  x      2   SBS        28.29259          .               .             31.41593             NaN     13
+       3  x      3   SBS        27.63847          .               .             31.41593             NaN     14
+       4  x      4    FR         3.85401          .               .             31.41593             NaN     15
+       5  x      5    FR         9.62590          .               .             31.41593             NaN     16
+       6  x      6    LL          .               .               .             31.41593             NaN     17
+       7  x      7    LL          .               .               .             31.41593             NaN     18
+       8  x      8    LL          .               .               .             31.41593             NaN     19
+       9  x      9    LL          .               .               .             31.41593             NaN     20
+      10  x     10    LL          .               .               .             31.41593             NaN     21
+      11  x     11    LL          .               .               .             31.41593             NaN     22
+      12  x     12    LL          .               .               .             31.41593             NaN     23
+      13  x     13    LL          .               .               .             31.41593             NaN     24
+      14  x     14   SBS         0.19030          .               .             31.41593             NaN     25
+      15  x     15   SBS         0.32920          .               .             31.41593             NaN     26
+      16  x     16   SBS         0.68608          .               .             31.41593             NaN     27
+      17  x     17   SBS         1.11444          .               .             31.41593             NaN     28
+      18  x     18   SBS         2.13457          .               .             31.41593             NaN     29
+      19  x     19   SBS        14.43413          .               .             31.41593             NaN     30
+      20  x     20   SBS         7.87397          .               .             31.41593             NaN     31
+      21  x     21   SBS        25.69278          .               .             31.41593             NaN     32
+      22  x     22   SBS        28.87447          .               .             31.41593             NaN     33
+      23  x     23   SBS        29.77550          .               .             31.41593             NaN     34
+      24  x     24   SBS        30.82077          .               .             31.41593             NaN     35
+      25  x     25    UL        31.41593          .               .             31.41593             NaN     36
+      26  x     26    UL        31.41593          .               .             31.41593             NaN     37
+      27  x     27    UL        31.41593          .               .             31.41593             NaN     38
+      28  x     28    UL        31.41593          .               .             31.41593             NaN     39
+      29  x     29    UL        31.41593          .               .             31.41593             NaN     40
+      30  x     30    UL        31.41593          .               .             31.41593             NaN     41
+      31  x     31    UL        31.41593          .               .             31.41593             NaN     42
+      32  x     32    UL        31.41593          .               .             31.41593             NaN     43
+      33  x     33    UL        31.41593          .               .             31.41593             NaN     44
+      34  x     34    UL        31.41593          .               .             31.41593             NaN     45
+      35  x     35    UL        31.41593          .               .             31.41593             NaN     46
+      36  x     36    UL        31.41593          .               .             31.41593             NaN     47
+      37  x     37    UL        31.41593          .               .             31.41593             NaN     48
+      38  x     38    UL        31.41593          .               .             31.41593             NaN     49
+      39  x     39    UL        31.41593          .               .             31.41593             NaN     50
+      40  x     40    UL        31.41593          .               .             31.41593             NaN     51
+      41  x     41    UL        31.41593          .               .             31.41593             NaN     52
+      42  x     42    UL        31.41593          .               .             31.41593             NaN     53
+      43  x     43    UL        31.41593          .               .             31.41593             NaN     54
+      44  x     44    UL        31.41593          .               .             31.41593             NaN     55
+      45  x     45    UL        31.41593          .               .             31.41593             NaN     56
+      46  x     46    UL        31.41593          .               .             31.41593             NaN     57
+      47  x     47    UL        31.41593          .               .             31.41593             NaN     58
+      48  x     48    UL        31.41593          .               .             31.41593             NaN     59
+      49  x     49    UL        31.41593          .               .             31.41593             NaN     60
+      50  x     50   SBS        28.16798          .               .             31.41593             NaN     61
+      51  x     51    UL        31.41593          .               .             31.41593             NaN     62
+      52  x     52    UL        31.41593          .               .             31.41593             NaN     63
+      53  x     53    UL        31.41593          .               .             31.41593             NaN     64
+      54  x     54    UL        31.41593          .               .             31.41593             NaN     65
+      55  x     55    UL        31.41593          .               .             31.41593             NaN     66
+      56  x     56    UL        31.41593          .               .             31.41593             NaN     67
+      57  x     57   SBS        30.95591          .               .             31.41593             NaN     68
+      58  x     58   SBS        30.37637          .               .             31.41593             NaN     69
+      59  x     59   SBS        29.79099          .               .             31.41593             NaN     70
+      60  x     60   SBS        29.20210          .               .             31.41593             NaN     71
+      61  x     61   SBS        28.61212          .               .             31.41593             NaN     72
+      62  x     62   SBS        28.02354          .               .             31.41593             NaN     73
+      63  x     63   SBS        25.46947          .               .             31.41593             NaN     74
+      64  x     64   SBS        13.90807          .               .             31.41593             NaN     75
+      65  x     65    LL          .               .               .             31.41593             NaN     76
+      66  x     66   SBS         6.47049          .               .             31.41593             NaN     77
+      67  x     67   SBS         2.00697          .               .             31.41593             NaN     78
+      68  x     68   SBS         1.46998          .               .             31.41593             NaN     79
+      69  x     69   SBS         2.45368          .               .             31.41593             NaN     80
+      70  x     70    LL          .               .               .             31.41593             NaN     81
+      71  x     71    BS         3.05952          .               .             31.41593             NaN     82
+      72  x     72   SBS         2.05990          .               .             31.41593             NaN     83
+      73  x     73   SBS         2.28904          .               .             31.41593             NaN     84
+      74  x     74   SBS         2.55350          .               .             31.41593             NaN     85
+      75  x     75   SBS         2.85409          .               .             31.41593             NaN     86
+      76  x     76   SBS         3.19110          .               .             31.41593             NaN     87
+      77  x     77   SBS         3.56422          .               .             31.41593             NaN     88
+      78  x     78   SBS         3.97248          .               .             31.41593             NaN     89
+      79  x     79   SBS        15.30849          .               .             31.41593             NaN     90
+      80  x     80   SBS        14.54635          .               .             31.41593             NaN     91
+      81  x     81   SBS        25.75781          .               .             31.41593             NaN     92
+      82  x     82   SBS        26.12825          .               .             31.41593             NaN     93
+      83  x     83   SBS        26.55009          .               .             31.41593             NaN     94
+      84  x     84   SBS        27.02023          .               .             31.41593             NaN     95
+      85  x     85    BS        27.53440          .               .             31.41593             NaN     96
+      86  x     86   SBS        28.89519          .               .             31.41593             NaN     97
+      87  x     87   SBS        21.32531          .               .             31.41593             NaN     98
+      88  x     88   SBS         6.05109          .               .             31.41593             NaN     99
+      89  x     89   SBS         4.21252          .               .             31.41593             NaN    100
+      90  x     90   SBS         4.82315          .               .             31.41593             NaN    101
+      91  x     91   SBS        16.31417          .               .             31.41593             NaN    102
+      92  x     92   SBS        16.17422          .               .             31.41593             NaN    103
+      93  x     93   SBS        27.97075          .               .             31.41593             NaN    104
+      94  x     94   SBS        28.87568          .               .             31.41593             NaN    105
+      95  x     95    BS        29.76824          .               .             31.41593             NaN    106
+      96  x     96   SBS        30.63232          .               .             31.41593             NaN    107
+      97  x     97    UL        31.41593          .               .             31.41593             NaN    108
+      98  x     98   SBS        20.52795          .               .             31.41593             NaN    109
+      99  x     99    BS        25.96586          .               .             31.41593             NaN    110
+     100  x    100   SBS        28.13464          .               .             31.41593             NaN    111
+     101  x    101 N  LL          .               .               .              1.0     -92270476.26470    112
+     102  x    102 N  LL          .               .               .              1.0    -189879641.29309    113
+     103  x    103 N  LL          .               .               .              1.0    -199345614.92375    114
+     104  x    104 N  LL          .               .               .              1.0     -52910584.97118    115
+     105  x    105 N  LL          .               .               .              1.0    -177191938.17702    116
+     106  x    106    LL          .               .               .              1.0      37254546.94990    117
+     107  x    107    LL          .               .               .              1.0      37156824.90677    118
+     108  x    108    LL          .               .               .              1.0      37059102.86364    119
+     109  x    109    LL          .               .               .              1.0      36961380.82051    120
+     110  x    110    LL          .               .               .              1.0      36863658.77738    121
+     111  x    111    LL          .               .               .              1.0      36765819.91849    122
+     112  x    112 N SBS         0.81469          .               .              1.0      36666163.65194    123
+     113  x    113 N  UL         1.0              .               .              1.0      36553300.30975    124
+     114  x    114 N  UL         1.0              .               .              1.0      32862916.31023    125
+     115  x    115 N  UL         1.0              .               .              1.0      30160479.29889    126
+     116  x    116 N  UL         1.0              .               .              1.0      23610619.89122    127
+     117  x    117 N  UL         1.0              .               .              1.0      16005681.19713    128
+     118  x    118    UL         1.0              .               .              1.0      -1658138.64087    129
+     119  x    119    UL         1.0              .               .              1.0    -180492906.57261    130
+     120  x    120    UL         1.0              .               .              1.0     -94845237.62126    131
+     121  x    121    UL         1.0              .               .              1.0    -159697533.43287    132
+     122  x    122    UL         1.0              .               .              1.0    -120189931.31239    133
+     123  x    123    UL         1.0              .               .              1.0    -105577611.06865    134
+     124  x    124    UL         1.0              .               .              1.0     -89240702.44504    135
+     125  x    125    UL         1.0              .               .              1.0     -79204320.80851    136
+     126  x    126    UL         1.0              .               .              1.0     -77218306.24759    137
+     127  x    127    UL         1.0              .               .              1.0     -75235096.72125    138
+     128  x    128    UL         1.0              .               .              1.0     -73252119.35844    139
+     129  x    129    UL         1.0              .               .              1.0     -71263256.75299    140
+     130  x    130    UL         1.0              .               .              1.0     -69254068.45464    141
+     131  x    131    UL         1.0              .               .              1.0     -67228863.60192    142
+     132  x    132    UL         1.0              .               .              1.0     -65232778.07469    143
+     133  x    133    UL         1.0              .               .              1.0     -63279570.46076    144
+     134  x    134    UL         1.0              .               .              1.0     -61373263.03920    145
+     135  x    135    UL         1.0              .               .              1.0     -59517109.55433    146
+     136  x    136    UL         1.0              .               .              1.0     -57714493.16738    147
+     137  x    137    UL         1.0              .               .              1.0     -55959621.45156    148
+     138  x    138 N  LL          .               .               .              1.0     -54191599.73245    149
+     139  x    139 N  LL          .               .               .              1.0     -52356191.54936    150
+     140  x    140 N  LL          .               .               .              1.0     -50432422.33978    151
+     141  x    141 N  LL          .               .               .              1.0     -48399109.76475    152
+     142  x    142 N  LL          .               .               .              1.0     -46228301.12813    153
+     143  x    143 N  LL          .               .               .              1.0     -43917430.61276    154
+     144  x    144 N  LL          .               .               .              1.0     -41537278.96282    155
+     145  x    145 N  LL          .               .               .              1.0     -39114381.20728    156
+     146  x    146 N  LL          .               .               .              1.0     -36661350.48617    157
+     147  x    147 N  LL          .               .               .              1.0     -34185838.41183    158
+     148  x    148 N  LL          .               .               .              1.0     -31669183.03507    159
+     149  x    149 N  LL          .               .               .              1.0    -114739486.58984    160
+     150  x    150    UL         1.0              .               .              1.0       -147383.56400    161
+     151  x    151 N  LL          .               .               .              1.0     -92270476.55713    162
+     152  x    152 N  LL          .               .               .              1.0    -189879641.94337    163
+     153  x    153 N  LL          .               .               .              1.0    -199345615.68947    164
+     154  x    154 N  LL          .               .               .              1.0     -52910585.73654    165
+     155  x    155 N  LL          .               .               .              1.0    -177191939.81489    166
+     156  x    156    LL          .               .               .              1.0      37254546.94990    167
+     157  x    157    LL          .               .               .              1.0      37156824.90677    168
+     158  x    158    LL          .               .               .              1.0      37059102.86364    169
+     159  x    159    LL          .               .               .              1.0      36961380.82051    170
+     160  x    160    LL          .               .               .              1.0      36863658.77738    171
+     161  x    161    LL          .               .               .              1.0      36765819.91849    172
+     162  x    162 N SBS         0.81467          .               .              1.0      36666163.65194    173
+     163  x    163 N  UL         1.0              .               .              1.0      36553300.30975    174
+     164  x    164 N  UL         1.0              .               .              1.0      32862916.27915    175
+     165  x    165 N  UL         1.0              .               .              1.0      30160479.24649    176
+     166  x    166 N  UL         1.0              .               .              1.0      23610619.78492    177
+     167  x    167 N  UL         1.0              .               .              1.0      16005681.02936    178
+     168  x    168    UL         1.0              .               .              1.0      -1658138.95145    179
+     169  x    169    UL         1.0              .               .              1.0    -180492907.98453    180
+     170  x    170    UL         1.0              .               .              1.0     -94845238.59978    181
+     171  x    171    UL         1.0              .               .              1.0    -159697534.15799    182
+     172  x    172    UL         1.0              .               .              1.0    -120189931.63853    183
+     173  x    173    UL         1.0              .               .              1.0    -105577611.27374    184
+     174  x    174    UL         1.0              .               .              1.0     -89240702.51731    185
+     175  x    175    UL         1.0              .               .              1.0     -79204320.80851    186
+     176  x    176    UL         1.0              .               .              1.0     -77218306.24758    187
+     177  x    177    UL         1.0              .               .              1.0     -75235096.72125    188
+     178  x    178    UL         1.0              .               .              1.0     -73252119.35844    189
+     179  x    179    UL         1.0              .               .              1.0     -71263256.75299    190
+     180  x    180    UL         1.0              .               .              1.0     -69254068.45464    191
+     181  x    181    UL         1.0              .               .              1.0     -67228863.60192    192
+     182  x    182    UL         1.0              .               .              1.0     -65232778.07469    193
+     183  x    183    UL         1.0              .               .              1.0     -63279570.46076    194
+     184  x    184    UL         1.0              .               .              1.0     -61373263.03920    195
+     185  x    185    UL         1.0              .               .              1.0     -59517109.55433    196
+     186  x    186    UL         1.0              .               .              1.0     -57714493.16738    197
+     187  x    187    UL         1.0              .               .              1.0     -55959621.45156    198
+     188  x    188 N  LL          .               .               .              1.0     -54191599.73245    199
+     189  x    189 N  LL          .               .               .              1.0     -52356191.54936    200
+     190  x    190 N  LL          .               .               .              1.0     -50432422.33978    201
+     191  x    191 N  LL          .               .               .              1.0     -48399109.76475    202
+     192  x    192 N  LL          .               .               .              1.0     -46228301.12813    203
+     193  x    193 N  LL          .               .               .              1.0     -43917430.61276    204
+     194  x    194 N  LL          .               .               .              1.0     -41537278.96282    205
+     195  x    195 N  LL          .               .               .              1.0     -39114381.20728    206
+     196  x    196 N  LL          .               .               .              1.0     -36661350.48617    207
+     197  x    197 N  LL          .               .               .              1.0     -34185838.41183    208
+     198  x    198 N  LL          .               .               .              1.0     -31669183.03507    209
+     199  x    199 N  LL          .               .               .              1.0    -114739486.58984    210
+     200  x    200    UL         1.0              .               .              1.0       -147383.56457    211
+     201  x    201 N  LL          .               .               .              1.0     -70889578.38670    212
+     202  x    202 N  LL          .               .               .              1.0    -147652181.82910    213
+     203  x    203 N  LL          .               .               .              1.0    -157919659.93242    214
+     204  x    204 N  LL          .               .               .              1.0     -12286134.22057    215
+     205  x    205 N  LL          .               .               .              1.0    -137368993.41547    216
+     206  x    206    LL          .               .               .              1.0      76275990.75076    217
+     207  x    207    LL          .               .               .              1.0      75376764.46625    218
+     208  x    208    LL          .               .               .              1.0      74477538.18175    219
+     209  x    209    LL          .               .               .              1.0      73578311.89728    220
+     210  x    210    LL          .               .               .              1.0      72679085.61281    221
+     211  x    211    LL          .               .               .              1.0      71779578.81806    222
+     212  x    212 N SBS         0.89102          .               .              1.0      70876877.33735    223
+     213  x    213 N  UL         1.0              .               .              1.0      69955331.85382    224
+     214  x    214 N  UL         1.0              .               .              1.0      65451003.88253    225
+     215  x    215 N  UL         1.0              .               .              1.0      61928308.02003    226
+     216  x    216 N  UL         1.0              .               .              1.0      54548632.21353    227
+     217  x    217 N  UL         1.0              .               .              1.0      46105617.28424    228
+     218  x    218 N  UL         1.0              .               .              1.0      27595756.62410    229
+     219  x    219    UL         1.0              .               .              1.0    -152089620.04075    230
+     220  x    220    UL         1.0              .               .              1.0     -67287541.07510    231
+     221  x    221    UL         1.0              .               .              1.0    -132981442.62382    232
+     222  x    222    UL         1.0              .               .              1.0     -94306210.16631    233
+     223  x    223    UL         1.0              .               .              1.0     -80517545.06165    234
+     224  x    224    UL         1.0              .               .              1.0     -64996668.27604    235
+     225  x    225    UL         1.0              .               .              1.0     -55769734.39790    236
+     226  x    226    UL         1.0              .               .              1.0     -54587174.74185    237
+     227  x    227    UL         1.0              .               .              1.0     -53401480.70452    238
+     228  x    228    UL         1.0              .               .              1.0     -52209887.07270    239
+     229  x    229    UL         1.0              .               .              1.0     -51005444.11619    240
+     230  x    230    UL         1.0              .               .              1.0     -49771000.41308    241
+     231  x    231    UL         1.0              .               .              1.0     -48510146.01609    242
+     232  x    232    UL         1.0              .               .              1.0     -47267507.33469    243
+     233  x    233    UL         1.0              .               .              1.0     -46056661.04608    244
+     234  x    234    UL         1.0              .               .              1.0     -44881522.31703    245
+     235  x    235    UL         1.0              .               .              1.0     -43745257.91580    246
+     236  x    236    UL         1.0              .               .              1.0     -42651176.42884    247
+     237  x    237    UL         1.0              .               .              1.0     -41593572.36685    248
+     238  x    238    UL         1.0              .               .              1.0     -40512612.36527    249
+     239  x    239 N  LL          .               .               .              1.0     -39360707.19480    250
+     240  x    240 N  LL          .               .               .              1.0     -38120676.80570    251
+     241  x    241 N  LL          .               .               .              1.0     -36771341.59942    252
+     242  x    242 N  LL          .               .               .              1.0     -35282036.95787    253
+     243  x    243 N  LL          .               .               .              1.0     -33649400.34363    254
+     244  x    244 N  LL          .               .               .              1.0     -31943531.70739    255
+     245  x    245 N  LL          .               .               .              1.0     -30190845.25283    256
+     246  x    246 N  LL          .               .               .              1.0     -28403972.92196    257
+     247  x    247 N  LL          .               .               .              1.0     -26590612.54570    258
+     248  x    248 N  LL          .               .               .              1.0     -24732168.06761    259
+     249  x    249 N  LL          .               .               .              1.0    -121303285.55721    260
+     250  x    250    UL         1.0              .               .              1.0       -111444.98890    261
+     251  x    251 N  LL          .               .               .              1.0    -314980724.05524    262
+     252  x    252 N  LL          .               .               .              1.0    -622495744.53320    263
+     253  x    253 N  LL          .               .               .              1.0    -611297189.16755    264
+     254  x    254 N  LL          .               .               .              1.0    -600098633.80213    265
+     255  x    255 N  LL          .               .               .              1.0    -588900078.43693    266
+     256  x    256 N  LL          .               .               .              1.0    -577701523.07196    267
+     257  x    257 N  LL          .               .               .              1.0    -490592839.35439    268
+     258  x    258 N  LL          .               .               .              1.0    -385976266.13163    269
+     259  x    259 N  LL          .               .               .              1.0    -283252299.08130    270
+     260  x    260 N  LL          .               .               .              1.0    -183222958.26533    271
+     261  x    261 N  LL          .               .               .              1.0     -86670348.38756    272
+     262  x    262    BS         0.19272          .               .              1.0       5657548.53782    273
+     263  x    263 N  UL         1.0              .               .              1.0     386802153.22149    274
+     264  x    264 N  UL         1.0              .               .              1.0        1.458110E+09    275
+     265  x    265 N  UL         1.0              .               .              1.0     476119465.37170    276
+     266  x    266 N  UL         1.0              .               .              1.0        1.167582E+09    277
+     267  x    267 N  UL         1.0              .               .              1.0     699701935.64135    278
+     268  x    268 N  UL         1.0              .               .              1.0     618583101.90063    279
+     269  x    269 N  UL         1.0              .               .              1.0     710079070.74239    280
+     270  x    270 N  UL         1.0              .               .              1.0     415877472.79764    281
+     271  x    271 N  UL         1.0              .               .              1.0     729095842.86007    282
+     272  x    272 N  UL         1.0              .               .              1.0     610010772.71995    283
+     273  x    273 N  UL         1.0              .               .              1.0     613419269.62801    284
+     274  x    274 N  UL         1.0              .               .              1.0     618481769.38559    285
+     275  x    275 N  UL         1.0              .               .              1.0     624792272.99980    286
+     276  x    276 N  UL         1.0              .               .              1.0     631889771.24311    287
+     277  x    277 N  UL         1.0              .               .              1.0     639270534.80406    288
+     278  x    278 N  UL         1.0              .               .              1.0     646393781.76329    289
+     279  x    279 N  UL         1.0              .               .              1.0     880695151.62023    290
+     280  x    280 N  UL         1.0              .               .              1.0     865735870.94257    291
+     281  x    281 N  UL         1.0              .               .              1.0     187442697.79151    292
+     282  x    282 N  UL         1.0              .               .              1.0     150052547.32456    293
+     283  x    283 N  UL         1.0              .               .              1.0     110929121.35758    294
+     284  x    284 N  UL         1.0              .               .              1.0      70737192.06010    295
+     285  x    285 N  UL         1.0              .               .              1.0      30216292.11499    296
+     286  x    286    UL         1.0              .               .              1.0     -65856510.74090    297
+     287  x    287 N  UL         1.0              .               .              1.0     407827456.68609    298
+     288  x    288 N  UL         1.0              .               .              1.0     516853599.79803    299
+     289  x    289 N  UL         1.0              .               .              1.0     420491133.56801    300
+     290  x    290 N  UL         1.0              .               .              1.0     424327797.44624    301
+     291  x    291 N  UL         1.0              .               .              1.0     499781908.59449    302
+     292  x    292 N  UL         1.0              .               .              1.0     475674474.99416    303
+     293  x    293    UL         1.0              .               .              1.0      -1497498.29571    304
+     294  x    294    UL         1.0              .               .              1.0     -42208306.15732    305
+     295  x    295    UL         1.0              .               .              1.0     -76809327.15072    306
+     296  x    296    UL         1.0              .               .              1.0    -104658694.51728    307
+     297  x    297    UL         1.0              .               .              1.0    -124189260.93145    308
+     298  x    298 N  UL         1.0              .               .              1.0     233293649.97371    309
+     299  x    299    BS         0.20800          .               .              1.0      52430928.28520    310
+     300  x    300 A  LL          .               .               .              1.0         11556.63929    311
+
+ Time for MPS input                             0.00 seconds
+ Time for solving problem                      48.39 seconds
+ Time for solution output                       0.00 seconds
+ Time for constraint functions                 51.57 seconds
+ Time for objective function                    0.00 seconds

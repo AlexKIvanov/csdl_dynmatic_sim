@@ -46,20 +46,20 @@ class simpleForcesAndMoments(csdl.Model):
             thrust_origin_val = val[0]
             thrust_vector_val = val[1]
 
-            tempThrust = self.declare_variable(key+'_thrust', shape=thrust_dict[key].shape)
-            tempOrigin = self.declare_variable(key+'_origin_rotated_NED', shape=thrust_origin_val.shape)
+            tempThrust = self.declare_variable(key+'_NEWTONS_thrust', shape=thrust_dict[key+'_NEWTONS'].shape)
+            tempOrigin = self.declare_variable(key+'_origin_rotated_METERS_NED_CG', shape=thrust_origin_val.shape)
             tempVector = self.declare_variable(key+'_vector_rotated_NED', shape=thrust_vector_val.shape)
 
             # Expand the thrust variable
-            thrust_mult_thrust_vector = csdl.expand(tempThrust, (nt,3), 'i->ij') 
+            thrust_NEWTONS_expanded = csdl.expand(tempThrust, (nt,3), 'i->ij') 
 
             # Multiply expanded thrust scaler with the thrust vector
-            thrust_vector_mult = thrust_mult_thrust_vector * tempVector
-            self.register_output(key+'_thrust_vector_mult', thrust_vector_mult)
+            thrust_vector_mult = thrust_NEWTONS_expanded * tempVector
+            self.register_output(key+'_thrust_vector_mult_NEWTONS_NED_CG', thrust_vector_mult)
 
             # Compute the moments produced by the thrust vector around the refPt
-            thrust_moments = csdl.cross(tempOrigin-refPtExpanded, thrust_vector_mult, axis=1)
-            self.register_output(key+'_moments', thrust_moments)
+            thrust_moments = csdl.cross(tempOrigin, thrust_vector_mult, axis=1)
+            self.register_output(key+'_moments_NEWTON_METER_NED_CG', thrust_moments)
 
             Fx[cnt,:,0] = csdl.reshape(thrust_vector_mult[:,0], (1,nt,1))
             Fy[cnt,:,0] = csdl.reshape(thrust_vector_mult[:,1], (1,nt,1))

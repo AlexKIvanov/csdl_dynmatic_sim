@@ -81,7 +81,7 @@ thrust_start        = 8000.0
 thrust_end          = 8000.0 
 thrust_upper_bound  = 10000.0
 thrust_lower_bound  = 0.0
-thrust_scaler       = 1e-4
+thrust_scaler       = 1e-2
 
 thrust = dict()
 thrust['front_left_nacelle1_NEWTONS'] = np.linspace(thrust_start, thrust_end, nt)
@@ -285,66 +285,36 @@ ddtheta[0:nt-1,0] = ddtheta_2 - ddtheta_1
 
 # Constraint for minimum altitude possible
 alt = z * np.ones((nt,1))*-1
-zdesire_final = main_model.create_input('final_alt', val=np.ones((1,1))*10.0)
+zdesire_final = main_model.create_input('final_alt', val=np.ones((1,1))*5.0)
+finalPositionConstraint = alt[nt-1,0] - zdesire_final
+main_model.register_output('finalPositionConstraint', finalPositionConstraint)
 
-# Constraints at the beginning of flight
-startConstraints = main_model.create_output('startConstraints', shape=(6,1))
-startConstraints[0,0] = q[1,0] 
-startConstraints[1,0] = ddtheta[1,0]
-startConstraints[2,0] = w[1,0]
-startConstraints[3,0] = ddz[1,0]
-startConstraints[4,0] = u[1,0]
-startConstraints[5,0] = ddx[1,0] 
+# Constraint on Qdot 
+finalQdot = main_model.create_output('finalQdot', shape=(1,1))
+finalQdot[0,0] = dq_dt[nt-1,0]
 
-# Constraints at the end of flight
-endConstraints = main_model.create_output('endConstraints', shape=(7,1))
-endConstraints[0,0] = q[nt-2,0] 
-endConstraints[1,0] = dq_dt[nt-2,0]
-endConstraints[2,0] = w[nt-2,0]
-endConstraints[3,0] = dw_dt[nt-2,0]
-endConstraints[4,0] = u[nt-2,0]
-endConstraints[5,0] = du_dt[nt-2,0] 
-endConstraints[6,0] = zdesire_final - alt[nt-2,0]
+# Constraint on Q
+finalQ = main_model.create_output('finalQ', shape=(1,1))
+finalQ[0,0] = q[nt-1,0]
 
-# Minimum effort objective function
-obj_vec      = main_model.create_output('obj_vec', shape=(nt,6))
-obj_vec[:,0] = csdl.reshape(front_act, new_shape=(nt,1))
-obj_vec[:,1] = csdl.reshape(rear_act, new_shape=(nt,1))
-obj_vec[:,2] = csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1))
-obj_vec[:,3] = csdl.reshape(front_left_nacelle2_NEWTONS, new_shape=(nt,1))
-obj_vec[:,4] = csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1))
-obj_vec[:,5] = csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1))
+# Constraint on Udot
+finalUdot = main_model.create_output('finalUdot', shape=(1,1))
+finalUdot[0,0] = du_dt[nt-1,0]
 
-obj_norm = csdl.pnorm(obj_vec, axis=0)
-obj_sum  = csdl.sum(obj_norm)
-main_model.register_output('objective', obj_sum)
-main_model.print_var(obj_sum)
+# Constraint on U
+finalU = main_model.create_output('finalU', shape=(1,1))
+finalU[0,0] = u[nt-1,0]
 
+# Constraint on Wdot
+finalWdot = main_model.create_output('finalWdot', shape=(1,1))
+finalWdot[0,0] = dw_dt[nt-1,0]
 
-posConstraints = main_model.create_output(name='posConstraints', shape=(1, ))
-posConstraints[0] = csdl.min(alt * 100) / 100
+# Constraint on W
+finalW = main_model.create_output('finalW', shape=(1,1))
+finalW[0,0] = w[nt-1,0]
 
-lowerZ = main_model.create_output('LowerZ', shape=(nt-1,1))
-lowerZ[0:nt-1, 0] = alt[0:nt-1,0]
-
-upperZ = main_model.create_output('UpperZ', shape=(nt-1,1))
-upperZ[0:nt-1, 0] = alt[1:nt,0]
-
-energyDelta = upperZ - lowerZ
-main_model.register_output('energyDelta', energyDelta)
-main_model.print_var(energyDelta)
-
-totEnergy = zdesire_final - alt[0,0]
-main_model.register_output('totEnergy', totEnergy)
-main_model.print_var(totEnergy)
-
-energySum = csdl.sum(energyDelta)
-main_model.register_output('energySum', energySum)
-main_model.print_var(energySum)
-
-energyDiff = csdl.pnorm(totEnergy - csdl.reshape(energySum, new_shape=(1,1)))
-main_model.register_output('energyDiff', energyDiff)
-main_model.print_var(energyDiff)
+altConstraint = main_model.create_output(name='altConstraint', shape=(1, ))
+altConstraint[0] = csdl.min(alt * 100) / 100
 
 # Developing rotation rate constraints for the wings
 rearWingRotRate1 = main_model.create_output('RearWingRotRate1', shape=(nt-1,1))
@@ -364,22 +334,38 @@ frontWingRotRate = (frontWingRotRate2 - frontWingRotRate1)
 main_model.register_output('frontWingRotRate', frontWingRotRate)
 frontWingRotRateMax = csdl.max( (csdl.pnorm(frontWingRotRate, axis=1) ) ) 
 main_model.register_output('frontMaxRotRate', frontWingRotRateMax)
+
+###########################################
+#            CONSTRAINTS FUNCTIONS        #          
+###########################################
+main_model.add_constraint('thetaConstraint', lower=-0.1745, upper=0.1745, scaler=1 )
+main_model.add_constraint('altConstraint',  lower=0.0)
+main_model.add_constraint('frontMaxRotRate',lower=-0.02, upper=0.02, scaler=1)
+main_model.add_constraint('rearMaxRotRate', lower=-0.02, upper=0.02, scaler=1)
+main_model.add_constraint('finalPositionConstraint', lower=-0.1, upper=0.1)
+
+main_model.add_constraint('finalQdot', upper=1e-4)
+main_model.add_constraint('finalQ', upper=1e-4)
+main_model.add_constraint('finalUdot', upper=1e-4)
+main_model.add_constraint('finalU', upper=1e-4)
+main_model.add_constraint('finalWdot', upper=1e-4)
+main_model.add_constraint('finalW', upper=1e-4)
+
 ###########################################
 #            OBJECTIVE FUNCTION           #          
 ###########################################
-ObjAdd       = main_model.create_input('ObjAdd',       val=np.ones((6,1))*10)
-ObjSub       = main_model.create_input('ObjSub',       val=np.ones((1,  ))*60)
-ObjMultConst = main_model.create_input('ObjMultConst', val=np.ones((6, ))*10)
-ObjDivConst  = main_model.create_input('ObjDivConst',  val=np.ones((1,  ))*10)
+# Minimum effort objective function
+obj_vec      = main_model.create_output('obj_vec', shape=(nt,6))
+obj_vec[:,0] = csdl.reshape(front_act, new_shape=(nt,1)) / front_actuation_upper_bound
+obj_vec[:,1] = csdl.reshape(rear_act, new_shape=(nt,1))   / rear_actuation_upper_bound
+obj_vec[:,2] = csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1)) / thrust_upper_bound
+obj_vec[:,3] = csdl.reshape(front_left_nacelle2_NEWTONS, new_shape=(nt,1)) / thrust_upper_bound
+obj_vec[:,4] = csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1)) / thrust_upper_bound
+obj_vec[:,5] = csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1))  / thrust_upper_bound
 
-# obj1 = ((csdl.sum(csdl.pnorm(endConstraints + ObjAdd, axis=1) * ObjMultConst))/ObjDivConst) - ObjSub
-constraints = csdl.sum(csdl.pnorm(endConstraints, axis=1))
-
-main_model.add_constraint('thetaConstraint', lower=-0.1745, upper=0.1745, scaler=1 )
-main_model.add_constraint('posConstraints', lower=0.0)
-main_model.add_constraint('frontMaxRotRate',lower=-0.02, upper=0.02, scaler=1)
-main_model.add_constraint('rearMaxRotRate', lower=-0.02, upper=0.02, scaler=1)
-main_model.add_constraint('endConstraints', lower=-0.02, upper=0.02, scaler=1)
+obj_sum  = csdl.sum(obj_vec)
+main_model.register_output('objective', obj_sum)
+main_model.print_var(obj_sum)
 
 main_model.add_objective('objective')
 
@@ -389,7 +375,7 @@ sim.run()
 prob = CSDLProblem(problem_name='Equalsplusminus5constraint', simulator=sim)
 optimizer = SNOPT(
     prob, 
-    Major_iterations = 5000,
+    Major_iterations = 20000,
     Major_optimality=1e-5, 
     Major_feasibility=1e-5,
     Superbasics_limit=1000,

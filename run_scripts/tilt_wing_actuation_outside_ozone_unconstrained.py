@@ -364,24 +364,24 @@ finalUUpper   = 1e-4
 finalWdotUpper = 1e-4
 finalWUpper = 1e-4
 
-main_model.add_constraint('thetaConstraint', lower=thetaConstraintLower, upper=thetaConstraintUpper, scaler=thetaConstraintScaler )
-main_model.add_constraint('altConstraint',  lower=altConstraintLower)
-main_model.add_constraint('frontMaxRotRate',lower=frontMaxRotRateLower, upper=frontMaxRotRateUpper, scaler=frontMaxRotRateScaler)
-main_model.add_constraint('rearMaxRotRate', lower=rearMaxRotRateLower, upper=rearMaxRotRateUpper, scaler=rearMaxRotRateScaler)
+# main_model.add_constraint('thetaConstraint', lower=thetaConstraintLower, upper=thetaConstraintUpper, scaler=thetaConstraintScaler )
+# main_model.add_constraint('altConstraint',  lower=altConstraintLower)
+# main_model.add_constraint('frontMaxRotRate',lower=frontMaxRotRateLower, upper=frontMaxRotRateUpper, scaler=frontMaxRotRateScaler)
+# main_model.add_constraint('rearMaxRotRate', lower=rearMaxRotRateLower, upper=rearMaxRotRateUpper, scaler=rearMaxRotRateScaler)
 # main_model.add_constraint('finalPositionConstraint', lower=finalPositionLower, upper=finalPositionUpper)
 
-main_model.add_constraint('finalQdot', upper=finalQdotUpper)
-main_model.add_constraint('finalQ',    upper=finalQUpper)
-main_model.add_constraint('finalUdot', upper=finalUdotUpper)
-main_model.add_constraint('finalU',    upper=finalUUpper)
-main_model.add_constraint('finalWdot', upper=finalWUpper)
-main_model.add_constraint('finalW',    upper=finalWUpper)
+# main_model.add_constraint('finalQdot', upper=finalQdotUpper)
+# main_model.add_constraint('finalQ',    upper=finalQUpper)
+# main_model.add_constraint('finalUdot', upper=finalUdotUpper)
+# main_model.add_constraint('finalU',    upper=finalUUpper)
+# main_model.add_constraint('finalWdot', upper=finalWUpper)
+# main_model.add_constraint('finalW',    upper=finalWUpper)
 
 ###########################################
 #            OBJECTIVE FUNCTION           #          
 ###########################################
 # Minimum effort objective function
-obj_vec      = main_model.create_output('obj_vec', shape=(nt,6))
+obj_vec      = main_model.create_output('obj_vec', shape=(1,6))
 # obj_vec[:,0] = ( csdl.reshape(front_act, new_shape=(nt,1)) * csdl.reshape(front_act, new_shape=(nt,1)) ) / (front_actuation_upper_bound*front_actuation_upper_bound*nt)
 # obj_vec[:,1] = ( csdl.reshape(rear_act, new_shape=(nt,1))  * csdl.reshape(rear_act, new_shape=(nt,1))  ) / (rear_actuation_upper_bound*rear_actuation_upper_bound*nt)
 # obj_vec[:,2] = ( csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1)) * csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*thrust_upper_bound*nt)
@@ -389,16 +389,16 @@ obj_vec      = main_model.create_output('obj_vec', shape=(nt,6))
 # obj_vec[:,4] = ( csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1)) * csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*thrust_upper_bound*nt)
 # obj_vec[:,5] = ( csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1)) * csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*thrust_upper_bound*nt)
 
-obj_vec[:,0] = ( csdl.reshape(front_act, new_shape=(nt,1)) ) / (front_actuation_upper_bound*nt)
-obj_vec[:,1] = ( csdl.reshape(rear_act, new_shape=(nt,1))  ) / (rear_actuation_upper_bound*nt)
-obj_vec[:,2] = ( csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*nt)
-obj_vec[:,3] = ( csdl.reshape(front_left_nacelle2_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*nt)
-obj_vec[:,4] = ( csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*nt)
-obj_vec[:,5] = ( csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1)) )  / (thrust_upper_bound*nt)
+obj_vec[:,0] = ( csdl.reshape(finalQdot, new_shape=(1,1)) * csdl.reshape(finalQdot, new_shape=(1,1)) )
+obj_vec[:,1] = ( csdl.reshape(finalQ, new_shape=(1,1)) * csdl.reshape(finalQ, new_shape=(1,1))  ) 
+obj_vec[:,2] = ( csdl.reshape(finalUdot, new_shape=(1,1)) * csdl.reshape(finalUdot, new_shape=(1,1)) )
+obj_vec[:,3] = ( csdl.reshape(finalU, new_shape=(1,1)) * csdl.reshape(finalU, new_shape=(1,1)) ) 
+obj_vec[:,4] = ( csdl.reshape(finalWdot, new_shape=(1,1)) * csdl.reshape(finalWdot, new_shape=(1,1)) ) 
+obj_vec[:,5] = ( csdl.reshape(finalW, new_shape=(1,1)) * csdl.reshape(finalW, new_shape=(1,1)) )  
 
 
 squaredFinalPos = csdl.reshape(finalPositionConstraint, new_shape=(1,)) * csdl.reshape(finalPositionConstraint, new_shape=(1,)) * 1e-4
-obj_sum  = (csdl.sum(obj_vec) / 6) + squaredFinalPos
+obj_sum  = (csdl.sum(obj_vec) ) 
 main_model.register_output('objective', obj_sum)
 main_model.print_var(obj_sum)
 
@@ -408,7 +408,7 @@ sim = python_csdl_backend.Simulator(main_model, analytics=True)
 sim.run()
 
 major_iterations = 100000
-major_optimality = 1e-5
+major_optimality = 1e-8
 major_feasibility = 1e-5
 linesearch_tolerance = 0.99
 major_step_size = 0.1
@@ -427,7 +427,7 @@ optimizer = SNOPT(
 optimizer.solve()
 optimizer.print_results()
 
-dirpath = '/home/alexander/Documents/OptResults/HoverTrimOptimizationV8_modifiedObjNoSquares_finalPositionInObj'
+dirpath = '/home/alexander/Documents/OptResults/HoverTrimOptimizationV3_Unconstrained'
 '''  
 Save Input Data to CSV
 '''

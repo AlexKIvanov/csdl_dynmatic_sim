@@ -366,7 +366,7 @@ finalUUpper   = 1e-4
 finalWdotUpper = 1e-4
 finalWUpper = 1e-4
 
-# main_model.add_constraint('thetaConstraint', lower=thetaConstraintLower, upper=thetaConstraintUpper, scaler=thetaConstraintScaler )
+main_model.add_constraint('thetaConstraint', lower=thetaConstraintLower, upper=thetaConstraintUpper, scaler=thetaConstraintScaler )
 # main_model.add_constraint('altConstraint',  lower=altConstraintLower)
 # main_model.add_constraint('frontMaxRotRate',lower=frontMaxRotRateLower, upper=frontMaxRotRateUpper, scaler=frontMaxRotRateScaler)
 # main_model.add_constraint('rearMaxRotRate', lower=rearMaxRotRateLower, upper=rearMaxRotRateUpper, scaler=rearMaxRotRateScaler)

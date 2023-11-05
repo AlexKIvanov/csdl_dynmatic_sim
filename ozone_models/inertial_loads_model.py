@@ -68,7 +68,11 @@ class InertialLoadsModel(csdl.Model):
         # self.connect('atmosphere_model.acc_gravity',
         #              'g')
 
-        # self.print_var(var=rho)
+        # self.print_var(var=g)
+        # self.print_var(mass)
+        # self.print_var(cgx)
+        # self.print_var(cgy)
+        # self.print_var(cgz)
         # endregion
 
         F = self.create_output(name='inertial_loads_F', shape=(num_nodes, 3))
@@ -82,7 +86,11 @@ class InertialLoadsModel(csdl.Model):
         M = self.create_output(name='inertial_loads_M', shape=(num_nodes, 3))
         for n in range(num_nodes):
             M[n, :] = csdl.cross(r_vec, F[n, :], axis=1)
+    
+        # self.print_var(F)
+        # self.print_var(M)
         return
+    
 
 
 # endregion

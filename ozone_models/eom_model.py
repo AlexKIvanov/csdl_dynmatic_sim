@@ -96,11 +96,11 @@ class OzoneEulerFlatEarth6DoF(csdl.Model):
         # endregion
 
         # region Calculations
-        m = csdl.expand(var=mass, shape=(num_nodes))
-        Ix = csdl.expand(var=Ixx, shape=(num_nodes))
-        Iy = csdl.expand(var=Iyy, shape=(num_nodes))
-        Iz = csdl.expand(var=Izz, shape=(num_nodes))
-        Jxz = csdl.expand(var=Ixz, shape=(num_nodes))
+        m = csdl.expand(var=mass, shape=(num_nodes,1))
+        Ix = csdl.expand(var=Ixx, shape=(num_nodes,1))
+        Iy = csdl.expand(var=Iyy, shape=(num_nodes,1))
+        Iz = csdl.expand(var=Izz, shape=(num_nodes,1))
+        Jxz = csdl.expand(var=Ixz, shape=(num_nodes,1))
 
         # Linear momentum equations
         du_dt = Fx / m + r * v - q * w

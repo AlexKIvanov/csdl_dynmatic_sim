@@ -39,7 +39,7 @@ h_vec = np.ones(nt-1) * dt    # A variable that needs to be created for Ozone
 states = dict()
 states['x']     = 0.0
 states['y']     = 0.0
-states['z']     = -0.1
+states['z']     = -5.0
 states['u']     = 0.0
 states['v']     = 0.0
 states['w']     = 0.0
@@ -55,21 +55,21 @@ pointsets = both_wings_all_nacelles()
 
 # Acutation Angle Dict for Front Wing
 front_act_dict = dict()
-front_actuation_angle_start = np.deg2rad(88.0)
-front_actuation_angle_end   = np.deg2rad(92.0)
-front_actuation_lower_bound = np.deg2rad(0.0)
-front_actuation_upper_bound = np.deg2rad(180)
-front_actuation_scaler = 1e1
+front_actuation_angle_start = np.deg2rad(88)
+front_actuation_angle_end   = np.deg2rad(92)
+front_actuation_lower_bound = np.deg2rad(80.0)
+front_actuation_upper_bound = np.deg2rad(100.0)
+front_actuation_scaler = 1e0
 front_actuation_array = np.linspace(front_actuation_angle_start, front_actuation_angle_end, nt)
 front_act_dict['front_actuation_angle_RAD'] = front_actuation_array
 
 # Acutation Angle Dict for Rear Wing
 rear_act_dict = dict()
-rear_actuation_angle_start = np.deg2rad(88.0)
-rear_actuation_angle_end   = np.deg2rad(92.0)
-rear_actuation_lower_bound = np.deg2rad(0.0)
-rear_actuation_upper_bound = np.deg2rad(180)
-rear_actuation_scaler = 1e1
+rear_actuation_angle_start = np.deg2rad(88)
+rear_actuation_angle_end   = np.deg2rad(92)
+rear_actuation_lower_bound = np.deg2rad(80.0)
+rear_actuation_upper_bound = np.deg2rad(100.0)
+rear_actuation_scaler = 1e0
 rear_actuation_array = np.linspace(rear_actuation_angle_start, rear_actuation_angle_end, nt)
 rear_act_dict['rear_actuation_angle_RAD'] = rear_actuation_array
 
@@ -77,17 +77,19 @@ rear_act_dict['rear_actuation_angle_RAD'] = rear_actuation_array
 refPt = np.array([13.35494603, -4.123772014e-16 , 8.118931759]) * ft2meters
 
 # Thrust Dict for front wing [NEWTONS]
-thrust_start        = 8000.0
-thrust_end          = 8000.0 
-thrust_upper_bound  = 10000.0
+front_thrust_start        = 4000
+front_thrust_end          = 4000
+rear_thrust_start         = 4000
+rear_thrust_end           = 4000
+thrust_upper_bound  = 15000.0
 thrust_lower_bound  = 0.0
-thrust_scaler       = 1e-2
+thrust_scaler       = 1e-3
 
 thrust = dict()
-thrust['front_left_nacelle1_NEWTONS'] = np.linspace(thrust_start, thrust_end, nt)
-thrust['front_left_nacelle2_NEWTONS'] = np.linspace(thrust_start, thrust_end, nt)
-thrust['front_left_nacelle3_NEWTONS'] = np.linspace(thrust_start, thrust_end, nt)
-thrust['rear_left_nacelle1_NEWTONS']  = np.linspace(thrust_start, thrust_end, nt)
+thrust['front_left_nacelle1_NEWTONS'] = np.linspace(front_thrust_start, front_thrust_end, nt)
+thrust['front_left_nacelle2_NEWTONS'] = np.linspace(front_thrust_start, front_thrust_end, nt)
+thrust['front_left_nacelle3_NEWTONS'] = np.linspace(front_thrust_start, front_thrust_end, nt)
+thrust['rear_left_nacelle1_NEWTONS']  = np.linspace(rear_thrust_start, rear_thrust_end, nt)
 
 # Expand all the geometry pointsets to have a time-axis of size nt 
 expanded_pointsets = dict()
@@ -175,7 +177,15 @@ main_model.add(front_wing_actuation_model, 'front_wing_actuation_model')
 main_model.add(rear_wing_actuation_model, 'rear_wing_actuation_model')
 
 for key,value in thrust.items():
-    main_model.create_input(key+'_thrust', val=value)
+    if 'front_left_nacelle1_NEWTONS' in key:
+        front_left_nacelle1_NEWTONS = main_model.create_input(key+'_thrust', val=value, shape=(nt,))
+    elif 'front_left_nacelle2_NEWTONS' in key:
+        front_left_nacelle2_NEWTONS = main_model.create_input(key+'_thrust', val=value, shape=(nt,))
+    elif 'front_left_nacelle3_NEWTONS' in key:
+        front_left_nacelle3_NEWTONS = main_model.create_input(key+'_thrust', val=value, shape=(nt,))
+    elif 'rear_left_nacelle1_NEWTONS' in key:
+        rear_left_nacelle1_NEWTONS = main_model.create_input(key+'_thrust', val=value, shape=(nt,))
+        
     main_model.add_design_variable(key+'_thrust', lower=thrust_lower_bound, upper=thrust_upper_bound, scaler=thrust_scaler)
 
 main_model.add(simpleForcesAndMomentsModel, 'simple_forces_moments_model')
@@ -277,51 +287,36 @@ ddtheta[0:nt-1,0] = ddtheta_2 - ddtheta_1
 
 # Constraint for minimum altitude possible
 alt = z * np.ones((nt,1))*-1
-zdesire_final = main_model.create_input('final_alt', val=np.ones((1,1))*10.0)
+zdesire_final = main_model.create_input('final_alt', val=np.ones((1,1))*5.0)
+finalPositionConstraint = alt[nt-1,0] - zdesire_final
+main_model.register_output('finalPositionConstraint', finalPositionConstraint)
 
-# Constraints at the beginning of flight
-startConstraints = main_model.create_output('startConstraints', shape=(6,1))
-startConstraints[0,0] = q[1,0] 
-startConstraints[1,0] = ddtheta[1,0]
-startConstraints[2,0] = w[1,0]
-startConstraints[3,0] = ddz[1,0]
-startConstraints[4,0] = u[1,0]
-startConstraints[5,0] = ddx[1,0] 
+# Constraint on Qdot 
+finalQdot = main_model.create_output('finalQdot', shape=(1,1))
+finalQdot[0,0] = dq_dt[nt-1,0]
 
-# Constraints at the end of flight
-endConstraints = main_model.create_output('endConstraints', shape=(7,1))
-endConstraints[0,0] = q[nt-2,0] 
-endConstraints[1,0] = dq_dt[nt-2,0]
-endConstraints[2,0] = w[nt-2,0]
-endConstraints[3,0] = dw_dt[nt-2,0]
-endConstraints[4,0] = u[nt-2,0]
-endConstraints[5,0] = du_dt[nt-2,0] 
-endConstraints[6,0] = zdesire_final - alt[nt-2,0]
+# Constraint on Q
+finalQ = main_model.create_output('finalQ', shape=(1,1))
+finalQ[0,0] = q[nt-1,0]
 
-posConstraints = main_model.create_output(name='posConstraints', shape=(1, ))
-posConstraints[0] = csdl.min(alt * 100) / 100
+# Constraint on Udot
+finalUdot = main_model.create_output('finalUdot', shape=(1,1))
+finalUdot[0,0] = du_dt[nt-1,0]
 
-lowerZ = main_model.create_output('LowerZ', shape=(nt-1,1))
-lowerZ[0:nt-1, 0] = alt[0:nt-1,0]
+# Constraint on U
+finalU = main_model.create_output('finalU', shape=(1,1))
+finalU[0,0] = u[nt-1,0]
 
-upperZ = main_model.create_output('UpperZ', shape=(nt-1,1))
-upperZ[0:nt-1, 0] = alt[1:nt,0]
+# Constraint on Wdot
+finalWdot = main_model.create_output('finalWdot', shape=(1,1))
+finalWdot[0,0] = dw_dt[nt-1,0]
 
-energyDelta = upperZ - lowerZ
-main_model.register_output('energyDelta', energyDelta)
-main_model.print_var(energyDelta)
+# Constraint on W
+finalW = main_model.create_output('finalW', shape=(1,1))
+finalW[0,0] = w[nt-1,0]
 
-totEnergy = zdesire_final - alt[0,0]
-main_model.register_output('totEnergy', totEnergy)
-main_model.print_var(totEnergy)
-
-energySum = csdl.sum(energyDelta)
-main_model.register_output('energySum', energySum)
-main_model.print_var(energySum)
-
-energyDiff = csdl.pnorm(totEnergy - csdl.reshape(energySum, new_shape=(1,1)))
-main_model.register_output('energyDiff', energyDiff)
-main_model.print_var(energyDiff)
+altConstraint = main_model.create_output(name='altConstraint', shape=(1, ))
+altConstraint[0] = csdl.min(alt)
 
 # Developing rotation rate constraints for the wings
 rearWingRotRate1 = main_model.create_output('RearWingRotRate1', shape=(nt-1,1))
@@ -341,45 +336,214 @@ frontWingRotRate = (frontWingRotRate2 - frontWingRotRate1)
 main_model.register_output('frontWingRotRate', frontWingRotRate)
 frontWingRotRateMax = csdl.max( (csdl.pnorm(frontWingRotRate, axis=1) ) ) 
 main_model.register_output('frontMaxRotRate', frontWingRotRateMax)
+
+###########################################
+#            CONSTRAINTS FUNCTIONS        #          
+###########################################
+thetaConstraintLower = -0.1745
+thetaConstraintUpper = 0.1745
+thetaConstraintScaler= 1e-1
+
+altConstraintLower = 0
+
+frontMaxRotRateLower = -0.02
+frontMaxRotRateUpper = 0.02
+frontMaxRotRateScaler = 1e0
+
+rearMaxRotRateLower = -0.02
+rearMaxRotRateUpper = 0.02
+rearMaxRotRateScaler = 1e0
+
+finalPositionLower = -0.1
+finalPositionUpper = 0.1
+
+finalQdotUpper = 1e-4
+finalQUpper = 1e-4
+finalUdotUpper  = 1e-4
+finalUUpper   = 1e-4 
+finalWdotUpper = 1e-4
+finalWUpper = 1e-4
+
+main_model.add_constraint('thetaConstraint', lower=thetaConstraintLower, upper=thetaConstraintUpper, scaler=thetaConstraintScaler )
+main_model.add_constraint('altConstraint',  lower=altConstraintLower)
+main_model.add_constraint('frontMaxRotRate',lower=frontMaxRotRateLower, upper=frontMaxRotRateUpper, scaler=frontMaxRotRateScaler)
+main_model.add_constraint('rearMaxRotRate', lower=rearMaxRotRateLower, upper=rearMaxRotRateUpper, scaler=rearMaxRotRateScaler)
+# main_model.add_constraint('finalPositionConstraint', lower=finalPositionLower, upper=finalPositionUpper)
+
+main_model.add_constraint('finalQdot', upper=finalQdotUpper)
+main_model.add_constraint('finalQ',    upper=finalQUpper)
+main_model.add_constraint('finalUdot', upper=finalUdotUpper)
+main_model.add_constraint('finalU',    upper=finalUUpper)
+main_model.add_constraint('finalWdot', upper=finalWUpper)
+main_model.add_constraint('finalW',    upper=finalWUpper)
+
 ###########################################
 #            OBJECTIVE FUNCTION           #          
 ###########################################
-ObjAdd       = main_model.create_input('ObjAdd',       val=np.ones((6,1))*10)
-ObjSub       = main_model.create_input('ObjSub',       val=np.ones((1,  ))*60)
-ObjMultConst = main_model.create_input('ObjMultConst', val=np.ones((6, ))*10)
-ObjDivConst  = main_model.create_input('ObjDivConst',  val=np.ones((1,  ))*10)
+# Minimum effort objective function
+obj_vec      = main_model.create_output('obj_vec', shape=(nt,6))
+# obj_vec[:,0] = ( csdl.reshape(front_act, new_shape=(nt,1)) * csdl.reshape(front_act, new_shape=(nt,1)) ) / (front_actuation_upper_bound*front_actuation_upper_bound*nt)
+# obj_vec[:,1] = ( csdl.reshape(rear_act, new_shape=(nt,1))  * csdl.reshape(rear_act, new_shape=(nt,1))  ) / (rear_actuation_upper_bound*rear_actuation_upper_bound*nt)
+# obj_vec[:,2] = ( csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1)) * csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*thrust_upper_bound*nt)
+# obj_vec[:,3] = ( csdl.reshape(front_left_nacelle2_NEWTONS, new_shape=(nt,1)) * csdl.reshape(front_left_nacelle2_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*thrust_upper_bound*nt)
+# obj_vec[:,4] = ( csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1)) * csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*thrust_upper_bound*nt)
+# obj_vec[:,5] = ( csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1)) * csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*thrust_upper_bound*nt)
 
-# obj1 = ((csdl.sum(csdl.pnorm(endConstraints + ObjAdd, axis=1) * ObjMultConst))/ObjDivConst) - ObjSub
-obj1 = csdl.sum(csdl.pnorm(endConstraints, axis=1))
+obj_vec[:,0] = ( csdl.reshape(front_act, new_shape=(nt,1)) ) / (front_actuation_upper_bound*nt)
+obj_vec[:,1] = ( csdl.reshape(rear_act, new_shape=(nt,1))  ) / (rear_actuation_upper_bound*nt)
+obj_vec[:,2] = ( csdl.reshape(front_left_nacelle1_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*nt)
+obj_vec[:,3] = ( csdl.reshape(front_left_nacelle2_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*nt)
+obj_vec[:,4] = ( csdl.reshape(front_left_nacelle3_NEWTONS, new_shape=(nt,1)) ) / (thrust_upper_bound*nt)
+obj_vec[:,5] = ( csdl.reshape(rear_left_nacelle1_NEWTONS, new_shape=(nt,1)) )  / (thrust_upper_bound*nt)
 
-main_model.register_output('objective', obj1)
 
-main_model.add_constraint('thetaConstraint', lower=-0.1745, upper=0.1745, scaler=1 )
-main_model.add_constraint('posConstraints', lower=0.0)
-main_model.add_constraint('frontMaxRotRate',lower=-0.02, upper=0.02, scaler=1)
-main_model.add_constraint('rearMaxRotRate', lower=-0.02, upper=0.02, scaler=1)
+squaredFinalPos = csdl.reshape(finalPositionConstraint, new_shape=(1,)) * csdl.reshape(finalPositionConstraint, new_shape=(1,)) * 1e-4
+obj_sum  = (csdl.sum(obj_vec) / 6) + squaredFinalPos
+main_model.register_output('objective', obj_sum)
+main_model.print_var(obj_sum)
 
 main_model.add_objective('objective')
 
 sim = python_csdl_backend.Simulator(main_model, analytics=True)
 sim.run()
 
-# prob = CSDLProblem(problem_name='Equalsplusminus5constraint', simulator=sim)
-# optimizer = SNOPT(
-#     prob, 
-#     Major_iterations = 5000,
-#     Major_optimality=1e-5, 
-#     Major_feasibility=1e-5,
-#     Superbasics_limit=1000,
-#     Linesearch_tolerance=0.99,
-#     # Major_step_limit=0.1,
-#     append2file=True
-# )
-# optimizer.solve()
-# optimizer.print_results()
+major_iterations = 100000
+major_optimality = 1e-5
+major_feasibility = 1e-5
+linesearch_tolerance = 0.99
+major_step_size = 0.1
+superbasics_limit = 1000
+prob = CSDLProblem(problem_name='Equalsplusminus5constraint', simulator=sim)
+optimizer = SNOPT(
+    prob, 
+    Major_iterations = major_iterations,
+    Major_optimality= major_optimality, 
+    Major_feasibility= major_feasibility,
+    Superbasics_limit=superbasics_limit,
+    Linesearch_tolerance=linesearch_tolerance,
+    Major_step_limit=major_step_size,
+    append2file=True
+)
+optimizer.solve()
+optimizer.print_results()
+
+dirpath = '/home/alexander/Documents/OptResults/HoverTrimOptimizationV8_modifiedObjNoSquares_finalPositionInObj'
+'''  
+Save Input Data to CSV
+'''
+filename = dirpath +'/INPUTS.csv'
+inputDict = dict()
+inputDict['nt'] = np.array([nt])
+inputDict['dt'] = np.array([dt])
+inputDict['major_iterations'] = np.array([major_iterations])
+inputDict['major_optimality'] = np.array([major_optimality])
+inputDict['major_feasibility'] = np.array([major_feasibility])
+inputDict['linesearch_tolerance'] = np.array([linesearch_tolerance])
+inputDict['superbasics_limit'] = np.array([superbasics_limit])
+inputDict['major_step_size'] = np.array([major_step_size])
+inputDict['refPt'] = refPt
+inputDict['IC_x'] = np.array([states['x']])
+inputDict['IC_y'] = np.array([states['y']])
+inputDict['IC_z'] = np.array([states['z']])
+inputDict['IC_u'] = np.array([states['u']])
+inputDict['IC_v'] = np.array([states['v']])
+inputDict['IC_w'] = np.array([states['w']])
+inputDict['IC_theta'] = np.array([states['theta']])
+inputDict['IC_psi'] = np.array([states['psi']])
+inputDict['IC_phi'] = np.array([states['phi']])
+inputDict['IC_p'] = np.array([states['p']])
+inputDict['IC_q'] = np.array([states['q']])
+inputDict['IC_r'] = np.array([states['r']])
+inputDict['front_thrust_start'] = np.array([front_thrust_start])
+inputDict['front_thrust_stop']  = np.array([front_thrust_end])
+inputDict['rear_thrust_start'] = np.array([rear_thrust_start])
+inputDict['rear_thrust_stop']  = np.array([rear_thrust_end])
+inputDict['thrust_upper_bound'] = np.array([thrust_lower_bound])
+inputDict['thrust_lower_bound']  = np.array([thrust_upper_bound])
+inputDict['thrust_scaler'] = np.array([thrust_scaler])
+inputDict['front_act_start']  = np.array([front_actuation_angle_start])
+inputDict['front_act_stop'] = np.array([front_actuation_angle_end])
+inputDict['front_act_scaler'] = np.array([front_actuation_scaler])
+inputDict['rear_act_start']  = np.array([rear_actuation_angle_start])
+inputDict['rear_act_stop'] = np.array([rear_actuation_angle_end])
+inputDict['objective'] = sim['objective']
+create_csv(filename, inputDict)
+
+'''  
+Save DV Data to CSV
+'''
+filename = dirpath +'/DV.csv'
+dvDict = dict()
+dvDict['front_thrust_start'] = np.array([front_thrust_start])
+dvDict['front_thrust_stop']  = np.array([front_thrust_end])
+dvDict['rear_thrust_start'] = np.array([rear_thrust_start])
+dvDict['rear_thrust_stop']  = np.array([rear_thrust_end])
+dvDict['thrust_upper_bound'] = np.array([thrust_lower_bound])
+dvDict['thrust_lower_bound']  = np.array([thrust_upper_bound])
+dvDict['thrust_scaler'] = np.array([thrust_scaler])
+dvDict['front_act_start']  = np.array([front_actuation_angle_start])
+dvDict['front_act_stop'] = np.array([front_actuation_angle_end])
+dvDict['front_act_scaler'] = np.array([front_actuation_scaler])
+dvDict['rear_act_start']  = np.array([rear_actuation_angle_start])
+dvDict['rear_act_stop'] = np.array([rear_actuation_angle_end])
+dvDict['rear_act_scaler'] = np.array([rear_actuation_scaler])
+dvDict['rear_act_scaler'] = np.array([rear_actuation_scaler])
+create_csv(filename, dvDict)
+
+'''  
+Save CONSTRAINTS Data to CSV
+'''
+filename = dirpath +'/CONSTRAINTS.csv'
+constraintDict = dict()
+constraintDict['thetaConstraintLower'] = np.array([thetaConstraintLower])
+constraintDict['thetaConstraintUpper']  = np.array([thetaConstraintUpper])
+constraintDict['thetaConstraintScaler'] = np.array([thetaConstraintScaler])
+constraintDict['altConstraintLower']  = np.array([altConstraintLower])
+constraintDict['frontMaxRotRateLower'] = np.array([frontMaxRotRateLower])
+constraintDict['frontMaxRotRateUpper']  = np.array([frontMaxRotRateUpper])
+constraintDict['frontMaxRotRateScaler'] = np.array([frontMaxRotRateScaler])
+constraintDict['finalPositionLower'] = np.array([finalPositionLower])
+constraintDict['finalPositionUpper']  = np.array([finalPositionUpper])
+constraintDict['finalQdotUpper'] = np.array([finalQdotUpper])
+constraintDict['finalQUpper'] = np.array([finalQUpper])
+constraintDict['finalQUpper'] = np.array([finalQUpper])
+constraintDict['finalUdotUpper'] = np.array([finalUdotUpper])
+constraintDict['finalUUpper'] = np.array([finalUUpper])
+constraintDict['finalWdotUpper'] = np.array([finalWdotUpper])
+constraintDict['finalWUpper'] = np.array([finalWUpper])
+create_csv(filename, constraintDict)
+
+'''  
+Save Output Data to CSV
+'''
+filename = dirpath +'/OUTPUTS.csv'
+outputDict = dict()
+outputDict['total_Fx'] = sim['total_Fx']
+outputDict['total_Fy'] = sim['total_Fy']
+outputDict['total_Fz'] = sim['total_Fz']
+outputDict['total_Mx'] = sim['total_Mx']
+outputDict['total_My'] = sim['total_My']
+outputDict['total_Mz'] = sim['total_Mz']
+outputDict['solved_x'] = sim['solved_x']
+outputDict['solved_u'] = sim['solved_u']
+outputDict['du_dt'] = sim['du_dt']
+outputDict['solved_z'] = sim['solved_z']
+outputDict['solved_w'] = sim['solved_w']
+outputDict['dw_dt'] = sim['dw_dt']
+outputDict['solved_theta'] = sim['solved_theta']
+outputDict['solved_q'] = sim['solved_q']
+outputDict['dq_dt'] = sim['dq_dt']
+outputDict['front_actuation_angle_RAD'] = sim['front_actuation_angle_RAD']
+outputDict['rear_actuation_angle_RAD'] = sim['rear_actuation_angle_RAD']
+outputDict['front_left_nacelle1_NEWTONS_thrust'] = sim['front_left_nacelle1_NEWTONS_thrust']
+outputDict['front_left_nacelle2_NEWTONS_thrust'] = sim['front_left_nacelle2_NEWTONS_thrust']
+outputDict['front_left_nacelle3_NEWTONS_thrust'] = sim['front_left_nacelle3_NEWTONS_thrust']
+outputDict['rear_left_nacelle1_NEWTONS_thrust'] = sim['rear_left_nacelle1_NEWTONS_thrust']
+create_csv(filename, outputDict)
+
 
 # sim.check_partials(compact_print=True)
-sim.check_totals(compact_print=True)
+# sim.check_totals(compact_print=True)
 # sim.visualize_implementation()
 
 # PLOTTING THE VECTORS 

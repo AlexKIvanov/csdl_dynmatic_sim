@@ -50,7 +50,7 @@ class AngleAxisActuation(csdl.Model):
         # Create the actuation angle input
         for key, value in actuation_angle_dict.items():
             temp_act_profile = np.reshape(value, (n,1))
-            actuation_angle = self.create_input(key, val=temp_act_profile)
+            actuation_angle = self.declare_variable(key, shape=temp_act_profile.shape)
 
         # Create normalized axis inputs
         for key, value in axis_dict.items():
@@ -76,7 +76,7 @@ class AngleAxisActuation(csdl.Model):
                 thrust_vector_name = key + '_vector'
                 thrust_vector_val = value[1]          # Should be a numpy array of shape (n,3)
 
-                axis_origin_pt = self.create_input(key+'_axis_origin_pt', val=thrust_axis_origin_pt)
+                axis_origin_pt = self.create_input(key+'_axis_origin_pt_METERS_VSP', val=thrust_axis_origin_pt)
 
                 thrust_origin = self.create_input(thrust_origin_name, val=thrust_origin_val)
                 thrust_vector = self.create_input(thrust_vector_name, val=thrust_vector_val)
@@ -103,18 +103,10 @@ class AngleAxisActuation(csdl.Model):
                 rotated_thrust_origin = translated_rotated_thrust_origin + axis_origin_pt
                 rotated_thrust_vector = translated_rotated_thrust_vector
 
-                rotated_thrust_origin_NED = self.create_output(thrust_origin_name+'_rotated_NED', shape=(n,3))
-                rotated_thrust_origin_NED[:,0] = rotated_thrust_origin[:,0]
-                rotated_thrust_origin_NED[:,1] = rotated_thrust_origin[:,1]
-                rotated_thrust_origin_NED[:,2] = rotated_thrust_origin[:,2]
+                self.register_output(thrust_origin_name+'_rotated_METERS_NED_CG', rotated_thrust_origin)
+                self.register_output(thrust_vector_name+'_rotated_NED', rotated_thrust_vector)
                 
-                rotated_thrust_vector_NED = self.create_output(thrust_vector_name+'_rotated_NED', shape=(n,3))
-                rotated_thrust_vector_NED[:,0] = -1*rotated_thrust_vector[:,0]
-                rotated_thrust_vector_NED[:,1] = rotated_thrust_vector[:,1]
-                rotated_thrust_vector_NED[:,2] = -1*rotated_thrust_vector[:,2]
-                
-                self.register_output(thrust_origin_name+'_rotated_VSP', rotated_thrust_origin)
-                self.register_output(thrust_vector_name+'_rotated_VSP', rotated_thrust_vector)
+
 
         # Check if the dictionary is empty
         if len(vlm_mesh_dict) == 0:

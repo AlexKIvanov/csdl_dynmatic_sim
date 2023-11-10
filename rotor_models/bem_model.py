@@ -64,11 +64,11 @@ class BEMModel(Model):
         ft2m = 0.3048
         for i in bem_mesh_list:
             BEM_dict = {
-                'origin': self.declare_variable(i[0].name, shape=(num_nodes, 1, 3)),
-                'vector': self.declare_variable(i[1].name, shape=(num_nodes, 1, 3))
+                'origin': self.declare_variable(i[0], shape=(num_nodes, 1, 3)),
+                'vector': self.declare_variable(i[1], shape=(num_nodes, 1, 3))
             }
-            thrust_origin_str = i[0].name + '_thrust_origin'  #"% s" % counter
-            thrust_vector_str = i[1].name + '_thrust_vector'  #"% s" % counter
+            thrust_origin_str = i[0] + '_thrust_origin'  #"% s" % counter
+            thrust_vector_str = i[1] + '_thrust_vector'  #"% s" % counter
             BEM_pt_set_list.append(BEM_dict)
             T_o = 1 * (csdl.reshape(BEM_pt_set_list[counter]['origin'],new_shape=(num_nodes, 3))) * ft2m
             # self.print_var(T_o)
@@ -187,8 +187,8 @@ class BEMModel(Model):
 
         # Post-Processing
         T = self.declare_variable('T', shape=(num_nodes, ))
-        F = self.create_output('F', shape=(num_nodes, 3))
-        M = self.create_output('M', shape=(num_nodes, 3))
+        F = self.create_output(name+'_F', shape=(num_nodes, 3))
+        M = self.create_output(name+'_M', shape=(num_nodes, 3))
 
         # self.print_var(T)
 
@@ -250,8 +250,8 @@ class BEMModel(Model):
         M[:,1] = moments[:,1]
         M[:,2] = moments[:,2] * 0
         
-        self.print_var(M)
-        self.print_var(F)
+        # self.print_var(M)
+        # self.print_var(F)
         #  # Post-Processing
         # T = self.declare_variable('T', shape=(num_nodes,))
 

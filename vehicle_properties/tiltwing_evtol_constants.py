@@ -17,7 +17,8 @@ def get_mass():
 
 def get_cg():
     ''' Defined from the openVSP coordinate frame '''
-    cg = np.array([4.0705875499988649,-1.25692571e-16, 2.474650399999944]) # Meters
+    # cg = np.array([4.0705875499988649,-1.25692571e-16, 2.474650399999944]) # Meters
+    cg = np.array([0.0,0.0,0.0]) # Meters
     return cg
 
 def get_Ixx():

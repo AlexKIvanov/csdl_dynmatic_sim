@@ -57,9 +57,13 @@ class simpleForcesAndMoments(csdl.Model):
             thrust_vector_mult = thrust_NEWTONS_expanded * tempVector
             self.register_output(key+'_thrust_vector_mult_NEWTONS_NED_CG', thrust_vector_mult)
 
+            self.print_var(thrust_vector_mult)
+            self.print_var(tempOrigin)
             # Compute the moments produced by the thrust vector around the refPt
             thrust_moments = csdl.cross(tempOrigin, thrust_vector_mult, axis=1)
             self.register_output(key+'_moments_NEWTON_METER_NED_CG', thrust_moments)
+
+            self.print_var(thrust_moments)
 
             Fx[cnt,:,0] = csdl.reshape(thrust_vector_mult[:,0], (1,nt,1))
             Fy[cnt,:,0] = csdl.reshape(thrust_vector_mult[:,1], (1,nt,1))
@@ -87,5 +91,14 @@ class simpleForcesAndMoments(csdl.Model):
         self.register_output('forces_moments_Mx', summedMx)
         self.register_output('forces_moments_My', summedMy)
         self.register_output('forces_moments_Mz', summedMz)
+
+        self.print_var(summedFx)
+        self.print_var(summedFy)
+        self.print_var(summedFz)
+
+        self.print_var(summedMx)
+        self.print_var(summedMy)
+        self.print_var(summedMz)
+        
                     
             

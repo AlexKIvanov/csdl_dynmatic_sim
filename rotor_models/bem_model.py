@@ -58,10 +58,10 @@ class BEMModel(Model):
         bem_mesh_list = self.parameters['bem_mesh_list']
         BEM_pt_set_list = []
         T_v_name_list= []
-        counter = 0
         mm2ft = 304.8
-
         ft2m = 0.3048
+
+        counter = 0
         for i in bem_mesh_list:
             BEM_dict = {
                 'origin': self.declare_variable(i[0], shape=(num_nodes, 1, 3)),

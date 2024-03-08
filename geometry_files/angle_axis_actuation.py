@@ -59,7 +59,8 @@ class AngleAxisActuation(csdl.Model):
             y_axis_value = np.reshape(value[:,1], (n,1))                  # Should be a numpy array of shape (n,1)
             z_axis_value = np.reshape(value[:,2], (n,1))                  # Should be a numpy array of shape (n,1)
             
-            x_axis = self.create_input(key+'_x' , val=x_axis_value)
+            temp = self.create_input(key+'_axis_vector', val=value)
+            x_axis = self.create_input(key+'_x' , val=x_axis_value)       
             y_axis = self.create_input(key+'_y' , val=y_axis_value)
             z_axis = self.create_input(key+'_z' , val=z_axis_value)
 
@@ -106,20 +107,62 @@ class AngleAxisActuation(csdl.Model):
                 self.register_output(thrust_origin_name+'_rotated_METERS_NED_CG', rotated_thrust_origin)
                 self.register_output(thrust_vector_name+'_rotated_NED', rotated_thrust_vector)
                 
-
-
         # Check if the dictionary is empty
         if len(vlm_mesh_dict) == 0:
             pass
         else:
             for key, value in vlm_mesh_dict.items():
+
                 vlm_mesh_name = key
                 vlm_mesh_val = value                 # Should be a numpy array of shape (n,p,3)
-                
+
+                p = value.shape[1]
+
+                # Create the actuation angle input
+                for key1, value in actuation_angle_dict.items():
+                    temp_act_profile = np.reshape(value, (n,1))
+                    actuation_angle_in = self.declare_variable(key1+'_mesh', shape=temp_act_profile.shape, val=temp_act_profile)
+                    actuation_angle = csdl.expand(actuation_angle_in,(n,9,1), 'ik->ijk')
+                    # temp = np.expand_dims( np.expand_dims(value, 1), 1)
+                    # temp_act_profile = np.repeat(temp, p, 1)
+                    # actuation_angle = self.declare_variable(key1+'_mesh', val=temp_act_profile)
+
+                # Create normalized axis inputs
+                for key2, value in axis_dict.items():
+                    x_axis_value = np.expand_dims( np.expand_dims(value[:,0], 1) , 1)
+                    x_axis_value = np.repeat(x_axis_value, p, 1)
+                    
+                    y_axis_value = np.expand_dims( np.expand_dims(value[:,1], 1) , 1) # Should be a numpy array of shape (n,1)
+                    y_axis_value = np.repeat(y_axis_value, p, 1)                      # Should be a numpy array of shape (n,1)
+
+                    z_axis_value = np.expand_dims( np.expand_dims(value[:,2], 1) , 1)
+                    z_axis_value = np.repeat(z_axis_value, p, 1)                  # Should be a numpy array of shape (n,1)
+                    
+                    x_axis = self.create_input(key2+'mesh_x' , val=x_axis_value)
+                    y_axis = self.create_input(key2+'mesh_y' , val=y_axis_value)
+                    z_axis = self.create_input(key2+'mesh_z' , val=z_axis_value)
+
+
+                mesh_axis_origin_point = np.reshape(axis_origin_point, (n,3))
+                mesh_axis_origin_point = np.expand_dims(mesh_axis_origin_point, 1)
+                mesh_axis_origin_point = np.repeat(mesh_axis_origin_point, p, 1)
+
+                mesh_axis_origin_pt = self.create_input(key+'_axis_origin_pt_METERS_VSP', val=mesh_axis_origin_point)
+
                 vlm_mesh = self.create_input(vlm_mesh_name, val=vlm_mesh_val)
+                mesh_translated = vlm_mesh - mesh_axis_origin_pt
 
-        
+                quat_mesh = self.create_output(vlm_mesh_name + '_quat', shape=(n,p) + (4,))
 
+                quat_mesh[:,:,0] = csdl.cos(actuation_angle / 2)
+                quat_mesh[:,:,1] = csdl.sin(actuation_angle / 2) * x_axis
+                quat_mesh[:,:,2] = csdl.sin(actuation_angle / 2) * y_axis
+                quat_mesh[:,:,3] = csdl.sin(actuation_angle / 2) * z_axis
+
+                translated_rotated_mesh = csdl.quatrotvec(quat_mesh, mesh_translated) + mesh_axis_origin_pt
+                translated_rotated_mesh_reshape = csdl.reshape(translated_rotated_mesh, new_shape=(n,3,3,3))
+
+                self.register_output(key+'_rotated', translated_rotated_mesh_reshape)
             
 
 

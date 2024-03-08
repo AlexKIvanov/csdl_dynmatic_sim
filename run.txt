@@ -1,0 +1,1535 @@
+Importing OpenVSP /home/alexander/Documents/ThesisRepo/nasa_uli_tc1/models/stp/both_wings_all_nacelles.stp
+120
+0 [ 6 15  3] (90, 3)
+1 [ 6 15  3] (90, 3)
+2 [ 6 15  3] (90, 3)
+3 [ 6 15  3] (90, 3)
+4 [ 6 15  3] (90, 3)
+5 [ 6 15  3] (90, 3)
+6 [ 6 15  3] (90, 3)
+7 [ 6 15  3] (90, 3)
+8 [ 6 15  3] (90, 3)
+9 [ 6 15  3] (90, 3)
+10 [ 6 15  3] (90, 3)
+11 [ 6 15  3] (90, 3)
+12 [ 6 15  3] (90, 3)
+13 [ 6 15  3] (90, 3)
+14 [ 6 15  3] (90, 3)
+15 [ 6 15  3] (90, 3)
+16 [ 6 15  3] (90, 3)
+17 [ 6 15  3] (90, 3)
+18 [ 6 15  3] (90, 3)
+19 [ 6 15  3] (90, 3)
+20 [ 6 15  3] (90, 3)
+21 [ 6 15  3] (90, 3)
+22 [ 6 15  3] (90, 3)
+23 [ 6 15  3] (90, 3)
+24 [ 6 15  3] (90, 3)
+25 [ 6 15  3] (90, 3)
+26 [ 6 15  3] (90, 3)
+27 [ 6 15  3] (90, 3)
+28 [ 6 15  3] (90, 3)
+29 [ 6 15  3] (90, 3)
+30 [ 6 15  3] (90, 3)
+31 [ 6 15  3] (90, 3)
+32 [ 6 15  3] (90, 3)
+33 [ 6 15  3] (90, 3)
+34 [ 6 15  3] (90, 3)
+35 [ 6 15  3] (90, 3)
+36 [ 6 15  3] (90, 3)
+37 [ 6 15  3] (90, 3)
+38 [ 6 15  3] (90, 3)
+39 [ 6 15  3] (90, 3)
+40 [ 6 15  3] (90, 3)
+41 [ 6 15  3] (90, 3)
+42 [ 6 15  3] (90, 3)
+43 [ 6 15  3] (90, 3)
+44 [ 6 15  3] (90, 3)
+45 [ 6 15  3] (90, 3)
+46 [ 6 15  3] (90, 3)
+47 [ 6 15  3] (90, 3)
+48 [ 6 15  3] (90, 3)
+49 [ 6 15  3] (90, 3)
+50 [ 6 15  3] (90, 3)
+51 [ 6 15  3] (90, 3)
+52 [ 6 15  3] (90, 3)
+53 [ 6 15  3] (90, 3)
+54 [ 6 15  3] (90, 3)
+55 [ 6 15  3] (90, 3)
+56 [ 6 15  3] (90, 3)
+57 [ 6 15  3] (90, 3)
+58 [ 6 15  3] (90, 3)
+59 [ 6 15  3] (90, 3)
+60 [ 6 15  3] (90, 3)
+61 [ 6 15  3] (90, 3)
+62 [ 6 15  3] (90, 3)
+63 [ 6 15  3] (90, 3)
+64 [ 6 15  3] (90, 3)
+65 [ 6 15  3] (90, 3)
+66 [ 6 15  3] (90, 3)
+67 [ 6 15  3] (90, 3)
+68 [ 6 15  3] (90, 3)
+69 [ 6 15  3] (90, 3)
+70 [ 6 15  3] (90, 3)
+71 [ 6 15  3] (90, 3)
+72 [ 6 15  3] (90, 3)
+73 [ 6 15  3] (90, 3)
+74 [ 6 15  3] (90, 3)
+75 [ 6 15  3] (90, 3)
+76 [ 6 15  3] (90, 3)
+77 [ 6 15  3] (90, 3)
+78 [ 6 15  3] (90, 3)
+79 [ 6 15  3] (90, 3)
+80 [ 6 15  3] (90, 3)
+81 [ 6 15  3] (90, 3)
+82 [ 6 15  3] (90, 3)
+83 [ 6 15  3] (90, 3)
+84 [ 6 15  3] (90, 3)
+85 [ 6 15  3] (90, 3)
+86 [ 6 15  3] (90, 3)
+87 [ 6 15  3] (90, 3)
+88 [ 6 15  3] (90, 3)
+89 [ 6 15  3] (90, 3)
+90 [ 6 15  3] (90, 3)
+91 [ 6 15  3] (90, 3)
+92 [ 6 15  3] (90, 3)
+93 [ 6 15  3] (90, 3)
+94 [ 6 15  3] (90, 3)
+95 [ 6 15  3] (90, 3)
+96 [ 6 15  3] (90, 3)
+97 [ 6 15  3] (90, 3)
+98 [ 6 15  3] (90, 3)
+99 [ 6 15  3] (90, 3)
+100 [ 6 15  3] (90, 3)
+101 [ 6 15  3] (90, 3)
+102 [ 6 15  3] (90, 3)
+103 [ 6 15  3] (90, 3)
+104 [ 6 15  3] (90, 3)
+105 [ 6 15  3] (90, 3)
+106 [ 6 15  3] (90, 3)
+107 [ 6 15  3] (90, 3)
+108 [ 6 15  3] (90, 3)
+109 [ 6 15  3] (90, 3)
+110 [ 6 15  3] (90, 3)
+111 [ 6 15  3] (90, 3)
+112 [ 6 15  3] (90, 3)
+113 [ 6 15  3] (90, 3)
+114 [ 6 15  3] (90, 3)
+115 [ 6 15  3] (90, 3)
+116 [ 6 15  3] (90, 3)
+117 [ 6 15  3] (90, 3)
+118 [ 6 15  3] (90, 3)
+119 [ 6 15  3] (90, 3)
+Complete import
+Vector:  [[-1.          0.00000001  0.        ]]
+Vector:  [[-1.          0.00000003  0.        ]]
+Vector:  [[-1.          0.00000001 -0.        ]]
+Vector:  [[-1.          0.00000008  0.        ]]
+[[0.  0.  0.  0. ]
+ [0.5 0.  0.  0. ]
+ [0.  0.5 0.  0. ]
+ [0.  0.  1.  0. ]]
+rot_vel shape (1, 4, 3)
+frame_vel_expand shape (1, 4, 3)
+rot_vel shape (1, 4, 3)
+frame_vel_expand shape (1, 4, 3)
+translating SDAG to operation-only sdag
+
+
+NODE REDUCTION: (1865 -> 1015)
+NODE REDUCTION: (1015 -> 550)
+NODE REDUCTION: (550 -> 402)
+NODE REDUCTION: (402 -> 346)
+NODE REDUCTION: (346 -> 331)
+NODE REDUCTION: (331 -> 331)
+NODE REDUCTION: (331 -> 331)
+NODE REDUCTION: (331 -> 331)
+NODE REDUCTION: (331 -> 331)
+NODE REDUCTION: (331 -> 331)
+NODE REDUCTION: (331 -> 331)
+sync point 1 (1/331 clusters) (61)
+sync point 2 (2/331 clusters) (60)
+sync point 3 (3/331 clusters) (59)
+sync point 4 (4/331 clusters) (58)
+sync point 5 (5/331 clusters) (57)
+sync point 6 (6/331 clusters) (56)
+sync point 7 (7/331 clusters) (55)
+sync point 8 (8/331 clusters) (54)
+sync point 9 (9/331 clusters) (53)
+sync point 10 (10/331 clusters) (52)
+sync point 11 (11/331 clusters) (51)
+sync point 12 (18/331 clusters) (48)
+sync point 13 (25/331 clusters) (46)
+sync point 14 (26/331 clusters) (45)
+sync point 15 (27/331 clusters) (44)
+sync point 16 (28/331 clusters) (43)
+sync point 17 (32/331 clusters) (40)
+sync point 18 (35/331 clusters) (38)
+sync point 19 (37/331 clusters) (36)
+sync point 20 (40/331 clusters) (35)
+sync point 21 (43/331 clusters) (33)
+sync point 22 (48/331 clusters) (28)
+sync point 23 (52/331 clusters) (30)
+sync point 24 (55/331 clusters) (29)
+sync point 25 (57/331 clusters) (29)
+sync point 26 (59/331 clusters) (28)
+sync point 27 (61/331 clusters) (27)
+sync point 28 (66/331 clusters) (22)
+sync point 29 (69/331 clusters) (20)
+sync point 30 (73/331 clusters) (16)
+sync point 31 (75/331 clusters) (14)
+sync point 32 (77/331 clusters) (13)
+sync point 33 (78/331 clusters) (13)
+sync point 34 (79/331 clusters) (13)
+sync point 35 (80/331 clusters) (16)
+sync point 36 (82/331 clusters) (15)
+sync point 37 (84/331 clusters) (14)
+sync point 38 (86/331 clusters) (18)
+sync point 39 (91/331 clusters) (16)
+sync point 40 (94/331 clusters) (18)
+sync point 41 (97/331 clusters) (25)
+sync point 42 (100/331 clusters) (22)
+sync point 43 (102/331 clusters) (20)
+sync point 44 (104/331 clusters) (18)
+sync point 45 (106/331 clusters) (24)
+sync point 46 (109/331 clusters) (22)
+sync point 47 (112/331 clusters) (21)
+sync point 48 (114/331 clusters) (24)
+sync point 49 (118/331 clusters) (21)
+sync point 50 (121/331 clusters) (18)
+sync point 51 (124/331 clusters) (15)
+sync point 52 (127/331 clusters) (13)
+sync point 53 (129/331 clusters) (13)
+sync point 54 (131/331 clusters) (12)
+sync point 55 (133/331 clusters) (13)
+sync point 56 (135/331 clusters) (12)
+sync point 57 (136/331 clusters) (12)
+sync point 58 (138/331 clusters) (11)
+sync point 59 (140/331 clusters) (10)
+sync point 60 (142/331 clusters) (9)
+sync point 61 (143/331 clusters) (9)
+sync point 62 (144/331 clusters) (8)
+sync point 63 (145/331 clusters) (8)
+sync point 64 (146/331 clusters) (8)
+sync point 65 (147/331 clusters) (16)
+sync point 66 (149/331 clusters) (14)
+sync point 67 (152/331 clusters) (19)
+sync point 68 (155/331 clusters) (17)
+sync point 69 (157/331 clusters) (20)
+sync point 70 (159/331 clusters) (20)
+sync point 71 (161/331 clusters) (20)
+sync point 72 (164/331 clusters) (19)
+sync point 73 (168/331 clusters) (22)
+sync point 74 (170/331 clusters) (23)
+sync point 75 (174/331 clusters) (20)
+sync point 76 (177/331 clusters) (19)
+sync point 77 (180/331 clusters) (18)
+sync point 78 (182/331 clusters) (17)
+sync point 79 (184/331 clusters) (17)
+sync point 80 (185/331 clusters) (16)
+sync point 81 (187/331 clusters) (17)
+sync point 82 (189/331 clusters) (18)
+sync point 83 (190/331 clusters) (18)
+sync point 84 (191/331 clusters) (17)
+sync point 85 (192/331 clusters) (16)
+sync point 86 (193/331 clusters) (17)
+sync point 87 (195/331 clusters) (16)
+sync point 88 (196/331 clusters) (17)
+sync point 89 (198/331 clusters) (17)
+sync point 90 (200/331 clusters) (17)
+sync point 91 (201/331 clusters) (16)
+sync point 92 (203/331 clusters) (16)
+sync point 93 (204/331 clusters) (15)
+sync point 94 (205/331 clusters) (15)
+sync point 95 (206/331 clusters) (19)
+sync point 96 (210/331 clusters) (16)
+sync point 97 (212/331 clusters) (15)
+sync point 98 (213/331 clusters) (16)
+sync point 99 (215/331 clusters) (17)
+sync point 100 (217/331 clusters) (20)
+sync point 101 (220/331 clusters) (21)
+sync point 102 (225/331 clusters) (21)
+sync point 103 (228/331 clusters) (19)
+sync point 104 (232/331 clusters) (18)
+sync point 105 (236/331 clusters) (17)
+sync point 106 (238/331 clusters) (16)
+sync point 107 (240/331 clusters) (15)
+sync point 108 (242/331 clusters) (16)
+sync point 109 (243/331 clusters) (15)
+sync point 110 (245/331 clusters) (14)
+sync point 111 (246/331 clusters) (15)
+sync point 112 (248/331 clusters) (16)
+sync point 113 (251/331 clusters) (14)
+sync point 114 (253/331 clusters) (14)
+sync point 115 (254/331 clusters) (14)
+sync point 116 (256/331 clusters) (13)
+sync point 117 (257/331 clusters) (13)
+sync point 118 (258/331 clusters) (14)
+sync point 119 (260/331 clusters) (13)
+sync point 120 (261/331 clusters) (14)
+sync point 121 (263/331 clusters) (15)
+sync point 122 (265/331 clusters) (15)
+sync point 123 (266/331 clusters) (14)
+sync point 124 (268/331 clusters) (13)
+sync point 125 (270/331 clusters) (13)
+sync point 126 (272/331 clusters) (13)
+sync point 127 (273/331 clusters) (13)
+sync point 128 (274/331 clusters) (14)
+sync point 129 (275/331 clusters) (14)
+sync point 130 (276/331 clusters) (13)
+sync point 131 (277/331 clusters) (13)
+sync point 132 (279/331 clusters) (12)
+sync point 133 (280/331 clusters) (12)
+sync point 134 (281/331 clusters) (12)
+sync point 135 (282/331 clusters) (11)
+sync point 136 (283/331 clusters) (11)
+sync point 137 (284/331 clusters) (10)
+sync point 138 (285/331 clusters) (9)
+sync point 139 (286/331 clusters) (9)
+sync point 140 (287/331 clusters) (9)
+sync point 141 (288/331 clusters) (9)
+sync point 142 (289/331 clusters) (9)
+sync point 143 (290/331 clusters) (9)
+sync point 144 (291/331 clusters) (9)
+sync point 145 (292/331 clusters) (9)
+sync point 146 (294/331 clusters) (8)
+sync point 147 (295/331 clusters) (7)
+sync point 148 (296/331 clusters) (6)
+sync point 149 (297/331 clusters) (5)
+sync point 150 (298/331 clusters) (4)
+sync point 151 (299/331 clusters) (4)
+sync point 152 (301/331 clusters) (3)
+sync point 153 (302/331 clusters) (2)
+sync point 154 (303/331 clusters) (1)
+sync point 155 (304/331 clusters) (1)
+sync point 156 (305/331 clusters) (1)
+sync point 157 (306/331 clusters) (2)
+sync point 158 (307/331 clusters) (3)
+sync point 159 (308/331 clusters) (2)
+sync point 160 (309/331 clusters) (2)
+sync point 161 (310/331 clusters) (3)
+sync point 162 (311/331 clusters) (2)
+sync point 163 (312/331 clusters) (1)
+sync point 164 (313/331 clusters) (1)
+sync point 165 (314/331 clusters) (1)
+sync point 166 (315/331 clusters) (4)
+sync point 167 (317/331 clusters) (4)
+sync point 168 (318/331 clusters) (3)
+sync point 169 (319/331 clusters) (3)
+sync point 170 (320/331 clusters) (4)
+sync point 171 (322/331 clusters) (2)
+sync point 172 (323/331 clusters) (3)
+sync point 173 (324/331 clusters) (6)
+sync point 174 (327/331 clusters) (3)
+sync point 175 (329/331 clusters) (2)
+sync point 176 (330/331 clusters) (1)
+sync point 177 (331/331 clusters) (0)
+MAKESPAN ESTIMATION: 0.12043999999999894
+221/2008 non-snapshot variables allocated
+translating SDAG to operation-only sdag
+
+
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+sync point 1 (1/2 clusters) (1)
+sync point 2 (2/2 clusters) (0)
+MAKESPAN ESTIMATION: 0.00011
+4/5 non-snapshot variables allocated
+
+generating: DERIVATIVESy-->MTX,b,gamma_b
+rot_vel shape (1, 4, 3)
+frame_vel_expand shape (1, 4, 3)
+rot_vel shape (1, 4, 3)
+frame_vel_expand shape (1, 4, 3)
+translating SDAG to operation-only sdag
+
+
+NODE REDUCTION: (1865 -> 1032)
+NODE REDUCTION: (1032 -> 566)
+NODE REDUCTION: (566 -> 411)
+NODE REDUCTION: (411 -> 340)
+NODE REDUCTION: (340 -> 319)
+NODE REDUCTION: (319 -> 317)
+NODE REDUCTION: (317 -> 317)
+NODE REDUCTION: (317 -> 317)
+NODE REDUCTION: (317 -> 317)
+NODE REDUCTION: (317 -> 317)
+NODE REDUCTION: (317 -> 317)
+sync point 1 (1/317 clusters) (58)
+sync point 2 (2/317 clusters) (57)
+sync point 3 (3/317 clusters) (56)
+sync point 4 (4/317 clusters) (55)
+sync point 5 (5/317 clusters) (54)
+sync point 6 (6/317 clusters) (53)
+sync point 7 (7/317 clusters) (52)
+sync point 8 (8/317 clusters) (51)
+sync point 9 (9/317 clusters) (50)
+sync point 10 (10/317 clusters) (49)
+sync point 11 (11/317 clusters) (48)
+sync point 12 (18/317 clusters) (45)
+sync point 13 (19/317 clusters) (44)
+sync point 14 (20/317 clusters) (43)
+sync point 15 (21/317 clusters) (42)
+sync point 16 (22/317 clusters) (41)
+sync point 17 (29/317 clusters) (39)
+sync point 18 (32/317 clusters) (37)
+sync point 19 (36/317 clusters) (40)
+sync point 20 (41/317 clusters) (41)
+sync point 21 (45/317 clusters) (37)
+sync point 22 (48/317 clusters) (36)
+sync point 23 (50/317 clusters) (34)
+sync point 24 (53/317 clusters) (31)
+sync point 25 (55/317 clusters) (30)
+sync point 26 (57/317 clusters) (30)
+sync point 27 (61/317 clusters) (26)
+sync point 28 (64/317 clusters) (24)
+sync point 29 (67/317 clusters) (21)
+sync point 30 (70/317 clusters) (18)
+sync point 31 (74/317 clusters) (15)
+sync point 32 (75/317 clusters) (14)
+sync point 33 (77/317 clusters) (12)
+sync point 34 (78/317 clusters) (13)
+sync point 35 (80/317 clusters) (12)
+sync point 36 (82/317 clusters) (20)
+sync point 37 (85/317 clusters) (19)
+sync point 38 (89/317 clusters) (17)
+sync point 39 (91/317 clusters) (18)
+sync point 40 (93/317 clusters) (17)
+sync point 41 (95/317 clusters) (25)
+sync point 42 (97/317 clusters) (30)
+sync point 43 (99/317 clusters) (28)
+sync point 44 (101/317 clusters) (26)
+sync point 45 (103/317 clusters) (24)
+sync point 46 (106/317 clusters) (23)
+sync point 47 (109/317 clusters) (21)
+sync point 48 (112/317 clusters) (19)
+sync point 49 (115/317 clusters) (16)
+sync point 50 (118/317 clusters) (14)
+sync point 51 (120/317 clusters) (12)
+sync point 52 (121/317 clusters) (11)
+sync point 53 (122/317 clusters) (10)
+sync point 54 (123/317 clusters) (9)
+sync point 55 (124/317 clusters) (8)
+sync point 56 (125/317 clusters) (7)
+sync point 57 (127/317 clusters) (5)
+sync point 58 (128/317 clusters) (7)
+sync point 59 (130/317 clusters) (5)
+sync point 60 (131/317 clusters) (5)
+sync point 61 (133/317 clusters) (18)
+sync point 62 (136/317 clusters) (21)
+sync point 63 (139/317 clusters) (21)
+sync point 64 (143/317 clusters) (18)
+sync point 65 (144/317 clusters) (17)
+sync point 66 (147/317 clusters) (17)
+sync point 67 (149/317 clusters) (22)
+sync point 68 (152/317 clusters) (20)
+sync point 69 (155/317 clusters) (19)
+sync point 70 (158/317 clusters) (18)
+sync point 71 (162/317 clusters) (17)
+sync point 72 (164/317 clusters) (16)
+sync point 73 (165/317 clusters) (17)
+sync point 74 (167/317 clusters) (16)
+sync point 75 (168/317 clusters) (16)
+sync point 76 (169/317 clusters) (16)
+sync point 77 (170/317 clusters) (16)
+sync point 78 (172/317 clusters) (18)
+sync point 79 (175/317 clusters) (19)
+sync point 80 (177/317 clusters) (19)
+sync point 81 (178/317 clusters) (18)
+sync point 82 (179/317 clusters) (19)
+sync point 83 (181/317 clusters) (19)
+sync point 84 (183/317 clusters) (17)
+sync point 85 (184/317 clusters) (17)
+sync point 86 (185/317 clusters) (20)
+sync point 87 (189/317 clusters) (20)
+sync point 88 (192/317 clusters) (19)
+sync point 89 (194/317 clusters) (18)
+sync point 90 (195/317 clusters) (18)
+sync point 91 (196/317 clusters) (17)
+sync point 92 (197/317 clusters) (17)
+sync point 93 (198/317 clusters) (16)
+sync point 94 (199/317 clusters) (17)
+sync point 95 (200/317 clusters) (16)
+sync point 96 (201/317 clusters) (16)
+sync point 97 (202/317 clusters) (21)
+sync point 98 (207/317 clusters) (16)
+sync point 99 (209/317 clusters) (14)
+sync point 100 (210/317 clusters) (14)
+sync point 101 (211/317 clusters) (15)
+sync point 102 (212/317 clusters) (16)
+sync point 103 (213/317 clusters) (16)
+sync point 104 (215/317 clusters) (16)
+sync point 105 (217/317 clusters) (17)
+sync point 106 (218/317 clusters) (20)
+sync point 107 (220/317 clusters) (19)
+sync point 108 (221/317 clusters) (19)
+sync point 109 (222/317 clusters) (19)
+sync point 110 (223/317 clusters) (20)
+sync point 111 (224/317 clusters) (20)
+sync point 112 (226/317 clusters) (20)
+sync point 113 (228/317 clusters) (20)
+sync point 114 (230/317 clusters) (19)
+sync point 115 (232/317 clusters) (19)
+sync point 116 (234/317 clusters) (17)
+sync point 117 (236/317 clusters) (17)
+sync point 118 (237/317 clusters) (18)
+sync point 119 (238/317 clusters) (18)
+sync point 120 (239/317 clusters) (18)
+sync point 121 (240/317 clusters) (19)
+sync point 122 (242/317 clusters) (17)
+sync point 123 (243/317 clusters) (16)
+sync point 124 (244/317 clusters) (17)
+sync point 125 (246/317 clusters) (18)
+sync point 126 (248/317 clusters) (16)
+sync point 127 (249/317 clusters) (16)
+sync point 128 (250/317 clusters) (16)
+sync point 129 (251/317 clusters) (18)
+sync point 130 (253/317 clusters) (17)
+sync point 131 (255/317 clusters) (16)
+sync point 132 (256/317 clusters) (16)
+sync point 133 (257/317 clusters) (15)
+sync point 134 (258/317 clusters) (14)
+sync point 135 (259/317 clusters) (15)
+sync point 136 (261/317 clusters) (14)
+sync point 137 (263/317 clusters) (14)
+sync point 138 (264/317 clusters) (13)
+sync point 139 (265/317 clusters) (12)
+sync point 140 (266/317 clusters) (12)
+sync point 141 (267/317 clusters) (12)
+sync point 142 (269/317 clusters) (12)
+sync point 143 (270/317 clusters) (12)
+sync point 144 (271/317 clusters) (11)
+sync point 145 (272/317 clusters) (11)
+sync point 146 (273/317 clusters) (11)
+sync point 147 (275/317 clusters) (10)
+sync point 148 (276/317 clusters) (10)
+sync point 149 (277/317 clusters) (9)
+sync point 150 (278/317 clusters) (9)
+sync point 151 (279/317 clusters) (9)
+sync point 152 (280/317 clusters) (9)
+sync point 153 (281/317 clusters) (9)
+sync point 154 (282/317 clusters) (9)
+sync point 155 (283/317 clusters) (8)
+sync point 156 (284/317 clusters) (7)
+sync point 157 (285/317 clusters) (6)
+sync point 158 (286/317 clusters) (6)
+sync point 159 (287/317 clusters) (5)
+sync point 160 (288/317 clusters) (4)
+sync point 161 (289/317 clusters) (4)
+sync point 162 (290/317 clusters) (3)
+sync point 163 (291/317 clusters) (2)
+sync point 164 (292/317 clusters) (1)
+sync point 165 (293/317 clusters) (1)
+sync point 166 (294/317 clusters) (1)
+sync point 167 (295/317 clusters) (2)
+sync point 168 (296/317 clusters) (3)
+sync point 169 (297/317 clusters) (2)
+sync point 170 (298/317 clusters) (1)
+sync point 171 (299/317 clusters) (2)
+sync point 172 (300/317 clusters) (1)
+sync point 173 (301/317 clusters) (1)
+sync point 174 (302/317 clusters) (1)
+sync point 175 (303/317 clusters) (4)
+sync point 176 (304/317 clusters) (4)
+sync point 177 (305/317 clusters) (4)
+sync point 178 (306/317 clusters) (3)
+sync point 179 (307/317 clusters) (4)
+sync point 180 (308/317 clusters) (6)
+sync point 181 (310/317 clusters) (7)
+sync point 182 (311/317 clusters) (6)
+sync point 183 (313/317 clusters) (4)
+sync point 184 (314/317 clusters) (3)
+sync point 185 (315/317 clusters) (2)
+sync point 186 (316/317 clusters) (1)
+sync point 187 (317/317 clusters) (0)
+MAKESPAN ESTIMATION: 0.12043999999999894
+221/2008 non-snapshot variables allocated
+translating SDAG to operation-only sdag
+
+
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+NODE REDUCTION: (2 -> 2)
+sync point 1 (1/2 clusters) (1)
+sync point 2 (2/2 clusters) (0)
+MAKESPAN ESTIMATION: 0.00011
+4/5 non-snapshot variables allocated
+
+generating: DERIVATIVESy-->MTX,b,gamma_b
+PROCESSING GRAPH...
+translating SDAG to operation-only sdag
+
+
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+NODE REDUCTION: (276 -> 276)
+sync point 1 (1/276 clusters) (43)
+sync point 2 (2/276 clusters) (43)
+sync point 3 (3/276 clusters) (43)
+sync point 4 (4/276 clusters) (43)
+sync point 5 (5/276 clusters) (43)
+sync point 6 (6/276 clusters) (43)
+sync point 7 (7/276 clusters) (43)
+sync point 8 (8/276 clusters) (43)
+sync point 9 (9/276 clusters) (43)
+sync point 10 (10/276 clusters) (43)
+sync point 11 (11/276 clusters) (43)
+sync point 12 (12/276 clusters) (43)
+sync point 13 (13/276 clusters) (43)
+sync point 14 (14/276 clusters) (43)
+sync point 15 (15/276 clusters) (42)
+sync point 16 (16/276 clusters) (42)
+sync point 17 (17/276 clusters) (42)
+sync point 18 (18/276 clusters) (42)
+sync point 19 (19/276 clusters) (42)
+sync point 20 (20/276 clusters) (42)
+sync point 21 (21/276 clusters) (42)
+sync point 22 (22/276 clusters) (42)
+sync point 23 (23/276 clusters) (42)
+sync point 24 (24/276 clusters) (41)
+sync point 25 (25/276 clusters) (41)
+sync point 26 (26/276 clusters) (41)
+sync point 27 (27/276 clusters) (41)
+sync point 28 (28/276 clusters) (44)
+sync point 29 (29/276 clusters) (43)
+sync point 30 (30/276 clusters) (42)
+sync point 31 (31/276 clusters) (42)
+sync point 32 (32/276 clusters) (42)
+sync point 33 (33/276 clusters) (42)
+sync point 34 (34/276 clusters) (42)
+sync point 35 (35/276 clusters) (42)
+sync point 36 (36/276 clusters) (42)
+sync point 37 (37/276 clusters) (42)
+sync point 38 (38/276 clusters) (42)
+sync point 39 (39/276 clusters) (45)
+sync point 40 (40/276 clusters) (44)
+sync point 41 (41/276 clusters) (43)
+sync point 42 (42/276 clusters) (42)
+sync point 43 (43/276 clusters) (41)
+sync point 44 (44/276 clusters) (40)
+sync point 45 (45/276 clusters) (39)
+sync point 46 (46/276 clusters) (39)
+sync point 47 (47/276 clusters) (39)
+sync point 48 (48/276 clusters) (39)
+sync point 49 (49/276 clusters) (38)
+sync point 50 (50/276 clusters) (38)
+sync point 51 (51/276 clusters) (37)
+sync point 52 (52/276 clusters) (37)
+sync point 53 (53/276 clusters) (37)
+sync point 54 (54/276 clusters) (37)
+sync point 55 (55/276 clusters) (36)
+sync point 56 (56/276 clusters) (36)
+sync point 57 (57/276 clusters) (36)
+sync point 58 (58/276 clusters) (36)
+sync point 59 (59/276 clusters) (36)
+sync point 60 (60/276 clusters) (36)
+sync point 61 (61/276 clusters) (36)
+sync point 62 (62/276 clusters) (35)
+sync point 63 (63/276 clusters) (35)
+sync point 64 (64/276 clusters) (35)
+sync point 65 (65/276 clusters) (34)
+sync point 66 (66/276 clusters) (34)
+sync point 67 (67/276 clusters) (34)
+sync point 68 (68/276 clusters) (34)
+sync point 69 (69/276 clusters) (34)
+sync point 70 (70/276 clusters) (34)
+sync point 71 (71/276 clusters) (34)
+sync point 72 (72/276 clusters) (34)
+sync point 73 (73/276 clusters) (33)
+sync point 74 (74/276 clusters) (33)
+sync point 75 (75/276 clusters) (33)
+sync point 76 (76/276 clusters) (33)
+sync point 77 (77/276 clusters) (32)
+sync point 78 (78/276 clusters) (32)
+sync point 79 (79/276 clusters) (32)
+sync point 80 (80/276 clusters) (32)
+sync point 81 (81/276 clusters) (32)
+sync point 82 (82/276 clusters) (32)
+sync point 83 (83/276 clusters) (32)
+sync point 84 (84/276 clusters) (32)
+sync point 85 (85/276 clusters) (31)
+sync point 86 (86/276 clusters) (30)
+sync point 87 (87/276 clusters) (30)
+sync point 88 (88/276 clusters) (29)
+sync point 89 (89/276 clusters) (28)
+sync point 90 (90/276 clusters) (28)
+sync point 91 (91/276 clusters) (27)
+sync point 92 (92/276 clusters) (26)
+sync point 93 (93/276 clusters) (26)
+sync point 94 (94/276 clusters) (25)
+sync point 95 (95/276 clusters) (24)
+sync point 96 (96/276 clusters) (23)
+sync point 97 (97/276 clusters) (23)
+sync point 98 (98/276 clusters) (22)
+sync point 99 (99/276 clusters) (22)
+sync point 100 (100/276 clusters) (21)
+sync point 101 (101/276 clusters) (20)
+sync point 102 (102/276 clusters) (20)
+sync point 103 (103/276 clusters) (20)
+sync point 104 (104/276 clusters) (20)
+sync point 105 (105/276 clusters) (20)
+sync point 106 (106/276 clusters) (19)
+sync point 107 (107/276 clusters) (18)
+sync point 108 (108/276 clusters) (17)
+sync point 109 (109/276 clusters) (17)
+sync point 110 (110/276 clusters) (16)
+sync point 111 (111/276 clusters) (15)
+sync point 112 (112/276 clusters) (15)
+sync point 113 (113/276 clusters) (14)
+sync point 114 (114/276 clusters) (14)
+sync point 115 (115/276 clusters) (14)
+sync point 116 (116/276 clusters) (14)
+sync point 117 (117/276 clusters) (14)
+sync point 118 (118/276 clusters) (14)
+sync point 119 (119/276 clusters) (14)
+sync point 120 (120/276 clusters) (14)
+sync point 121 (121/276 clusters) (14)
+sync point 122 (122/276 clusters) (14)
+sync point 123 (123/276 clusters) (13)
+sync point 124 (124/276 clusters) (12)
+sync point 125 (125/276 clusters) (12)
+sync point 126 (126/276 clusters) (12)
+sync point 127 (127/276 clusters) (12)
+sync point 128 (128/276 clusters) (11)
+sync point 129 (129/276 clusters) (10)
+sync point 130 (130/276 clusters) (10)
+sync point 131 (131/276 clusters) (10)
+sync point 132 (132/276 clusters) (10)
+sync point 133 (133/276 clusters) (10)
+sync point 134 (134/276 clusters) (10)
+sync point 135 (135/276 clusters) (10)
+sync point 136 (136/276 clusters) (10)
+sync point 137 (137/276 clusters) (10)
+sync point 138 (138/276 clusters) (10)
+sync point 139 (139/276 clusters) (10)
+sync point 140 (140/276 clusters) (10)
+sync point 141 (141/276 clusters) (10)
+sync point 142 (142/276 clusters) (10)
+sync point 143 (143/276 clusters) (10)
+sync point 144 (144/276 clusters) (10)
+sync point 145 (145/276 clusters) (10)
+sync point 146 (146/276 clusters) (12)
+sync point 147 (147/276 clusters) (12)
+sync point 148 (148/276 clusters) (14)
+sync point 149 (149/276 clusters) (16)
+sync point 150 (150/276 clusters) (18)
+sync point 151 (151/276 clusters) (18)
+sync point 152 (152/276 clusters) (18)
+sync point 153 (153/276 clusters) (17)
+sync point 154 (154/276 clusters) (16)
+sync point 155 (155/276 clusters) (17)
+sync point 156 (156/276 clusters) (19)
+sync point 157 (157/276 clusters) (18)
+sync point 158 (158/276 clusters) (19)
+sync point 159 (159/276 clusters) (21)
+sync point 160 (160/276 clusters) (20)
+sync point 161 (161/276 clusters) (19)
+sync point 162 (162/276 clusters) (18)
+sync point 163 (163/276 clusters) (17)
+sync point 164 (164/276 clusters) (16)
+sync point 165 (165/276 clusters) (17)
+sync point 166 (166/276 clusters) (19)
+sync point 167 (167/276 clusters) (20)
+sync point 168 (168/276 clusters) (22)
+sync point 169 (169/276 clusters) (21)
+sync point 170 (170/276 clusters) (20)
+sync point 171 (171/276 clusters) (19)
+sync point 172 (172/276 clusters) (18)
+sync point 173 (173/276 clusters) (17)
+sync point 174 (174/276 clusters) (16)
+sync point 175 (175/276 clusters) (15)
+sync point 176 (176/276 clusters) (14)
+sync point 177 (177/276 clusters) (13)
+sync point 178 (178/276 clusters) (15)
+sync point 179 (179/276 clusters) (14)
+sync point 180 (180/276 clusters) (16)
+sync point 181 (181/276 clusters) (15)
+sync point 182 (182/276 clusters) (14)
+sync point 183 (183/276 clusters) (13)
+sync point 184 (184/276 clusters) (12)
+sync point 185 (185/276 clusters) (14)
+sync point 186 (186/276 clusters) (13)
+sync point 187 (187/276 clusters) (13)
+sync point 188 (188/276 clusters) (13)
+sync point 189 (189/276 clusters) (13)
+sync point 190 (190/276 clusters) (15)
+sync point 191 (191/276 clusters) (15)
+sync point 192 (192/276 clusters) (15)
+sync point 193 (193/276 clusters) (14)
+sync point 194 (194/276 clusters) (13)
+sync point 195 (195/276 clusters) (12)
+sync point 196 (196/276 clusters) (12)
+sync point 197 (197/276 clusters) (11)
+sync point 198 (198/276 clusters) (10)
+sync point 199 (199/276 clusters) (9)
+sync point 200 (200/276 clusters) (8)
+sync point 201 (201/276 clusters) (8)
+sync point 202 (202/276 clusters) (7)
+sync point 203 (203/276 clusters) (6)
+sync point 204 (204/276 clusters) (6)
+sync point 205 (205/276 clusters) (6)
+sync point 206 (206/276 clusters) (6)
+sync point 207 (207/276 clusters) (6)
+sync point 208 (208/276 clusters) (6)
+sync point 209 (209/276 clusters) (6)
+sync point 210 (210/276 clusters) (6)
+sync point 211 (211/276 clusters) (6)
+sync point 212 (212/276 clusters) (6)
+sync point 213 (213/276 clusters) (6)
+sync point 214 (214/276 clusters) (6)
+sync point 215 (215/276 clusters) (6)
+sync point 216 (216/276 clusters) (5)
+sync point 217 (217/276 clusters) (4)
+sync point 218 (218/276 clusters) (4)
+sync point 219 (219/276 clusters) (5)
+sync point 220 (220/276 clusters) (4)
+sync point 221 (221/276 clusters) (3)
+sync point 222 (222/276 clusters) (2)
+sync point 223 (223/276 clusters) (1)
+sync point 224 (224/276 clusters) (9)
+sync point 225 (225/276 clusters) (9)
+sync point 226 (226/276 clusters) (9)
+sync point 227 (227/276 clusters) (11)
+sync point 228 (228/276 clusters) (13)
+sync point 229 (229/276 clusters) (13)
+sync point 230 (230/276 clusters) (13)
+sync point 231 (231/276 clusters) (15)
+sync point 232 (232/276 clusters) (15)
+sync point 233 (233/276 clusters) (15)
+sync point 234 (234/276 clusters) (14)
+sync point 235 (235/276 clusters) (14)
+sync point 236 (236/276 clusters) (13)
+sync point 237 (237/276 clusters) (13)
+sync point 238 (238/276 clusters) (12)
+sync point 239 (239/276 clusters) (12)
+sync point 240 (240/276 clusters) (13)
+sync point 241 (241/276 clusters) (14)
+sync point 242 (242/276 clusters) (13)
+sync point 243 (243/276 clusters) (14)
+sync point 244 (244/276 clusters) (13)
+sync point 245 (245/276 clusters) (12)
+sync point 246 (246/276 clusters) (12)
+sync point 247 (247/276 clusters) (13)
+sync point 248 (248/276 clusters) (14)
+sync point 249 (249/276 clusters) (14)
+sync point 250 (250/276 clusters) (14)
+sync point 251 (251/276 clusters) (14)
+sync point 252 (252/276 clusters) (14)
+sync point 253 (253/276 clusters) (13)
+sync point 254 (254/276 clusters) (13)
+sync point 255 (255/276 clusters) (12)
+sync point 256 (256/276 clusters) (12)
+sync point 257 (257/276 clusters) (12)
+sync point 258 (258/276 clusters) (12)
+sync point 259 (259/276 clusters) (11)
+sync point 260 (260/276 clusters) (11)
+sync point 261 (261/276 clusters) (10)
+sync point 262 (262/276 clusters) (10)
+sync point 263 (263/276 clusters) (10)
+sync point 264 (264/276 clusters) (9)
+sync point 265 (265/276 clusters) (8)
+sync point 266 (266/276 clusters) (7)
+sync point 267 (267/276 clusters) (6)
+sync point 268 (268/276 clusters) (5)
+sync point 269 (269/276 clusters) (4)
+sync point 270 (270/276 clusters) (3)
+sync point 271 (271/276 clusters) (2)
+sync point 272 (272/276 clusters) (2)
+sync point 273 (273/276 clusters) (1)
+sync point 274 (274/276 clusters) (1)
+sync point 275 (275/276 clusters) (1)
+sync point 276 (276/276 clusters) (0)
+MAKESPAN ESTIMATION: 0.002850000000000006
+IS DAG? True
+operation count: 162	 type: elementwise
+operation count: 53	 type: <class 'csdl.lang.input.Input'>
+operation count: 86	 type: <class 'csdl.operations.power_combination.power_combination'>
+operation count: 281	 type: <class 'csdl.lang.output.Output'>
+operation count: 34	 type: <class 'csdl.operations.indexed_passthrough.indexed_passthrough'>
+operation count: 34	 type: <class 'csdl.lang.concatenation.Concatenation'>
+operation count: 17	 type: <class 'csdl.operations.linear_combination.linear_combination'>
+operation count: 1	 type: <class 'csdl.operations.pnorm.pnorm'>
+operation count: 1	 type: <class 'csdl.operations.max.max'>
+operation count: 15	 type: <class 'csdl.operations.decompose.decompose'>
+operation count: 1	 type: <class 'csdl.operations.min.min'>
+operation count: 34	 type: <class 'csdl.operations.reshape.reshape'>
+operation count: 7	 type: <class 'csdl.operations.sum.sum'>
+operation count: 19	 type: <class 'csdl.operations.print_var.print_var'>
+operation count: 10	 type: <class 'csdl.operations.quatrotvec.quatrotvec'>
+operation count: 10	 type: <class 'csdl.operations.cos.cos'>
+operation count: 30	 type: <class 'csdl.operations.sin.sin'>
+operation count: 6	 type: <class 'csdl.operations.expand.expand'>
+operation count: 4	 type: <class 'csdl.operations.cross.cross'>
+operation count: 1	 type: <class 'ozone.classes.ODEModelTM.ODEModelComp'>
+GRAPH PROCESSED
+154/368 non-snapshot variables allocated
+
+printing  v0256_front_left_nacelle1_thrust_vector_mult_NEWTONS_NED_CG (front_left_nacelle1_thrust_vector_mult_NEWTONS_NED_CG)
+[[-4000.             0.00004735     0.        ]
+ [-4000.             0.00004735     0.        ]]
+
+printing  v0122_front_left_nacelle1_origin_rotated_METERS_NED_CG (front_left_nacelle1_origin_rotated_METERS_NED_CG)
+[[-1.53290174  2.25867681  0.01342721]
+ [-1.53290174  2.25867681  0.01342721]]
+
+printing  v0150_front_left_nacelle2_origin_rotated_METERS_NED_CG (front_left_nacelle2_origin_rotated_METERS_NED_CG)
+[[-1.1185265   4.45738939  0.01342721]
+ [-1.1185265   4.45738939  0.01342721]]
+
+printing  v0263_front_left_nacelle2_thrust_vector_mult_NEWTONS_NED_CG (front_left_nacelle2_thrust_vector_mult_NEWTONS_NED_CG)
+[[-4000.             0.00012247     0.        ]
+ [-4000.             0.00012247     0.        ]]
+
+printing  v0269_front_left_nacelle3_thrust_vector_mult_NEWTONS_NED_CG (front_left_nacelle3_thrust_vector_mult_NEWTONS_NED_CG)
+[[-4000.             0.00002519    -0.        ]
+ [-4000.             0.00002519    -0.        ]]
+
+printing  v0178_front_left_nacelle3_origin_rotated_METERS_NED_CG (front_left_nacelle3_origin_rotated_METERS_NED_CG)
+[[-0.70323095  6.6627628   0.12355553]
+ [-0.70323095  6.6627628   0.12355553]]
+
+printing  v0275_rear_left_nacelle1_thrust_vector_mult_NEWTONS_NED_CG (rear_left_nacelle1_thrust_vector_mult_NEWTONS_NED_CG)
+[[-4000.            0.0003095     0.       ]
+ [-4000.            0.0003095     0.       ]]
+
+printing  v0235_rear_left_nacelle1_origin_rotated_METERS_NED_CG (rear_left_nacelle1_origin_rotated_METERS_NED_CG)
+[[3.60931006 1.5362898  1.53870444]
+ [3.60931006 1.5362898  1.53870444]]
+
+printing  v0290_front_left_nacelle1_moments_NEWTON_METER_NED_CG (front_left_nacelle1_moments_NEWTON_METER_NED_CG)
+[[  -0.00000064  -53.70883547 9034.70716763]
+ [  -0.00000064  -53.70883547 9034.70716763]]
+
+printing  v0296_front_left_nacelle2_moments_NEWTON_METER_NED_CG (front_left_nacelle2_moments_NEWTON_METER_NED_CG)
+[[   -0.00000164   -53.70883547 17829.55744134]
+ [   -0.00000164   -53.70883547 17829.55744134]]
+
+printing  v0306_rear_left_nacelle1_moments_NEWTON_METER_NED_CG (rear_left_nacelle1_moments_NEWTON_METER_NED_CG)
+[[   -0.00047624 -6154.81777115  6145.16031711]
+ [   -0.00047624 -6154.81777115  6145.16031711]]
+
+printing  v0301_front_left_nacelle3_moments_NEWTON_METER_NED_CG (front_left_nacelle3_moments_NEWTON_METER_NED_CG)
+[[   -0.00000311  -494.22213275 26651.0511743 ]
+ [   -0.00000311  -494.22213275 26651.0511743 ]]
+
+printing  v0333_forces_moments_Fx (forces_moments_Fx)
+[[-16000.]
+ [-16000.]]
+
+printing  v0336_forces_moments_Fz (forces_moments_Fz)
+[[-0.]
+ [-0.]]
+
+printing  v0335_forces_moments_Fy (forces_moments_Fy)
+[[0.]
+ [0.]]
+
+printing  v0339_forces_moments_My (forces_moments_My)
+[[-6756.45757482]
+ [-6756.45757482]]
+
+printing  v0338_forces_moments_Mx (forces_moments_Mx)
+[[-0.]
+ [-0.]]
+
+printing  v0341_forces_moments_Mz (forces_moments_Mz)
+[[0.]
+ [0.]]
+Integrating ODE ... 
+
+printing  v022_refPt (refPt)
+[0. 0. 0.]
+
+printing  v023_front_wing_vlm_rotated (front_wing_vlm_rotated)
+[[[[-0.10824942  6.66275847  0.11614985]
+   [-0.73378081  3.33137929  0.11767765]
+   [-1.35930977  0.          0.11614996]]
+
+  [[ 0.24752155  6.66276063  0.13102431]
+   [-0.30177223  3.33138031  0.13435913]
+   [-0.85106601  0.          0.13739918]]
+
+  [[ 0.60329245  6.6627628   0.11310239]
+   [ 0.13023595  3.3313814   0.11358648]
+   [-0.34282056  0.          0.111796  ]]]]
+
+printing  v024_rear_wing_vlm_rotated (rear_wing_vlm_rotated)
+[[[[4.20642616 1.53628956 1.53129881]
+   [4.10060741 0.76814478 1.53129885]
+   [3.99478866 0.         1.53129888]]
+
+  [[4.62970129 1.53628969 1.54899554]
+   [4.57679169 0.76814485 1.55120767]
+   [4.5238821  0.00000001 1.55341979]]
+
+  [[5.05297634 1.5362898  1.52767269]
+   [5.05297589 0.7681449  1.52721956]
+   [5.05297544 0.         1.52676642]]]]
+
+printing  v018_forces_moments_Fz (forces_moments_Fz)
+[[-0.]]
+
+printing  v016_forces_moments_Fx (forces_moments_Fx)
+[[-16000.]]
+
+printing  v0211_alpha (alpha)
+[[0.]]
+
+printing  v0202_testGamma (testGamma)
+[[0.0000002]]
+
+printing  v01798_inertial_loads_F (inertial_loads_F)
+[[   -0.             0.         23531.05888424]]
+
+printing  v01813_inertial_loads_M (inertial_loads_M)
+[[ 0. -0.  0.]]
+
+printing  v0225_frame_vel (frame_vel)
+[[-50.   0.  -0.]]
+nonlinear solver: newton solver converged in 1 iterations. 9.550499576785472e-16
+
+printing  v01752_M (vlm_M_vlmFrame)
+[[  -0.         -456.49515888    0.        ]]
+
+printing  v01733_F (vlm_F_vlmFrame)
+[[-1272.13766743    -0.          1603.14158053]]
+
+printing  v01742_Forces_IN_VLM (Forces_IN_VLM)
+[[-1272.13766743    -0.          1603.14158053]]
+
+printing  v077_total_Mx (total_Mx)
+[[0.]]
+
+printing  v085_total_Mz (total_Mz)
+[[0.]]
+
+printing  v059_total_Fx (total_Fx)
+[[17272.13766743]]
+
+printing  v01768_L_over_D (L_over_D)
+[[-1.26019504]]
+
+printing  v063_total_Fy (total_Fy)
+[[0.]]
+
+printing  v067_total_Fz (total_Fz)
+[[21927.91730372]]
+
+printing  v081_total_My (total_My)
+[[-7212.9527337]]
+
+printing  v022_refPt (refPt)
+[0. 0. 0.]
+
+printing  v023_front_wing_vlm_rotated (front_wing_vlm_rotated)
+[[[[-0.10824942  6.66275847  0.11614985]
+   [-0.73378081  3.33137929  0.11767765]
+   [-1.35930977  0.          0.11614996]]
+
+  [[ 0.24752155  6.66276063  0.13102431]
+   [-0.30177223  3.33138031  0.13435913]
+   [-0.85106601  0.          0.13739918]]
+
+  [[ 0.60329245  6.6627628   0.11310239]
+   [ 0.13023595  3.3313814   0.11358648]
+   [-0.34282056  0.          0.111796  ]]]]
+
+printing  v024_rear_wing_vlm_rotated (rear_wing_vlm_rotated)
+[[[[4.20642616 1.53628956 1.53129881]
+   [4.10060741 0.76814478 1.53129885]
+   [3.99478866 0.         1.53129888]]
+
+  [[4.62970129 1.53628969 1.54899554]
+   [4.57679169 0.76814485 1.55120767]
+   [4.5238821  0.00000001 1.55341979]]
+
+  [[5.05297634 1.5362898  1.52767269]
+   [5.05297589 0.7681449  1.52721956]
+   [5.05297544 0.         1.52676642]]]]
+
+printing  v016_forces_moments_Fx (forces_moments_Fx)
+[[-16000.]]
+
+printing  v018_forces_moments_Fz (forces_moments_Fz)
+[[-0.]]
+
+printing  v0211_alpha (alpha)
+[[0.]]
+
+printing  v0202_testGamma (testGamma)
+[[0.0000002]]
+
+printing  v01798_inertial_loads_F (inertial_loads_F)
+[[   -0.             0.         23531.05888424]]
+
+printing  v01813_inertial_loads_M (inertial_loads_M)
+[[ 0. -0.  0.]]
+
+printing  v0225_frame_vel (frame_vel)
+[[-50.   0.  -0.]]
+nonlinear solver: newton solver converged in 1 iterations. 9.550499576785472e-16
+
+printing  v01752_M (vlm_M_vlmFrame)
+[[  -0.         -456.49515888    0.        ]]
+
+printing  v085_total_Mz (total_Mz)
+[[0.]]
+
+printing  v081_total_My (total_My)
+[[-7212.9527337]]
+
+printing  v01733_F (vlm_F_vlmFrame)
+[[-1272.13766743    -0.          1603.14158053]]
+
+printing  v01742_Forces_IN_VLM (Forces_IN_VLM)
+[[-1272.13766743    -0.          1603.14158053]]
+
+printing  v063_total_Fy (total_Fy)
+[[0.]]
+
+printing  v067_total_Fz (total_Fz)
+[[21927.91730372]]
+
+printing  v01768_L_over_D (L_over_D)
+[[-1.26019504]]
+
+printing  v059_total_Fx (total_Fx)
+[[17272.13766743]]
+
+printing  v077_total_Mx (total_Mx)
+[[0.]]
+(('dp_dt', 'dphi_dt', 'dpsi_dt', 'dq_dt', 'dr_dt', 'dtheta_dt', 'du_dt', 'dv_dt', 'dw_dt', 'dx_dt', 'dy_dt', 'dz_dt'), ('forces_moments_Fx', 'forces_moments_Fy', 'forces_moments_Fz', 'forces_moments_Mx', 'forces_moments_My', 'forces_moments_Mz', 'front_wing_vlm_rotated', 'p', 'phi', 'psi', 'q', 'r', 'rear_wing_vlm_rotated', 'refPt', 'theta', 'u', 'v', 'w', 'x', 'y', 'z'))  not found, generating...
+
+generating: DERIVATIVESdp_dt,dphi_dt,dpsi_dt,dq_dt,dr_dt,dtheta_dt,du_dt,dv_dt,dw_dt,dx_dt,dy_dt,dz_dt-->forces_moments_Fx,forces_moments_Fy,forces_moments_Fz,forces_moments_Mx,forces_moments_My,forces_moments_Mz,front_wing_vlm_rotated,p,phi,psi,q,r,rear_wing_vl
+
+printing  v022_refPt (refPt)
+[0. 0. 0.]
+
+printing  v023_front_wing_vlm_rotated (front_wing_vlm_rotated)
+[[[[-0.10824942  6.66275847  0.11614985]
+   [-0.73378081  3.33137929  0.11767765]
+   [-1.35930977  0.          0.11614996]]
+
+  [[ 0.24752155  6.66276063  0.13102431]
+   [-0.30177223  3.33138031  0.13435913]
+   [-0.85106601  0.          0.13739918]]
+
+  [[ 0.60329245  6.6627628   0.11310239]
+   [ 0.13023595  3.3313814   0.11358648]
+   [-0.34282056  0.          0.111796  ]]]]
+
+printing  v024_rear_wing_vlm_rotated (rear_wing_vlm_rotated)
+[[[[4.20642616 1.53628956 1.53129881]
+   [4.10060741 0.76814478 1.53129885]
+   [3.99478866 0.         1.53129888]]
+
+  [[4.62970129 1.53628969 1.54899554]
+   [4.57679169 0.76814485 1.55120767]
+   [4.5238821  0.00000001 1.55341979]]
+
+  [[5.05297634 1.5362898  1.52767269]
+   [5.05297589 0.7681449  1.52721956]
+   [5.05297544 0.         1.52676642]]]]
+
+printing  v016_forces_moments_Fx (forces_moments_Fx)
+[[-16000.]]
+
+printing  v018_forces_moments_Fz (forces_moments_Fz)
+[[-0.]]
+
+printing  v0211_alpha (alpha)
+[[0.]]
+
+printing  v0202_testGamma (testGamma)
+[[0.00907316]]
+
+printing  v01798_inertial_loads_F (inertial_loads_F)
+[[   -0.             0.         23531.05888425]]
+
+printing  v01813_inertial_loads_M (inertial_loads_M)
+[[ 0. -0.  0.]]
+
+printing  v0225_frame_vel (frame_vel)
+[[-50.36198352   0.          -0.        ]]
+nonlinear solver: newton solver converged in 1 iterations. 9.550499576785472e-16
+
+printing  v01752_M (vlm_M_vlmFrame)
+[[  -0.         -451.00195116    0.        ]]
+
+printing  v085_total_Mz (total_Mz)
+[[0.]]
+
+printing  v081_total_My (total_My)
+[[-7207.45952598]]
+
+printing  v01733_F (vlm_F_vlmFrame)
+[[-1290.69710209    -0.          1624.02211802]]
+
+printing  v01742_Forces_IN_VLM (Forces_IN_VLM)
+[[-1290.69710209    -0.          1624.02211802]]
+
+printing  v063_total_Fy (total_Fy)
+[[0.]]
+
+printing  v067_total_Fz (total_Fz)
+[[21907.03676622]]
+
+printing  v01768_L_over_D (L_over_D)
+[[-1.25825193]]
+
+printing  v059_total_Fx (total_Fx)
+[[17290.69710209]]
+
+printing  v077_total_Mx (total_Mx)
+[[0.]]
+
+printing  v022_refPt (refPt)
+[0. 0. 0.]
+
+printing  v023_front_wing_vlm_rotated (front_wing_vlm_rotated)
+[[[[-0.10824942  6.66275847  0.11614985]
+   [-0.73378081  3.33137929  0.11767765]
+   [-1.35930977  0.          0.11614996]]
+
+  [[ 0.24752155  6.66276063  0.13102431]
+   [-0.30177223  3.33138031  0.13435913]
+   [-0.85106601  0.          0.13739918]]
+
+  [[ 0.60329245  6.6627628   0.11310239]
+   [ 0.13023595  3.3313814   0.11358648]
+   [-0.34282056  0.          0.111796  ]]]]
+
+printing  v024_rear_wing_vlm_rotated (rear_wing_vlm_rotated)
+[[[[4.20642616 1.53628956 1.53129881]
+   [4.10060741 0.76814478 1.53129885]
+   [3.99478866 0.         1.53129888]]
+
+  [[4.62970129 1.53628969 1.54899554]
+   [4.57679169 0.76814485 1.55120767]
+   [4.5238821  0.00000001 1.55341979]]
+
+  [[5.05297634 1.5362898  1.52767269]
+   [5.05297589 0.7681449  1.52721956]
+   [5.05297544 0.         1.52676642]]]]
+
+printing  v016_forces_moments_Fx (forces_moments_Fx)
+[[-16000.]]
+
+printing  v018_forces_moments_Fz (forces_moments_Fz)
+[[-0.]]
+
+printing  v0211_alpha (alpha)
+[[-0.00021621]]
+
+printing  v0202_testGamma (testGamma)
+[[0.00884824]]
+
+printing  v01798_inertial_loads_F (inertial_loads_F)
+[[    5.08769555     0.         23531.05850338]]
+
+printing  v01813_inertial_loads_M (inertial_loads_M)
+[[0. 0. 0.]]
+
+printing  v0225_frame_vel (frame_vel)
+[[-50.36236639   0.           0.01088894]]
+nonlinear solver: newton solver converged in 1 iterations. 1.6467268631127714e-15
+
+printing  v01752_M (vlm_M_vlmFrame)
+[[  -0.         -451.00031999    0.        ]]
+
+printing  v085_total_Mz (total_Mz)
+[[0.]]
+
+printing  v081_total_My (total_My)
+[[-7207.45789481]]
+
+printing  v01733_F (vlm_F_vlmFrame)
+[[-1290.48088522    -0.          1613.45773273]]
+
+printing  v01742_Forces_IN_VLM (Forces_IN_VLM)
+[[-1290.48088522    -0.          1613.45773273]]
+
+printing  v063_total_Fy (total_Fy)
+[[0.]]
+
+printing  v067_total_Fz (total_Fz)
+[[21917.60077064]]
+
+printing  v01768_L_over_D (L_over_D)
+[[-1.24972231]]
+
+printing  v059_total_Fx (total_Fx)
+[[17295.56858077]]
+
+printing  v077_total_Mx (total_Mx)
+[[0.]]
+
+printing  v022_refPt (refPt)
+[0. 0. 0.]
+
+printing  v023_front_wing_vlm_rotated (front_wing_vlm_rotated)
+[[[[-0.10824942  6.66275847  0.11614985]
+   [-0.73378081  3.33137929  0.11767765]
+   [-1.35930977  0.          0.11614996]]
+
+  [[ 0.24752155  6.66276063  0.13102431]
+   [-0.30177223  3.33138031  0.13435913]
+   [-0.85106601  0.          0.13739918]]
+
+  [[ 0.60329245  6.6627628   0.11310239]
+   [ 0.13023595  3.3313814   0.11358648]
+   [-0.34282056  0.          0.111796  ]]]]
+
+printing  v024_rear_wing_vlm_rotated (rear_wing_vlm_rotated)
+[[[[4.20642616 1.53628956 1.53129881]
+   [4.10060741 0.76814478 1.53129885]
+   [3.99478866 0.         1.53129888]]
+
+  [[4.62970129 1.53628969 1.54899554]
+   [4.57679169 0.76814485 1.55120767]
+   [4.5238821  0.00000001 1.55341979]]
+
+  [[5.05297634 1.5362898  1.52767269]
+   [5.05297589 0.7681449  1.52721956]
+   [5.05297544 0.         1.52676642]]]]
+
+printing  v016_forces_moments_Fx (forces_moments_Fx)
+[[-16000.]]
+
+printing  v018_forces_moments_Fz (forces_moments_Fz)
+[[-0.]]
+
+printing  v0211_alpha (alpha)
+[[-0.00043209]]
+
+printing  v0202_testGamma (testGamma)
+[[0.01757812]]
+
+printing  v01798_inertial_loads_F (inertial_loads_F)
+[[   10.16764161     0.         23531.05702552]]
+
+printing  v01813_inertial_loads_M (inertial_loads_M)
+[[0. 0. 0.]]
+
+printing  v0225_frame_vel (frame_vel)
+[[-50.72882263   0.           0.02191965]]
+nonlinear solver: newton solver converged in 1 iterations. 1.0532500405730103e-15
+
+printing  v01752_M (vlm_M_vlmFrame)
+[[  -0.         -445.45103912    0.        ]]
+
+printing  v085_total_Mz (total_Mz)
+[[0.]]
+
+printing  v081_total_My (total_My)
+[[-7201.90861394]]
+
+printing  v01733_F (vlm_F_vlmFrame)
+[[-1309.16674179    -0.          1623.87999409]]
+
+printing  v01742_Forces_IN_VLM (Forces_IN_VLM)
+[[-1309.16674179    -0.          1623.87999409]]
+
+printing  v063_total_Fy (total_Fy)
+[[0.]]
+
+printing  v067_total_Fz (total_Fz)
+[[21907.17703143]]
+
+printing  v01768_L_over_D (L_over_D)
+[[-1.23929572]]
+
+printing  v059_total_Fx (total_Fx)
+[[17319.3343834]]
+
+printing  v077_total_Mx (total_Mx)
+[[0.]]
+
+printing  v022_refPt (refPt)
+[0. 0. 0.]
+
+printing  v023_front_wing_vlm_rotated (front_wing_vlm_rotated)
+[[[[-0.10824942  6.66275847  0.11614985]
+   [-0.73378081  3.33137929  0.11767765]
+   [-1.35930977  0.          0.11614996]]
+
+  [[ 0.24752155  6.66276063  0.13102431]
+   [-0.30177223  3.33138031  0.13435913]
+   [-0.85106601  0.          0.13739918]]
+
+  [[ 0.60329245  6.6627628   0.11310239]
+   [ 0.13023595  3.3313814   0.11358648]
+   [-0.34282056  0.          0.111796  ]]]]
+
+printing  v024_rear_wing_vlm_rotated (rear_wing_vlm_rotated)
+[[[[4.20642616 1.53628956 1.53129881]
+   [4.10060741 0.76814478 1.53129885]
+   [3.99478866 0.         1.53129888]]
+
+  [[4.62970129 1.53628969 1.54899554]
+   [4.57679169 0.76814485 1.55120767]
+   [4.5238821  0.00000001 1.55341979]]
+
+  [[5.05297634 1.5362898  1.52767269]
+   [5.05297589 0.7681449  1.52721956]
+   [5.05297544 0.         1.52676642]]]]
+
+printing  v018_forces_moments_Fz (forces_moments_Fz)
+[[-0.]]
+
+printing  v016_forces_moments_Fx (forces_moments_Fx)
+[[-16000.]]
+
+printing  v0211_alpha (alpha)
+[[-0.0004322]]
+
+printing  v0202_testGamma (testGamma)
+[[0.01757409]]
+
+printing  v01798_inertial_loads_F (inertial_loads_F)
+[[   10.17022395     0.         23531.05702458]]
+
+printing  v01813_inertial_loads_M (inertial_loads_M)
+[[0. 0. 0.]]
+
+printing  v0225_frame_vel (frame_vel)
+[[-50.7288196    0.           0.02192521]]
+nonlinear solver: newton solver converged in 1 iterations. 1.2994827337208943e-15
+
+printing  v01752_M (vlm_M_vlmFrame)
+[[  -0.         -445.45100341    0.        ]]
+
+printing  v01733_F (vlm_F_vlmFrame)
+[[-1309.1664656    -0.         1623.8743497]]
+
+printing  v01742_Forces_IN_VLM (Forces_IN_VLM)
+[[-1309.1664656    -0.         1623.8743497]]
+
+printing  v077_total_Mx (total_Mx)
+[[0.]]
+
+printing  v085_total_Mz (total_Mz)
+[[0.]]
+
+printing  v059_total_Fx (total_Fx)
+[[17319.33668956]]
+
+printing  v01768_L_over_D (L_over_D)
+[[-1.23929139]]
+
+printing  v063_total_Fy (total_Fy)
+[[0.]]
+
+printing  v067_total_Fz (total_Fz)
+[[21907.18267488]]
+
+printing  v081_total_My (total_My)
+[[-7201.90857823]]
+Function Evaluation Time:  0.5324845314025879
+Total Integration Time:  0.5475695133209229 
+
+
+printing  v077_objective (objective)
+[127.75975159]
+[[[[-0.10824942  6.66275847  0.11614985]
+   [-0.73378081  3.33137929  0.11767765]
+   [-1.35930977  0.          0.11614996]]
+
+  [[ 0.24752155  6.66276063  0.13102431]
+   [-0.30177223  3.33138031  0.13435913]
+   [-0.85106601  0.          0.13739918]]
+
+  [[ 0.60329245  6.6627628   0.11310239]
+   [ 0.13023595  3.3313814   0.11358648]
+   [-0.34282056  0.          0.111796  ]]]
+
+
+ [[[-0.10824942  6.66275847  0.11614985]
+   [-0.73378081  3.33137929  0.11767765]
+   [-1.35930977  0.          0.11614996]]
+
+  [[ 0.24752155  6.66276063  0.13102431]
+   [-0.30177223  3.33138031  0.13435913]
+   [-0.85106601  0.          0.13739918]]
+
+  [[ 0.60329245  6.6627628   0.11310239]
+   [ 0.13023595  3.3313814   0.11358648]
+   [-0.34282056  0.          0.111796  ]]]]
+[[[ 0.10824942  6.66275847 -0.11614985]
+  [ 0.73378081  3.33137929 -0.11767765]
+  [ 1.35930977  0.         -0.11614996]
+  [-0.24752155  6.66276063 -0.13102431]
+  [ 0.30177223  3.33138031 -0.13435913]
+  [ 0.85106601  0.         -0.13739918]
+  [-0.60329245  6.6627628  -0.11310239]
+  [-0.13023595  3.3313814  -0.11358648]
+  [ 0.34282056  0.         -0.111796  ]]
+
+ [[ 0.10824942  6.66275847 -0.11614985]
+  [ 0.73378081  3.33137929 -0.11767765]
+  [ 1.35930977  0.         -0.11614996]
+  [-0.24752155  6.66276063 -0.13102431]
+  [ 0.30177223  3.33138031 -0.13435913]
+  [ 0.85106601  0.         -0.13739918]
+  [-0.60329245  6.6627628  -0.11310239]
+  [-0.13023595  3.3313814  -0.11358648]
+  [ 0.34282056  0.         -0.111796  ]]]
+------ FORCES AND MOMENTS -------
+[[17272.13766743]
+ [17319.33668956]]
+[[0.]
+ [0.]]
+[[21927.91730372]
+ [21907.18267488]]
+[[0.]
+ [0.]]
+[[-7212.9527337 ]
+ [-7201.90857823]]
+[[0.]
+ [0.]]
+---------- Thrust --------------
+front_left_nacelle1_NEWTONS_thrust [4000. 4000.]
+front_left_nacelle2_NEWTONS_thrust [4000. 4000.]
+front_left_nacelle3_NEWTONS_thrust [4000. 4000.]
+rear_left_nacelle1_NEWTONS_thrust [4000. 4000.]
+---------- Actuation Angles --------------
+Front Act: [0. 0.]
+Rear Act: [0. 0.]
+---------- STATES --------------
+X: [0.         5.03601698]
+U: [50.         50.72099078]
+Udot: [[7.19821166]
+ [7.22558593]]
+Z: [-5.         -4.95432547]
+W: [0.00001   0.8914668]
+Wdot: [[9.13852084]
+ [8.69155499]]
+Theta: [ 0.         -0.02476348]
+Q: [ 0.         -0.49514316]
+Qdot: [[-4.95521233]
+ [-4.94762512]]

@@ -6,7 +6,9 @@ from src.caddee.concept.geometry.geocore.utils.create_thrust_vector_origin_pair 
 from src.caddee.concept.geometry.geocore.utils.generate_corner_points import generate_corner_points
 from src.caddee.concept.geometry.geocore.utils.generate_camber_mesh import generate_camber_mesh
 from src.caddee.concept.geometry.geocore.utils.thrust_vector_creation import generate_thrust_vector
+from vedo import Points, Plotter, LegendBox
 
+from utils.plotMeshesAndVectors import plotMeshesAndVectors
 from src import STP_FILES_FOLDER
 
 
@@ -73,10 +75,10 @@ def both_wings_all_nacelles():
     point11 = np.array([3727.767, 0.0, 2591]) / mm2ft  # Mid of fwing
 
     fwing_lead_left, fwing_trail_left, fwing_lead_left_mid, fwing_trail_left_mid = generate_corner_points(
-        geo, "front_wing", point00, point01, point10, point11)
+                                                geo, "front_wing", point00, point01, point10, point11)
     fwing_left_top, fwing_left_bot, fwing_chord_surface_left, fwing_camber_surface_left = generate_camber_mesh(
-        geo, fwing_lead_left, fwing_trail_left, fwing_lead_left_mid,
-        fwing_trail_left_mid, top_surfaces, bot_surfaces, "front_wing_left")
+                                                geo, fwing_lead_left, fwing_trail_left, fwing_lead_left_mid,
+                                                fwing_trail_left_mid, top_surfaces, bot_surfaces, "front_wing_left")
 
     # CREATING 2 REAR WING CAMBER SURFACE MESHES
     point00 = np.array([8277.012, 1536.2898, 4006.5]) / mm2ft  # Left side of fwing
@@ -233,42 +235,85 @@ def both_wings_all_nacelles():
     results_dict = dict()
     results_dict['front_left_wing_mesh_METERS_VSP']          = fwing_camber_surface_left.physical_coordinates * ft2meters
     results_dict['rear_left_wing_mesh_METERS_VSP']           = rwing_camber_surface_left.physical_coordinates * ft2meters
-    results_dict['front_left_wing_mesh_METERS_NED_CG']       = (np.matmul(fwing_camber_surface_left.physical_coordinates - refPt, VSP2NED) * ft2meters)
-    results_dict['rear_left_wing_mesh_METERS_NED_CG']        = (np.matmul(rwing_camber_surface_left.physical_coordinates - refPt, VSP2NED) * ft2meters)
+    results_dict['front_left_wing_mesh_METERS_CG']           = (fwing_camber_surface_left.physical_coordinates - refPt) * ft2meters
+    results_dict['rear_left_wing_mesh_METERS_CG']            = (rwing_camber_surface_left.physical_coordinates - refPt) * ft2meters
+    results_dict['front_left_wing_mesh_METERS_NED_CG']       = np.matmul(fwing_camber_surface_left.physical_coordinates - refPt, VSP2NED) * ft2meters
+    results_dict['rear_left_wing_mesh_METERS_NED_CG']        = np.matmul(rwing_camber_surface_left.physical_coordinates - refPt, VSP2NED) * ft2meters
 
     results_dict['front_left_nacelle1_origin_METERS_VSP']    = flnacelle1_thrust[0].physical_coordinates * ft2meters
+    results_dict['front_left_nacelle1_origin_METERS_CG']     = (flnacelle1_thrust[0].physical_coordinates - refPt) * ft2meters
     results_dict['front_left_nacelle1_origin_METERS_NED_CG'] = (np.matmul(flnacelle1_thrust[0].physical_coordinates - refPt, VSP2NED) * ft2meters)
     results_dict['front_left_nacelle1_vector_VSP']           = flnacelle1_thrust[1].physical_coordinates
     results_dict['front_left_nacelle1_vector_NED']           = np.matmul(flnacelle1_thrust[1].physical_coordinates, VSP2NED)
 
     results_dict['front_left_nacelle2_origin_METERS_VSP']    = flnacelle2_thrust[0].physical_coordinates * ft2meters
+    results_dict['front_left_nacelle2_origin_METERS_CG']     = (flnacelle2_thrust[0].physical_coordinates - refPt) * ft2meters
     results_dict['front_left_nacelle2_origin_METERS_NED_CG'] = (np.matmul(flnacelle2_thrust[0].physical_coordinates - refPt , VSP2NED) * ft2meters)   
     results_dict['front_left_nacelle2_vector_VSP']           = flnacelle2_thrust[1].physical_coordinates
     results_dict['front_left_nacelle2_vector_NED']           = np.matmul(flnacelle2_thrust[1].physical_coordinates, VSP2NED)
     
     results_dict['front_left_nacelle3_origin_METERS_VSP']    = flnacelle3_thrust[0].physical_coordinates * ft2meters
+    results_dict['front_left_nacelle3_origin_METERS_CG']     = (flnacelle3_thrust[0].physical_coordinates - refPt) * ft2meters
     results_dict['front_left_nacelle3_origin_METERS_NED_CG'] = (np.matmul(flnacelle3_thrust[0].physical_coordinates - refPt, VSP2NED) * ft2meters)   
     results_dict['front_left_nacelle3_vector_VSP']           = flnacelle3_thrust[1].physical_coordinates
     results_dict['front_left_nacelle3_vector_NED']           = np.matmul(flnacelle3_thrust[1].physical_coordinates, VSP2NED)
 
     results_dict['rear_left_nacelle1_origin_METERS_VSP']     = rlnacelle1_thrust[0].physical_coordinates * ft2meters
+    results_dict['rear_left_nacelle1_origin_METERS_CG']      = (rlnacelle1_thrust[0].physical_coordinates - refPt) * ft2meters
     results_dict['rear_left_nacelle1_origin_METERS_NED_CG']  = (np.matmul(rlnacelle1_thrust[0].physical_coordinates - refPt, VSP2NED) * ft2meters)  
     results_dict['rear_left_nacelle1_vector_VSP']            = rlnacelle1_thrust[1].physical_coordinates
     results_dict['rear_left_nacelle1_vector_NED']            = np.matmul(rlnacelle1_thrust[1].physical_coordinates, VSP2NED)
 
     results_dict['front_wing_axis_origin_METERS_VSP']        = axisOrigin.physical_coordinates * ft2meters
+    results_dict['front_wing_axis_origin_METERS_CG']         = (axisOrigin.physical_coordinates - refPt) * ft2meters
     results_dict['front_wing_axis_origin_METERS_NED_CG']     = np.matmul(axisOrigin.physical_coordinates - refPt, VSP2NED) * ft2meters
     
     results_dict['front_wing_axis_end_METERS_VSP']           = flnacelle3_thrust[0].physical_coordinates * ft2meters
+    results_dict['front_wing_axis_end_METERS_CG']            = (flnacelle3_thrust[0].physical_coordinates - refPt) * ft2meters
     results_dict['front_wing_axis_end_METERS_NED_CG']        = np.matmul(flnacelle3_thrust[0].physical_coordinates - refPt, VSP2NED) * ft2meters
 
     results_dict['rear_wing_axis_origin_METERS_VSP']         = rw_centerNacelleAligned.physical_coordinates * ft2meters
+    results_dict['rear_wing_axis_origin_METERS_CG']          = (rw_centerNacelleAligned.physical_coordinates - refPt) * ft2meters
     results_dict['rear_wing_axis_origin_METERS_NED_CG']      = np.matmul(rw_centerNacelleAligned.physical_coordinates - refPt, VSP2NED) * ft2meters
     
     results_dict['rear_wing_axis_end_METERS_VSP']            = rw_leftNacelleAligned.physical_coordinates * ft2meters
+    results_dict['rear_wing_axis_end_METERS_CG']             = (rw_leftNacelleAligned.physical_coordinates - refPt) * ft2meters
     results_dict['rear_wing_axis_end_METERS_NED_CG']         = np.matmul(rw_leftNacelleAligned.physical_coordinates - refPt, VSP2NED) * ft2meters
     
     results_dict['front_wing_rotation_axis']                 = frontwingRotaxis.physical_coordinates / np.linalg.norm(frontwingRotaxis.physical_coordinates)
     results_dict['rear_wing_rotation_axis']                  = rearwingRotaxis.physical_coordinates  / np.linalg.norm(rearwingRotaxis.physical_coordinates)
+
+
+    frontWingDict = dict()
+    frontWingDict['front_mesh_shape']  = (9,3)
+    frontWingDict['front_wing_mesh']   = results_dict['front_left_wing_mesh_METERS_CG']
+    frontWingDict['fl1_thrust_origin'] = results_dict['front_left_nacelle1_origin_METERS_CG']
+    frontWingDict['fl2_thrust_origin'] = results_dict['front_left_nacelle2_origin_METERS_CG']
+    frontWingDict['fl3_thrust_origin'] = results_dict['front_left_nacelle3_origin_METERS_CG']
+    frontWingDict['fl1_thrust_vector'] = results_dict['front_left_nacelle1_vector_VSP']
+    frontWingDict['fl2_thrust_vector'] = results_dict['front_left_nacelle2_vector_VSP']
+    frontWingDict['fl3_thrust_vector'] = results_dict['front_left_nacelle3_vector_VSP']
+    frontWingDict['rot_axis_origin'] = results_dict['front_wing_axis_origin_METERS_CG']
+    frontWingDict['rot_axis_vector'] = results_dict['front_wing_rotation_axis']    
+    
+    rearWingDict = dict()
+    rearWingDict['rear_mesh_shape']  = (9,3)
+    rearWingDict['rear_wing_mesh']   = results_dict['rear_left_wing_mesh_METERS_CG']
+    rearWingDict['rl1_thrust_origin'] = results_dict['rear_left_nacelle1_origin_METERS_CG']
+    rearWingDict['rl1_thrust_vector'] = results_dict['rear_left_nacelle1_vector_VSP']
+    rearWingDict['rot_axis_origin'] = results_dict['rear_wing_axis_origin_METERS_CG']
+    rearWingDict['rot_axis_vector'] = results_dict['rear_wing_rotation_axis']    
+
+    plotMeshesAndVectors(frontWingDict, rearWingDict, 1)
+
+    # vp = Plotter()
+    # vps_list = []
+    # points = fwing_camber_surface_left.physical_coordinates * ft2meters
+    # vps = Points(points, c='red', r=4)
+    # vps_list.append(vps)
+    # points = (fwing_camber_surface_left.physical_coordinates - refPt) * ft2meters
+    # vps = Points(points, c='blue', r=4)
+    # vps_list.append(vps)
+    # vp.show(vps_list, 'Projection Results', axes=1, viewup="z", interactive=True)
 
     return results_dict
